@@ -1,6 +1,7 @@
 /bootstrap/compiled.php
 /vendor
 /.idea
+/components
 _ide_helper.php
 composer.phar
 composer.lock
