@@ -12,11 +12,11 @@ class CreateSeminarsWebcastTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('seminars_webcast', function(Blueprint $table)
-		{
-			$table->increments('id');
-			$table->timestamps();
-		});
+//		Schema::create('seminars_webcast', function(Blueprint $table)
+//		{
+//			$table->increments('id');
+//			$table->timestamps();
+//		});
 	}
 
 

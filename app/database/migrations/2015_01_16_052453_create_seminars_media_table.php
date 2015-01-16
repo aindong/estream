@@ -12,11 +12,11 @@ class CreateSeminarsMediaTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('seminars_media', function(Blueprint $table)
-		{
-			$table->increments('id');
-			$table->timestamps();
-		});
+//		Schema::create('seminars_media', function(Blueprint $table)
+//		{
+//			$table->increments('id');
+//			$table->timestamps();
+//		});
 	}
 
 

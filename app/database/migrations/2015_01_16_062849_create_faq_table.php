@@ -12,11 +12,11 @@ class CreateFaqTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('faq', function(Blueprint $table)
-		{
-			$table->increments('id');
-			$table->timestamps();
-		});
+//		Schema::create('faq', function(Blueprint $table)
+//		{
+//			$table->increments('id');
+//			$table->timestamps();
+//		});
 	}
 
 
