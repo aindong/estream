@@ -27,7 +27,7 @@ class CreateSeminarsWebcastTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('seminars_webcast');
+//		Schema::drop('seminars_webcast');
 	}
 
 }

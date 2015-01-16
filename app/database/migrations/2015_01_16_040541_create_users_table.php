@@ -18,6 +18,7 @@ class CreateUsersTable extends Migration {
 			$table->string('email', 100);
 			$table->string('password', 150);
 			$table->string('activation_code', 150);
+			$table->string('remember_token');
 			$table->integer('activated');
 			$table->integer('role_id');
 			$table->string('last_ip', 50);

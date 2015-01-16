@@ -27,7 +27,7 @@ class CreateSeminarsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('seminars');
+//		Schema::drop('seminars');
 	}
 
 }

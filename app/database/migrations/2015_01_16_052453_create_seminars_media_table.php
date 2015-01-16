@@ -27,7 +27,7 @@ class CreateSeminarsMediaTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('seminars_media');
+//		Schema::drop('seminars_media');
 	}
 
 }
