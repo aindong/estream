@@ -15,6 +15,8 @@ class CreateUsersMembership extends Migration {
 		Schema::create('users_membership', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->integer('user_id');
+			$table->string('expire_at');
 			$table->timestamps();
 		});
 	}
