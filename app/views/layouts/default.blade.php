@@ -42,72 +42,11 @@
         <!--TOP STRIP START-->
         <div class="top-strip">
             <div class="container">
-                <!--LANGUAGE SECTION START-->
-
-                <div class="language">
-
-                    <div class="dropdown">
-
-                        <a class="dropdown-toggle" id="dLabel1" role="button" data-toggle="dropdown" data-target="#" href="http://crunchpress.net/page.html">
-
-                            Language
-
-                            <b class="caret"></b>
-
-                        </a>
-
-                        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel1">
-
-                            <li><a href="index.html#">English</a></li>
-
-                            <li><a href="index.html#">Spenish</a></li>
-
-                            <li><a href="index.html#">Turkish</a></li>
-
-                            <li><a href="index.html#">Arabic</a></li>
-
-                        </ul>
-
-                    </div>
-
-                    <div class="dropdown">
-
-                        <a class="dropdown-toggle" id="currency" role="button" data-toggle="dropdown" data-target="#" href="http://crunchpress.net/page.html">
-
-                            Currency
-
-                            <b class="caret"></b>
-
-                        </a>
-
-                        <ul class="dropdown-menu" role="menu" aria-labelledby="currency">
-
-                            <li><a href="index.html#">Dollar</a></li>
-
-                            <li><a href="index.html#">Euro</a></li>
-
-                            <li><a href="index.html#">Dirham</a></li>
-
-                            <li><a href="index.html#">Rupees</a></li>
-
-                            <li><a href="index.html#">Dinar</a></li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
-
-                <!--LANGUAGE SECTION END-->
-
                 <!--ACCOUNT SECTION START-->
 
                 <div class="account">
 
                     <ul>
-
-                        <li><a href="index.html#">Subscribe</a></li>
-
                         <li><a href="index.html#">Sign Out</a></li>
 
                         <li>
