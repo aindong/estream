@@ -221,98 +221,32 @@
                                 <div class="nav-collapse collapse">
 
                                     <ul>
+                                        <li><a href="/">Home</a></li>
+                                        <li><a href="/news">News</a></li>
+                                        <li><a href="/services">Services</a></li>
+                                        <li><a href="/seminars">Seminars</a></li>
+                                        <li><a href="/about-us">About us</a></li>
+                                        <li><a href="/faq">FAQs</a></li>
 
-                                        <li><a href="javascript:void(0)">Home</a>
+                                        {{--<li><a href="javascript:void(0)">Pages</a>--}}
 
-                                            <ul>
+                                            {{--<ul>--}}
+                                                {{--<li><a href="about-us.html">About us</a></li>--}}
+                                                {{--<li><a href="404.html">Error 404</a></li>--}}
+                                                {{--<li><a href="faq.html">FAQs</a></li>--}}
+                                                {{--<li><a href="gallery.html">Gallery</a></li>--}}
+                                                {{--<li><a href="news.html">News</a></li>--}}
+                                                {{--<li><a href="our-lessons.html">Our Lessons</a></li>--}}
+                                                {{--<li><a href="search-result.html">Search Result</a></li>--}}
+                                                {{--<li><a href="signin.html">Sign In</a></li>--}}
+                                                {{--<li><a href="student-login.html">Student Login</a></li>--}}
+                                                {{--<li><a href="student-profile.html">Student Profile</a></li>--}}
+                                                {{--<li><a href="teacher-profile.html">Teacher Profile</a></li>--}}
+                                                {{--<li><a href="team.html">Our Team</a></li>--}}
+                                                {{--<li><a href="edit-profile.html">Edit Your Profile</a></li>--}}
+                                            {{--</ul>--}}
 
-                                                <li><a href="index.html">Home Page Default</a></li>
-
-                                                <li><a href="index-1.html">Home Page 1</a></li>
-
-                                                <li><a href="index-2.html">Home Page 2</a></li>
-
-                                                <li><a href="index-3.html">Home Page 3</a></li>
-
-                                                <li><a href="index-4.html">Home Page 4</a></li>
-
-                                                <li><a href="index-sidemenu.html">Home Page 5</a></li>
-
-                                            </ul>
-
-                                        </li>
-
-                                        <li><a href="javascript:void(0)">Blog</a>
-
-                                            <ul>
-
-                                                <li><a href="blog.html">Blog</a></li>
-
-                                                <li><a href="blog-detail.html">Blog Detail</a></li>
-
-                                            </ul>
-
-                                        </li>
-
-                                        <li><a href="services.html">Services</a></li>
-
-                                        <li><a href="javascript:void(0)">Events</a>
-
-                                            <ul>
-
-                                                <li><a href="events.html">Events</a></li>
-
-                                                <li><a href="events-detail.html">Event Detail</a></li>
-
-                                            </ul>
-
-                                        </li>
-
-                                        <li><a href="javascript:void(0)">Courses</a>
-
-                                            <ul>
-
-                                                <li><a href="courses.html">Courses</a></li>
-
-                                                <li><a href="courses-detail.html">Course Detail</a></li>
-
-                                            </ul>
-
-                                        </li>
-
-                                        <li><a href="javascript:void(0)">Pages</a>
-
-                                            <ul>
-
-                                                <li><a href="about-us.html">About us</a></li>
-
-                                                <li><a href="404.html">Error 404</a></li>
-
-                                                <li><a href="faq.html">FAQs</a></li>
-
-                                                <li><a href="gallery.html">Gallery</a></li>
-
-                                                <li><a href="news.html">News</a></li>
-
-                                                <li><a href="our-lessons.html">Our Lessons</a></li>
-
-                                                <li><a href="search-result.html">Search Result</a></li>
-
-                                                <li><a href="signin.html">Sign In</a></li>
-
-                                                <li><a href="student-login.html">Student Login</a></li>
-
-                                                <li><a href="student-profile.html">Student Profile</a></li>
-
-                                                <li><a href="teacher-profile.html">Teacher Profile</a></li>
-
-                                                <li><a href="team.html">Our Team</a></li>
-
-                                                <li><a href="edit-profile.html">Edit Your Profile</a></li>
-
-                                            </ul>
-
-                                        </li>
+                                        {{--</li>--}}
 
                                         <li><a href="contact-us.html">Contact Us</a></li>
 

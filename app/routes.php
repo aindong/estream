@@ -23,6 +23,11 @@ Route::group([], function() {
  */
 Route::group([], function() {
 	Route::get('/', ['as' => 'front.index', 'uses' => 'HomeController@index']);
+	Route::get('/services', ['as' => 'front.index', 'uses' => 'HomeController@services']);
+	Route::get('/seminars', ['as' => 'front.index', 'uses' => 'HomeController@seminars']);
+	Route::get('/about-us', ['as' => 'front.index', 'uses' => 'HomeController@aboutUs']);
+	Route::get('/faq', ['as' => 'front.index', 'uses' => 'HomeController@faq']);
+	Route::get('/news', ['as' => 'front.index', 'uses' => 'HomeController@news']);
 });
 
 /**
