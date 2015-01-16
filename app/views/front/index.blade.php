@@ -2889,3 +2889,13 @@
 
     <!--CONTANT END-->
 @stop
+
+@section('page-script')
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/skrollr.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easy-pie-chart.js"></script>
+    <script src="js/functions.js"></script>
+@stop
