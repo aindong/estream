@@ -15,31 +15,61 @@ class HomeController extends BaseController {
 	|
 	*/
 
+	/**
+	 * Index page
+	 *
+	 * @return \Illuminate\View\View
+	 */
 	public function index()
 	{
 		return View::make('front.index');
 	}
 
+	/**
+	 * Services
+	 *
+	 * @return \Illuminate\View\View
+	 */
 	public function services()
 	{
 		return View::make('front.services');
 	}
 
+	/**
+	 * Seminars
+	 *
+	 * @return \Illuminate\View\View
+	 */
 	public function seminars()
 	{
 		return View::make('front.seminars');
 	}
 
+	/**
+	 * About Us
+	 *
+	 * @return \Illuminate\View\View
+	 */
 	public function aboutUs()
 	{
 		return View::make('front.about');
 	}
 
+	/**
+	 * Faq
+	 *
+	 * @return \Illuminate\View\View
+	 */
 	public function faq()
 	{
 		return View::make('front.faq');
 	}
 
+	/**
+	 * News
+	 *
+	 * @return \Illuminate\View\View
+	 */
 	public function news()
 	{
 		return View::make('front.news');
