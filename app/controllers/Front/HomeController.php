@@ -20,4 +20,29 @@ class HomeController extends BaseController {
 		return View::make('front.index');
 	}
 
+	public function services()
+	{
+		return View::make('front.services');
+	}
+
+	public function seminars()
+	{
+		return View::make('front.seminars');
+	}
+
+	public function aboutUs()
+	{
+		return View::make('front.about');
+	}
+
+	public function faq()
+	{
+		return View::make('front.faq');
+	}
+
+	public function news()
+	{
+		return View::make('front.news');
+	}
+
 }
