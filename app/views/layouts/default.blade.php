@@ -48,7 +48,8 @@
 
                     <ul>
                         @if(!Session::get('auth'))
-                        <li><a href="index.html#">Register</a></li>
+                        <li><a href="/login">Register</a></li>
+                        <li><a href="/login">Login</a></li>
                         @else
                         <li><a href="index.html#">Sign Out</a></li>
 
