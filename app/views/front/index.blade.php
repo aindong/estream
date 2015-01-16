@@ -779,7 +779,7 @@
 
         <!--LATEST COURSES SECTION END-->
 
-        <!--STUDENT FORM SECTION START-->
+        <!--Registration FORM SECTION START-->
 
         <section class="form">
 
@@ -801,7 +801,7 @@
 
                                 <div class="header">
 
-                                    <h2>Student Form</h2>
+                                    <h2>Registration Form</h2>
 
                                     <p>Learn how to build websites &amp; apps, write code or start a business.</p>
 
