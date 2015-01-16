@@ -47,6 +47,9 @@
                 <div class="account">
 
                     <ul>
+                        @if(!Session::get('auth'))
+                        <li><a href="index.html#">Register</a></li>
+                        @else
                         <li><a href="index.html#">Sign Out</a></li>
 
                         <li>
@@ -74,7 +77,7 @@
                             </div>
 
                         </li>
-
+                        @endif
                     </ul>
 
                 </div>
