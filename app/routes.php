@@ -11,7 +11,24 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
+/**
+ * Frontpage routes
+ */
+Route::group([], function() {
+
+});
+
+/**
+ * Backpage routes
+ */
+Route::group([], function() {
+	Route::get('/', ['as' => 'front.index', 'uses' => 'HomeController@index']);
+});
+
+/**
+ * API routes
+ * v1 api
+ */
+Route::group(['prefix' => '/api/v1/'], function() {
+
 });
