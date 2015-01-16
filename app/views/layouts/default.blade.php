@@ -119,28 +119,6 @@
 
                         </li>
 
-                        <li class="dropdown">
-
-                            <a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="http://crunchpress.net/page.html">
-
-                                <i class="fa fa-briefcase"></i><span>&euro;0</span>
-
-                            </a>
-
-                            <div class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-
-                                <p>0 items in shopping bag</p>
-
-                                <p class="color">Unfortunately, your shopping bag is emtpy.</p>
-
-                                <a href="index.html#" class="return">Return to the Shop</a>
-
-                            </div>
-
-                        </li>
-
-                        <li><i class="fa fa-star"></i><span>3</span></li>
-
                     </ul>
 
                 </div>
