@@ -630,6 +630,7 @@
 <script src="js/jquery-1.11.0.min.js"></script>
 <!-- Bootstrap -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/class/helper.js"></script>
 @yield('page-script')
 </body>
 

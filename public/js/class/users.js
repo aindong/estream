@@ -1,0 +1,95 @@
+(function() {
+    'use strict';
+
+    /**
+     * User class
+     */
+    var User = function() {},
+        user = User.prototype;
+
+    /**
+     * Variables
+     */
+
+    /**
+     * ============================================================
+     * Functions
+     * ============================================================
+     */
+
+    /**
+     * User login request
+     */
+    user.login = function(input) {
+        var alertDiv = $('.alert-login');
+
+        $.ajax({
+            url: '/api/v1/users/login',
+            type: 'post',
+            data: input,
+            beforeSend: '',
+            success: function(data) {
+                console.log(data);
+                alertDiv
+                    .addClass('alert-success')
+                    .removeClass('alert-danger')
+                    .html('You\'ve successfully logged in')
+                    .show();
+            },
+            error: function(data) {
+                console.log(data.responseJSON);
+                var errors = data.responseJSON;
+
+                var message = Helper.getErrorMessages(errors.message);
+
+                alertDiv
+                    .addClass('alert-danger')
+                    .removeClass('alert-success')
+                    .html(message)
+                    .show();
+            }
+        });
+    };
+
+    /**
+     * User registration request
+     */
+    user.register = function(input) {
+        $.ajax({
+            url: '/api/v1/users/create',
+            type: 'post',
+            data: input,
+            beforeSend: '',
+            success: function(data) {
+                console.log(data);
+            },
+            error: function(data) {
+                console.log(data.responseJSON);
+            }
+        });
+    };
+
+    /**
+     * ============================================================
+     * Event listeners
+     * ============================================================
+     */
+
+    /**
+     * User login
+     */
+    $('#loginForm').on('submit', function(e) {
+        e.preventDefault();
+        // Call the user login request
+        user.login($(this).serialize());
+    });
+
+    /**
+     * User registration
+     */
+    $('#registerForm').on('submit', function(e) {
+        e.preventDefault();
+        // Call the user registration request
+        user.register($(this).serialize());
+    });
+})();

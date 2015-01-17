@@ -20,16 +20,17 @@
             <div class="row">
                 <div class="span6">
                     <div class="form-box">
-                        <form>
+                        <form id="loginForm">
                             <div class="form-body">
                                 <fieldset>
                                     <legend>Login Below:</legend>
+                                    <div class="alert alert-login" style="display: none;"></div>
                                     <label>Email Address</label>
-                                    <input type="text" placeholder="Enter your E-mail ID" class="input-block-level">
+                                    <input type="text" placeholder="Enter your E-mail ID" class="input-block-level" name="username">
                                     <label>Password</label>
-                                    <input type="password" placeholder="Enter Password" class="input-block-level">
+                                    <input type="password" placeholder="Enter Password" class="input-block-level" name="password">
 
-                                    <button type="submit" class="btn-style">Submit</button>
+                                    <button type="submit" class="btn-style" id="loginBtn">Submit</button>
                                 </fieldset>
                             </div>
                             <div class="footer">
@@ -39,31 +40,30 @@
                                     <li><a href="signin.html#">Sign up Today for Free!</a></li>
                                     <li><a href="signin.html#">Terms of Use</a></li>
                                 </ul>
-                                <button class="btn-style">Register</button>
                             </div>
                         </form>
                     </div>
                 </div>
                 <div class="span6">
                     <div class="form-box">
-                        <form>
+                        <form id="registerForm">
                             <div class="form-body">
                                 <fieldset>
                                     <legend>First time here? Sign up now!</legend>
                                     <div class="row-fluid">
                                         <div class="span6">
                                             <label>First Name</label>
-                                            <input type="text" placeholder="First Name" class="input-block-level">
+                                            <input type="text" placeholder="First Name" class="input-block-level" name="first_name">
                                         </div>
                                         <div class="span6">
                                             <label>Last Name</label>
-                                            <input type="text" placeholder="Last Name" class="input-block-level">
+                                            <input type="text" placeholder="Last Name" class="input-block-level" name="last_name">
                                         </div>
                                     </div>
                                     <label>Email Address</label>
-                                    <input type="text" placeholder="Enter your E-mail ID" class="input-block-level">
+                                    <input type="text" placeholder="Enter your E-mail ID" class="input-block-level" name="email">
                                     <label>Password</label>
-                                    <input type="password" placeholder="Enter Password" class="input-block-level">
+                                    <input type="password" placeholder="Enter Password" class="input-block-level" name="password">
                                     <button type="submit" class="btn-style">Sign Up</button>
                                 </fieldset>
                             </div>
@@ -129,4 +129,5 @@
     <script src="js/modernizr.js"></script>
     <script type="text/javascript" src="js/skrollr.min.js"></script>
     <script src="js/functions.js"></script>
+    <script src="js/class/users.js"></script>
 @stop

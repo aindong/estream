@@ -37,5 +37,7 @@ Route::group([], function() {
  * v1 api
  */
 Route::group(['prefix' => '/api/v1/'], function() {
-
+	// Users api
+	Route::post('users/login', ['as' => 'user.login', 'uses' => 'UsersApiController@login']);
+	Route::post('users/register', ['as' => 'user.register', 'uses' => 'UsersApiController@register']);
 });
