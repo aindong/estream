@@ -50,6 +50,7 @@
                             <div class="form-body">
                                 <fieldset>
                                     <legend>First time here? Sign up now!</legend>
+                                    <div class="alert alert-register" style="display: none;"></div>
                                     <div class="row-fluid">
                                         <div class="span6">
                                             <label>First Name</label>

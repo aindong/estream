@@ -40,7 +40,7 @@
                 console.log(data.responseJSON);
                 var errors = data.responseJSON;
 
-                var message = Helper.getErrorMessages(errors.message);
+                var message = helper.getErrorMessages(errors.message);
 
                 alertDiv
                     .addClass('alert-danger')
@@ -55,6 +55,8 @@
      * User registration request
      */
     user.register = function(input) {
+        var alertDiv = $('.alert-register');
+
         $.ajax({
             url: '/api/v1/users/create',
             type: 'post',
@@ -62,9 +64,23 @@
             beforeSend: '',
             success: function(data) {
                 console.log(data);
+                alertDiv
+                    .addClass('alert-success')
+                    .removeClass('alert-danger')
+                    .html('Registration successful')
+                    .show();
             },
             error: function(data) {
                 console.log(data.responseJSON);
+                var errors = data.responseJSON;
+
+                var message = helper.getErrorMessages(errors.message);
+
+                alertDiv
+                    .addClass('alert-danger')
+                    .removeClass('alert-success')
+                    .html(message)
+                    .show();
             }
         });
     };
