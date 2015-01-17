@@ -53,11 +53,56 @@ class UsersApiController extends BaseController
         return Response::json([
             'status'    => 'error',
             'message'   => 'Invalid request'
-        ], 401);
+        ], 400);
     }
 
     public function register()
     {
+        if (!Request::ajax()) {
+            return Response::json([
+                'status'    => 'error',
+                'message'   => 'Invalid request'
+            ], 404);
+        }
 
+        $validate = Validator::make($data = Input::all(), [
+            'first_name' => 'required|min:3',
+            'last_name'  => 'required|min:3',
+            'email'      => 'required|email|min:5',
+            'password'   => 'required|min:5'
+        ]);
+
+        if ($validate->fails()) {
+            $errorMessage = $validate->errors()->all();
+
+            return Response::json([
+                'status'    => 'error',
+                'message'   => $errorMessage
+            ], 400);
+        }
+
+        $user = new User();
+        $user->email    = $data['email'];
+        $user->password = Hash::make($data['password']);
+        $user->save();
+
+        $userInfo = new UsersInfo();
+        $userInfo->user_id    = $user->id;
+        $userInfo->first_name = $data['first_name'];
+        $userInfo->last_name  = $data['last_name'];
+        $userInfo->save();
+
+        $message = [
+            'data' => [
+                'user'      => $user,
+                'user_info' => $userInfo
+            ],
+            'message' => 'Registration successful'
+        ];
+
+        return Response::json([
+            'status'    => 'success',
+            'message'   => $message
+        ], 201);
     }
 }
