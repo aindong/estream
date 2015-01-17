@@ -1,11 +1,10 @@
-(function() {
+var User = (function() {
     'use strict';
 
     /**
      * User class
      */
-    var User = function() {},
-        user = User.prototype;
+    var user = {};
 
     /**
      * Variables
@@ -40,7 +39,7 @@
                 console.log(data.responseJSON);
                 var errors = data.responseJSON;
 
-                var message = helper.getErrorMessages(errors.message);
+                var message = Helper.getErrorMessages(errors.message);
 
                 alertDiv
                     .addClass('alert-danger')
@@ -74,7 +73,7 @@
                 console.log(data.responseJSON);
                 var errors = data.responseJSON;
 
-                var message = helper.getErrorMessages(errors.message);
+                var message = Helper.getErrorMessages(errors.message);
 
                 alertDiv
                     .addClass('alert-danger')
@@ -108,4 +107,6 @@
         // Call the user registration request
         user.register($(this).serialize());
     });
+
+    return user;
 })();
