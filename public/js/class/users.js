@@ -34,6 +34,10 @@ var User = (function() {
                     .removeClass('alert-danger')
                     .html('You\'ve successfully logged in')
                     .show();
+
+                setTimeout(function() {
+                    location.href = data.link;
+                }, 2000);
             },
             error: function(data) {
                 console.log(data.responseJSON);

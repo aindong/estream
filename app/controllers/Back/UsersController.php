@@ -1,5 +1,7 @@
 <?php namespace Controllers\Back;
 
+use View;
+
 class UsersController extends \BaseController
 {
     /**

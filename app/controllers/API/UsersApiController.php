@@ -38,9 +38,12 @@ class UsersApiController extends BaseController
             $attempt = Auth::attempt($credentials);
 
             if (Auth::check()) {
+                $link = '/admin/dashboard';
+
                 return Response::json([
                     'status'    => 'success',
-                    'message'   => 'Successfully logged in'
+                    'message'   => 'Successfully logged in',
+                    'link'      => $link
                 ], 200);
             }
 
