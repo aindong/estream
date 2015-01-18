@@ -33,6 +33,7 @@ Route::group(['namespace' => 'Controllers\Back'], function() {
 	Route::get('/user/dashboard', ['as' => 'user.dashboard', 'uses' => 'UsersController@userDashboard']);
 
 	Route::get('/admin/dashboard', ['as' => 'admin.dashboard', 'uses' => 'UsersController@adminDashboard']);
+	Route::get('/admin/users', ['as' => 'admin.users.index', 'uses' => 'UsersController@index']);
 });
 
 /**

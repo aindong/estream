@@ -23,4 +23,9 @@ class UsersController extends \BaseController
     {
         return View::make('user.dashboard');
     }
+
+    public function index()
+    {
+        return View::make('admin.users.index');
+    }
 }

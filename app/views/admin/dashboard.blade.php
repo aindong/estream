@@ -9,7 +9,7 @@
     <!--BANNER START-->
     <div class="page-heading">
         <div class="container">
-            <h2>Edit Profile</h2>
+            <h2>Admin Dashboard</h2>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
         </div>
     </div>
@@ -27,19 +27,20 @@
                         <div class="text">
                             <p>Welcome</p>
                             <a href="edit-profile.html#" class="btn-style">Marrie James</a>
+                            <p>Status: <span>Member</span></p>
+                            <p>Expiration: <span>February 1, 2015</span></p>
                         </div>
                     </div>
                     <!--PROFILE IMAGE END-->
                     <!--EDIT PROFILE START-->
                     <div class="profile-box edit-profile">
-                        <h2>Account Setting</h2>
+                        <h2>Dashboard Navigation</h2>
                         <ul>
-                            <li><a href="edit-profile.html#">Edit Profile</a></li>
-                            <li><a href="edit-profile.html#">Edit Password</a></li>
-                            <li><a href="edit-profile.html#">View Quiz Scores</a></li>
-                            <li><a href="edit-profile.html#">Attended Courses</a></li>
-                            <li><a href="edit-profile.html#">Booked Courses</a></li>
-                            <li><a href="edit-profile.html#">Confirmed Courses</a></li>
+                            <li><a href="/admin/users">Users Managemet</a></li>
+                            <li><a href="edit-profile.html#">Seminars Management</a></li>
+                            <li><a href="edit-profile.html#">Webcast Requests</a></li>
+                            <li><a href="edit-profile.html#">FAQ Management</a></li>
+                            <li><a href="edit-profile.html#">Edit profile</a></li>
                         </ul>
                         <div class="logout">
                             <a href="edit-profile.html#">Log Out</a>
