@@ -14,14 +14,7 @@
 /**
  * Frontpage routes
  */
-Route::group([], function() {
-
-});
-
-/**
- * Backpage routes
- */
-Route::group([], function() {
+Route::group(['namespace' => 'Controllers\Front'], function() {
 	Route::get('/', ['as' => 'front.index', 'uses' => 'HomeController@index']);
 	Route::get('/services', ['as' => 'front.index', 'uses' => 'HomeController@services']);
 	Route::get('/seminars', ['as' => 'front.index', 'uses' => 'HomeController@seminars']);
@@ -30,6 +23,16 @@ Route::group([], function() {
 	Route::get('/news', ['as' => 'front.index', 'uses' => 'HomeController@news']);
 
 	Route::get('/login', ['as' => 'front.login', 'uses' => 'UsersController@login']);
+	Route::get('/logout', ['as' => 'front.logout', 'uses' => 'UsersController@logout']);
+});
+
+/**
+ * Backpage routes
+ */
+Route::group(['namespace' => 'Controllers\Back'], function() {
+	Route::get('/user/dashboard', ['as' => 'user.dashboard', 'uses' => 'UsersController@userDashboard']);
+
+	Route::get('/admin/dashboard', ['as' => 'admin.dashboard', 'uses' => 'UsersController@adminDashboard']);
 });
 
 /**

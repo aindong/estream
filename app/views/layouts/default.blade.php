@@ -47,11 +47,11 @@
                 <div class="account">
 
                     <ul>
-                        @if(!Session::get('auth'))
+                        @if(!Auth::check())
                         <li><a href="/login">Register</a></li>
                         <li><a href="/login">Login</a></li>
                         @else
-                        <li><a href="index.html#">Sign Out</a></li>
+                        <li><a href="/logout">Sign Out</a></li>
 
                         <li>
 

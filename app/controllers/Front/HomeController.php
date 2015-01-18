@@ -1,6 +1,8 @@
-<?php
+<?php namespace Controllers\Front;
 
-class HomeController extends BaseController {
+use View;
+
+class HomeController extends \BaseController {
 
 	/*
 	|--------------------------------------------------------------------------
