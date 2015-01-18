@@ -1,6 +1,8 @@
 <?php namespace Controllers\Front;
 
 use View;
+use Auth;
+use Redirect;
 
 class UsersController extends \BaseController
 {
@@ -21,6 +23,10 @@ class UsersController extends \BaseController
      */
     public function login()
     {
+        if (Auth::check()) {
+            return Redirect::to('/admin/dashboard');
+        }
+
         return View::make('front.login');
     }
 
