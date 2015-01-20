@@ -3,8 +3,7 @@
 @section('page-style')
     <!-- PRETTY PHOTO BACKGROUNDS -->
     <link href="/css/prettyPhoto.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" type="text/css" href="/packages/datatables/media/css/jquery.dataTables.css">
-    <link rel="stylesheet" href="/packages/datatables/examples/resources/bootstrap/3/dataTables.bootstrap.css"/>
+    <link rel="stylesheet" href="/packages/datatables/media/css/dataTables.bootstrap.css"/>
 @stop
 
 @section('content')
@@ -20,7 +19,7 @@
     <div class="contant">
         <div class="container">
             <div class="row">
-                <div class="span4">
+                <div class="span3">
                     <!--PROFILE IMAGE START-->
                     <div class="profile-box profile-view">
                         <div class="thumb">
@@ -42,6 +41,8 @@
                             <li><a href="edit-profile.html#">Seminars Management</a></li>
                             <li><a href="edit-profile.html#">Webcast Requests</a></li>
                             <li><a href="edit-profile.html#">FAQ Management</a></li>
+                            <li><a href="#">Audit Trail</a></li>
+                            <li><a href="#">Settings</a></li>
                             <li><a href="edit-profile.html#">Edit profile</a></li>
                         </ul>
                         <div class="logout">
@@ -50,38 +51,247 @@
                     </div>
                     <!--EDIT PROFILE END-->
                 </div>
-                <div class="span8">
+                <div class="span9">
                     <!--QUIZ SCORE START-->
                     <div class="profile-box editing">
                         <h2>Users Management</h2>
-                        <table class="table" id="example">
+                        <table class="table table-striped table-bordered" cellspacing="0" width="100%" id="example">
                             <thead>
                                 <tr>
-                                    <th>Student</th>
-                                    <th>Part</th>
-                                    <th>Score</th>
+                                    <th>Name</th>
+                                    <th>Occupation</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><a href="edit-profile.html#">How To Be A Great Photographer</a></td>
-                                    <td>1</td>
-                                    <td>5/25</td>
+                                    <td>Test Name 1</td>
+                                    <td>Student</td>
+                                    <td>Regular</td>
+                                    <td>Actions</td>
                                 </tr>
                                 <tr>
-                                    <td>Instructor: Rebecca Smith</td>
-                                    <td>2</td>
-                                    <td>2.5/25</td>
+                                    <td>Test Name 2</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
                                 </tr>
                                 <tr>
-                                    <td>&nbsp;</td>
-                                    <td>3</td>
-                                    <td>Pending</td>
+                                    <td>Test Name 3</td>
+                                    <td>Student</td>
+                                    <td>Regular</td>
+                                    <td>Actions</td>
                                 </tr>
                                 <tr>
-                                    <td>&nbsp;</td>
-                                    <td>4</td>
-                                    <td>Pending</td>
+                                    <td>Test Name 4</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 5</td>
+                                    <td>Student</td>
+                                    <td>Regular</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 6</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 7</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 8</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 3</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 4</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 5</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 6</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 7</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 8</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 3</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 4</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 5</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 6</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 7</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 8</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 3</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 4</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 5</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 6</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 7</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 8</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 3</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 4</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 5</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 6</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 7</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 8</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 3</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 4</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 5</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 6</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 7</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <tr>
+                                    <td>Test Name 8</td>
+                                    <td>Student</td>
+                                    <td>Member</td>
+                                    <td>Actions</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -146,7 +356,7 @@
     <script src="/js/modernizr.js"></script>
     <script type="text/javascript" src="/js/skrollr.min.js"></script>
     <script type="text/javascript" src="/packages/datatables/media/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="/packages/datatables/examples/resources/bootstrap/3/dataTables.bootstrap.js"></script>
+    <script type="text/javascript" src="/packages/datatables/media/js/dataTables.bootstrap.js"></script>
     <script src="/js/functions.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
