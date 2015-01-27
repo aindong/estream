@@ -30,10 +30,10 @@ Route::group(['namespace' => 'Controllers\Front'], function() {
  * Backpage routes
  */
 Route::group(['namespace' => 'Controllers\Back'], function() {
-	Route::get('/user/dashboard', ['as' => 'user.dashboard', 'uses' => 'UsersController@userDashboard']);
+	Route::get('/user/dashboard', ['as' => 'user.dashboard', 'uses' => 'UsersController@index']);
 
-	Route::get('/admin/dashboard', ['as' => 'admin.dashboard', 'uses' => 'UsersController@adminDashboard']);
-	Route::get('/admin/users', ['as' => 'admin.users.index', 'uses' => 'UsersController@index']);
+	Route::get('/admin/dashboard', ['as' => 'admin.dashboard', 'uses' => 'AdminController@index']);
+	Route::get('/admin/users', ['as' => 'admin.users.index', 'uses' => 'AdminController@users']);
 });
 
 /**
