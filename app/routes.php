@@ -38,6 +38,10 @@ Route::group(['namespace' => 'Controllers\Back'], function() {
 	Route::resource('/admin/users', 'UsersController');
 	// Seminars
 	Route::resource('/admin/seminars', 'SeminarsController');
+	// Medias
+	Route::resource('/admin/medias', 'MediasController');
+	// Articles
+	Route::resource('/admin/medias', 'ArticlesController');
 });
 
 /**
