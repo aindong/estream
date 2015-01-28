@@ -16,7 +16,7 @@
         <span>EStreaming Admin Dashboard</span>
         <div class="pull-right">
             <ul>
-                <li><a href="#">Logout</a></li>
+                <li><a href="/logout">Logout</a></li>
                 <li><a href="#">My Profile</a></li>
             </ul>
         </div>

@@ -24,7 +24,8 @@ Route::group(['namespace' => 'Controllers\Front'], function() {
 
 	Route::get('/login', ['as' => 'front.login', 'uses' => 'UsersController@login']);
 	Route::get('/logout', ['as' => 'front.logout', 'uses' => 'UsersController@logout']);
-	Route::get('/user/dashboard', ['as' => 'user.dashboard', 'uses' => 'UsersController@index']);
+
+	Route::get('/users/dashboard', ['as' => 'user.dashboard', 'uses' => 'UsersController@index']);
 });
 
 /**
