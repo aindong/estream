@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration {
 			$table->string('activation_code', 150);
 			$table->string('remember_token');
 			$table->integer('activated');
-			$table->integer('role_id');
+			$table->integer('role_id')->default(1);
 			$table->string('last_ip', 50);
 			$table->timestamp('last_login_at');
 			$table->softDeletes();
