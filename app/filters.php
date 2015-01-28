@@ -54,6 +54,12 @@ Route::filter('auth.basic', function()
 	return Auth::basic();
 });
 
+Route::filter('hasRole', function($route, $request, $value) {
+	if (Auth::user()->role->name != $value) {
+		return Redirect::to('/');
+	}
+});
+
 /*
 |--------------------------------------------------------------------------
 | Guest Filter

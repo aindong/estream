@@ -31,7 +31,7 @@ Route::group(['namespace' => 'Controllers\Front'], function() {
 /**
  * Backpage routes
  */
-Route::group(['namespace' => 'Controllers\Back'], function() {
+Route::group(['namespace' => 'Controllers\Back', 'before' => 'auth|hasRole:admin'], function() {
 	Route::get('/admin/dashboard', ['as' => 'admin.dashboard', 'uses' => 'AdminController@index']);
 
 	// Users
