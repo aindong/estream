@@ -1,5 +1,6 @@
 <?php namespace Controllers\Back;
 
+use User;
 use View;
 
 class UsersController extends \BaseController
@@ -11,6 +12,7 @@ class UsersController extends \BaseController
      */
     public function index()
     {
-        return View::make('user.dashboard');
+        $users = User::all();
+        return View::make('admin.users.index', compact('users'));
     }
 }

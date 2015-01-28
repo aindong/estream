@@ -1,17 +1,18 @@
 <?php namespace Controllers\Back;
 
 use View;
-use User;
+use Seminar;
 
-class AdminController extends \BaseController
+class SeminarsController extends \BaseController
 {
     /**
-     * Admin Dashboard
+     * Seminars
      *
      * @return \Illuminate\View\View
      */
     public function index()
     {
-        return View::make('admin.dashboard');
+        return View::make('admin.seminars.index');
     }
+
 }

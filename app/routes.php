@@ -33,9 +33,11 @@ Route::group(['namespace' => 'Controllers\Back'], function() {
 	Route::get('/user/dashboard', ['as' => 'user.dashboard', 'uses' => 'UsersController@index']);
 
 	Route::get('/admin/dashboard', ['as' => 'admin.dashboard', 'uses' => 'AdminController@index']);
-	Route::get('/admin/users', ['as' => 'admin.users.index', 'uses' => 'AdminController@users']);
 
-	Route::get('/admin/seminars', ['as' => 'admin.seminars.index', 'uses' => 'AdminController@seminars']);
+	// Users
+	Route::resource('/admin/users', 'UsersController');
+	// Seminars
+	Route::resource('/admin/seminars', 'SeminarsController');
 });
 
 /**
