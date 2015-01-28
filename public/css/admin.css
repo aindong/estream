@@ -59,5 +59,6 @@ body {
     top: 50px;
     right: 20px;
     background-color: #fff;
+    min-height: 600px;
 }
 
