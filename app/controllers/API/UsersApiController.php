@@ -38,7 +38,12 @@ class UsersApiController extends BaseController
             $attempt = Auth::attempt($credentials);
 
             if (Auth::check()) {
-                $link = '/admin/dashboard';
+                if (Auth::getUser()->role->name == 'admin') {
+                    $link = '/admin/dashboard';
+                } else {
+                    $link = '/users/dashboard';
+                }
+
 
                 return Response::json([
                     'status'    => 'success',
