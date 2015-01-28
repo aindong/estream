@@ -45,3 +45,7 @@ Route::group(['prefix' => '/api/v1/'], function() {
 	Route::post('users/login', ['as' => 'user.login', 'uses' => 'UsersApiController@login']);
 	Route::post('users/create', ['as' => 'user.register', 'uses' => 'UsersApiController@register']);
 });
+
+Route::get('test', function() {
+	return View::make('test');
+});
