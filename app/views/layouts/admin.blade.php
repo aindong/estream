@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/packages/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/css/admin.css"/>
     <link rel="stylesheet" href="/packages/datatables/extensions/Bootstrap/dataTables.bootstrap.css"/>
+    <link rel="stylesheet" href="/packages/FullCalendar/fullcalendar.min.css"/>
     @yield('page-style')
 </head>
 <body>
@@ -27,7 +28,7 @@
             <hr/>
             <li><a href="/admin/dashboard">Dashboard</a></li>
             <li><a href="/admin/users">Users</a></li>
-            <li><a href="#">Seminars</a></li>
+            <li><a href="/admin/seminars">Seminars</a></li>
             <li><a href="#">Medias</a></li>
             <li><a href="#">Webcasts Requests</a></li>
             <li><a href="#">FAQ</a></li>
@@ -46,6 +47,8 @@
 <script src="/packages/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/packages/datatables/media/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="/packages/datatables/extensions/Bootstrap/dataTables.bootstrap.js"></script>
+<script src="/js/moment.js"></script>
+<script src="/packages/FullCalendar/fullcalendar.min.js"></script>
 
 @yield('page-script')
 </body>

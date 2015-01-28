@@ -25,4 +25,9 @@ class AdminController extends \BaseController
         $users = User::all();
         return View::make('admin.users.index', compact('users'));
     }
+
+    public function seminars()
+    {
+        return View::make('admin.seminars.index');
+    }
 }
