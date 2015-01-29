@@ -12,11 +12,13 @@ class CreateSeminarsMediaTable extends Migration {
 	 */
 	public function up()
 	{
-//		Schema::create('seminars_media', function(Blueprint $table)
-//		{
-//			$table->increments('id');
-//			$table->timestamps();
-//		});
+		Schema::create('seminars_media', function(Blueprint $table)
+		{
+			$table->increments('id');
+			$table->integer('seminar_id');
+			$table->integer('media_id');
+			$table->timestamps();
+		});
 	}
 
 
@@ -27,7 +29,7 @@ class CreateSeminarsMediaTable extends Migration {
 	 */
 	public function down()
 	{
-//		Schema::drop('seminars_media');
+		Schema::drop('seminars_media');
 	}
 
 }
