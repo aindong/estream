@@ -22,24 +22,38 @@ class SeminarsController extends \BaseController
      */
     public function create()
     {
-      return View::make('admin.seminars.create');
+        return View::make('admin.seminars.create');
     }
 
+    /**
+     * Store
+     * Create a new seminar
+     */
     public function store()
     {
-
+      
     }
 
+    /**
+     * Edit
+     * Edit an existing seminar
+     */
     public function edit($id)
     {
-
+        return View::make('admin.seminars.edit');
     }
 
+    /**
+     * Update
+     */
     public function update($id)
     {
 
     }
 
+    /**
+     * Destroy
+     */
     public function destroy($id)
     {
 
