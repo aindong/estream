@@ -26,14 +26,14 @@
         <ul class="nav fixed">
             <h3 class="container" style="width: 100%">Navigation</h3>
             <hr/>
-            <li><a href="/admin/dashboard">Dashboard</a></li>
-            <li><a href="/admin/users">Users</a></li>
-            <li><a href="/admin/seminars">Seminars</a></li>
-            <li><a href="/admin/medias">Medias</a></li>
-            <li><a href="/admin/webcasts">Webcasts Requests</a></li>
-            <li><a href="/admin/faq">FAQ</a></li>
-            <li><a href="/admin/logs">Audit Trail</a></li>
-            <li><a href="/admin/reports">Reports</a></li>
+            <li><a href="/admin/dashboard"><i class="glyphicon glyphicon-th-large"></i> Dashboard</a></li>
+            <li><a href="/admin/users"><i class="glyphicon glyphicon-user"></i> Users</a></li>
+            <li><a href="/admin/seminars"><i class="glyphicon glyphicon-calendar"></i> Seminars</a></li>
+            <li><a href="/admin/medias"><i class="glyphicon glyphicon-picture"></i> Medias</a></li>
+            <li><a href="/admin/webcasts"><i class="glyphicon glyphicon-headphones"></i> Webcasts Requests</a></li>
+            <li><a href="/admin/faq"><i class="glyphicon glyphicon-th-list"></i> FAQ</a></li>
+            <li><a href="/admin/logs"><i class="glyphicon glyphicon-bell"></i> Audit Trail</a></li>
+            <li><a href="/admin/reports"><i class="glyphicon glyphicon-stats"></i> Reports</a></li>
         </ul>
     </div>
 
