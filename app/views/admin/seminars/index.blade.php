@@ -1,29 +1,33 @@
 @extends('layouts.admin')
-@section('page-style')
-    <style>
-
-    </style>
-@stop
 
 @section('content')
-    <h2>Seminars <a href="#" class="btn btn-primary">Add New</a></h2>
-    <div id='calendar'></div>
+    <h2>Users Management <a href="/admin/users/create" class="btn btn-primary">Add New</a></h2>
+    <table class="table table-striped table-bordered" cellspacing="0" width="100%" id="example">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+            @foreach($users as $user)
+                <tr>
+                    <td>{{{ $user->info->last_name }}}, {{{ $user->info->first_name }}} {{{ $user->info->middle_name }}}</td>
+                    <td>{{{ $user->email }}}</td>
+                    <td>Regular</td>
+                    <td><a href="/admin/users/{{ $user->id }}/edit" class="btn btn-warning">Update</a> <a href="#" class="btn btn-danger">Delete</a></td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
 @stop
 
 @section('page-script')
     <script type="text/javascript">
         $(document).ready(function() {
-
-            // page is now ready, initialize the calendar...
-            $('#calendar').fullCalendar({
-                // put your options and callbacks here
-                header: {
-                    left: 'prev,next today',
-                    center: 'title',
-                    right: 'month,agendaWeek,agendaDay'
-                }
-            })
-
+            $('#example').dataTable();
         });
     </script>
 @stop
