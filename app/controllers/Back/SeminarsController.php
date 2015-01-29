@@ -15,4 +15,33 @@ class SeminarsController extends \BaseController
         return View::make('admin.seminars.index');
     }
 
+    /**
+     * Create
+     *
+     * @return \Illuminate\View\View
+     */
+    public function create()
+    {
+      return View::make('admin.seminars.create');
+    }
+
+    public function store()
+    {
+
+    }
+
+    public function edit($id)
+    {
+
+    }
+
+    public function update($id)
+    {
+
+    }
+
+    public function destroy($id)
+    {
+
+    }
 }

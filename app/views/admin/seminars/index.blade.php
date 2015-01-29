@@ -8,6 +8,7 @@
             <th>Title</th>
             <th>Description</th>
             <th>Price</th>
+            <th>Location</th>
             <th>Start</th>
             <th>End</th>
             <th>Actions</th>
