@@ -5,9 +5,11 @@
     <table class="table table-striped table-bordered" cellspacing="0" width="100%" id="example">
         <thead>
         <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Status</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Start</th>
+            <th>End</th>
             <th>Actions</th>
         </tr>
         </thead>
@@ -16,7 +18,14 @@
                 <tr>
                     <td>{{{ $user->info->last_name }}}, {{{ $user->info->first_name }}} {{{ $user->info->middle_name }}}</td>
                     <td>{{{ $user->email }}}</td>
-                    <td>Regular</td>
+                    <td>{{{ ucfirst($user->info->membership) }}}</td>
+                    <td>
+                      @if($user->info->membership == 'member')
+                        {{{ date('M d, Y', strtotime($user->info->membership_expire_at)) }}}
+                      @else
+                        N/A
+                      @endif
+                    </td>
                     <td><a href="/admin/users/{{ $user->id }}/edit" class="btn btn-warning">Update</a> <a href="#" class="btn btn-danger">Delete</a></td>
                 </tr>
             @endforeach

@@ -17,7 +17,11 @@ class CreateSeminarsTable extends Migration {
 			$table->increments('id');
 			$table->string('title');
 			$table->mediumText('description');
+			$table->string('image');
 			$table->string('price');
+			$table->string('location');
+			$table->string('long');
+			$table->string('lat');
 			$table->timestamp('start_at');
 			$table->timestamp('end_at');
 			$table->timestamps();
