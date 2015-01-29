@@ -13,7 +13,8 @@ class ArticlesController extends \BaseController
     public function index()
     {
         $articles = Article::all();
-        return View::make('admin.articles.index', compact('users'));
+
+        return View::make('admin.articles.index', compact('articles'));
     }
 
     /**
