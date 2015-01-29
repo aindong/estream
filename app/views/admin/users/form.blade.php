@@ -29,5 +29,5 @@
     {{ Form::text('last_name', null, ['class' => 'form-control', 'required' => 'required']) }}
 </div>
 
-<a href="/admin/barangaychairmen" class="btn btn-danger">Back</a>
+<a href="/admin/users" class="btn btn-danger">Back</a>
 <button type="submit" class="btn btn-primary">Submit</button>

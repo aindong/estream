@@ -34,7 +34,7 @@ class ArticlesController extends \BaseController
         return Redirect::back()->withErrors($validator)->withInput();
       }
 
-      Barangay::create($data);
+      Article::create($data);
 
       return Redirect::route('admin.articles.index');
     }
