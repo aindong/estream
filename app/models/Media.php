@@ -1,6 +1,6 @@
 <?php
 
-class Article extends Eloquent
+class Media extends Eloquent
 {
     protected $guarded = ['id'];
 }

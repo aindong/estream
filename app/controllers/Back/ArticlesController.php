@@ -2,6 +2,10 @@
 
 use Article;
 use View;
+use Validator;
+use Input;
+use Redirect;
+use Auth;
 
 class ArticlesController extends \BaseController
 {
@@ -27,13 +31,13 @@ class ArticlesController extends \BaseController
 
     public function store()
     {
-      $validator = Validator::make($data = Input::all(), Barangay::$rules);
+      $validator = Validator::make($data = Input::all(), Article::$rules);
 
       if ($validator->fails())
       {
         return Redirect::back()->withErrors($validator)->withInput();
       }
-
+      $data['user_id'] = Auth::user()->id;
       Article::create($data);
 
       return Redirect::route('admin.articles.index');

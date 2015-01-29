@@ -2,6 +2,9 @@
 
 use Faq;
 use View;
+use Validator;
+use Input;
+use Redirect;
 
 class FaqsController extends \BaseController
 {
@@ -27,7 +30,7 @@ class FaqsController extends \BaseController
 
     public function store()
     {
-      $validator = Validator::make($data = Input::all(), Barangay::$rules);
+      $validator = Validator::make($data = Input::all(), Faq::$rules);
 
       if ($validator->fails())
       {
