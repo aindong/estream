@@ -1,9 +1,11 @@
 <?php namespace Controllers\Back;
 
 use User;
+use UsersInfo;
 use View;
 use Input;
 use Redirect;
+use Hash;
 
 class UsersController extends \BaseController
 {
@@ -28,7 +30,22 @@ class UsersController extends \BaseController
 
     public function store()
     {
+        $data = Input::all();
 
+        $user = new User;
+        $user->email = $data['email'];
+        $user->password = Hash::make($data['password']);
+        $user->save();
+
+        $userInfo = new UsersInfo();
+        $userInfo->create([
+            'user_id'       => $user->id,
+            'first_name'    => $data['first_name'],
+            'last_name'     => $data['last_name'],
+            'middle_name'   => $data['middle_name']
+        ]);
+
+        return Redirect::route('admin.users.index');
     }
 
     /**
@@ -46,21 +63,18 @@ class UsersController extends \BaseController
 
     public function update($id)
     {
-        $user = User::findOrFail($id);
-
         $data = Input::all();
 
-        $user->update([
-            'email' => $data['email'],
-            'password' => $data['password']
-        ]);
+        $user = User::find($id);
+        $user->email = $data['email'];
+        $user->password = Hash::make($data['password']);
+        $user->save();
 
-        $userInfo = \UsersInfo::where('user_id', $id)->first();
-        $userInfo->update([
-            'first_name'    => $data['first_name'],
-            'last_name'     => $data['last_name'],
-            'middle_name'   => $data['middle_name']
-        ]);
+        $userInfo = UsersInfo::where('user_id', $id)->first();
+        $userInfo->first_name  = $data['first_name'];
+        $userInfo->last_name   = $data['last_name'];
+        $userInfo->middle_name = $data['middle_name'];
+        $userInfo->save();
 
         return Redirect::route('admin.users.index');
     }
