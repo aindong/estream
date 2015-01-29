@@ -22,7 +22,7 @@ class CreateUsersInfo extends Migration {
 			$table->string('occupation', 100);
 			$table->timestamp('birthdate');
 			$table->string('address');
-			$table->string('membership');
+			$table->string('membership')->default('regular');
 			$table->timestamp('membership_expire_at');
 			$table->timestamps();
 		});

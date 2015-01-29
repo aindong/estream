@@ -20,7 +20,7 @@ class CreateSeminarSpeakersTable extends Migration {
 			$table->string('lname');
 			$table->string('mname');
 			$table->string('image');
-			$table->mediumText('bio');s
+			$table->mediumText('bio');
 			$table->timestamps();
 		});
 	}
