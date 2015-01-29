@@ -1,4 +1,4 @@
-<!Coctype html>
+<!Doctype html>
 
 <html>
 <head>
@@ -635,4 +635,3 @@
 </body>
 
 </html>
-

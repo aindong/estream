@@ -29,11 +29,11 @@
             <li><a href="/admin/dashboard">Dashboard</a></li>
             <li><a href="/admin/users">Users</a></li>
             <li><a href="/admin/seminars">Seminars</a></li>
-            <li><a href="#">Medias</a></li>
-            <li><a href="#">Webcasts Requests</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Audit Trail</a></li>
-            <li><a href="#">Reports</a></li>
+            <li><a href="/admin/medias">Medias</a></li>
+            <li><a href="/admin/webcasts">Webcasts Requests</a></li>
+            <li><a href="/admin/faq">FAQ</a></li>
+            <li><a href="/admin/logs">Audit Trail</a></li>
+            <li><a href="/admin/reports">Reports</a></li>
         </ul>
     </div>
 
