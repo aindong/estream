@@ -6,26 +6,20 @@
         <thead>
         <tr>
             <th>Name</th>
-            <th>Email</th>
-            <th>Status</th>
-            <th>Expiration</th>
+            <th>Title</th>
+            <th>Created</th>
+            <th>Updated</th>
             <th>Actions</th>
         </tr>
         </thead>
         <tbody>
             @foreach($articles as $article)
                 <tr>
-                    <!-- <td>{{{ $article->info->last_name }}}, {{{ $article->info->first_name }}} {{{ $article->info->middle_name }}}</td>
-                    <td>{{{ $article->email }}}</td>
-                    <td>{{{ ucfirst($article->info->membership) }}}</td>
-                    <td>
-                      @if($article->info->membership == 'member')
-                        {{{ date('M d, Y', strtotime($article->info->membership_expire_at)) }}}
-                      @else
-                        N/A
-                      @endif
-                    </td>
-                    <td><a href="/admin/articles/{{ $article->id }}/edit" class="btn btn-warning">Update</a> <a href="#" class="btn btn-danger">Delete</a></td> -->
+                    <td>{{{ $article->user->info->last_name }}}, {{{ $article->user->info->first_name }}} {{{ $article->user->info->middle_name }}}</td>
+                    <td>{{{ $article->title }}}</td>
+                    <td>{{{ $article->created_at }}}</td>
+                    <td>{{{ $article->updated_at }}}</td>
+                    <td><a href="/admin/articles/{{ $article->id }}/edit" class="btn btn-warning">Update</a> <a href="#" class="btn btn-danger">Delete</a></td>
                 </tr>
             @endforeach
         </tbody>

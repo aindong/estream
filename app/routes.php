@@ -43,7 +43,9 @@ Route::group(['namespace' => 'Controllers\Back', 'before' => 'auth|hasRole:admin
 	// Medias
 	Route::resource('/admin/medias', 'MediasController');
 	// Articles
-	Route::resource('/admin/medias', 'ArticlesController');
+	Route::resource('/admin/articles', 'ArticlesController');
+	// Faqs
+	Route::resource('/admin/faqs', 'FaqsController');
 });
 
 /**
