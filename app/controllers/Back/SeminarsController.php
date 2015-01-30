@@ -2,6 +2,8 @@
 
 use View;
 use Seminar;
+use Input;
+use Redirect;
 
 class SeminarsController extends \BaseController
 {
@@ -12,7 +14,9 @@ class SeminarsController extends \BaseController
      */
     public function index()
     {
-        return View::make('admin.seminars.index');
+        $seminars = Seminar::all();
+
+        return View::make('admin.seminars.index', compact('seminars'));
     }
 
     /**
@@ -31,7 +35,12 @@ class SeminarsController extends \BaseController
      */
     public function store()
     {
-      
+
+
+        $data = Input::all();
+
+        Seminar::create($data);
+        return Redirect::route('admin.seminars.index');
     }
 
     /**

@@ -1,5 +1,5 @@
 <?php
 
 class Seminar extends \Eloquent {
-	protected $fillable = [];
+	protected $guarded = ['id'];
 }
