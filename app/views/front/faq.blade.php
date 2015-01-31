@@ -1,0 +1,219 @@
+@extends('layouts.default')
+
+@section('page-style')
+    <!-- PIE CHART -->
+    <link href="css/chart.css" rel="stylesheet" type="text/css">
+@stop
+
+@section('content')
+    <!--BANNER START-->
+    <div class="page-heading">
+        <div class="container">
+            <h2>FAQs</h2>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+        </div>
+    </div>
+    <!--BANNER END-->
+    <!--CONTANT START-->
+    <div class="contant">
+        <div class="container">
+            <div class="row">
+                <div class="span8">
+                    <div class="faq-2">
+                        <h3>Phasellus mauris mi, euismod volutpat sagittis accumsan, suscipit sed leo quis nibh rutrum, fringilla</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel ante a urna tincidunt lobortis. Duis laoreet condimentum est a sagittis. Donec nulla ante, facilisis ut est id, dapibus consequat sem. Nam imperdiet erat in sagittis suscipit. Phasellus et pulvinar lacus. Nunc ut porttitor lacus. In hac habitasse platea dictumst. Suspendisse vestibulum commodo orci. Donec malesuada orci vel mi rutrum lobortis.</p>
+                        <!--ACORDIAN DATE START-->
+                        <div class="accordion_cp" id="section1">
+                            <p>we provide courses at affordable prices</p><span><img src="images/faq-pen.png" alt=""></span>
+                        </div>
+                        <div class="contain_cp_accor">
+                            <div class="content_cp_accor">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <!--ACORDIAN DATE END-->
+                        <!--ACORDIAN DATE START-->
+                        <div class="accordion_cp" id="section2">
+                            <p>WE PROVIDE A VARIETY OF COURSES cHECK OUT THE COUSES NOW</p><span><img src="images/faq-pen.png" alt=""></span>
+                        </div>
+                        <div class="contain_cp_accor">
+                            <div class="content_cp_accor">
+                                <p>Lorem ipsum dolor sit amet, ius minim gubergren ad. At mei sumo sonet audiam, ad mutat elitr platonem vix. Ne nisl idque fierent vix. Ferri clita ponderum ne duo, simul appellantur reprehendunt mea an. An gloriatur vulputate eos, an sed fuisset, in quo inani eligendi.</p>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <!--ACORDIAN DATE END-->
+                        <!--ACORDIAN DATE START-->
+                        <div class="accordion_cp" id="section3">
+                            <p>We have world class teaching facilities</p><span><img src="images/faq-pen.png" alt=""></span>
+                        </div>
+                        <div class="contain_cp_accor">
+                            <div class="content_cp_accor">
+                                <p>Lorem ipsum dolor sit amet, ius minim gubergren ad. At mei sumo sonet audiam, ad mutat elitr platonem vix. Ne nisl idque fierent vix. Ferri clita ponderum ne duo, simul appellantur reprehendunt mea an. An gloriatur vulputate eos, an sed fuisset, in quo inani eligendi.</p>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <!--ACORDIAN DATE END-->
+                        <!--ACORDIAN DATE START-->
+                        <div class="accordion_cp" id="section4">
+                            <p>Learning Management</p><span><img src="images/faq-pen.png" alt=""></span>
+                        </div>
+                        <div class="contain_cp_accor">
+                            <div class="content_cp_accor">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <!--ACORDIAN DATE END-->
+                        <!--ACORDIAN DATE START-->
+                        <div class="accordion_cp" id="section5">
+                            <p>Learn Cooking Basics Online</p><span><img src="images/faq-pen.png" alt=""></span>
+                        </div>
+                        <div class="contain_cp_accor">
+                            <div class="content_cp_accor">
+                                <p>Lorem ipsum dolor sit amet, ius minim gubergren ad. At mei sumo sonet audiam, ad mutat elitr platonem vix. Ne nisl idque fierent vix. Ferri clita ponderum ne duo, simul appellantur reprehendunt mea an. An gloriatur vulputate eos, an sed fuisset, in quo inani eligendi.</p>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <!--ACORDIAN DATE END-->
+                        <!--ACORDIAN DATE START-->
+                        <div class="accordion_cp" id="section6">
+                            <p>What you have to know about MBA</p><span><img src="images/faq-pen.png" alt=""></span>
+                        </div>
+                        <div class="contain_cp_accor">
+                            <div class="content_cp_accor">
+                                <p>Lorem ipsum dolor sit amet, ius minim gubergren ad. At mei sumo sonet audiam, ad mutat elitr platonem vix. Ne nisl idque fierent vix. Ferri clita ponderum ne duo, simul appellantur reprehendunt mea an. An gloriatur vulputate eos, an sed fuisset, in quo inani eligendi.</p>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <!--ACORDIAN DATE END-->
+                        <!--ACORDIAN DATE START-->
+                        <div class="accordion_cp" id="section7">
+                            <p>WE PROVIDE A VARIETY OF COURSES cHECK OUT THE COUSES NOW</p><span><img src="images/faq-pen.png" alt=""></span>
+                        </div>
+                        <div class="contain_cp_accor">
+                            <div class="content_cp_accor">
+                                <p>Lorem ipsum dolor sit amet, ius minim gubergren ad. At mei sumo sonet audiam, ad mutat elitr platonem vix. Ne nisl idque fierent vix. Ferri clita ponderum ne duo, simul appellantur reprehendunt mea an. An gloriatur vulputate eos, an sed fuisset, in quo inani eligendi.</p>
+                            </div>
+                        </div>
+                        <!--ACORDIAN DATE END-->
+                    </div>
+                </div>
+                <div class="span4">
+                    <!--SIDEBAR START-->
+                    <div class="sidebar">
+                        <!--PAPULAR POST WIDGET START-->
+                        <div class="widget widget-papular-post">
+                            <h2>Popular Posts</h2>
+                            <ul>
+                                <!--LIST ITEM START-->
+                                <li>
+                                    <h4>Donec neque ipsum, sodales nec trist</h4>
+                                    <div class="thumb">
+                                        <a href="faq.html#"><img src="images/papular-post.jpg" alt=""></a>
+                                    </div>
+                                    <div class="text">
+                                        <p class="date">19 May 2012  <span>Admin</span></p>
+                                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
+                                    </div>
+                                </li>
+                                <!--LIST ITEM END-->
+                                <!--LIST ITEM START-->
+                                <li>
+                                    <h4>Donec neque ipsum, sodales nec trist</h4>
+                                    <div class="thumb">
+                                        <a href="faq.html#"><img src="images/papular-post2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="text">
+                                        <p class="date">19 May 2012  <span>Admin</span></p>
+                                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
+                                    </div>
+                                </li>
+                                <!--LIST ITEM END-->
+                                <!--LIST ITEM START-->
+                                <li>
+                                    <h4>Donec neque ipsum, sodales nec trist</h4>
+                                    <div class="thumb">
+                                        <a href="faq.html#"><img src="images/papular-post3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="text">
+                                        <p class="date">19 May 2012  <span>Admin</span></p>
+                                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
+                                    </div>
+                                </li>
+                                <!--LIST ITEM END-->
+                                <!--LIST ITEM START-->
+                                <li>
+                                    <h4>Donec neque ipsum, sodales nec trist</h4>
+                                    <div class="thumb">
+                                        <a href="faq.html#"><img src="images/papular-post4.jpg" alt=""></a>
+                                    </div>
+                                    <div class="text">
+                                        <p class="date">19 May 2012  <span>Admin</span></p>
+                                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
+                                    </div>
+                                </li>
+                                <!--LIST ITEM END-->
+                            </ul>
+                        </div>
+                        <!--PAPULAR POST WIDGET END-->
+                    </div>
+                    <!--SIDEBAR END-->
+                </div>
+            </div>
+        </div>
+        <!--FOLLOW US SECTION START-->
+        <section class="follow-us">
+            <div class="container">
+                <div class="row">
+                    <div class="span4">
+                        <div class="follow">
+                            <a href="faq.html#">
+                                <i class="fa fa-facebook"></i>
+                                <div class="text">
+                                    <h4>Follow us on Facebook</h4>
+                                    <p>Faucibus toroot menuts</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="follow">
+                            <a href="faq.html#">
+                                <i class="fa fa-google"></i>
+                                <div class="text">
+                                    <h4>Follow us on Google Plus</h4>
+                                    <p>Faucibus toroot menuts</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="follow">
+                            <a href="faq.html#">
+                                <i class="fa fa-linkedin"></i>
+                                <div class="text">
+                                    <h4>Follow us on Linkedin</h4>
+                                    <p>Faucibus toroot menuts</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--FOLLOW US SECTION END-->
+    </div>
+    <!--CONTANT END-->
+@stop
+
+@section('page-script')
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/jquery.easy-pie-chart.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script> <!--required only if using cookies-->
+    <script type="text/javascript" src="js/jquery.accordion.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/skrollr.min.js"></script>
+    <script src="js/functions.js"></script>
+@stop
