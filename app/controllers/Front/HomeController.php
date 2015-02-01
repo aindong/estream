@@ -44,6 +44,7 @@ class HomeController extends \BaseController {
 	 */
 	public function seminars()
 	{
+		$seminars = \Seminar::orderBy('start', 'desc')->paginate(5);
 		return View::make('front.seminars');
 	}
 
@@ -75,7 +76,9 @@ class HomeController extends \BaseController {
 	 */
 	public function news()
 	{
-		return View::make('front.news');
+		$articles = \Article::orderBy('created_at', 'desc')->paginate(5);
+		return View::make('front.news', compact('articles'))
+			->with('pagination', $articles->links());
 	}
 
 }

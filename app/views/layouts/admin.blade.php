@@ -28,6 +28,7 @@
             <hr/>
             <li><a href="/admin/dashboard"><i class="glyphicon glyphicon-th-large"></i> Dashboard</a></li>
             <li><a href="/admin/users"><i class="glyphicon glyphicon-user"></i> Users</a></li>
+            <li><a href="/admin/articles"><i class="glyphicon glyphicon-pencil"></i> News Articles</a></li>
             <li><a href="/admin/seminars"><i class="glyphicon glyphicon-calendar"></i> Seminars</a></li>
             <li><a href="/admin/medias"><i class="glyphicon glyphicon-picture"></i> Medias</a></li>
             <li><a href="/admin/webcasts"><i class="glyphicon glyphicon-headphones"></i> Webcasts Requests</a></li>
