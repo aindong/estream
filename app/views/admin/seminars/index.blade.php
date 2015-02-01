@@ -18,12 +18,12 @@
             @foreach($seminars as $seminar)
                 <tr>
                     <td>{{{ $seminar->title }}}</td>
-                    <td>{{{ $seminar->description }}}</td>
+                    <td>{{{ substr($seminar->description, 0, 100) }}}...</td>
                     <td>{{{ $seminar->price }}}</td>
                     <td>{{{ $seminar->location }}}</td>
                     <td>{{{ date('M d, Y', strtotime($seminar->start)) }}}</td>
                     <td>{{{ date('M d, Y', strtotime($seminar->end)) }}}</td>
-                    <td><a href="/admin/users/{{ $seminar->id }}/edit" class="btn btn-warning">Update</a> <a href="#" class="btn btn-danger">Delete</a></td>
+                    <td><a href="/admin/users/{{ $seminar->id }}/edit" class="btn btn-primary">Downloadables</a> <a href="/admin/users/{{ $seminar->id }}/edit" class="btn btn-warning">Update</a> <a href="#" class="btn btn-danger">Delete</a></td>
                 </tr>
             @endforeach
         </tbody>
