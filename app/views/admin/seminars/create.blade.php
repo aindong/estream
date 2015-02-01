@@ -63,6 +63,13 @@
 @stop
 
 @section('page-script')
+  <script type="text/javascript">
+    $(function() {
+      $('.startDate').datepicker();
+      $('.endDate').datepicker();
+    });
+  </script>
+
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeziEtPjf1dHcEcDDKbvgg-tW6rbjwmD0&v=3.exp&libraries=places"></script>
   <script type="text/javascript">
     'use strict';

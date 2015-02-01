@@ -37,12 +37,12 @@
 
 <div class="form-group">
     {{ Form::label('start_at', 'Start date *', ['class' => 'form-label']) }}
-    {{ Form::text('start_at', null, ['class' => 'form-control', 'required' => 'required']) }}
+    {{ Form::text('start_at', null, ['class' => 'form-control startDate', 'required' => 'required']) }}
 </div>
 
 <div class="form-group">
     {{ Form::label('end_at', 'End date *', ['class' => 'form-label']) }}
-    {{ Form::text('end_at', null, ['class' => 'form-control', 'required' => 'required']) }}
+    {{ Form::text('end_at', null, ['class' => 'form-control endDate', 'required' => 'required']) }}
 </div>
 <!-- 
 <legend>Speakers</legend> -->

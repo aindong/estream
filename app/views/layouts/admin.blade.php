@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/admin.css"/>
     <link rel="stylesheet" href="/packages/datatables/extensions/Bootstrap/dataTables.bootstrap.css"/>
     <link rel="stylesheet" href="/packages/FullCalendar/fullcalendar.min.css"/>
+    <link rel="stylesheet" href="/css/datepicker.css"/>
     @yield('page-style')
 </head>
 <body>
@@ -50,7 +51,7 @@
 <script type="text/javascript" src="/packages/datatables/extensions/Bootstrap/dataTables.bootstrap.js"></script>
 <script src="/js/moment.js"></script>
 <script src="/packages/FullCalendar/fullcalendar.min.js"></script>
-
+<script src="/js/bootstrap-datepicker.js"></script>
 @yield('page-script')
 </body>
 </html>

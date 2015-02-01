@@ -38,7 +38,9 @@ class SeminarsController extends \BaseController
 
 
         $data = Input::all();
-
+        $data['start_at'] = date('Y-m-d', strtotime($data['start_at']));
+        $data['end_at']   = date('Y-m-d', strtotime($data['end_at']));
+//        print_r($data);exit;
         Seminar::create($data);
         return Redirect::route('admin.seminars.index');
     }

@@ -21,8 +21,8 @@
                     <td>{{{ substr($seminar->description, 0, 100) }}}...</td>
                     <td>{{{ $seminar->price }}}</td>
                     <td>{{{ $seminar->location }}}</td>
-                    <td>{{{ date('M d, Y', strtotime($seminar->start)) }}}</td>
-                    <td>{{{ date('M d, Y', strtotime($seminar->end)) }}}</td>
+                    <td>{{{ date('M d, Y', strtotime($seminar->start_at)) }}}</td>
+                    <td>{{{ date('M d, Y', strtotime($seminar->end_at)) }}}</td>
                     <td><a href="/admin/users/{{ $seminar->id }}/edit" class="btn btn-primary">Downloadables</a> <a href="/admin/users/{{ $seminar->id }}/edit" class="btn btn-warning">Update</a> <a href="#" class="btn btn-danger">Delete</a></td>
                 </tr>
             @endforeach
