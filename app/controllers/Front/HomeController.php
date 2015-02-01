@@ -64,7 +64,8 @@ class HomeController extends \BaseController {
 	 */
 	public function faq()
 	{
-		return View::make('front.faq');
+		$faqs = \Faq::all();
+		return View::make('front.faq', compact('faqs'));
 	}
 
 	/**
