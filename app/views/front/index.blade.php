@@ -779,95 +779,95 @@
 
         <!--LATEST COURSES SECTION END-->
 
-        <!--Registration FORM SECTION START-->
+        {{--<!--Registration FORM SECTION START-->--}}
 
-        <section class="form">
+        {{--<section class="form">--}}
 
-            <div class="form-contant relative">
+            {{--<div class="form-contant relative">--}}
 
-                <div class="container form-fields">
+                {{--<div class="container form-fields">--}}
 
-                    <div class="row">
+                    {{--<div class="row">--}}
 
-                        <div class="span6">
+                        {{--<div class="span6">--}}
 
-                            <img src="images/student.png" alt="">
+                            {{--<img src="images/student.png" alt="">--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                        <div class="span6">
+                        {{--<div class="span6">--}}
 
-                            <div class="student-form">
+                            {{--<div class="student-form">--}}
 
-                                <div class="header">
+                                {{--<div class="header">--}}
 
-                                    <h2>Registration Form</h2>
+                                    {{--<h2>Registration Form</h2>--}}
 
-                                    <p>Learn how to build websites &amp; apps, write code or start a business.</p>
+                                    {{--<p>Learn how to build websites &amp; apps, write code or start a business.</p>--}}
 
-                                </div>
+                                {{--</div>--}}
 
-                                <div class="form-data">
+                                {{--<div class="form-data">--}}
 
-                                    <ul>
+                                    {{--<ul>--}}
 
-                                        <li><input type="text" class="input-block-level" placeholder="Name"></li>
+                                        {{--<li><input type="text" class="input-block-level" placeholder="Name"></li>--}}
 
-                                        <li><input type="text" class="input-block-level" placeholder="Email ID"></li>
+                                        {{--<li><input type="text" class="input-block-level" placeholder="Email ID"></li>--}}
 
-                                        <li><input type="text" class="input-block-level" placeholder="Phone Number"></li>
+                                        {{--<li><input type="text" class="input-block-level" placeholder="Phone Number"></li>--}}
 
-                                        <li><input type="text" class="input-block-level" placeholder="Select Course"></li>
+                                        {{--<li><input type="text" class="input-block-level" placeholder="Select Course"></li>--}}
 
-                                        <li>
+                                        {{--<li>--}}
 
-                                            <div class="gender">
+                                            {{--<div class="gender">--}}
 
-                                                <span>
+                                                {{--<span>--}}
 
-                                                    <input name="gender" type="radio" value="" id="male">
+                                                    {{--<input name="gender" type="radio" value="" id="male">--}}
 
-                                                    <label for="male">Male</label>
+                                                    {{--<label for="male">Male</label>--}}
 
-                                                </span>
+                                                {{--</span>--}}
 
-                                                <span>
+                                                {{--<span>--}}
 
-                                                    <input name="gender" type="radio" value="" id="female">
+                                                    {{--<input name="gender" type="radio" value="" id="female">--}}
 
-                                                    <label for="female">Female</label>
+                                                    {{--<label for="female">Female</label>--}}
 
-                                                </span>
+                                                {{--</span>--}}
 
-                                            </div>
+                                            {{--</div>--}}
 
-                                            <button>Submit</button>
+                                            {{--<button>Submit</button>--}}
 
-                                        </li>
+                                        {{--</li>--}}
 
-                                    </ul>
+                                    {{--</ul>--}}
 
-                                </div>
+                                {{--</div>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                    </div>
+                    {{--</div>--}}
 
-                </div>
+                {{--</div>--}}
 
-                <div id="bg1" data-0="background-position:0px 0px;" data-end="background-position:0px -1000px;"></div>
+                {{--<div id="bg1" data-0="background-position:0px 0px;" data-end="background-position:0px -1000px;"></div>--}}
 
-                <div id="bg2" data-0="background-position:0px 0px;" data-end="background-position:0px -1500px;"></div>
+                {{--<div id="bg2" data-0="background-position:0px 0px;" data-end="background-position:0px -1500px;"></div>--}}
 
-                <div id="bg3" data-0="background-position:0px 0px;" data-end="background-position:0px -900px;"></div>
+                {{--<div id="bg3" data-0="background-position:0px 0px;" data-end="background-position:0px -900px;"></div>--}}
 
-            </div>
+            {{--</div>--}}
 
-        </section>
+        {{--</section>--}}
 
-        <!--STUDENT FORM SECTION END-->
+        {{--<!--STUDENT FORM SECTION END-->--}}
 
         <!--OUR TEACHERS SECTION START-->
 

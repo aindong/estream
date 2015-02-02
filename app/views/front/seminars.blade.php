@@ -52,7 +52,7 @@
                                         </tr>
                                         <tr>
                                             <td><p class="color">Venue:</p></td>
-                                            <td><a href="events.html#">103, C Block, West Street, New York, BMC, US</a></td>
+                                            <td><a href="events.html#">{{ $seminar->location }}</a></td>
                                         </tr>
                                     </table>
                                 </div>

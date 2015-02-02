@@ -46,7 +46,7 @@ class UsersController extends \BaseController
         ]);
 
         \AuditTrail::create([
-            'user_id'   => Auth::getUser()->id,
+            'user_id'   => \Auth::getUser()->id,
             'action'     => 'Created a new user'
         ]);
 
@@ -82,7 +82,7 @@ class UsersController extends \BaseController
         $userInfo->save();
 
         \AuditTrail::create([
-            'user_id'   => Auth::getUser()->id,
+            'user_id'   => \Auth::getUser()->id,
             'action'     => 'Updated a user with id '.$id
         ]);
 

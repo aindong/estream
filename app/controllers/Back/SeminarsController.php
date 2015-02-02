@@ -42,7 +42,7 @@ class SeminarsController extends \BaseController
         Seminar::create($data);
 
         \AuditTrail::create([
-            'user_id'   => Auth::getUser()->id,
+            'user_id'   => \Auth::getUser()->id,
             'action'     => 'Created a new seminar'
         ]);
 
