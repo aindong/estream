@@ -1,11 +1,11 @@
 <?php namespace Controllers\Back;
 
+use Hash;
+use Input;
+use Redirect;
 use User;
 use UsersInfo;
 use View;
-use Input;
-use Redirect;
-use Hash;
 
 class UsersController extends \BaseController
 {
@@ -45,6 +45,11 @@ class UsersController extends \BaseController
             'middle_name'   => $data['middle_name']
         ]);
 
+        \AuditTrail::create([
+            'user_id'   => Auth::getUser()->id,
+            'action'     => 'Created a new user'
+        ]);
+
         return Redirect::route('admin.users.index');
     }
 
@@ -75,6 +80,11 @@ class UsersController extends \BaseController
         $userInfo->last_name   = $data['last_name'];
         $userInfo->middle_name = $data['middle_name'];
         $userInfo->save();
+
+        \AuditTrail::create([
+            'user_id'   => Auth::getUser()->id,
+            'action'     => 'Updated a user with id '.$id
+        ]);
 
         return Redirect::route('admin.users.index');
     }

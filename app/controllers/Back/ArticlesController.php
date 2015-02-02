@@ -1,11 +1,11 @@
 <?php namespace Controllers\Back;
 
 use Article;
-use View;
-use Validator;
+use Auth;
 use Input;
 use Redirect;
-use Auth;
+use Validator;
+use View;
 
 class ArticlesController extends \BaseController
 {
@@ -40,6 +40,11 @@ class ArticlesController extends \BaseController
       $data['user_id'] = Auth::user()->id;
       Article::create($data);
 
+        \AuditTrail::create([
+            'user_id'   => Auth::getUser()->id,
+            'action'     => 'Created a new article'
+        ]);
+
       return Redirect::route('admin.articles.index');
     }
 
@@ -67,12 +72,22 @@ class ArticlesController extends \BaseController
 
       $articles->update($data);
 
+        \AuditTrail::create([
+            'user_id'   => Auth::getUser()->id,
+            'action'     => 'Updated an article with id of '.$id
+        ]);
+
       return Redirect::route('admin.articles.index');
     }
 
-    public function destroy()
+    public function destroy($id)
     {
       Article::destroy($id);
+
+        \AuditTrail::create([
+            'user_id'   => Auth::getUser()->id,
+            'action'     => 'Deleted an article with id of '. $id
+        ]);
 
       return Redirect::route('admin.articles.index');
     }

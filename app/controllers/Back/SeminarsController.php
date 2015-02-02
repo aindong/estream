@@ -1,9 +1,9 @@
 <?php namespace Controllers\Back;
 
-use View;
-use Seminar;
 use Input;
 use Redirect;
+use Seminar;
+use View;
 
 class SeminarsController extends \BaseController
 {
@@ -35,13 +35,17 @@ class SeminarsController extends \BaseController
      */
     public function store()
     {
-
-
         $data = Input::all();
         $data['start_at'] = date('Y-m-d', strtotime($data['start_at']));
         $data['end_at']   = date('Y-m-d', strtotime($data['end_at']));
 //        print_r($data);exit;
         Seminar::create($data);
+
+        \AuditTrail::create([
+            'user_id'   => Auth::getUser()->id,
+            'action'     => 'Created a new seminar'
+        ]);
+
         return Redirect::route('admin.seminars.index');
     }
 

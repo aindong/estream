@@ -44,7 +44,10 @@ class UsersApiController extends BaseController
                     $link = '/users/dashboard';
                 }
 
-
+                AuditTrail::create([
+                    'user_id'   => Auth::getUser()->id,
+                    'action'     => 'Logged in'
+                ]);
                 return Response::json([
                     'status'    => 'success',
                     'message'   => 'Successfully logged in',

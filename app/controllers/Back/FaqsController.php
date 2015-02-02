@@ -1,10 +1,10 @@
 <?php namespace Controllers\Back;
 
 use Faq;
-use View;
-use Validator;
 use Input;
 use Redirect;
+use Validator;
+use View;
 
 class FaqsController extends \BaseController
 {
@@ -39,6 +39,11 @@ class FaqsController extends \BaseController
 
       Faq::create($data);
 
+        \AuditTrail::create([
+            'user_id'   => Auth::getUser()->id,
+            'action'     => 'Created a new faq'
+        ]);
+
       return Redirect::route('admin.faqs.index');
     }
 
@@ -66,12 +71,22 @@ class FaqsController extends \BaseController
 
       $faqs->update($data);
 
+        \AuditTrail::create([
+            'user_id'   => Auth::getUser()->id,
+            'action'     => 'Updated a faq with an id of '.$id
+        ]);
+
       return Redirect::route('admin.faqs.index');
     }
 
-    public function destroy()
+    public function destroy($id)
     {
       Faq::destroy($id);
+
+        \AuditTrail::create([
+            'user_id'   => Auth::getUser()->id,
+            'action'     => 'Deleted a faq with an id of '.$id
+        ]);
 
       return Redirect::route('admin.faqs.index');
     }
