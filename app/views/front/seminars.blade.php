@@ -9,7 +9,7 @@
     <!--BANNER START-->
     <div class="page-heading">
         <div class="container">
-            <h2>Events</h2>
+            <h2>Seminars</h2>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
         </div>
     </div>
@@ -18,209 +18,251 @@
     <div class="contant">
         <div class="container">
             <div class="event-page">
-                <!--EVENT START-->
-                <div class="row events">
-                    <div class="span6">
-                        <div class="thumb">
-                            <a href="events.html#"><img src="images/events1.jpg" alt=""></a>
+                @foreach($seminars as $seminar)
+                    <!--EVENT START-->
+                    <div class="row events">
+                        <div class="span6">
+                            <div class="thumb">
+                                <a href="events.html#"><img src="images/events1.jpg" alt=""></a>
+                            </div>
                         </div>
-                    </div>
-                    <!--EVENT CONTANT START-->
-                    <div class="span6">
-                        <div class="text">
-                            <!--EVENT HEADER START-->
-                            <div class="event-header">
-                                <span>Mon July 2</span>
-                                <h2>Learn Creative Skills, Shape Your Future</h2>
-                                <div class="data-tags">
-                                    <a href="events.html#">Technology</a>
+                        <!--EVENT CONTANT START-->
+                        <div class="span6">
+                            <div class="text">
+                                <!--EVENT HEADER START-->
+                                <div class="event-header">
+                                    <span>Mon July 2</span>
+                                    <h2>{{ $seminar->title }}</h2>
+                                    <div class="data-tags">
+                                        {{--<a href="events.html#"></a>--}}
+                                    </div>
                                 </div>
-                            </div>
-                            <!--EVENT HEADER END-->
-                            <!--EVENT BODY START-->
-                            <div class="event-body">
-                                <p>The point of using Lorem Ipsum is that it has a making it look like English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>
-                            </div>
-                            <!--EVENT BODY END-->
-                            <!--EVENT VANUE START-->
-                            <div class="event-vanue">
-                                <table>
-                                    <tr>
-                                        <td><p class="color">Date:</p></td>
-                                        <td><a href="events.html#"><i class="fa fa-calendar-o"></i>06 Dec, 20140 - 14 Dec, 2014</a> <a href="events.html#"><i class="fa fa-clock-o"></i>7:30 am - 9:00 pm</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><p class="color">Venue:</p></td>
-                                        <td><a href="events.html#">103, C Block, West Street, New York, BMC, US</a></td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <!--EVENT VANUE END-->
-                            <!--EVENT FOOTER START-->
-                            <div class="event-footer">
-                                <a href="events.html#" class="btn-style">Register</a>
-                            </div>
-                            <!--EVENT FOOTER END-->
-                        </div>
-                    </div>
-                    <!--EVENT CONTANT END-->
-                </div>
-                <!--EVENT END-->
-                <!--EVENT START-->
-                <div class="row events">
-                    <div class="span6">
-                        <div class="thumb">
-                            <a href="events.html#"><img src="images/events2.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <!--EVENT CONTANT START-->
-                    <div class="span6">
-                        <div class="text">
-                            <!--EVENT HEADER START-->
-                            <div class="event-header">
-                                <span>Mon July 2</span>
-                                <h2>Learn Creative Skills, Shape Your Future</h2>
-                                <div class="data-tags">
-                                    <a href="events.html#">Technology</a>
+                                <!--EVENT HEADER END-->
+                                <!--EVENT BODY START-->
+                                <div class="event-body">
+                                    <p>{{ substr($seminar->description, 0, 200) }}...</p>
                                 </div>
-                            </div>
-                            <!--EVENT HEADER END-->
-                            <!--EVENT BODY START-->
-                            <div class="event-body">
-                                <p>The point of using Lorem Ipsum is that it has a making it look like English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>
-                            </div>
-                            <!--EVENT BODY END-->
-                            <!--EVENT VANUE START-->
-                            <div class="event-vanue">
-                                <table>
-                                    <tr>
-                                        <td><p class="color">Date:</p></td>
-                                        <td><a href="events.html#"><i class="fa fa-calendar-o"></i>06 Dec, 20140 - 14 Dec, 2014</a> <a href="events.html#"><i class="fa fa-clock-o"></i>7:30 am - 9:00 pm</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><p class="color">Venue:</p></td>
-                                        <td><a href="events.html#">103, C Block, West Street, New York, BMC, US</a></td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <!--EVENT VANUE END-->
-                            <!--EVENT FOOTER START-->
-                            <div class="event-footer">
-                                <a href="events.html#" class="btn-style">Register</a>
-                            </div>
-                            <!--EVENT FOOTER END-->
-                        </div>
-                    </div>
-                    <!--EVENT CONTANT END-->
-                </div>
-                <!--EVENT END-->
-                <!--EVENT START-->
-                <div class="row events">
-                    <div class="span6">
-                        <div class="thumb">
-                            <a href="events.html#"><img src="images/events3.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <!--EVENT CONTANT START-->
-                    <div class="span6">
-                        <div class="text">
-                            <!--EVENT HEADER START-->
-                            <div class="event-header">
-                                <span>Mon July 2</span>
-                                <h2>Learn Creative Skills, Shape Your Future</h2>
-                                <div class="data-tags">
-                                    <a href="events.html#">Technology</a>
+                                <!--EVENT BODY END-->
+                                <!--EVENT VANUE START-->
+                                <div class="event-vanue">
+                                    <table>
+                                        <tr>
+                                            <td><p class="color">Date:</p></td>
+                                            <td><a href="events.html#"><i class="fa fa-calendar-o"></i>{{ date('d M, Y', strtotime($seminar->start_at)) }} - {{ date('d M, Y', strtotime($seminar->end_at)) }}</a> <a href="#"><i class="fa fa-clock-o"></i>7:30 am - 9:00 pm</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><p class="color">Venue:</p></td>
+                                            <td><a href="events.html#">103, C Block, West Street, New York, BMC, US</a></td>
+                                        </tr>
+                                    </table>
                                 </div>
-                            </div>
-                            <!--EVENT HEADER END-->
-                            <!--EVENT BODY START-->
-                            <div class="event-body">
-                                <p>The point of using Lorem Ipsum is that it has a making it look like English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>
-                            </div>
-                            <!--EVENT BODY END-->
-                            <!--EVENT VANUE START-->
-                            <div class="event-vanue">
-                                <table>
-                                    <tr>
-                                        <td><p class="color">Date:</p></td>
-                                        <td><a href="events.html#"><i class="fa fa-calendar-o"></i>06 Dec, 20140 - 14 Dec, 2014</a> <a href="events.html#"><i class="fa fa-clock-o"></i>7:30 am - 9:00 pm</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><p class="color">Venue:</p></td>
-                                        <td><a href="events.html#">103, C Block, West Street, New York, BMC, US</a></td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <!--EVENT VANUE END-->
-                            <!--EVENT FOOTER START-->
-                            <div class="event-footer">
-                                <a href="events.html#" class="btn-style">Register</a>
-                            </div>
-                            <!--EVENT FOOTER END-->
-                        </div>
-                    </div>
-                    <!--EVENT CONTANT END-->
-                </div>
-                <!--EVENT END-->
-                <!--EVENT START-->
-                <div class="row events">
-                    <div class="span6">
-                        <div class="thumb">
-                            <a href="events.html#"><img src="images/events4.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <!--EVENT CONTANT START-->
-                    <div class="span6">
-                        <div class="text">
-                            <!--EVENT HEADER START-->
-                            <div class="event-header">
-                                <span>Mon July 2</span>
-                                <h2>Learn Creative Skills, Shape Your Future</h2>
-                                <div class="data-tags">
-                                    <a href="events.html#">Technology</a>
+                                <!--EVENT VANUE END-->
+                                <!--EVENT FOOTER START-->
+                                <div class="event-footer">
+                                    <a href="events.html#" class="btn-style">Register</a>
                                 </div>
+                                <!--EVENT FOOTER END-->
                             </div>
-                            <!--EVENT HEADER END-->
-                            <!--EVENT BODY START-->
-                            <div class="event-body">
-                                <p>The point of using Lorem Ipsum is that it has a making it look like English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>
-                            </div>
-                            <!--EVENT BODY END-->
-                            <!--EVENT VANUE START-->
-                            <div class="event-vanue">
-                                <table>
-                                    <tr>
-                                        <td><p class="color">Date:</p></td>
-                                        <td><a href="events.html#"><i class="fa fa-calendar-o"></i>06 Dec, 20140 - 14 Dec, 2014</a> <a href="events.html#"><i class="fa fa-clock-o"></i>7:30 am - 9:00 pm</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><p class="color">Venue:</p></td>
-                                        <td><a href="events.html#">103, C Block, West Street, New York, BMC, US</a></td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <!--EVENT VANUE END-->
-                            <!--EVENT FOOTER START-->
-                            <div class="event-footer">
-                                <a href="events.html#" class="btn-style">Register</a>
-                            </div>
-                            <!--EVENT FOOTER END-->
                         </div>
+                        <!--EVENT CONTANT END-->
                     </div>
-                    <!--EVENT CONTANT END-->
-                </div>
-                <!--EVENT END-->
+                    <!--EVENT END-->
+                @endforeach
+                {{--<!--EVENT START-->--}}
+                {{--<div class="row events">--}}
+                    {{--<div class="span6">--}}
+                        {{--<div class="thumb">--}}
+                            {{--<a href="events.html#"><img src="images/events1.jpg" alt=""></a>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<!--EVENT CONTANT START-->--}}
+                    {{--<div class="span6">--}}
+                        {{--<div class="text">--}}
+                            {{--<!--EVENT HEADER START-->--}}
+                            {{--<div class="event-header">--}}
+                                {{--<span>Mon July 2</span>--}}
+                                {{--<h2>Learn Creative Skills, Shape Your Future</h2>--}}
+                                {{--<div class="data-tags">--}}
+                                    {{--<a href="events.html#">Technology</a>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                            {{--<!--EVENT HEADER END-->--}}
+                            {{--<!--EVENT BODY START-->--}}
+                            {{--<div class="event-body">--}}
+                                {{--<p>The point of using Lorem Ipsum is that it has a making it look like English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>--}}
+                            {{--</div>--}}
+                            {{--<!--EVENT BODY END-->--}}
+                            {{--<!--EVENT VANUE START-->--}}
+                            {{--<div class="event-vanue">--}}
+                                {{--<table>--}}
+                                    {{--<tr>--}}
+                                        {{--<td><p class="color">Date:</p></td>--}}
+                                        {{--<td><a href="events.html#"><i class="fa fa-calendar-o"></i>06 Dec, 20140 - 14 Dec, 2014</a> <a href="events.html#"><i class="fa fa-clock-o"></i>7:30 am - 9:00 pm</a></td>--}}
+                                    {{--</tr>--}}
+                                    {{--<tr>--}}
+                                        {{--<td><p class="color">Venue:</p></td>--}}
+                                        {{--<td><a href="events.html#">103, C Block, West Street, New York, BMC, US</a></td>--}}
+                                    {{--</tr>--}}
+                                {{--</table>--}}
+                            {{--</div>--}}
+                            {{--<!--EVENT VANUE END-->--}}
+                            {{--<!--EVENT FOOTER START-->--}}
+                            {{--<div class="event-footer">--}}
+                                {{--<a href="events.html#" class="btn-style">Register</a>--}}
+                            {{--</div>--}}
+                            {{--<!--EVENT FOOTER END-->--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<!--EVENT CONTANT END-->--}}
+                {{--</div>--}}
+                {{--<!--EVENT END-->--}}
+                {{--<!--EVENT START-->--}}
+                {{--<div class="row events">--}}
+                    {{--<div class="span6">--}}
+                        {{--<div class="thumb">--}}
+                            {{--<a href="events.html#"><img src="images/events2.jpg" alt=""></a>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<!--EVENT CONTANT START-->--}}
+                    {{--<div class="span6">--}}
+                        {{--<div class="text">--}}
+                            {{--<!--EVENT HEADER START-->--}}
+                            {{--<div class="event-header">--}}
+                                {{--<span>Mon July 2</span>--}}
+                                {{--<h2>Learn Creative Skills, Shape Your Future</h2>--}}
+                                {{--<div class="data-tags">--}}
+                                    {{--<a href="events.html#">Technology</a>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                            {{--<!--EVENT HEADER END-->--}}
+                            {{--<!--EVENT BODY START-->--}}
+                            {{--<div class="event-body">--}}
+                                {{--<p>The point of using Lorem Ipsum is that it has a making it look like English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>--}}
+                            {{--</div>--}}
+                            {{--<!--EVENT BODY END-->--}}
+                            {{--<!--EVENT VANUE START-->--}}
+                            {{--<div class="event-vanue">--}}
+                                {{--<table>--}}
+                                    {{--<tr>--}}
+                                        {{--<td><p class="color">Date:</p></td>--}}
+                                        {{--<td><a href="events.html#"><i class="fa fa-calendar-o"></i>06 Dec, 20140 - 14 Dec, 2014</a> <a href="events.html#"><i class="fa fa-clock-o"></i>7:30 am - 9:00 pm</a></td>--}}
+                                    {{--</tr>--}}
+                                    {{--<tr>--}}
+                                        {{--<td><p class="color">Venue:</p></td>--}}
+                                        {{--<td><a href="events.html#">103, C Block, West Street, New York, BMC, US</a></td>--}}
+                                    {{--</tr>--}}
+                                {{--</table>--}}
+                            {{--</div>--}}
+                            {{--<!--EVENT VANUE END-->--}}
+                            {{--<!--EVENT FOOTER START-->--}}
+                            {{--<div class="event-footer">--}}
+                                {{--<a href="events.html#" class="btn-style">Register</a>--}}
+                            {{--</div>--}}
+                            {{--<!--EVENT FOOTER END-->--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<!--EVENT CONTANT END-->--}}
+                {{--</div>--}}
+                {{--<!--EVENT END-->--}}
+                {{--<!--EVENT START-->--}}
+                {{--<div class="row events">--}}
+                    {{--<div class="span6">--}}
+                        {{--<div class="thumb">--}}
+                            {{--<a href="events.html#"><img src="images/events3.jpg" alt=""></a>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<!--EVENT CONTANT START-->--}}
+                    {{--<div class="span6">--}}
+                        {{--<div class="text">--}}
+                            {{--<!--EVENT HEADER START-->--}}
+                            {{--<div class="event-header">--}}
+                                {{--<span>Mon July 2</span>--}}
+                                {{--<h2>Learn Creative Skills, Shape Your Future</h2>--}}
+                                {{--<div class="data-tags">--}}
+                                    {{--<a href="events.html#">Technology</a>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                            {{--<!--EVENT HEADER END-->--}}
+                            {{--<!--EVENT BODY START-->--}}
+                            {{--<div class="event-body">--}}
+                                {{--<p>The point of using Lorem Ipsum is that it has a making it look like English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>--}}
+                            {{--</div>--}}
+                            {{--<!--EVENT BODY END-->--}}
+                            {{--<!--EVENT VANUE START-->--}}
+                            {{--<div class="event-vanue">--}}
+                                {{--<table>--}}
+                                    {{--<tr>--}}
+                                        {{--<td><p class="color">Date:</p></td>--}}
+                                        {{--<td><a href="events.html#"><i class="fa fa-calendar-o"></i>06 Dec, 20140 - 14 Dec, 2014</a> <a href="events.html#"><i class="fa fa-clock-o"></i>7:30 am - 9:00 pm</a></td>--}}
+                                    {{--</tr>--}}
+                                    {{--<tr>--}}
+                                        {{--<td><p class="color">Venue:</p></td>--}}
+                                        {{--<td><a href="events.html#">103, C Block, West Street, New York, BMC, US</a></td>--}}
+                                    {{--</tr>--}}
+                                {{--</table>--}}
+                            {{--</div>--}}
+                            {{--<!--EVENT VANUE END-->--}}
+                            {{--<!--EVENT FOOTER START-->--}}
+                            {{--<div class="event-footer">--}}
+                                {{--<a href="events.html#" class="btn-style">Register</a>--}}
+                            {{--</div>--}}
+                            {{--<!--EVENT FOOTER END-->--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<!--EVENT CONTANT END-->--}}
+                {{--</div>--}}
+                {{--<!--EVENT END-->--}}
+                {{--<!--EVENT START-->--}}
+                {{--<div class="row events">--}}
+                    {{--<div class="span6">--}}
+                        {{--<div class="thumb">--}}
+                            {{--<a href="events.html#"><img src="images/events4.jpg" alt=""></a>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<!--EVENT CONTANT START-->--}}
+                    {{--<div class="span6">--}}
+                        {{--<div class="text">--}}
+                            {{--<!--EVENT HEADER START-->--}}
+                            {{--<div class="event-header">--}}
+                                {{--<span>Mon July 2</span>--}}
+                                {{--<h2>Learn Creative Skills, Shape Your Future</h2>--}}
+                                {{--<div class="data-tags">--}}
+                                    {{--<a href="events.html#">Technology</a>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                            {{--<!--EVENT HEADER END-->--}}
+                            {{--<!--EVENT BODY START-->--}}
+                            {{--<div class="event-body">--}}
+                                {{--<p>The point of using Lorem Ipsum is that it has a making it look like English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>--}}
+                            {{--</div>--}}
+                            {{--<!--EVENT BODY END-->--}}
+                            {{--<!--EVENT VANUE START-->--}}
+                            {{--<div class="event-vanue">--}}
+                                {{--<table>--}}
+                                    {{--<tr>--}}
+                                        {{--<td><p class="color">Date:</p></td>--}}
+                                        {{--<td><a href="events.html#"><i class="fa fa-calendar-o"></i>06 Dec, 20140 - 14 Dec, 2014</a> <a href="events.html#"><i class="fa fa-clock-o"></i>7:30 am - 9:00 pm</a></td>--}}
+                                    {{--</tr>--}}
+                                    {{--<tr>--}}
+                                        {{--<td><p class="color">Venue:</p></td>--}}
+                                        {{--<td><a href="events.html#">103, C Block, West Street, New York, BMC, US</a></td>--}}
+                                    {{--</tr>--}}
+                                {{--</table>--}}
+                            {{--</div>--}}
+                            {{--<!--EVENT VANUE END-->--}}
+                            {{--<!--EVENT FOOTER START-->--}}
+                            {{--<div class="event-footer">--}}
+                                {{--<a href="events.html#" class="btn-style">Register</a>--}}
+                            {{--</div>--}}
+                            {{--<!--EVENT FOOTER END-->--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<!--EVENT CONTANT END-->--}}
+                {{--</div>--}}
+                {{--<!--EVENT END-->--}}
             </div>
             <div class="pagination">
-                <ul>
-                    <li><a href="events.html#"><i class="fa fa-angle-left"></i></a></li>
-                    <li><a href="events.html#">1</a></li>
-                    <li><a href="events.html#">2</a></li>
-                    <li><a href="events.html#">3</a></li>
-                    <li><a href="events.html#">4</a></li>
-                    <li><a href="events.html#">5</a></li>
-                    <li><a href="events.html#"><i class="fa fa-angle-right"></i></a></li>
-                </ul>
+                {{ $pagination }}
             </div>
             <div class="clearfix"></div>
 
