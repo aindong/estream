@@ -34,12 +34,12 @@
                                 </fieldset>
                             </div>
                             <div class="footer">
-                                <ul>
-                                    <li><a href="signin.html#">I Forgot My Password</a></li>
-                                    <li><a href="signin.html#">Re-send Confirmation Email</a></li>
-                                    <li><a href="signin.html#">Sign up Today for Free!</a></li>
-                                    <li><a href="signin.html#">Terms of Use</a></li>
-                                </ul>
+                                {{--<ul>--}}
+                                    {{--<li><a href="signin.html#">I Forgot My Password</a></li>--}}
+                                    {{--<li><a href="signin.html#">Re-send Confirmation Email</a></li>--}}
+                                    {{--<li><a href="signin.html#">Sign up Today for Free!</a></li>--}}
+                                    {{--<li><a href="signin.html#">Terms of Use</a></li>--}}
+                                {{--</ul>--}}
                             </div>
                         </form>
                     </div>
