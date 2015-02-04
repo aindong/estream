@@ -49,7 +49,7 @@
             </tr>
         </table></div>
 
-    {{--<div id="livevideodivk" ><video id="sourcevid" style="background: url('/images/cb.jpg');" autoplay></video></div>--}}
+    <div id="livevideodivk" ><video id="sourcevid" style="background: url('/images/cb.jpg');" autoplay></video></div>
 
     <div id="anim" style="visibility:hidden;"><img id="animation" src="/images/anim.gif" width="210px" /></div>
 
