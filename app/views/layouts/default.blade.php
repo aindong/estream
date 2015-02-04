@@ -136,7 +136,7 @@
                                     <ul>
                                         <li><a href="/">Home</a></li>
                                         <li><a href="/news">News</a></li>
-                                        <li><a href="/services">Gallery</a></li>
+                                        <li><a href="/gallery">Gallery</a></li>
                                         <li><a href="/seminars">Seminars</a></li>
                                         <li><a href="/about-us">About us</a></li>
                                         <li><a href="/faq">FAQs</a></li>

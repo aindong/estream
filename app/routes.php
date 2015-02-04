@@ -22,6 +22,7 @@ Route::group(['namespace' => 'Controllers\Front'], function() {
 	Route::get('/faq', ['as' => 'front.index', 'uses' => 'HomeController@faq']);
 	Route::get('/news', ['as' => 'front.index', 'uses' => 'HomeController@news']);
 	Route::get('/contact-us', ['as' => 'front.index', 'uses' => 'HomeController@contactUs']);
+	Route::get('/gallery', ['as' => 'front.index', 'uses' => 'HomeController@gallery']);
 
 	Route::get('/login', ['as' => 'front.login', 'uses' => 'UsersController@login']);
 	Route::get('/logout', ['as' => 'front.logout', 'uses' => 'UsersController@logout']);

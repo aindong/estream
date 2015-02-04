@@ -75,6 +75,11 @@ class HomeController extends \BaseController {
 		return View::make('front.faq', compact('faqs'));
 	}
 
+	public function gallery()
+	{
+		return View::make('front.gallery');
+	}
+
 	/**
 	 * News
 	 *
