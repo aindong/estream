@@ -57,13 +57,23 @@
 
                             <div class="dropdown">
 
-                                <a class="dropdown-toggle" id="account" role="button" data-toggle="dropdown" data-target="#" href="/user/dashboard">
+                                @if(Auth::getUser()->role_id == 2)
+                                    <a href="/admin/dashboard">
 
-                                    My Account
+                                        My Account
 
-                                    <b class="caret"></b>
+                                        <b class="caret"></b>
 
-                                </a>
+                                    </a>
+                                @else
+                                    <a href="/user/dashboard">
+
+                                        My Account
+
+                                        <b class="caret"></b>
+
+                                    </a>
+                                @endif
 
                             </div>
 
