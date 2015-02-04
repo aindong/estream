@@ -66,7 +66,7 @@
 
                                     </a>
                                 @else
-                                    <a href="/user/dashboard">
+                                    <a href="/users/dashboard">
 
                                         My Account
 
