@@ -72,6 +72,12 @@ class SeminarsController extends \BaseController
         return View::make('admin.seminars.edit');
     }
 
+    public function show($id)
+    {
+        $seminar = Seminar::find($id);
+        return View::make('admin.seminars.show', compact('seminar'));
+    }
+
     /**
      * Update
      */
