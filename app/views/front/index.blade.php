@@ -21,17 +21,17 @@
 
         <div class="newsletters">
 
-            <h1>Start 30-Day free trial today.</h1>
+            <h1>We provide seminars for you.</h1>
 
-            <h4>Search for online courses on Web development, Yoga, Guitar lessons, or anything else.</h4>
+            <h4>Wide range of topic that you can see on our new website</h4>
 
-            <div class="subscribe">
+            {{--<div class="subscribe">--}}
 
-                <input type="text" class="input-block-level">
+                {{--<input type="text" class="input-block-level">--}}
 
-                <button>Subscribe</button>
+                {{--<button>Subscribe</button>--}}
 
-            </div>
+            {{--</div>--}}
 
         </div>
 
@@ -43,741 +43,741 @@
 
     <div class="contant">
 
-        <!--SERVICES SECTION START-->
+        {{--<!--SERVICES SECTION START-->--}}
 
-        <section>
+        {{--<section>--}}
 
-            <div class="container">
+            {{--<div class="container">--}}
 
-                <!--SECTION HEADER START-->
+                {{--<!--SECTION HEADER START-->--}}
 
-                <div class="sec-header">
+                {{--<div class="sec-header">--}}
 
-                    <h2>Our Services</h2>
+                    {{--<h2>Our Services</h2>--}}
 
-                    <p>Take a look at what we have are doing</p>
+                    {{--<p>Take a look at what we have are doing</p>--}}
 
-                    <span></span>
+                    {{--<span></span>--}}
 
-                    <span></span>
+                    {{--<span></span>--}}
 
-                    <span></span>
+                    {{--<span></span>--}}
 
-                </div>
+                {{--</div>--}}
 
-                <!--SECTION HEADER END-->
+                {{--<!--SECTION HEADER END-->--}}
 
-                <div class="row">
+                {{--<div class="row">--}}
 
-                    <!--SERVICE ITEM START-->
+                    {{--<!--SERVICE ITEM START-->--}}
 
-                    <div class="span4">
+                    {{--<div class="span4">--}}
 
-                        <div class="services">
+                        {{--<div class="services">--}}
 
-                            <div class="header">
+                            {{--<div class="header">--}}
 
-                                <i class="fa fa-tablet"></i>
+                                {{--<i class="fa fa-tablet"></i>--}}
 
-                                <i class="fa fa-user inner-icon"></i>
+                                {{--<i class="fa fa-user inner-icon"></i>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="text">
+                            {{--<div class="text">--}}
 
-                                <h3><a href="index.html#">Expert teachers</a></h3>
+                                {{--<h3><a href="index.html#">Expert teachers</a></h3>--}}
 
-                                <p>UI improvements were the one aspect of WordPress's future that everyone I spoke to seemed to agree on: </p>
+                                {{--<p>UI improvements were the one aspect of WordPress's future that everyone I spoke to seemed to agree on: </p>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                    </div>
+                    {{--</div>--}}
 
-                    <!--SERVICE ITEM END-->
+                    {{--<!--SERVICE ITEM END-->--}}
 
-                    <!--SERVICE ITEM START-->
+                    {{--<!--SERVICE ITEM START-->--}}
 
-                    <div class="span4">
+                    {{--<div class="span4">--}}
 
-                        <div class="services">
+                        {{--<div class="services">--}}
 
-                            <div class="header">
+                            {{--<div class="header">--}}
 
-                                <i class="fa fa-tablet"></i>
+                                {{--<i class="fa fa-tablet"></i>--}}
 
-                                <i class="fa fa-list-alt inner-icon"></i>
+                                {{--<i class="fa fa-list-alt inner-icon"></i>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="text">
+                            {{--<div class="text">--}}
 
-                                <h3><a href="index.html#">Trusted certifications</a></h3>
+                                {{--<h3><a href="index.html#">Trusted certifications</a></h3>--}}
 
-                                <p>UI improvements were the one aspect of WordPress's future that everyone I spoke to seemed to agree on: </p>
+                                {{--<p>UI improvements were the one aspect of WordPress's future that everyone I spoke to seemed to agree on: </p>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                    </div>
+                    {{--</div>--}}
 
-                    <!--SERVICE ITEM END-->
+                    {{--<!--SERVICE ITEM END-->--}}
 
-                    <!--SERVICE ITEM START-->
+                    {{--<!--SERVICE ITEM START-->--}}
 
-                    <div class="span4">
+                    {{--<div class="span4">--}}
 
-                        <div class="services">
+                        {{--<div class="services">--}}
 
-                            <div class="header">
+                            {{--<div class="header">--}}
 
-                                <i class="fa fa-tablet"></i>
+                                {{--<i class="fa fa-tablet"></i>--}}
 
-                                <i class="fa fa-cogs inner-icon"></i>
+                                {{--<i class="fa fa-cogs inner-icon"></i>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="text">
+                            {{--<div class="text">--}}
 
-                                <h3><a href="index.html#">Start Learning</a></h3>
+                                {{--<h3><a href="index.html#">Start Learning</a></h3>--}}
 
-                                <p>UI improvements were the one aspect of WordPress's future that everyone I spoke to seemed to agree on: </p>
+                                {{--<p>UI improvements were the one aspect of WordPress's future that everyone I spoke to seemed to agree on: </p>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                    </div>
+                    {{--</div>--}}
 
-                    <!--SERVICE ITEM END-->
+                    {{--<!--SERVICE ITEM END-->--}}
 
-                </div>
+                {{--</div>--}}
 
-            </div>
+            {{--</div>--}}
 
-        </section>
+        {{--</section>--}}
 
-        <!--SERVICES SECTION END-->
+        {{--<!--SERVICES SECTION END-->--}}
 
-        <!--LATEST COURSES SECTION START-->
+        {{--<!--LATEST COURSES SECTION START-->--}}
 
-        <section class="gray-bg">
+        {{--<section class="gray-bg">--}}
 
-            <div class="container">
+            {{--<div class="container">--}}
 
-                <!--SECTION HEADER START-->
+                {{--<!--SECTION HEADER START-->--}}
 
-                <div class="sec-header">
+                {{--<div class="sec-header">--}}
 
-                    <h2>Latest Courses</h2>
+                    {{--<h2>Latest Courses</h2>--}}
 
-                    <p>Check Our Featured Courses</p>
+                    {{--<p>Check Our Featured Courses</p>--}}
 
-                    <span></span>
+                    {{--<span></span>--}}
 
-                    <span></span>
+                    {{--<span></span>--}}
 
-                    <span></span>
+                    {{--<span></span>--}}
 
-                </div>
+                {{--</div>--}}
 
-                <!--SECTION HEADER END-->
+                {{--<!--SECTION HEADER END-->--}}
 
-                <div class="customNavigation">
+                {{--<div class="customNavigation">--}}
 
-                    <a class="btn prev"><i class="fa fa-angle-left"></i></a>
+                    {{--<a class="btn prev"><i class="fa fa-angle-left"></i></a>--}}
 
-                    <a class="btn next"><i class="fa fa-angle-right"></i></a>
+                    {{--<a class="btn next"><i class="fa fa-angle-right"></i></a>--}}
 
-                </div>
+                {{--</div>--}}
 
-                <div id="owl-carousel" class="owl-carousel owl-theme">
+                {{--<div id="owl-carousel" class="owl-carousel owl-theme">--}}
 
-                    <!--COURSE ITEM START-->
+                    {{--<!--COURSE ITEM START-->--}}
 
-                    <div class="course">
+                    {{--<div class="course">--}}
 
-                        <div class="thumb">
+                        {{--<div class="thumb">--}}
 
-                            <a href="index.html#"><img src="images/course1.jpg" alt=""></a>
+                            {{--<a href="index.html#"><img src="images/course1.jpg" alt=""></a>--}}
 
-                            <div class="price"><span>$</span>9</div>
+                            {{--<div class="price"><span>$</span>9</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                        <div class="text">
+                        {{--<div class="text">--}}
 
-                            <div class="header">
+                            {{--<div class="header">--}}
 
-                                <h4>Management</h4>
+                                {{--<h4>Management</h4>--}}
 
-                                <div class="rating">
+                                {{--<div class="rating">--}}
 
-                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    {{--<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>--}}
 
-                                </div>
+                                {{--</div>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="course-name">
+                            {{--<div class="course-name">--}}
 
-                                <p>Build a Business Plan</p>
+                                {{--<p>Build a Business Plan</p>--}}
 
-                                <span>$800</span>
+                                {{--<span>$800</span>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="course-detail-btn">
+                            {{--<div class="course-detail-btn">--}}
 
-                                <a href="index.html#">Subscribe</a>
+                                {{--<a href="index.html#">Subscribe</a>--}}
 
-                                <a href="index.html#">Detail</a>
+                                {{--<a href="index.html#">Detail</a>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                    </div>
+                    {{--</div>--}}
 
-                    <!--COURSE ITEM END-->
+                    {{--<!--COURSE ITEM END-->--}}
 
-                    <!--COURSE ITEM START-->
+                    {{--<!--COURSE ITEM START-->--}}
 
-                    <div class="course">
+                    {{--<div class="course">--}}
 
-                        <div class="thumb">
+                        {{--<div class="thumb">--}}
 
-                            <a href="index.html#"><img src="images/course2.jpg" alt=""></a>
+                            {{--<a href="index.html#"><img src="images/course2.jpg" alt=""></a>--}}
 
-                            <div class="price"><span>$</span>51</div>
+                            {{--<div class="price"><span>$</span>51</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                        <div class="text">
+                        {{--<div class="text">--}}
 
-                            <div class="header">
+                            {{--<div class="header">--}}
 
-                                <h4>Music</h4>
+                                {{--<h4>Music</h4>--}}
 
-                                <div class="rating">
+                                {{--<div class="rating">--}}
 
-                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    {{--<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>--}}
 
-                                </div>
+                                {{--</div>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="course-name">
+                            {{--<div class="course-name">--}}
 
-                                <p>How to play the guitar</p>
+                                {{--<p>How to play the guitar</p>--}}
 
-                                <span>$800</span>
+                                {{--<span>$800</span>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="course-detail-btn">
+                            {{--<div class="course-detail-btn">--}}
 
-                                <a href="index.html#">Subscribe</a>
+                                {{--<a href="index.html#">Subscribe</a>--}}
 
-                                <a href="index.html#">Detail</a>
+                                {{--<a href="index.html#">Detail</a>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                    </div>
+                    {{--</div>--}}
 
-                    <!--COURSE ITEM END-->
+                    {{--<!--COURSE ITEM END-->--}}
 
-                    <!--COURSE ITEM START-->
+                    {{--<!--COURSE ITEM START-->--}}
 
-                    <div class="course">
+                    {{--<div class="course">--}}
 
-                        <div class="thumb">
+                        {{--<div class="thumb">--}}
 
-                            <a href="index.html#"><img src="images/course3.jpg" alt=""></a>
+                            {{--<a href="index.html#"><img src="images/course3.jpg" alt=""></a>--}}
 
-                            <div class="price"><span>$</span>20</div>
+                            {{--<div class="price"><span>$</span>20</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                        <div class="text">
+                        {{--<div class="text">--}}
 
-                            <div class="header">
+                            {{--<div class="header">--}}
 
-                                <h4>Marketing</h4>
+                                {{--<h4>Marketing</h4>--}}
 
-                                <div class="rating">
+                                {{--<div class="rating">--}}
 
-                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    {{--<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>--}}
 
-                                </div>
+                                {{--</div>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="course-name">
+                            {{--<div class="course-name">--}}
 
-                                <p>Marketing Management</p>
+                                {{--<p>Marketing Management</p>--}}
 
-                                <span>$1200</span>
+                                {{--<span>$1200</span>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="course-detail-btn">
+                            {{--<div class="course-detail-btn">--}}
 
-                                <a href="index.html#">Subscribe</a>
+                                {{--<a href="index.html#">Subscribe</a>--}}
 
-                                <a href="index.html#">Detail</a>
+                                {{--<a href="index.html#">Detail</a>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                    </div>
+                    {{--</div>--}}
 
-                    <!--COURSE ITEM END-->
+                    {{--<!--COURSE ITEM END-->--}}
 
-                    <!--COURSE ITEM START-->
+                    {{--<!--COURSE ITEM START-->--}}
 
-                    <div class="course">
+                    {{--<div class="course">--}}
 
-                        <div class="thumb">
+                        {{--<div class="thumb">--}}
 
-                            <a href="index.html#"><img src="images/course4.jpg" alt=""></a>
+                            {{--<a href="index.html#"><img src="images/course4.jpg" alt=""></a>--}}
 
-                            <div class="price"><span>$</span>8</div>
+                            {{--<div class="price"><span>$</span>8</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                        <div class="text">
+                        {{--<div class="text">--}}
 
-                            <div class="header">
+                            {{--<div class="header">--}}
 
-                                <h4>Holidays Education</h4>
+                                {{--<h4>Holidays Education</h4>--}}
 
-                                <div class="rating">
+                                {{--<div class="rating">--}}
 
-                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    {{--<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>--}}
 
-                                </div>
+                                {{--</div>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="course-name">
+                            {{--<div class="course-name">--}}
 
-                                <p>Holidays Education Course</p>
+                                {{--<p>Holidays Education Course</p>--}}
 
-                                <span>$800</span>
+                                {{--<span>$800</span>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="course-detail-btn">
+                            {{--<div class="course-detail-btn">--}}
 
-                                <a href="index.html#">Subscribe</a>
+                                {{--<a href="index.html#">Subscribe</a>--}}
 
-                                <a href="index.html#">Detail</a>
+                                {{--<a href="index.html#">Detail</a>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                    </div>
+                    {{--</div>--}}
 
-                    <!--COURSE ITEM END-->
+                    {{--<!--COURSE ITEM END-->--}}
 
-                    <!--COURSE ITEM START-->
+                    {{--<!--COURSE ITEM START-->--}}
 
-                    <div class="course">
+                    {{--<div class="course">--}}
 
-                        <div class="thumb">
+                        {{--<div class="thumb">--}}
 
-                            <a href="index.html#"><img src="images/course1.jpg" alt=""></a>
+                            {{--<a href="index.html#"><img src="images/course1.jpg" alt=""></a>--}}
 
-                            <div class="price"><span>$</span>15</div>
+                            {{--<div class="price"><span>$</span>15</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                        <div class="text">
+                        {{--<div class="text">--}}
 
-                            <div class="header">
+                            {{--<div class="header">--}}
 
-                                <h4>Management</h4>
+                                {{--<h4>Management</h4>--}}
 
-                                <div class="rating">
+                                {{--<div class="rating">--}}
 
-                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    {{--<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>--}}
 
-                                </div>
+                                {{--</div>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="course-name">
+                            {{--<div class="course-name">--}}
 
-                                <p>Build a Business Plan</p>
+                                {{--<p>Build a Business Plan</p>--}}
 
-                                <span>$800</span>
+                                {{--<span>$800</span>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="course-detail-btn">
+                            {{--<div class="course-detail-btn">--}}
 
-                                <a href="index.html#">Subscribe</a>
+                                {{--<a href="index.html#">Subscribe</a>--}}
 
-                                <a href="index.html#">Detail</a>
+                                {{--<a href="index.html#">Detail</a>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                    </div>
+                    {{--</div>--}}
 
-                    <!--COURSE ITEM END-->
+                    {{--<!--COURSE ITEM END-->--}}
 
-                    <!--COURSE ITEM START-->
+                    {{--<!--COURSE ITEM START-->--}}
 
-                    <div class="course">
+                    {{--<div class="course">--}}
 
-                        <div class="thumb">
+                        {{--<div class="thumb">--}}
 
-                            <a href="index.html#"><img src="images/course2.jpg" alt=""></a>
+                            {{--<a href="index.html#"><img src="images/course2.jpg" alt=""></a>--}}
 
-                            <div class="price"><span>$</span>63</div>
+                            {{--<div class="price"><span>$</span>63</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                        <div class="text">
+                        {{--<div class="text">--}}
 
-                            <div class="header">
+                            {{--<div class="header">--}}
 
-                                <h4>Music</h4>
+                                {{--<h4>Music</h4>--}}
 
-                                <div class="rating">
+                                {{--<div class="rating">--}}
 
-                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    {{--<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>--}}
 
-                                </div>
+                                {{--</div>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="course-name">
+                            {{--<div class="course-name">--}}
 
-                                <p>How to play the guitar</p>
+                                {{--<p>How to play the guitar</p>--}}
 
-                                <span>$800</span>
+                                {{--<span>$800</span>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="course-detail-btn">
+                            {{--<div class="course-detail-btn">--}}
 
-                                <a href="index.html#">Subscribe</a>
+                                {{--<a href="index.html#">Subscribe</a>--}}
 
-                                <a href="index.html#">Detail</a>
+                                {{--<a href="index.html#">Detail</a>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                    </div>
+                    {{--</div>--}}
 
-                    <!--COURSE ITEM END-->
+                    {{--<!--COURSE ITEM END-->--}}
 
-                    <!--COURSE ITEM START-->
+                    {{--<!--COURSE ITEM START-->--}}
 
-                    <div class="course">
+                    {{--<div class="course">--}}
 
-                        <div class="thumb">
+                        {{--<div class="thumb">--}}
 
-                            <a href="index.html#"><img src="images/course3.jpg" alt=""></a>
+                            {{--<a href="index.html#"><img src="images/course3.jpg" alt=""></a>--}}
 
-                            <div class="price"><span>$</span>19</div>
+                            {{--<div class="price"><span>$</span>19</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                        <div class="text">
+                        {{--<div class="text">--}}
 
-                            <div class="header">
+                            {{--<div class="header">--}}
 
-                                <h4>Marketing</h4>
+                                {{--<h4>Marketing</h4>--}}
 
-                                <div class="rating">
+                                {{--<div class="rating">--}}
 
-                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    {{--<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>--}}
 
-                                </div>
+                                {{--</div>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="course-name">
+                            {{--<div class="course-name">--}}
 
-                                <p>Marketing Management</p>
+                                {{--<p>Marketing Management</p>--}}
 
-                                <span>$1200</span>
+                                {{--<span>$1200</span>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="course-detail-btn">
+                            {{--<div class="course-detail-btn">--}}
 
-                                <a href="index.html#">Subscribe</a>
+                                {{--<a href="index.html#">Subscribe</a>--}}
 
-                                <a href="index.html#">Detail</a>
+                                {{--<a href="index.html#">Detail</a>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                    </div>
+                    {{--</div>--}}
 
-                    <!--COURSE ITEM END-->
+                    {{--<!--COURSE ITEM END-->--}}
 
-                    <!--COURSE ITEM START-->
+                    {{--<!--COURSE ITEM START-->--}}
 
-                    <div class="course">
+                    {{--<div class="course">--}}
 
-                        <div class="thumb">
+                        {{--<div class="thumb">--}}
 
-                            <a href="index.html#"><img src="images/course4.jpg" alt=""></a>
+                            {{--<a href="index.html#"><img src="images/course4.jpg" alt=""></a>--}}
 
-                            <div class="price"><span>$</span>25</div>
+                            {{--<div class="price"><span>$</span>25</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                        <div class="text">
+                        {{--<div class="text">--}}
 
-                            <div class="header">
+                            {{--<div class="header">--}}
 
-                                <h4>Holidays Education</h4>
+                                {{--<h4>Holidays Education</h4>--}}
 
-                                <div class="rating">
+                                {{--<div class="rating">--}}
 
-                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    {{--<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>--}}
 
-                                </div>
+                                {{--</div>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="course-name">
+                            {{--<div class="course-name">--}}
 
-                                <p>Holidays Education Course</p>
+                                {{--<p>Holidays Education Course</p>--}}
 
-                                <span>$800</span>
+                                {{--<span>$800</span>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="course-detail-btn">
+                            {{--<div class="course-detail-btn">--}}
 
-                                <a href="index.html#">Subscribe</a>
+                                {{--<a href="index.html#">Subscribe</a>--}}
 
-                                <a href="index.html#">Detail</a>
+                                {{--<a href="index.html#">Detail</a>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                    </div>
+                    {{--</div>--}}
 
-                    <!--COURSE ITEM END-->
+                    {{--<!--COURSE ITEM END-->--}}
 
-                    <!--COURSE ITEM START-->
+                    {{--<!--COURSE ITEM START-->--}}
 
-                    <div class="course">
+                    {{--<div class="course">--}}
 
-                        <div class="thumb">
+                        {{--<div class="thumb">--}}
 
-                            <a href="index.html#"><img src="images/course1.jpg" alt=""></a>
+                            {{--<a href="index.html#"><img src="images/course1.jpg" alt=""></a>--}}
 
-                            <div class="price"><span>$</span>13</div>
+                            {{--<div class="price"><span>$</span>13</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                        <div class="text">
+                        {{--<div class="text">--}}
 
-                            <div class="header">
+                            {{--<div class="header">--}}
 
-                                <h4>Management</h4>
+                                {{--<h4>Management</h4>--}}
 
-                                <div class="rating">
+                                {{--<div class="rating">--}}
 
-                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    {{--<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>--}}
 
-                                </div>
+                                {{--</div>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="course-name">
+                            {{--<div class="course-name">--}}
 
-                                <p>Build a Business Plan</p>
+                                {{--<p>Build a Business Plan</p>--}}
 
-                                <span>$800</span>
+                                {{--<span>$800</span>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="course-detail-btn">
+                            {{--<div class="course-detail-btn">--}}
 
-                                <a href="index.html#">Subscribe</a>
+                                {{--<a href="index.html#">Subscribe</a>--}}
 
-                                <a href="index.html#">Detail</a>
+                                {{--<a href="index.html#">Detail</a>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                    </div>
+                    {{--</div>--}}
 
-                    <!--COURSE ITEM END-->
+                    {{--<!--COURSE ITEM END-->--}}
 
-                    <!--COURSE ITEM START-->
+                    {{--<!--COURSE ITEM START-->--}}
 
-                    <div class="course">
+                    {{--<div class="course">--}}
 
-                        <div class="thumb">
+                        {{--<div class="thumb">--}}
 
-                            <a href="index.html#"><img src="images/course2.jpg" alt=""></a>
+                            {{--<a href="index.html#"><img src="images/course2.jpg" alt=""></a>--}}
 
-                            <div class="price"><span>$</span>17</div>
+                            {{--<div class="price"><span>$</span>17</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                        <div class="text">
+                        {{--<div class="text">--}}
 
-                            <div class="header">
+                            {{--<div class="header">--}}
 
-                                <h4>Music</h4>
+                                {{--<h4>Music</h4>--}}
 
-                                <div class="rating">
+                                {{--<div class="rating">--}}
 
-                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    {{--<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>--}}
 
-                                </div>
+                                {{--</div>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="course-name">
+                            {{--<div class="course-name">--}}
 
-                                <p>How to play the guitar</p>
+                                {{--<p>How to play the guitar</p>--}}
 
-                                <span>$800</span>
+                                {{--<span>$800</span>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="course-detail-btn">
+                            {{--<div class="course-detail-btn">--}}
 
-                                <a href="index.html#">Subscribe</a>
+                                {{--<a href="index.html#">Subscribe</a>--}}
 
-                                <a href="index.html#">Detail</a>
+                                {{--<a href="index.html#">Detail</a>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                    </div>
+                    {{--</div>--}}
 
-                    <!--COURSE ITEM END-->
+                    {{--<!--COURSE ITEM END-->--}}
 
-                    <!--COURSE ITEM START-->
+                    {{--<!--COURSE ITEM START-->--}}
 
-                    <div class="course">
+                    {{--<div class="course">--}}
 
-                        <div class="thumb">
+                        {{--<div class="thumb">--}}
 
-                            <a href="index.html#"><img src="images/course3.jpg" alt=""></a>
+                            {{--<a href="index.html#"><img src="images/course3.jpg" alt=""></a>--}}
 
-                            <div class="price"><span>$</span>31</div>
+                            {{--<div class="price"><span>$</span>31</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                        <div class="text">
+                        {{--<div class="text">--}}
 
-                            <div class="header">
+                            {{--<div class="header">--}}
 
-                                <h4>Marketing</h4>
+                                {{--<h4>Marketing</h4>--}}
 
-                                <div class="rating">
+                                {{--<div class="rating">--}}
 
-                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    {{--<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>--}}
 
-                                </div>
+                                {{--</div>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="course-name">
+                            {{--<div class="course-name">--}}
 
-                                <p>Marketing Management</p>
+                                {{--<p>Marketing Management</p>--}}
 
-                                <span>$1200</span>
+                                {{--<span>$1200</span>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="course-detail-btn">
+                            {{--<div class="course-detail-btn">--}}
 
-                                <a href="index.html#">Subscribe</a>
+                                {{--<a href="index.html#">Subscribe</a>--}}
 
-                                <a href="index.html#">Detail</a>
+                                {{--<a href="index.html#">Detail</a>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                    </div>
+                    {{--</div>--}}
 
-                    <!--COURSE ITEM END-->
+                    {{--<!--COURSE ITEM END-->--}}
 
-                    <!--COURSE ITEM START-->
+                    {{--<!--COURSE ITEM START-->--}}
 
-                    <div class="course">
+                    {{--<div class="course">--}}
 
-                        <div class="thumb">
+                        {{--<div class="thumb">--}}
 
-                            <a href="index.html#"><img src="images/course4.jpg" alt=""></a>
+                            {{--<a href="index.html#"><img src="images/course4.jpg" alt=""></a>--}}
 
-                            <div class="price"><span>$</span>36</div>
+                            {{--<div class="price"><span>$</span>36</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                        <div class="text">
+                        {{--<div class="text">--}}
 
-                            <div class="header">
+                            {{--<div class="header">--}}
 
-                                <h4>Holidays Education</h4>
+                                {{--<h4>Holidays Education</h4>--}}
 
-                                <div class="rating">
+                                {{--<div class="rating">--}}
 
-                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    {{--<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>--}}
 
-                                </div>
+                                {{--</div>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="course-name">
+                            {{--<div class="course-name">--}}
 
-                                <p>Holidays Education Course</p>
+                                {{--<p>Holidays Education Course</p>--}}
 
-                                <span>$800</span>
+                                {{--<span>$800</span>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <div class="course-detail-btn">
+                            {{--<div class="course-detail-btn">--}}
 
-                                <a href="index.html#">Subscribe</a>
+                                {{--<a href="index.html#">Subscribe</a>--}}
 
-                                <a href="index.html#">Detail</a>
+                                {{--<a href="index.html#">Detail</a>--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                    </div>
+                    {{--</div>--}}
 
-                    <!--COURSE ITEM END-->
+                    {{--<!--COURSE ITEM END-->--}}
 
-                </div>
+                {{--</div>--}}
 
-            </div>
+            {{--</div>--}}
 
-        </section>
+        {{--</section>--}}
 
-        <!--LATEST COURSES SECTION END-->
+        {{--<!--LATEST COURSES SECTION END-->--}}
 
         {{--<!--Registration FORM SECTION START-->--}}
 
