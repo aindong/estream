@@ -2,7 +2,7 @@
 
 @section('page-style')
     <!-- PIE CHART -->
-    <link href="css/chart.css" rel="stylesheet" type="text/css">
+    <link href="/css/chart.css" rel="stylesheet" type="text/css">
 @stop
 
 @section('content')
@@ -30,7 +30,7 @@
                             <div class="text">
                                 <!--EVENT HEADER START-->
                                 <div class="event-header">
-                                    <span>Mon July 2</span>
+                                    <span>{{ date('D M d', strtotime($seminar->start_at)) }}</span>
                                     <h2>{{ $seminar->title }}</h2>
                                     <div class="data-tags">
                                         {{--<a href="events.html#"></a>--}}
@@ -60,7 +60,18 @@
                                 <div class="event-footer">
                                 @if(Auth::check())
                                     <a href="events.html#" class="btn-style">Register</a>
-                                    @if(isset(Auth::getUser()->seminars->status) && Auth::getUser()->seminars->status == "paid")
+                                    <?php
+                                        $seminarStatus = '';
+                                        $id = $seminar->id;
+                                        foreach (Auth::getUser()->seminars as $sem) {
+                                            if ($id == $sem->seminar_id) {
+                                                $seminarStatus = $sem->status;
+                                                break;
+                                            }
+                                        }
+                                    ?>
+
+                                    @if($seminarStatus == "paid")
                                         <a href="events.html#" class="btn-style">Download Assets</a>
                                     @endif
                                 @else
@@ -133,13 +144,13 @@
 @stop
 
 @section('page-script')
-    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="/js/jquery.bxslider.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script type="text/javascript" src="js/jquery.easy-pie-chart.js"></script>
-    <script type="text/javascript" src="js/jquery.cookie.js"></script> <!--required only if using cookies-->
-    <script type="text/javascript" src="js/jquery.accordion.js"></script>
-    <script src="js/modernizr.js"></script>
-    <script type="text/javascript" src="js/skrollr.min.js"></script>
-    <script src="js/functions.js"></script>
+    <script src="/js/owl.carousel.js"></script>
+    <script type="text/javascript" src="/js/jquery.easy-pie-chart.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script> <!--required only if using cookies-->
+    <script type="text/javascript" src="/js/jquery.accordion.js"></script>
+    <script src="/js/modernizr.js"></script>
+    <script type="text/javascript" src="/js/skrollr.min.js"></script>
+    <script src="/js/functions.js"></script>
 @stop

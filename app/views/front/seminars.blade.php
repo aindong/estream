@@ -31,7 +31,7 @@
                             <div class="text">
                                 <!--EVENT HEADER START-->
                                 <div class="event-header">
-                                    <span>Mon July 2</span>
+                                    <span>{{ date('D M d', strtotime($seminar->start_at)) }}</span>
                                     <h2><a href="/seminars/{{{ $seminar->id }}}">{{ $seminar->title }}</a></h2>
                                     <div class="data-tags">
                                         {{--<a href="events.html#"></a>--}}
