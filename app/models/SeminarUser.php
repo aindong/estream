@@ -6,7 +6,7 @@ class SeminarUser extends \Eloquent {
 
 	public function user()
 	{
-		return $this->belongsTo('User', 'seminar_id');
+		return $this->belongsTo('User', 'user_id');
 	}
 
 	public function seminar()

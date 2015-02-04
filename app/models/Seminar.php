@@ -3,7 +3,7 @@
 class Seminar extends \Eloquent {
 	protected $guarded = ['id'];
 
-	public function seminarUsers()
+	public function attendees()
 	{
 		return $this->hasMany('SeminarUser');
 	}

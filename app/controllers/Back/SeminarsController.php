@@ -55,10 +55,10 @@ class SeminarsController extends \BaseController
 //        print_r($data);exit;
         Seminar::create($data);
 
-        \AuditTrail::create([
-            'user_id'   => \Auth::getUser()->id,
-            'action'     => 'Created a new seminar'
-        ]);
+//        \AuditTrail::create([
+//            'user_id'   => \Auth::getUser()->id,
+//            'action'     => 'Created a new seminar'
+//        ]);
 
         return Redirect::route('admin.seminars.index');
     }

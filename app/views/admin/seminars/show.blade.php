@@ -11,30 +11,20 @@
             <th>Name</th>
             <th>Email</th>
             <th>Status</th>
-            <th>Expiration</th>
             <th>Actions</th>
         </tr>
         </thead>
         <tbody>
-        @foreach($users as $user)
+        @foreach($seminar->attendees as $attendant)
             <tr>
-                <td>{{{ $user->info->last_name }}}, {{{ $user->info->first_name }}} {{{ $user->info->middle_name }}}</td>
-                <td>{{{ $user->email }}}</td>
-                <td>{{{ ucfirst($user->info->membership) }}}</td>
-                <td>
-                    @if($user->info->membership == 'member')
-                        {{{ date('M d, Y', strtotime($user->info->membership_expire_at)) }}}
-                    @else
-                        N/A
-                    @endif
-                </td>
-                <td><a href="/admin/users/{{ $user->id }}/edit" class="btn btn-warning">Update</a> <a href="#" class="btn btn-danger">Delete</a></td>
+                <td>{{{ $attendant->user->info->last_name }}}, {{{ $attendant->user->info->first_name }}} {{{ $attendant->user->info->middle_name }}}</td>
+                <td>{{{ $attendant->user->email }}}</td>
+                <td>{{{ ucfirst($attendant->status) }}}</td>
+                <td><a href="/admin/users/{{ $attendant->user_id }}/edit" class="btn btn-primary">Paid</a> <a href="/admin/users/{{ $attendant->user_id }}/edit" class="btn btn-danger">Unpaid</a></td>
             </tr>
         @endforeach
         </tbody>
     </table>
-
-    <?php print_r($seminar) ?>
 @stop
 
 @section('page-script')
