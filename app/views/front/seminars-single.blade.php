@@ -59,7 +59,6 @@
                                 <!--EVENT FOOTER START-->
                                 <div class="event-footer">
                                 @if(Auth::check())
-                                    <a href="events.html#" class="btn-style">Register</a>
                                     <?php
                                         $seminarStatus = '';
                                         $id = $seminar->id;
@@ -72,7 +71,11 @@
                                     ?>
 
                                     @if($seminarStatus == "paid")
-                                        <a href="events.html#" class="btn-style">Download Assets</a>
+                                        <a href="#" class="btn-style">Download Assets</a>
+                                    @elseif($seminarStatus == 'waiting for payment')
+                                        Waiting for your payment
+                                    @else
+                                        <a href="#" class="btn-style register" data-id="{{ $seminar->id }}">Register</a>
                                     @endif
                                 @else
                                     <a href="/login" class="btn-style">Login</a>
@@ -153,4 +156,25 @@
     <script src="/js/modernizr.js"></script>
     <script type="text/javascript" src="/js/skrollr.min.js"></script>
     <script src="/js/functions.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('.register').on('click', function(e) {
+                e.preventDefault();
+
+                $.ajax({
+                    url: '/users/seminars/register/' + $(this).data('id'),
+                    type: 'POST',
+                    success: function() {
+                        console.log('success');
+                        alert('Successfully registered for the seminar');
+                        location.reload();
+                    },
+                    error: function() {
+                        console.log('error');
+                    }
+                });
+            });
+        });
+    </script>
 @stop

@@ -42,13 +42,29 @@ class UsersController extends \BaseController
      */
     public function logout()
     {
-        \AuditTrail::create([
-            'user_id'   => Auth::getUser()->id,
-            'action'     => 'User logged out'
-        ]);
+
 
         Auth::logout();
 
         return Redirect::to('/');
+    }
+
+    public function registerSeminar($id)
+    {
+        if (\Request::ajax()) {
+            if (!Auth::check()) {
+                return \Response::json(['message' => 'error'], 400);
+            }
+
+            \SeminarUser::create([
+               'user_id'     => \Auth::getUser()->id,
+                'seminar_id' => $id,
+                'status'     => 'waiting for payment'
+            ]);
+
+            return \Response::json(['message' => 'success'], 200);
+        }
+
+        return \Response::json(['message' => 'error'], 400);
     }
 }
