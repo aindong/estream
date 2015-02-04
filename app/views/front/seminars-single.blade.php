@@ -60,7 +60,7 @@
                                 <div class="event-footer">
                                 @if(Auth::check())
                                     <a href="events.html#" class="btn-style">Register</a>
-                                    @if(isset(Auth::getUser()->seminars->status) && Auth::getUser()->seminars->status == "waiting for approval")
+                                    @if(isset(Auth::getUser()->seminars->status) && Auth::getUser()->seminars->status == "paid")
                                         <a href="events.html#" class="btn-style">Download Assets</a>
                                     @endif
                                 @else

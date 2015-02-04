@@ -40,10 +40,10 @@ class ArticlesController extends \BaseController
       $data['user_id'] = Auth::user()->id;
       Article::create($data);
 
-        \AuditTrail::create([
-            'user_id'   => Auth::getUser()->id,
-            'action'     => 'Created a new article'
-        ]);
+        // \AuditTrail::create([
+        //     'user_id'   => Auth::getUser()->id,
+        //     'action'     => 'Created a new article'
+        // ]);
 
       return Redirect::route('admin.articles.index');
     }
@@ -72,10 +72,10 @@ class ArticlesController extends \BaseController
 
       $articles->update($data);
 
-        \AuditTrail::create([
-            'user_id'   => Auth::getUser()->id,
-            'action'     => 'Updated an article with id of '.$id
-        ]);
+        // \AuditTrail::create([
+        //     'user_id'   => Auth::getUser()->id,
+        //     'action'     => 'Updated an article with id of '.$id
+        // ]);
 
       return Redirect::route('admin.articles.index');
     }
@@ -84,10 +84,10 @@ class ArticlesController extends \BaseController
     {
       Article::destroy($id);
 
-        \AuditTrail::create([
-            'user_id'   => Auth::getUser()->id,
-            'action'     => 'Deleted an article with id of '. $id
-        ]);
+        // \AuditTrail::create([
+        //     'user_id'   => Auth::getUser()->id,
+        //     'action'     => 'Deleted an article with id of '. $id
+        // ]);
 
       return Redirect::route('admin.articles.index');
     }

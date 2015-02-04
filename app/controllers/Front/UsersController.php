@@ -44,6 +44,11 @@ class UsersController extends \BaseController
     {
         Auth::logout();
 
+        \AuditTrail::create([
+            'user_id'   => Auth::getUser()->id,
+            'action'     => 'User logged out'
+        ]);
+
         return Redirect::to('/');
     }
 }

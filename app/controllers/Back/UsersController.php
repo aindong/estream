@@ -45,10 +45,10 @@ class UsersController extends \BaseController
             'middle_name'   => $data['middle_name']
         ]);
 
-        \AuditTrail::create([
-            'user_id'   => \Auth::getUser()->id,
-            'action'     => 'Created a new user'
-        ]);
+        // \AuditTrail::create([
+        //     'user_id'   => \Auth::getUser()->id,
+        //     'action'     => 'Created a new user'
+        // ]);
 
         return Redirect::route('admin.users.index');
     }
@@ -81,10 +81,10 @@ class UsersController extends \BaseController
         $userInfo->middle_name = $data['middle_name'];
         $userInfo->save();
 
-        \AuditTrail::create([
-            'user_id'   => \Auth::getUser()->id,
-            'action'     => 'Updated a user with id '.$id
-        ]);
+        // \AuditTrail::create([
+        //     'user_id'   => \Auth::getUser()->id,
+        //     'action'     => 'Updated a user with id '.$id
+        // ]);
 
         return Redirect::route('admin.users.index');
     }

@@ -39,10 +39,10 @@ class FaqsController extends \BaseController
 
       Faq::create($data);
 
-        \AuditTrail::create([
-            'user_id'   => \Auth::getUser()->id,
-            'action'     => 'Created a new faq'
-        ]);
+        // \AuditTrail::create([
+        //     'user_id'   => \Auth::getUser()->id,
+        //     'action'     => 'Created a new faq'
+        // ]);
 
       return Redirect::route('admin.faqs.index');
     }
@@ -71,10 +71,10 @@ class FaqsController extends \BaseController
 
       $faqs->update($data);
 
-        \AuditTrail::create([
-            'user_id'   => \Auth::getUser()->id,
-            'action'     => 'Updated a faq with an id of '.$id
-        ]);
+        // \AuditTrail::create([
+        //     'user_id'   => \Auth::getUser()->id,
+        //     'action'     => 'Updated a faq with an id of '.$id
+        // ]);
 
       return Redirect::route('admin.faqs.index');
     }
@@ -83,10 +83,10 @@ class FaqsController extends \BaseController
     {
       Faq::destroy($id);
 
-        \AuditTrail::create([
-            'user_id'   => \Auth::getUser()->id,
-            'action'     => 'Deleted a faq with an id of '.$id
-        ]);
+        // \AuditTrail::create([
+        //     'user_id'   => \Auth::getUser()->id,
+        //     'action'     => 'Deleted a faq with an id of '.$id
+        // ]);
 
       return Redirect::route('admin.faqs.index');
     }
