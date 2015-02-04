@@ -2,6 +2,7 @@
 
 use View;
 use Article;
+use Seminar;
 
 class HomeController extends \BaseController {
 
@@ -103,6 +104,18 @@ class HomeController extends \BaseController {
 		$article = Article::find($id);
 
       	return View::make('front.news-single', compact('article'));
+	}
+
+	/**
+	 * News single
+	 *
+	 * @return \Illuminate\View\View
+	 */
+	public function seminarSingle($id)
+	{
+		$seminar = Seminar::find($id);
+
+      	return View::make('front.seminars-single', compact('seminar'));
 	}
 
 }

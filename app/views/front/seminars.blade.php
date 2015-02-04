@@ -32,7 +32,7 @@
                                 <!--EVENT HEADER START-->
                                 <div class="event-header">
                                     <span>Mon July 2</span>
-                                    <h2>{{ $seminar->title }}</h2>
+                                    <h2><a href="/seminars/{{{ $seminar->id }}}">{{ $seminar->title }}</a></h2>
                                     <div class="data-tags">
                                         {{--<a href="events.html#"></a>--}}
                                     </div>
@@ -59,7 +59,7 @@
                                 <!--EVENT VANUE END-->
                                 <!--EVENT FOOTER START-->
                                 <div class="event-footer">
-                                    <a href="events.html#" class="btn-style">Register</a>
+                                    <a href="/seminars/{{{ $seminar->id }}}" class="btn-style">More details</a>
                                 </div>
                                 <!--EVENT FOOTER END-->
                             </div>
