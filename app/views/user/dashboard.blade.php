@@ -23,9 +23,14 @@
                             <p>Welcome</p>
                             <a href="edit-profile.html#" class="btn-style">Marrie James</a>
                             <div style="line-height: 0.4em;">
-                                <p style="font-weight: bold;">Member</p>
-                                <p style="font-size: 18px;">Membership Expiration Date</p>
-                                <p>January 20, 2015</p>
+                                @if(Auth::getUser()->info->membership == 'member')
+                                    <p style="font-weight: bold;">Member</p>
+                                    <p style="font-size: 18px;">Membership Expiration Date</p>
+                                    <p>{{ date('M d Y', strtotime(Auth::getUser()->info->membership_expire_at)) }}</p>
+                                @else
+                                    <p style="font-weight: bold;">Regular</p>
+                                @endif
+
                             </div>
                         </div>
                     </div>
@@ -34,8 +39,9 @@
                     <div class="profile-box edit-profile">
                         <h2>Account Setting</h2>
                         <ul>
-                            <li><a href="edit-profile.html#">Edit Profile</a></li>
-                            <li><a href="edit-profile.html#">My Seminars</a></li>
+                            <li><a href="/user/dashboard">Edit Profile</a></li>
+                            <li><a href="/user/seminars">My Seminars</a></li>
+                            <li><a href="/user/webcasts">Webcasts Request</a></li>
                         </ul>
                         <div class="logout">
                             <a href="/logout">Log Out</a>
@@ -107,95 +113,11 @@
                         </ul>
                     </div>
                     <!--EDIT PASSWORD END-->
-                    <!--QUIZ SCORE START-->
-                    <div class="profile-box editing">
-                        <h2>View quizes scores (only online course)</h2>
-                        <table>
-                            <thead>
-                            <tr>
-                                <td>Student</td>
-                                <td>Part</td>
-                                <td>Score</td>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td><a href="edit-profile.html#">How To Be A Great Photographer</a></td>
-                                <td>1</td>
-                                <td>5/25</td>
-                            </tr>
-                            <tr>
-                                <td>Instructor: Rebecca Smith</td>
-                                <td>2</td>
-                                <td>2.5/25</td>
-                            </tr>
-                            <tr>
-                                <td>&nbsp;</td>
-                                <td>3</td>
-                                <td>Pending</td>
-                            </tr>
-                            <tr>
-                                <td>&nbsp;</td>
-                                <td>4</td>
-                                <td>Pending</td>
-                            </tr>
-                            </tbody>
-                            <tfoot>
-                            <tr>
-                                <td>Total</td>
-                                <td>&nbsp;</td>
-                                <td>7.5/50</td>
-                            </tr>
-                            </tfoot>
-                        </table>
 
-
-                    </div>
-                    <!--QUIZ SCORE END-->
                 </div>
             </div>
         </div>
-        <!--FOLLOW US SECTION START-->
-        <section class="follow-us">
-            <div class="container">
-                <div class="row">
-                    <div class="span4">
-                        <div class="follow">
-                            <a href="edit-profile.html#">
-                                <i class="fa fa-facebook"></i>
-                                <div class="text">
-                                    <h4>Follow us on Facebook</h4>
-                                    <p>Faucibus toroot menuts</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="span4">
-                        <div class="follow">
-                            <a href="edit-profile.html#">
-                                <i class="fa fa-google"></i>
-                                <div class="text">
-                                    <h4>Follow us on Google Plus</h4>
-                                    <p>Faucibus toroot menuts</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="span4">
-                        <div class="follow">
-                            <a href="edit-profile.html#">
-                                <i class="fa fa-linkedin"></i>
-                                <div class="text">
-                                    <h4>Follow us on Linkedin</h4>
-                                    <p>Faucibus toroot menuts</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--FOLLOW US SECTION END-->
+
     </div>
     <!--CONTANT END-->
 @stop
