@@ -3,7 +3,7 @@
 @section('content')
     <h1>{{ $seminar->title }}</h1>
     <p style="color: #000; font-size: 12px;">{{ date('d M, Y', strtotime($seminar->start_at)) }} - {{ date('d M, Y', strtotime($seminar->end_at)) }}</p>
-    <p style="color: #000; font-size: 15px;">{{ $seminar->description }}</p>
+    <p style="color: #000; font-size: 15px;">{{ substr($seminar->description, 0, 250) }} ...</p>
 
     <table class="table table-striped table-bordered" cellspacing="0" width="100%" id="example">
         <thead>
