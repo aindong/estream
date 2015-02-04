@@ -6,7 +6,7 @@
 @stop
 
 @section('content')
-    <h2>Seminars <a href="#" class="btn btn-primary">Add New</a></h2>
+    <h2>Seminars <a href="/admin/seminars/create" class="btn btn-primary">Add New</a></h2>
     <div id='calendar'></div>
 @stop
 
