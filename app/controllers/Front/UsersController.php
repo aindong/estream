@@ -1,8 +1,8 @@
 <?php namespace Controllers\Front;
 
-use View;
 use Auth;
 use Redirect;
+use View;
 
 class UsersController extends \BaseController
 {
@@ -42,12 +42,12 @@ class UsersController extends \BaseController
      */
     public function logout()
     {
-        Auth::logout();
-
         \AuditTrail::create([
             'user_id'   => Auth::getUser()->id,
             'action'     => 'User logged out'
         ]);
+
+        Auth::logout();
 
         return Redirect::to('/');
     }
