@@ -73,7 +73,7 @@
     var localStream = null;
     var remoteStream;
     var peerConn = null;
-    var started = false;
+    var started = true;
     var isRTCPeerConnection = true;
     var mediaConstraints = {'mandatory': {
         'OfferToReceiveAudio':true,
