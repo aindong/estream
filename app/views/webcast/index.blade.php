@@ -53,7 +53,7 @@
 
     <div id="anim" style="visibility:hidden;"><img id="animation" src="/images/anim.gif" width="210px" /></div>
 
-    <div id="remotevideodivk" ><video id="remotevid" style="background: url('/images/cb.jpg');" autoplay style="margin-left:30px;"></video></div>
+    {{--<div id="remotevideodivk" ><video id="remotevid" style="background: url('/images/cb.jpg');" autoplay style="margin-left:30px;"></video></div>--}}
 
     <br><br><br><br>
     <button id="btn" type="button" onclick="startVideo();">Start video</button>
@@ -69,7 +69,7 @@
     var socket = new WebSocket('ws://192.168.1.12:1337/');  // change the IP address to your websocket server
     var stunServer = "stun.l.google.com:19302";
     var sourcevid = document.getElementById('sourcevid');
-    var remotevid = document.getElementById('remotevid');
+    //var remotevid = document.getElementById('remotevid');
     var localStream = null;
     var remoteStream;
     var peerConn = null;
@@ -125,19 +125,19 @@
     // when remote adds a stream, hand it on to the local video element
     function onRemoteStreamAdded(event) {
         logg("Added remote stream");
-        remotevid.src = window.webkitURL.createObjectURL(event.stream);
+        //remotevid.src = window.webkitURL.createObjectURL(event.stream);
     }
 
-    function waitForRemoteVideo() {
-        if (remoteStream.videoTracks.length === 0 || remotevid.currentTime > 0) {
-            transitionToActive();
-        } else {
-            setTimeout(waitForRemoteVideo, 100);
-        }
-    }
+//    function waitForRemoteVideo() {
+//        if (remoteStream.videoTracks.length === 0 || remotevid.currentTime > 0) {
+//            transitionToActive();
+//        } else {
+//            setTimeout(waitForRemoteVideo, 100);
+//        }
+//    }
 
     function transitionToActive() {
-        remotevid.style.opacity = 1;
+        //remotevid.style.opacity = 1;
         card.style.webkitTransform = "rotateY(180deg)";
         setTimeout(function() { sourcevid.src = ""; }, 500);
         setStatus("<input type=\"button\" id=\"hangup\" value=\"Hang up\" onclick=\"onHangup()\" />");
@@ -146,7 +146,7 @@
     // when remote removes a stream, remove it from the local video element
     function onRemoteStreamRemoved(event) {
         logg("Remove remote stream");
-        remotevid.src = "";
+        //remotevid.src = "";
     }
 
     function onIceCandidate(event) {
