@@ -6,4 +6,9 @@ class WebcastsController extends BaseController
     {
         return View::make('webcast.index');
     }
+
+    public function client()
+    {
+        return View::make('webcast.client');
+    }
 }
