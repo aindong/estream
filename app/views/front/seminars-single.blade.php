@@ -58,9 +58,11 @@
                                 <!--EVENT VANUE END-->
                                 <!--EVENT FOOTER START-->
                                 <div class="event-footer">
-                                @if (Auth::check())
+                                @if(Auth::check())
                                     <a href="events.html#" class="btn-style">Register</a>
-                                    <a href="events.html#" class="btn-style">Download Assets</a>
+                                    @if(isset(Auth::getUser()->seminars->status) && Auth::getUser()->seminars->status == "waiting for approval")
+                                        <a href="events.html#" class="btn-style">Download Assets</a>
+                                    @endif
                                 @else
                                     <a href="events.html#" class="btn-style">Login</a>
                                 @endif
