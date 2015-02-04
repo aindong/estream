@@ -49,7 +49,7 @@
             </tr>
         </table></div>
 
-    <div id="livevideodivk" ><video id="sourcevid" style="background: url('/images/cb.jpg');" autoplay></video></div>
+    {{--<div id="livevideodivk" ><video id="sourcevid" style="background: url('/images/cb.jpg');" autoplay></video></div>--}}
 
     <div id="anim" style="visibility:hidden;"><img id="animation" src="/images/anim.gif" width="210px" /></div>
 
@@ -73,7 +73,7 @@
     var localStream = null;
     var remoteStream;
     var peerConn = null;
-    var started = true;
+    var started = false;
     var isRTCPeerConnection = true;
     var mediaConstraints = {'mandatory': {
         'OfferToReceiveAudio':true,
@@ -171,12 +171,12 @@
 
     // start the connection upon user request
     function connect() {
-        if (!started && localStream) {
-            document.getElementById('anim').style.visibility='visible';
+        if (!started) {
+            //document.getElementById('anim').style.visibility='visible';
             console.log("Creating PeerConnection.");
             createPeerConnection();
             logg('Adding local stream...');
-            peerConn.addStream(localStream);
+            //peerConn.addStream(localStream);
             started = true;
             logg("isRTCPeerConnection: " + isRTCPeerConnection);
 
@@ -210,10 +210,10 @@
 
         if (msg.type === 'offer') {
 
-            if (!started && localStream) {
+            if (!started) {
                 createPeerConnection();
                 logg('Adding local stream...');
-                peerConn.addStream(localStream);
+                //peerConn.addStream(localStream);
                 started = true;
                 logg("isRTCPeerConnection: " + isRTCPeerConnection);
 
