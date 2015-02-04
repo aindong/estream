@@ -37,6 +37,9 @@ Route::group(['namespace' => 'Controllers\Front'], function() {
 	});
 });
 
+Route::get('/webcast', ['as' => 'webcast.index', 'uses' => 'WebcastsController@index']);
+Route::get('/webcast', ['as' => 'webcast.index', 'uses' => 'WebcastsController@index']);
+
 /**
  * Backpage routes
  */
