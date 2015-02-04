@@ -16,6 +16,20 @@ class SeminarsController extends \BaseController
     {
         $seminars = Seminar::all();
 
+        if (\Request::ajax()) {
+            $results = [];
+
+            foreach ($seminars as $seminar) {
+                $results[] = [
+                    'title' => $seminar->title,
+                    'start' => $seminar->start_at,
+                    'end'   => $seminar->end_at
+                ];
+            }
+
+            return \Response::json($results, 200);
+        }
+
         return View::make('admin.seminars.index', compact('seminars'));
     }
 
