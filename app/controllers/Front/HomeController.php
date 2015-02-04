@@ -1,6 +1,7 @@
 <?php namespace Controllers\Front;
 
 use View;
+use Article;
 
 class HomeController extends \BaseController {
 
@@ -90,6 +91,18 @@ class HomeController extends \BaseController {
 		$articles = \Article::orderBy('created_at', 'desc')->paginate(5);
 		return View::make('front.news', compact('articles'))
 			->with('pagination', $articles->links());
+	}
+
+	/**
+	 * News single
+	 *
+	 * @return \Illuminate\View\View
+	 */
+	public function newsSingle($id)
+	{
+		$article = Article::find($id);
+
+      	return View::make('front.news-single', compact('article'));
 	}
 
 }

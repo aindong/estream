@@ -39,7 +39,7 @@
                                 <h2><a href="/articles/{{{ $article->id }}}">{{{ $article->title }}}</a></h2>
                                 <div class="text">
                                     <p>{{{ substr($article->body, 0, 200) }}} ...</p>
-                                    <a href="/articles/{{{ $article->id }}}">Read More</a>
+                                    <a href="/news/{{{ $article->id }}}">Read More</a>
                                 </div>
 
                                 <div class="blog-comments">
