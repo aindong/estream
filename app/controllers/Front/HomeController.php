@@ -59,6 +59,11 @@ class HomeController extends \BaseController {
 		return View::make('front.about');
 	}
 
+	public function contactUs()
+	{
+		return View::make('front.contact');
+	}
+
 	/**
 	 * Faq
 	 *
