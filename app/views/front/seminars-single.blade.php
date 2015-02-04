@@ -64,7 +64,7 @@
                                         <a href="events.html#" class="btn-style">Download Assets</a>
                                     @endif
                                 @else
-                                    <a href="events.html#" class="btn-style">Login</a>
+                                    <a href="/login" class="btn-style">Login</a>
                                 @endif
                                 </div>
                                 <!--EVENT FOOTER END-->
