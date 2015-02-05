@@ -879,9 +879,9 @@
 
                 <div class="sec-header">
 
-                    <h2>Our Teachers</h2>
+                    <h2>Administrators</h2>
 
-                    <p>Discover courses by topic</p>
+                    <!-- <p>Discover courses by topic</p> -->
 
                     <span></span>
 
@@ -900,7 +900,7 @@
                     <div class="span3">
 
                         <div class="teachers">
-
+<!-- 
                             <div class="social-icons">
 
                                 <a href="index.html#"><i class="fa fa-facebook"></i></a>
@@ -919,7 +919,7 @@
 
                                 <a href="index.html#"><i class="fa fa-vimeo-square"></i></a>
 
-                            </div>
+                            </div> -->
 
                             <div class="thumb">
 
@@ -946,7 +946,7 @@
                     <div class="span3">
 
                         <div class="teachers">
-
+<!-- 
                             <div class="social-icons">
 
                                 <a href="index.html#"><i class="fa fa-facebook"></i></a>
@@ -965,7 +965,7 @@
 
                                 <a href="index.html#"><i class="fa fa-vimeo-square"></i></a>
 
-                            </div>
+                            </div> -->
 
                             <div class="thumb">
 
@@ -992,7 +992,7 @@
                     <div class="span3">
 
                         <div class="teachers">
-
+<!-- 
                             <div class="social-icons">
 
                                 <a href="index.html#"><i class="fa fa-facebook"></i></a>
@@ -1011,7 +1011,7 @@
 
                                 <a href="index.html#"><i class="fa fa-vimeo-square"></i></a>
 
-                            </div>
+                            </div> -->
 
                             <div class="thumb">
 
@@ -1038,7 +1038,7 @@
                     <div class="span3">
 
                         <div class="teachers">
-
+<!-- 
                             <div class="social-icons">
 
                                 <a href="index.html#"><i class="fa fa-facebook"></i></a>
@@ -1057,7 +1057,7 @@
 
                                 <a href="index.html#"><i class="fa fa-vimeo-square"></i></a>
 
-                            </div>
+                            </div> -->
 
                             <div class="thumb">
 
@@ -1675,7 +1675,7 @@
 
         <!--FOLLOW US SECTION START-->
 
-        <section class="follow-us">
+        <!-- <section class="follow-us">
 
             <div class="container">
 
@@ -1751,7 +1751,7 @@
 
             </div>
 
-        </section>
+        </section> -->
 
         <!--FOLLOW US SECTION END-->
 

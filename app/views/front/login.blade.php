@@ -77,7 +77,7 @@
             </div>
         </div>
         <!--FOLLOW US SECTION START-->
-        <section class="follow-us">
+        <!-- <section class="follow-us">
             <div class="container">
                 <div class="row">
                     <div class="span4">
@@ -115,7 +115,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--FOLLOW US SECTION END-->
     </div>
     <!--CONTANT END-->

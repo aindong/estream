@@ -148,7 +148,7 @@
 
         <!--FOLLOW US SECTION START-->
 
-        <section class="follow-us">
+        <!-- <section class="follow-us">
 
             <div class="container">
 
@@ -224,7 +224,7 @@
 
             </div>
 
-        </section>
+        </section> -->
 
         <!--FOLLOW US SECTION END-->
 

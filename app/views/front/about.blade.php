@@ -23,8 +23,8 @@
                     <div class="span6">
                         <div class="intro">
                             <h2>Everything you need to know</h2>
-                            <p>Lorem ipsum dolor sit amet, ius minim gubergren ad. At mei sumo sonet audiam, ad mutat elitr platonem vix. Ne nisl idque fierent vix. Ferri clita ponderum ne duo, simul appellantur reprehendunt mea an. An gloriatur vulputate eos, an sed fuisset, in quo inani eligendi.
-                                Cum copiosae pertinacia ei, admodum volumus cum ut, erat nonumy his te. Iudico praesent sed id, nam error consequat reprehendunt no. Nostrud nostrum tacimates mei ut, debet facilisi in ius, dolor accusam omittam eu sea. </p>
+                            <p>Established under the mandate of <b>Art III, Sec. 8 of the Constitution</b>, chosen educators from the different institutions of learning organized a training body named Association of Educators for Interrelated Research and Studies, Inc. Its office is located at Rm. 209 Llabres Bldg., Blk. 12, Lot 19 Verdant Heights, 
+                            Multinational Village, Paraňaque City. Like any other organizations, the Association of Educators for Interrelated Research and Studies, Inc. (AEIRS) is registered at the Securities and Exchange Commission as a non-stock and nonprofit organization with a Company Registration Number CN201126786. It also bears TIN # 415-618-325-000 issued by the Bureau of Internal Revenue.</p>
                         </div>
                     </div>
                     <div class="span6">
@@ -48,8 +48,8 @@
             <div class="container">
                 <!--SECTION HEADER START-->
                 <div class="sec-header">
-                    <h2>Our Teachers</h2>
-                    <p>Discover courses by topic</p>
+                    <h2>Administrators</h2>
+                    <!-- <p>Discover courses by topic</p> -->
                     <span></span>
                     <span></span>
                     <span></span>
@@ -59,7 +59,7 @@
                     <!--TEACHERS THUMB START-->
                     <div class="span3">
                         <div class="teachers">
-                            <div class="social-icons">
+                            <!-- <div class="social-icons">
                                 <a href="about-us.html#"><i class="fa fa-facebook"></i></a>
                                 <a href="about-us.html#"><i class="fa fa-flickr"></i></a>
                                 <a href="about-us.html#"><i class="fa fa-dribbble"></i></a>
@@ -68,13 +68,13 @@
                                 <a href="about-us.html#"><i class="fa fa-pinterest"></i></a>
                                 <a href="about-us.html#"><i class="fa fa-twitter"></i></a>
                                 <a href="about-us.html#"><i class="fa fa-vimeo-square"></i></a>
-                            </div>
+                            </div> -->
                             <div class="thumb">
-                                <a href="about-us.html#"><img src="images/teachers1.jpg" alt=""></a>
+                                <a href="about-us.html#"><img src="images/admin1.jpg" alt=""></a>
                             </div>
                             <div class="text">
-                                <h2><a href="about-us.html#">Mickey Rorey</a></h2>
-                                <p>Science Teacher</p>
+                                <h2><a href="about-us.html#">Dexter Manzano</a></h2>
+                                <p>Administrator</p>
                             </div>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
                     <!--TEACHERS THUMB START-->
                     <div class="span3">
                         <div class="teachers">
-                            <div class="social-icons">
+                            <!-- <div class="social-icons">
                                 <a href="about-us.html#"><i class="fa fa-facebook"></i></a>
                                 <a href="about-us.html#"><i class="fa fa-flickr"></i></a>
                                 <a href="about-us.html#"><i class="fa fa-dribbble"></i></a>
@@ -91,13 +91,13 @@
                                 <a href="about-us.html#"><i class="fa fa-pinterest"></i></a>
                                 <a href="about-us.html#"><i class="fa fa-twitter"></i></a>
                                 <a href="about-us.html#"><i class="fa fa-vimeo-square"></i></a>
-                            </div>
+                            </div> -->
                             <div class="thumb">
-                                <a href="about-us.html#"><img src="images/teachers2.jpg" alt=""></a>
+                                <a href="about-us.html#"><img src="images/admin2.jpg" alt=""></a>
                             </div>
                             <div class="text">
-                                <h2><a href="about-us.html#">Mickey Rorey</a></h2>
-                                <p>Science Teacher</p>
+                                <h2><a href="about-us.html#">David Lip</a></h2>
+                                <p>Administrator</p>
                             </div>
                         </div>
                     </div>
@@ -105,7 +105,7 @@
                     <!--TEACHERS THUMB START-->
                     <div class="span3">
                         <div class="teachers">
-                            <div class="social-icons">
+                            <!-- <div class="social-icons">
                                 <a href="about-us.html#"><i class="fa fa-facebook"></i></a>
                                 <a href="about-us.html#"><i class="fa fa-flickr"></i></a>
                                 <a href="about-us.html#"><i class="fa fa-dribbble"></i></a>
@@ -114,13 +114,13 @@
                                 <a href="about-us.html#"><i class="fa fa-pinterest"></i></a>
                                 <a href="about-us.html#"><i class="fa fa-twitter"></i></a>
                                 <a href="about-us.html#"><i class="fa fa-vimeo-square"></i></a>
-                            </div>
+                            </div> -->
                             <div class="thumb">
-                                <a href="about-us.html#"><img src="images/teachers3.jpg" alt=""></a>
+                                <a href="about-us.html#"><img src="images/admin3.jpg" alt=""></a>
                             </div>
                             <div class="text">
-                                <h2><a href="about-us.html#">Mickey Rorey</a></h2>
-                                <p>Science Teacher</p>
+                                <h2><a href="about-us.html#">Apolinario Saymo</a></h2>
+                                <p>Administrator</p>
                             </div>
                         </div>
                     </div>
@@ -128,7 +128,7 @@
                     <!--TEACHERS THUMB START-->
                     <div class="span3">
                         <div class="teachers">
-                            <div class="social-icons">
+                            <!-- <div class="social-icons">
                                 <a href="about-us.html#"><i class="fa fa-facebook"></i></a>
                                 <a href="about-us.html#"><i class="fa fa-flickr"></i></a>
                                 <a href="about-us.html#"><i class="fa fa-dribbble"></i></a>
@@ -137,13 +137,13 @@
                                 <a href="about-us.html#"><i class="fa fa-pinterest"></i></a>
                                 <a href="about-us.html#"><i class="fa fa-twitter"></i></a>
                                 <a href="about-us.html#"><i class="fa fa-vimeo-square"></i></a>
-                            </div>
+                            </div> -->
                             <div class="thumb">
-                                <a href="about-us.html#"><img src="images/teachers4.jpg" alt=""></a>
+                                <a href="about-us.html#"><img src="images/admin4.jpg" alt=""></a>
                             </div>
                             <div class="text">
-                                <h2><a href="about-us.html#">Mickey Rorey</a></h2>
-                                <p>Science Teacher</p>
+                                <h2><a href="about-us.html#">Aganon</a></h2>
+                                <p>Administrator</p>
                             </div>
                         </div>
                     </div>
@@ -154,7 +154,7 @@
         <!--OUR TEACHERS SECTION END-->
 
         <!--FOLLOW US SECTION START-->
-        <section class="follow-us">
+        <!-- <section class="follow-us">
             <div class="container">
                 <div class="row">
                     <div class="span4">
@@ -192,7 +192,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--FOLLOW US SECTION END-->
     </div>
     <!--CONTANT END-->
