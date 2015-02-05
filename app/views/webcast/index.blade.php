@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Video Conference - WebRTC</title>
+    <title>Estream webcast</title>
     <style>
         video {
             border-radius:15px;
