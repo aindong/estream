@@ -25,6 +25,20 @@
                             <h2>Everything you need to know</h2>
                             <p>Established under the mandate of <b>Art III, Sec. 8 of the Constitution</b>, chosen educators from the different institutions of learning organized a training body named Association of Educators for Interrelated Research and Studies, Inc. Its office is located at Rm. 209 Llabres Bldg., Blk. 12, Lot 19 Verdant Heights, 
                             Multinational Village, Paraňaque City. Like any other organizations, the Association of Educators for Interrelated Research and Studies, Inc. (AEIRS) is registered at the Securities and Exchange Commission as a non-stock and nonprofit organization with a Company Registration Number CN201126786. It also bears TIN # 415-618-325-000 issued by the Bureau of Internal Revenue.</p>
+                            <h2>Objectives</h2>
+                            <p>1)  To promote love of teaching and learning and serves as an activity center for students and professionals who value discipline in studies, review, and research;<br>
+                            2)  To promote materials and extension services to help the community obtain information meeting their personal, educational, and professional needs; and<br>
+                            3)  To encourage career development and advancement among students and professionals.</p>
+
+                            <h2>Summary</h2>
+
+                            <p>Name of Organization: Association of Educator for Interrelated Research and Studies (AEIRS)<br>
+                            Address: Rm. 209, Llabres Bldg., Blk. 12, Lot 19 Verdant Heights, Multinational Village, 
+                                Paraňaque City<br>
+                            SEC Reg: CN201126786<br>
+                            TIN No. : 415-618-325-000</p>
+
+
                         </div>
                     </div>
                     <div class="span6">
@@ -73,7 +87,7 @@
                                 <a href="about-us.html#"><img src="images/admin1.jpg" alt=""></a>
                             </div>
                             <div class="text">
-                                <h2><a href="about-us.html#">Dexter L. Manzano</a></h2>
+                                <h2><a href="about-us.html#">Dexter Manzano</a></h2>
                                 <p>Vice-President</p>
                             </div>
                         </div>
