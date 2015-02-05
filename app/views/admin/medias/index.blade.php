@@ -21,7 +21,7 @@
                       <td>{{{ $media->type }}}</td>
                       <td>{{{ $media->created_at }}}</td>
                       <td>{{{ $media->updated_at }}}</td>
-                      <td><a href="/admin/medias/{{ $media->id }}/edit" class="btn btn-warning">Update</a> <a href="#" class="btn btn-danger">Delete</a></td>
+                      <td><a href="#" class="btn btn-danger">Delete</a></td>
                   </tr>
               @endforeach
           </tbody>
