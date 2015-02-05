@@ -39,9 +39,9 @@
                     <div class="profile-box edit-profile">
                         <h2>Account Setting</h2>
                         <ul>
-                            <li><a href="/user/dashboard">Edit Profile</a></li>
-                            <li><a href="/user/seminars">My Seminars</a></li>
-                            <li><a href="/user/webcasts">Webcasts Request</a></li>
+                            <li><a href="/users/dashboard">Edit Profile</a></li>
+                            <li><a href="/users/seminars">My Seminars</a></li>
+                            <li><a href="/users/webcasts">Webcasts Request</a></li>
                         </ul>
                         <div class="logout">
                             <a href="/logout">Log Out</a>
@@ -50,9 +50,15 @@
                     <!--EDIT PROFILE END-->
                 </div>
                 <div class="span8">
+                    @foreach($seminarUsers as $seminaruser)
                     <div class="profile-box editing">
-                        <p>test</p>
+                       <h1>{{ $seminaruser->seminar->title }}</h1>
+                       <p style="font-size: 12px"><i class="fa fa-calendar-o"></i> {{ date('d M, Y', strtotime($seminaruser->seminar->start_at)) }} - {{ date('d M, Y', strtotime($seminaruser->seminar->end_at)) }}</p>
+                       <p><i>{{ $seminaruser->seminar->location }}</i></p>
+                       <p>{{ substr($seminaruser->seminar->description, 0, 200) }} ...</p>
+                       <p>Status: <span style="font-weight: bold">{{ ucfirst($seminaruser->status) }}</span></p>
                     </div>
+                    @endforeach
                 </div>
             </div>
         </div>

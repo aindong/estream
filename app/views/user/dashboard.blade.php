@@ -39,9 +39,9 @@
                     <div class="profile-box edit-profile">
                         <h2>Account Setting</h2>
                         <ul>
-                            <li><a href="/user/dashboard">Edit Profile</a></li>
-                            <li><a href="/user/seminars">My Seminars</a></li>
-                            <li><a href="/user/webcasts">Webcasts Request</a></li>
+                            <li><a href="/users/dashboard">Edit Profile</a></li>
+                            <li><a href="/users/seminars">My Seminars</a></li>
+                            <li><a href="/users/webcasts">Webcasts Request</a></li>
                         </ul>
                         <div class="logout">
                             <a href="/logout">Log Out</a>
