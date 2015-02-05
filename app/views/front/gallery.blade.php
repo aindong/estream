@@ -1,5 +1,10 @@
 @extends('layouts.default')
 
+@section('page-style')
+    <!-- PRETTY PHOTO BACKGROUNDS -->
+    <link href="css/prettyPhoto.css" rel="stylesheet" media="screen">
+@stop
+
 @section('content')
     <!--BANNER START-->
     <div class="page-heading">
@@ -17,9 +22,9 @@
                 <ul class="row">
                     @foreach($medias as $key => $media)
                         <li class="span3">
-                            <img src="/images/gallery1.jpg" alt=""/>
+                            <img src="{{ '/public/uploads/gallery/'.$media->file }}" alt=""/>
                             <div class="social-icons">
-                                <a href="images/gallery1.jpg" rel="prettyPhoto[gallery2]"><i class="fa fa-search"></i></a>
+                                <a href="{{ '/public/uploads/gallery/'.$media->file }}" rel="prettyPhoto[gallery2]"><i class="fa fa-search"></i></a>
                             </div>
                         </li>
                     @endforeach
@@ -112,11 +117,9 @@
     <script src="/js/jquery.bxslider.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script src="/js/owl.carousel.js"></script>
-    <script type="text/javascript" src="/js/jquery.easy-pie-chart.js"></script>
-    <script type="text/javascript" src="/js/jquery.cookie.js"></script> <!--required only if using cookies-->
-    <script type="text/javascript" src="/js/jquery.accordion.js"></script>
-    <script src="/js/modernizr.js"></script>
+    <script type="text/javascript" src="js/jquery.easy-pie-chart.js"></script>
     <script src="/js/jquery.prettyPhoto.js"></script>
+    <script src="/js/modernizr.js"></script>
     <script type="text/javascript" src="/js/skrollr.min.js"></script>
-    <script src="/js/functions.js"></script>
+
 @stop
