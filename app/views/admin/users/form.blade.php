@@ -29,5 +29,11 @@
     {{ Form::text('last_name', null, ['class' => 'form-control', 'required' => 'required']) }}
 </div>
 
+<div class="form-group">
+    {{ Form::label('role_id', 'Role *', ['class' => 'form-label']) }}
+    {{ Form::select('role_id', ['User', 'Admin'], null, ['class' => 'form-control', 'required']) }}
+    {{--{{ Form::text('role', null, ['class' => 'form-control', 'required' => 'required']) }}--}}
+</div>
+
 <a href="/admin/users" class="btn btn-danger">Back</a>
 <button type="submit" class="btn btn-primary">Submit</button>

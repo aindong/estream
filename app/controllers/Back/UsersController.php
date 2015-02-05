@@ -35,6 +35,7 @@ class UsersController extends \BaseController
         $user = new User;
         $user->email = $data['email'];
         $user->password = Hash::make($data['password']);
+        $user->role_id = $data['role_id'] + 1;
         $user->save();
 
         $userInfo = new UsersInfo();
