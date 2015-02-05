@@ -902,7 +902,7 @@
                             </div>
                             <div class="text">
                                 <h2><a href="about-us.html#">Dexter Manzano</a></h2>
-                                <p>Administrator</p>
+                                <p>Vice-President</p>
                             </div>
                         </div>
                     </div>
@@ -924,8 +924,8 @@
                                 <a href="about-us.html#"><img src="images/admin2.jpg" alt=""></a>
                             </div>
                             <div class="text">
-                                <h2><a href="about-us.html#">David Lip</a></h2>
-                                <p>Administrator</p>
+                                <h2><a href="about-us.html#">David V. Lip</a></h2>
+                                <p>Business Manager</p>
                             </div>
                         </div>
                     </div>
@@ -948,7 +948,7 @@
                             </div>
                             <div class="text">
                                 <h2><a href="about-us.html#">Apolinario Saymo</a></h2>
-                                <p>Administrator</p>
+                                <p>President</p>
                             </div>
                         </div>
                     </div>
@@ -970,8 +970,8 @@
                                 <a href="about-us.html#"><img src="images/admin4.jpg" alt=""></a>
                             </div>
                             <div class="text">
-                                <h2><a href="about-us.html#">Aganon</a></h2>
-                                <p>Administrator</p>
+                                <h2><a href="about-us.html#">Raffy S. Aganon</a></h2>
+                                <p>Treasurer</p>
                             </div>
                         </div>
                     </div>
@@ -1023,7 +1023,7 @@
 
                                 <div class="post-date">
 
-                                    <p>May<span>11</span>2014</p>
+                                    <p>January<span>11</span>2015</p>
 
                                 </div>
 
@@ -1049,11 +1049,11 @@
 
                             <div class="text">
 
-                                <h2>A Post With Everything In It</h2>
+                                <h2>Association of Educators for Interrelated Research and Studies, Inc.</h2>
 
-                                <h5>Writer David / Poetry course</h5>
+                                <h5>Apolinario S. Saymo / President</h5>
 
-                                <p>Vel ut quas utroque placerat, kasd utinam epicuri at est, hendrerit argumentum dissentias ei nec. Vel ut quas utroque placerat, kasd utinam epicuri at est, hendrerit argumentum dissentias ei nec. </p>
+                                <p>To promote love of teaching and learning and serves as an activity center for students and professionals who value discipline in studies, review, and research </p>
 
                                 <a href="index.html#" class="more">Read More</a>
 
@@ -1081,7 +1081,7 @@
 
                                 <div class="post-date">
 
-                                    <p>May<span>11</span>2014</p>
+                                    <p>February<span>01</span>2015</p>
 
                                 </div>
 
@@ -1107,11 +1107,11 @@
 
                             <div class="text">
 
-                                <h2>A Post With Everything In It</h2>
+                                <h2>Association of Educator for Interrelated Research and Studies (AEIRS)</h2>
 
-                                <h5>Writer David / Poetry course</h5>
+                                <h5>Dexter L. Manzano / Vice-President</h5>
 
-                                <p>Vel ut quas utroque placerat, kasd utinam epicuri at est, hendrerit argumentum dissentias ei nec. Vel ut quas utroque placerat, kasd utinam epicuri at est, hendrerit argumentum dissentias ei nec. </p>
+                                <p>To promote materials and extension services to help the community obtain information meeting their personal, educational, and professional needs. </p>
 
                                 <a href="index.html#" class="more">Read More</a>
 
@@ -1190,11 +1190,11 @@
 
                             <div class="text">
 
-                                <h3 class="pull-left">Learn Photography </h3>
+                                <h3 class="pull-left">Watch Seminars </h3>
 
-                                <span class="pull-right">$6 Per Hour</span>
+                                <span class="pull-right">Free!</span>
 
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p>
+                                <p>To promote love of teaching and learning and serves as an activity center for students and professionals who value discipline in studies, review, and research. To promote materials and extension services to help the community obtain information meeting their personal, educational, and professional needs. </p>
 
                             </div>
 
@@ -1282,7 +1282,7 @@
 
                             <div class="testimonial-text">
 
-                                <p>Nunc ullamcorper massa eu magna varius commodo. Praesent nec enim eu quam suscipit tincidunt at sed tortor. Quisque quis massa faucibus leo egestas rhoncus. Cras pretium rhoncus urna nec accumsan. Proin vehicula ante non pulvinar dignissim. Curabitur in urna volutpat, suscipit metus at, consectetur ipsum. </p>
+                                <p>To promote love of teaching and learning and serves as an activity center for students and professionals who value discipline in studies, review, and research. To promote materials and extension services to help the community obtain information meeting their personal, educational, and professional needs. </p>
 
                                 <a href="index.html#">Naiana Ansa</a>
 
@@ -1294,7 +1294,7 @@
 
                             <div class="testimonial-text">
 
-                                <p>Praesent nec enim eu quam suscipit tincidunt at sed tortor. Quisque quis massa faucibus leo egestas rhoncus. Cras pretium rhoncus urna nec accumsan. Proin vehicula ante non pulvinar dignissim. Curabitur in urna volutpat, suscipit metus at, consectetur ipsum. </p>
+                                <p>To promote love of teaching and learning and serves as an activity center for students and professionals who value discipline in studies, review, and research </p>
 
                                 <a href="index.html#">Jasmine Dou</a>
 
@@ -1306,7 +1306,7 @@
 
                             <div class="testimonial-text">
 
-                                <p>Nunc ullamcorper massa eu magna varius commodo. Praesent nec enim eu quam suscipit tincidunt at sed tortor. Quisque quis massa faucibus leo egestas rhoncus. Cras pretium rhoncus urna nec accumsan. Proin vehicula ante non pulvinar dignissim. </p>
+                                <p>I'm learning as I go along in this program and developing career interests through each phase of the process. I do hope to find a more secure place in the working world upon completion of my degree. </p>
 
                                 <a href="index.html#">David john</a>
 
@@ -1318,7 +1318,7 @@
 
                             <div class="testimonial-text">
 
-                                <p>Nunc ullamcorper massa eu magna varius commodo. Praesent nec enim eu quam suscipit tincidunt at sed tortor. Quisque quis massa faucibus leo egestas rhoncus. Cras pretium rhoncus urna nec accumsan. Proin vehicula ante non pulvinar dignissim. Curabitur in urna volutpat, suscipit metus at, consectetur ipsum. </p>
+                                <p>The program requirements were very “do-able” with my work schedule and I was able to transfer many credits from my AS degree. I also liked the idea of obtaining a degree from a university with an excellent reputation as opposed to one of the “online only” schools that advertise heavily on TV. </p>
 
                                 <a href="index.html#">Roth Brown</a>
 
@@ -1330,7 +1330,7 @@
 
                             <div class="testimonial-text">
 
-                                <p>Praesent nec enim eu quam suscipit tincidunt at sed tortor. Quisque quis massa faucibus leo egestas rhoncus. Cras pretium rhoncus urna nec accumsan. Proin vehicula ante non pulvinar dignissim. Curabitur in urna volutpat, suscipit metus at, consectetur ipsum. </p>
+                                <p>The online coursework has been the most enjoyable aspect of the program. They are just as stimulating as those classes taken on campus! I've just finished my third semester and the time as flown by. </p>
 
                                 <a href="index.html#">Timothy Smith</a>
 

@@ -10,7 +10,7 @@
     <div class="page-heading">
         <div class="container">
             <h2>Gallery</h2>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+            <p>Look for more pictures of our recent seminars</p>
         </div>
     </div>
     <!--BANNER END-->

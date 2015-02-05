@@ -5,7 +5,7 @@
     <div class="page-heading">
         <div class="container">
             <h2>Contact Us</h2>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+            <p>Suggestions and consultations, visit us now!</p>
         </div>
     </div>
     <!--BANNER END-->

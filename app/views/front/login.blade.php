@@ -10,7 +10,7 @@
     <div class="page-heading">
         <div class="container">
             <h2>Sign In</h2>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+            <p>Register - Login</p>
         </div>
     </div>
     <!--BANNER END-->

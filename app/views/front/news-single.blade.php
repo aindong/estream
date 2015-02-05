@@ -14,7 +14,7 @@
 
             <h2>Latest Articles</h2>
 
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+            <p>Read more about articles</p>
 
         </div>
 

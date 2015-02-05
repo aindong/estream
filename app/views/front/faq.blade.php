@@ -10,7 +10,7 @@
     <div class="page-heading">
         <div class="container">
             <h2>FAQs</h2>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+            <p>Learn more Frequently asked Questions</p>
         </div>
     </div>
     <!--BANNER END-->
@@ -20,8 +20,8 @@
             <div class="row">
                 <div class="span8">
                     <div class="faq-2">
-                        <h3>Phasellus mauris mi, euismod volutpat sagittis accumsan, suscipit sed leo quis nibh rutrum, fringilla</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel ante a urna tincidunt lobortis. Duis laoreet condimentum est a sagittis. Donec nulla ante, facilisis ut est id, dapibus consequat sem. Nam imperdiet erat in sagittis suscipit. Phasellus et pulvinar lacus. Nunc ut porttitor lacus. In hac habitasse platea dictumst. Suspendisse vestibulum commodo orci. Donec malesuada orci vel mi rutrum lobortis.</p>
+                        <h3>What is the difference between Live and On Demand?</h3>
+                        <p>Unable to attend a Web seminar during the scheduled time? On Demand Web seminars provide you the flexibility to extend your professional learning when it is most convenient. On Demand Web seminars are recorded during the actual Live event and include all audio, video, chat discussion, and actions within the presentation.</p>
                         {{--<!--ACORDIAN DATE START-->--}}
                         {{--<div class="accordion_cp" id="section1">--}}
                             {{--<p>we provide courses at affordable prices</p><span><img src="images/faq-pen.png" alt=""></span>--}}

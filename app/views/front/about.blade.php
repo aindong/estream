@@ -10,7 +10,7 @@
     <div class="page-heading">
         <div class="container">
             <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+            <p>Everything you need to know and learn about our organization</p>
         </div>
     </div>
     <!--BANNER END-->
@@ -73,8 +73,8 @@
                                 <a href="about-us.html#"><img src="images/admin1.jpg" alt=""></a>
                             </div>
                             <div class="text">
-                                <h2><a href="about-us.html#">Dexter Manzano</a></h2>
-                                <p>Administrator</p>
+                                <h2><a href="about-us.html#">Dexter L. Manzano</a></h2>
+                                <p>Vice-President</p>
                             </div>
                         </div>
                     </div>
@@ -96,8 +96,8 @@
                                 <a href="about-us.html#"><img src="images/admin2.jpg" alt=""></a>
                             </div>
                             <div class="text">
-                                <h2><a href="about-us.html#">David Lip</a></h2>
-                                <p>Administrator</p>
+                                <h2><a href="about-us.html#">David V. Lip</a></h2>
+                                <p>Business Manager</p>
                             </div>
                         </div>
                     </div>
@@ -120,7 +120,7 @@
                             </div>
                             <div class="text">
                                 <h2><a href="about-us.html#">Apolinario Saymo</a></h2>
-                                <p>Administrator</p>
+                                <p>President</p>
                             </div>
                         </div>
                     </div>
@@ -142,8 +142,8 @@
                                 <a href="about-us.html#"><img src="images/admin4.jpg" alt=""></a>
                             </div>
                             <div class="text">
-                                <h2><a href="about-us.html#">Aganon</a></h2>
-                                <p>Administrator</p>
+                                <h2><a href="about-us.html#">Raffy S. Aganon</a></h2>
+                                <p>Treasurer</p>
                             </div>
                         </div>
                     </div>
