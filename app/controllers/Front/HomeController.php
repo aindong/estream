@@ -26,7 +26,9 @@ class HomeController extends \BaseController {
 	 */
 	public function index()
 	{
-		return View::make('front.index');
+		$seminars = \Seminar::orderBy('start_at', 'desc')->paginate(5);
+		$articles = \Article::orderBy('created_at', 'desc')->paginate(5);
+		return View::make('front.index', compact('faqs', 'seminars', 'articles'));
 	}
 
 	/**
