@@ -155,7 +155,7 @@
     <script type="text/javascript" src="/js/jquery.accordion.js"></script>
     <script src="/js/modernizr.js"></script>
     <script type="text/javascript" src="/js/skrollr.min.js"></script>
-    <script src="/js/functions.js"></script>
+    {{--<script src="/js/functions.js"></script>--}}
 
     <script type="text/javascript">
         $(function() {
@@ -175,6 +175,67 @@
                     }
                 });
             });
+
+            // MAP
+            var map;
+            var brooklyn = new google.maps.LatLng({{ $seminar->lat }},{{ $seminar->long }});
+
+            var MY_MAPTYPE_ID = 'custom_style';
+
+            function initialize() {
+
+                var featureOpts = [
+                    {
+                        stylers: [
+                            { hue: '#b1e7b8' },
+                            { visibility: 'simplified' },
+                            { gamma: 0.5 },
+                            { weight: 0.5 }
+                        ]
+                    },
+                    {
+                        elementType: 'labels',
+                        stylers: [
+                            { visibility: 'on' }
+                        ]
+                    },
+                    {
+                        featureType: 'water',
+                        stylers: [
+                            { color: '#b1e7b8' }
+                        ]
+                    }
+                ];
+
+                var mapOptions = {
+                    zoom: 16,
+                    center: brooklyn,
+                    mapTypeControlOptions: {
+                        mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+                    },
+                    mapTypeId: MY_MAPTYPE_ID
+                };
+
+                map = new google.maps.Map(document.getElementById('map-canvas'),
+                        mapOptions);
+
+                var styledMapOptions = {
+                    name: 'Custom Style'
+                };
+
+                var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
+
+                map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
+
+                var marker = new google.maps.Marker({
+                    position: brooklyn,
+                    map: map,
+                    title: '{{ $seminar->location }}'
+                });
+
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
         });
     </script>
 @stop

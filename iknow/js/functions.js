@@ -101,7 +101,7 @@ var map;
 		
 		  var mapOptions = {
 			zoom: 12,
-			center: brooklyn,
+			center: manila,
 			mapTypeControlOptions: {
 			  mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
 			},
