@@ -47,8 +47,8 @@ class MediasController extends \BaseController
 
         $file = Input::file('file');
 
-        $filename = time() . '_' . $file->getClientOriginalName();
-        $file->move($destination . $filename);
+        $filename = uniqid() . '-' . time() . '-' . $file->getClientOriginalName();
+        $file->move($destination, $filename);
 
         $media = new Media();
         $media->type    = 'image';
