@@ -22,7 +22,7 @@
                     <td>
                         <a href="/admin/articles/{{ $article->id }}/edit" class="btn btn-warning">Update</a> 
                         <!-- <a href="#" class="btn btn-danger">Delete</a> -->
-                        {{ Form::open(array('url' => 'admin/articles/' . $article->id)) }}
+                        {{ Form::open(array('url' => 'admin/articles/' . $article->id, 'class' => 'deleteItem')) }}
                         {{ Form::hidden('_method', 'DELETE') }}
                         {{ Form::submit('Delete', array('class' => 'btn btn-danger')) }}
                         {{ Form::close() }}
@@ -37,6 +37,12 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('#example').dataTable();
+
+            $('.deleteItem').on('submit', function(e) {
+                if(!confirm('Are you sure to delete this item?')) {
+                    return false;
+                }
+            });
         });
     </script>
 @stop
