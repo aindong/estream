@@ -8,7 +8,7 @@
             <th>User</th>
             <th>Action</th>
             <th>Date</th>
-            <th>Actions</th>
+            <!-- <th>Actions</th> -->
         </tr>
         </thead>
         <tbody>
@@ -17,7 +17,7 @@
                 <td>{{{ $log->user->email }}}</td>
                 <td>{{{ $log->action }}}</td>
                 <td>{{{ date('M d, Y', strtotime($log->created_at)) }}}</td>
-                <td><a href="#" class="btn btn-danger">Delete</a></td>
+                <!-- <td><a href="#" class="btn btn-danger">Delete</a></td> -->
             </tr>
         @endforeach
         </tbody>

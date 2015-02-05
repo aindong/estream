@@ -21,7 +21,14 @@
                     </td>
                     <td>{{{ $faq->created_at }}}</td>
                     <td>{{{ $faq->updated_at }}}</td>
-                    <td><a href="/admin/faqs/{{ $faq->id }}/edit" class="btn btn-warning">Update</a> <a href="#" class="btn btn-danger">Delete</a></td>
+                    <td>
+                        <a href="/admin/faqs/{{ $faq->id }}/edit" class="btn btn-warning">Update</a> 
+                        <!-- <a href="#" class="btn btn-danger">Delete</a> -->
+                        {{ Form::open(array('url' => 'admin/faqs/' . $faq->id)) }}
+                        {{ Form::hidden('_method', 'DELETE') }}
+                        {{ Form::submit('Delete', array('class' => 'btn btn-danger')) }}
+                        {{ Form::close() }}
+                    </td>
                 </tr>
             @endforeach
         </tbody>
