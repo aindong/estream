@@ -57,6 +57,7 @@
 
     <br><br><br><br><br/><br/>
     <div style="margin-left: 0px !important">
+        <a href="/admin/dashboard" class="btn btn-primary" id="btn">Go back</a>
         <button id="btn" type="button" onclick="startVideo();">Start video</button>
         <button id="btn" type="button" onclick="stopVideo();">Stop video</button>
         <button id="btn" type="button" onclick="connect();" >Connect</button>

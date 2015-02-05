@@ -55,6 +55,7 @@
 
     <br><br><br><br>
     <div>
+        <a href="/users/dashboard" class="btn btn-primary" id="btn">Go back</a>
         {{--<button id="btn" type="button" onclick="connect();" >Connect</button>--}}
     </div>
     {{--<button id="btn" type="button" onclick="startVideo();">Start video</button>--}}
