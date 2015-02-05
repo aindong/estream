@@ -870,221 +870,113 @@
         {{--<!--STUDENT FORM SECTION END-->--}}
 
         <!--OUR TEACHERS SECTION START-->
-
-        <section class="gray-bg">
-
+        <section>
             <div class="container">
-
                 <!--SECTION HEADER START-->
-
                 <div class="sec-header">
-
                     <h2>Administrators</h2>
-
                     <!-- <p>Discover courses by topic</p> -->
-
                     <span></span>
-
                     <span></span>
-
                     <span></span>
-
                 </div>
-
                 <!--SECTION HEADER END-->
-
                 <div class="row">
-
                     <!--TEACHERS THUMB START-->
-
                     <div class="span3">
-
                         <div class="teachers">
-<!-- 
-                            <div class="social-icons">
-
-                                <a href="index.html#"><i class="fa fa-facebook"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-flickr"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-dribbble"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-google-plus"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-linkedin"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-pinterest"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-twitter"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-vimeo-square"></i></a>
-
+                            <!-- <div class="social-icons">
+                                <a href="about-us.html#"><i class="fa fa-facebook"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-flickr"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-dribbble"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-google-plus"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-linkedin"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-pinterest"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-twitter"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-vimeo-square"></i></a>
                             </div> -->
-
                             <div class="thumb">
-
-                                <a href="index.html#"><img src="images/teachers1.jpg" alt=""></a>
-
+                                <a href="about-us.html#"><img src="images/admin1.jpg" alt=""></a>
                             </div>
-
                             <div class="text">
-
-                                <h2><a href="index.html#">Mickey Rorey</a></h2>
-
-                                <p>Science Teacher</p>
-
+                                <h2><a href="about-us.html#">Dexter Manzano</a></h2>
+                                <p>Administrator</p>
                             </div>
-
                         </div>
-
                     </div>
-
                     <!--TEACHERS THUMB END-->
-
                     <!--TEACHERS THUMB START-->
-
                     <div class="span3">
-
                         <div class="teachers">
-<!-- 
-                            <div class="social-icons">
-
-                                <a href="index.html#"><i class="fa fa-facebook"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-flickr"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-dribbble"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-google-plus"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-linkedin"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-pinterest"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-twitter"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-vimeo-square"></i></a>
-
+                            <!-- <div class="social-icons">
+                                <a href="about-us.html#"><i class="fa fa-facebook"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-flickr"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-dribbble"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-google-plus"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-linkedin"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-pinterest"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-twitter"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-vimeo-square"></i></a>
                             </div> -->
-
                             <div class="thumb">
-
-                                <a href="index.html#"><img src="images/teachers2.jpg" alt=""></a>
-
+                                <a href="about-us.html#"><img src="images/admin2.jpg" alt=""></a>
                             </div>
-
                             <div class="text">
-
-                                <h2><a href="index.html#">Mickey Rorey</a></h2>
-
-                                <p>Science Teacher</p>
-
+                                <h2><a href="about-us.html#">David Lip</a></h2>
+                                <p>Administrator</p>
                             </div>
-
                         </div>
-
                     </div>
-
                     <!--TEACHERS THUMB END-->
-
                     <!--TEACHERS THUMB START-->
-
                     <div class="span3">
-
                         <div class="teachers">
-<!-- 
-                            <div class="social-icons">
-
-                                <a href="index.html#"><i class="fa fa-facebook"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-flickr"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-dribbble"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-google-plus"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-linkedin"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-pinterest"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-twitter"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-vimeo-square"></i></a>
-
+                            <!-- <div class="social-icons">
+                                <a href="about-us.html#"><i class="fa fa-facebook"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-flickr"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-dribbble"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-google-plus"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-linkedin"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-pinterest"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-twitter"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-vimeo-square"></i></a>
                             </div> -->
-
                             <div class="thumb">
-
-                                <a href="index.html#"><img src="images/teachers3.jpg" alt=""></a>
-
+                                <a href="about-us.html#"><img src="images/admin3.jpg" alt=""></a>
                             </div>
-
                             <div class="text">
-
-                                <h2><a href="index.html#">Mickey Rorey</a></h2>
-
-                                <p>Science Teacher</p>
-
+                                <h2><a href="about-us.html#">Apolinario Saymo</a></h2>
+                                <p>Administrator</p>
                             </div>
-
                         </div>
-
                     </div>
-
                     <!--TEACHERS THUMB END-->
-
                     <!--TEACHERS THUMB START-->
-
                     <div class="span3">
-
                         <div class="teachers">
-<!-- 
-                            <div class="social-icons">
-
-                                <a href="index.html#"><i class="fa fa-facebook"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-flickr"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-dribbble"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-google-plus"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-linkedin"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-pinterest"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-twitter"></i></a>
-
-                                <a href="index.html#"><i class="fa fa-vimeo-square"></i></a>
-
+                            <!-- <div class="social-icons">
+                                <a href="about-us.html#"><i class="fa fa-facebook"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-flickr"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-dribbble"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-google-plus"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-linkedin"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-pinterest"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-twitter"></i></a>
+                                <a href="about-us.html#"><i class="fa fa-vimeo-square"></i></a>
                             </div> -->
-
                             <div class="thumb">
-
-                                <a href="index.html#"><img src="images/teachers4.jpg" alt=""></a>
-
+                                <a href="about-us.html#"><img src="images/admin4.jpg" alt=""></a>
                             </div>
-
                             <div class="text">
-
-                                <h2><a href="index.html#">Mickey Rorey</a></h2>
-
-                                <p>Science Teacher</p>
-
+                                <h2><a href="about-us.html#">Aganon</a></h2>
+                                <p>Administrator</p>
                             </div>
-
                         </div>
-
                     </div>
-
                     <!--TEACHERS THUMB END-->
-
                 </div>
-
             </div>
-
         </section>
-
         <!--OUR TEACHERS SECTION END-->
 
         <!--PAPULAR POSTS SECTION START-->
