@@ -5,13 +5,8 @@
 @endif
 
 <div class="form-group">
-    {{ Form::label('question', 'Question *', ['class' => 'form-label']) }}
-    {{ Form::text('question', null, ['class' => 'form-control', 'required' => 'required']) }}
-</div>
-
-<div class="form-group">
-    {{ Form::label('answer', 'Answer *', ['class' => 'form-label']) }}
-    {{ Form::textarea('answer', null, ['class' => 'form-control', 'required' => 'required']) }}
+    {{ Form::label('file', 'Image *', ['class' => 'form-label']) }}
+    {{ Form::file('file',null, ['class' => 'form-control', 'required' => 'required']) }}
 </div>
 
 <a href="/admin/medias" class="btn btn-danger">Back</a>

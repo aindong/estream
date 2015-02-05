@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-    <h2>Media Management <a href="/admin/medias/create" class="btn btn-primary">Add New</a></h2>
+    <h2>Gallery Management <a href="/admin/medias/create" class="btn btn-primary">Add New</a></h2>
     <table class="table table-striped table-bordered" cellspacing="0" width="100%" id="example">
         <thead>
           <tr>
@@ -17,7 +17,7 @@
               @foreach($medias as $media)
                   <tr>
                       <td>{{{ $media->user->info->last_name }}}, {{{ $media->user->info->first_name }}} {{{ $media->user->info->middle_name }}}</td>
-                      <td>{{{ $media->file }}}</td>
+                      <td><img src="{{ '/public/uploads/gallery/' . $media->file }}" alt="" height="150" width="150"/></td>
                       <td>{{{ $media->type }}}</td>
                       <td>{{{ $media->created_at }}}</td>
                       <td>{{{ $media->updated_at }}}</td>

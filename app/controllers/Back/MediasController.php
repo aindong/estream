@@ -1,11 +1,11 @@
 <?php namespace Controllers\Back;
 
-use Media;
-use View;
-use Validator;
-use Input;
-use Redirect;
 use Auth;
+use Input;
+use Media;
+use Redirect;
+use Validator;
+use View;
 
 class MediasController extends \BaseController
 {
@@ -31,16 +31,32 @@ class MediasController extends \BaseController
 
     public function store()
     {
-      $validator = Validator::make($data = Input::all(), Media::$rules);
+        $destination = public_path() . '/public/uploads/gallery/';
 
-      if ($validator->fails())
-      {
-        return Redirect::back()->withErrors($validator)->withInput();
-      }
+        $validator = Validator::make($data = Input::all(), Media::$rules);
 
-      Media::create($data);
+        if ($validator->fails())
+        {
+          return Redirect::back()->withErrors($validator)->withInput();
+        }
 
-      return Redirect::route('admin.medias.index');
+        if (!Input::hasFile('file')) {
+            \Session::flash('error', 'Error on uploading the image');
+            return Redirect::back();
+        }
+
+        $file = Input::file('file');
+
+        $filename = time() . '_' . $file->getClientOriginalName();
+        $file->move($destination . $filename);
+
+        $media = new Media();
+        $media->type    = 'image';
+        $media->user_id = Auth::getUser()->id;
+        $media->file    = $filename;
+        $media->save();
+
+        return Redirect::route('admin.medias.index');
     }
 
     /**
@@ -75,5 +91,10 @@ class MediasController extends \BaseController
       Media::destroy($id);
 
       return Redirect::route('admin.medias.index');
+    }
+
+    public function show($id)
+    {
+
     }
 }
