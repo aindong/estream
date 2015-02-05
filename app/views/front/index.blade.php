@@ -9,13 +9,15 @@
 
         <ul class="bxslider">
 
-            <li><img src="images/banner1.jpg" alt=""> </li>
+            <li><img src="images/home1.jpg" alt=""> </li>
 
-            <li><img src="images/banner2.jpg" alt=""></li>
+            <li><img src="images/home2.jpg" alt=""></li>
 
-            <li><img src="images/banner3.jpg" alt=""></li>
+            <li><img src="images/home3.jpg" alt=""></li>
 
-            <li><img src="images/banner4.jpg" alt=""></li>
+            <li><img src="images/home4.jpg" alt=""></li>
+
+            <li><img src="images/home5.jpg" alt=""></li>
 
         </ul>
 
@@ -1139,11 +1141,12 @@
 
                         <div class="box">
 
-                            <h2>Event Gallery</h2>
+                            <h2>Latest Seminars</h2>
 
                             <ul class="event-galley">
 
                                 <!--LIST ITEM START-->
+                                @foreach($seminars as $seminar)
 
                                 <li>
 
@@ -1155,97 +1158,21 @@
 
                                     <div class="text">
 
-                                        <p>21-04-2012</p>
+                                        <p>{{ date('D M d', strtotime($seminar->start_at)) }}</p>
 
-                                        <h4>most popular courses </h4>
+                                        <h4>{{ $seminar->title }}</h4>
 
-                                        <a href="index.html#" class="tags">Equipment</a>
+                                        <!-- <a href="index.html#" class="tags">Equipment</a>
 
-                                        <a href="index.html#" class="tags">tips</a>
-
-                                    </div>
-
-                                </li>
-
-                                <!--LIST ITEM START-->
-
-                                <!--LIST ITEM START-->
-
-                                <li>
-
-                                    <div class="thumb">
-
-                                        <a href="index.html#"><img alt="" src="images/event2.png"></a>
-
-                                    </div>
-
-                                    <div class="text">
-
-                                        <p>21-04-2012</p>
-
-                                        <h4>most popular courses </h4>
-
-                                        <a href="index.html#" class="tags">Equipment</a>
-
-                                        <a href="index.html#" class="tags">tips</a>
+                                        <a href="index.html#" class="tags">tips</a> -->
 
                                     </div>
 
                                 </li>
 
-                                <!--LIST ITEM START-->
+                                @endforeach
 
-                                <!--LIST ITEM START-->
-
-                                <li>
-
-                                    <div class="thumb">
-
-                                        <a href="index.html#"><img alt="" src="images/event3.png"></a>
-
-                                    </div>
-
-                                    <div class="text">
-
-                                        <p>21-04-2012</p>
-
-                                        <h4>most popular courses </h4>
-
-                                        <a href="index.html#" class="tags">Equipment</a>
-
-                                        <a href="index.html#" class="tags">tips</a>
-
-                                    </div>
-
-                                </li>
-
-                                <!--LIST ITEM START-->
-
-                                <!--LIST ITEM START-->
-
-                                <li>
-
-                                    <div class="thumb">
-
-                                        <a href="index.html#"><img alt="" src="images/event4.png"></a>
-
-                                    </div>
-
-                                    <div class="text">
-
-                                        <p>21-04-2012</p>
-
-                                        <h4>most popular courses </h4>
-
-                                        <a href="index.html#" class="tags">Equipment</a>
-
-                                        <a href="index.html#" class="tags">tips</a>
-
-                                    </div>
-
-                                </li>
-
-                                <!--LIST ITEM START-->
+                                <!--LIST ITEM END-->
 
                             </ul>
 
@@ -1279,59 +1206,13 @@
 
                         <div class="box">
 
-                            <h2>Our Next Courses</h2>
+                            <h2>Latest Posts</h2>
 
                             <ul class="event-galley next-course">
 
                                 <!--LIST ITEM START-->
 
-                                <li>
-
-                                    <div class="thumb">
-
-                                        <a href="index.html#"><img alt="" src="images/event1.png"></a>
-
-                                    </div>
-
-                                    <div class="text">
-
-                                        <h4><a href="index.html#">Computer</a></h4>
-
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
-
-                                        <span class="rate"><small>$</small> 27</span>
-
-                                    </div>
-
-                                </li>
-
-                                <!--LIST ITEM START-->
-
-                                <!--LIST ITEM START-->
-
-                                <li>
-
-                                    <div class="thumb">
-
-                                        <a href="index.html#"><img alt="" src="images/event2.png"></a>
-
-                                    </div>
-
-                                    <div class="text">
-
-                                        <h4><a href="index.html#">Computer</a></h4>
-
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
-
-                                        <span class="rate"><small>$</small> 27</span>
-
-                                    </div>
-
-                                </li>
-
-                                <!--LIST ITEM START-->
-
-                                <!--LIST ITEM START-->
+                                @foreach($articles as $article)
 
                                 <li>
 
@@ -1343,41 +1224,21 @@
 
                                     <div class="text">
 
-                                        <h4><a href="index.html#">Computer</a></h4>
+                                        <p>{{ date('D M d', strtotime($article->start_at)) }}</p>
 
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                                        <h4>{{ $article->title }}</h4>
 
-                                        <span class="rate"><small>$</small> 27</span>
+                                        <!-- <a href="index.html#" class="tags">Equipment</a>
 
-                                    </div>
-
-                                </li>
-
-                                <!--LIST ITEM START-->
-
-                                <!--LIST ITEM START-->
-
-                                <li>
-
-                                    <div class="thumb">
-
-                                        <a href="index.html#"><img alt="" src="images/event4.png"></a>
-
-                                    </div>
-
-                                    <div class="text">
-
-                                        <h4><a href="index.html#">Computer</a></h4>
-
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
-
-                                        <span class="rate"><small>$</small> 27</span>
+                                        <a href="index.html#" class="tags">tips</a> -->
 
                                     </div>
 
                                 </li>
 
-                                <!--LIST ITEM START-->
+                                @endforeach
+
+                                <!--LIST ITEM END-->
 
                             </ul>
 
