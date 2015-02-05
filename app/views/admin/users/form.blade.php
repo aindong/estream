@@ -29,5 +29,21 @@
     {{ Form::text('last_name', null, ['class' => 'form-control', 'required' => 'required']) }}
 </div>
 
+<div class="form-group">
+    {{ Form::label('membership', 'Membership *', ['class' => 'form-label']) }}
+    {{ Form::select('membership', ['regular' => 'Regular', 'member' => 'Member'], null, ['class' => 'form-control', 'required']) }}
+</div>
+
+<div class="form-group">
+    {{ Form::label('membership_expire_at', 'Membership Expires at', ['class' => 'form-label']) }}
+    {{ Form::text('membership_expire_at', null, ['class' => 'form-control membership_expire_at']) }}
+</div>
+
+<div class="form-group">
+    {{ Form::label('role_id', 'Role *', ['class' => 'form-label']) }}
+    {{ Form::select('role_id', ['User', 'Admin'], null, ['class' => 'form-control', 'required']) }}
+    {{--{{ Form::text('role', null, ['class' => 'form-control', 'required' => 'required']) }}--}}
+</div>
+
 <a href="/admin/users" class="btn btn-danger">Back</a>
 <button type="submit" class="btn btn-primary">Submit</button>

@@ -67,4 +67,10 @@ class UsersController extends \BaseController
 
         return \Response::json(['message' => 'error'], 400);
     }
+
+    public function seminars()
+    {
+        $seminarUsers = \SeminarUser::all();
+        return View::make('user.seminar', compact('seminarUsers'));
+    }
 }

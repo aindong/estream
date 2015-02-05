@@ -8,5 +8,9 @@
 @stop
 
 @section('page-script')
-
+    <script type="text/javascript">
+        $(function() {
+            $('.membership_expire_at').datepicker();
+        });
+    </script>
 @stop
