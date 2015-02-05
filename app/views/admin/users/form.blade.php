@@ -41,7 +41,7 @@
 
 <div class="form-group">
     {{ Form::label('role_id', 'Role *', ['class' => 'form-label']) }}
-    {{ Form::select('role_id', ['User', 'Admin'], null, ['class' => 'form-control', 'required']) }}
+    {{ Form::select('role_id', [1 => 'User', 2 => 'Admin'], null, ['class' => 'form-control', 'required']) }}
     {{--{{ Form::text('role', null, ['class' => 'form-control', 'required' => 'required']) }}--}}
 </div>
 

@@ -44,14 +44,26 @@ class UsersApiController extends BaseController
                     $link = '/users/dashboard';
                 }
 
+                $membership = Auth::getUser()->info->membership;
+                $membership_expire_at = strtotime(Auth::getUser()->info->membership_expire_at);
+                $today = time();
+
+                if ($membership_expire_at < $today) {
+                    $userinfo = UsersInfo::find(Auth::getUser()->id);
+                    $userinfo->membership = 'regular';
+                    $userinfo->membership_expire_at = 0;
+                    $userinfo->save();
+                }
+
                 AuditTrail::create([
                     'user_id'   => Auth::getUser()->id,
                     'action'     => 'Logged in'
                 ]);
                 return Response::json([
-                    'status'    => 'success',
-                    'message'   => 'Successfully logged in',
-                    'link'      => $link
+                    'status'        => 'success',
+                    'message'       => 'Successfully logged in',
+                    'membership'    => ['membership' => $membership, 'membership_expire_at' => $membership_expire_at, 'today' => $today],
+                    'link'          => $link
                 ], 200);
             }
 

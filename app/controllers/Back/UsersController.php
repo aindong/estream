@@ -35,15 +35,17 @@ class UsersController extends \BaseController
         $user = new User;
         $user->email = $data['email'];
         $user->password = Hash::make($data['password']);
-        $user->role_id = $data['role_id'] + 1;
+        $user->role_id = $data['role_id'];
         $user->save();
 
         $userInfo = new UsersInfo();
         $userInfo->create([
-            'user_id'       => $user->id,
-            'first_name'    => $data['first_name'],
-            'last_name'     => $data['last_name'],
-            'middle_name'   => $data['middle_name']
+            'user_id'               => $user->id,
+            'first_name'            => $data['first_name'],
+            'last_name'             => $data['last_name'],
+            'middle_name'           => $data['middle_name'],
+            'membership'            => $data['membership'],
+            'membership_expire_at'  => date('Y-m-d', strtotime($data['membership_expire_at']))
         ]);
 
         // \AuditTrail::create([
@@ -77,9 +79,11 @@ class UsersController extends \BaseController
         $user->save();
 
         $userInfo = UsersInfo::where('user_id', $id)->first();
-        $userInfo->first_name  = $data['first_name'];
-        $userInfo->last_name   = $data['last_name'];
-        $userInfo->middle_name = $data['middle_name'];
+        $userInfo->first_name            = $data['first_name'];
+        $userInfo->last_name             = $data['last_name'];
+        $userInfo->middle_name           = $data['middle_name'];
+        $userInfo->membership            = $data['membership'];
+        $userInfo->membership_expire_at  = date('Y-m-d', strtotime($data['membership_expire_at']));
         $userInfo->save();
 
         // \AuditTrail::create([
