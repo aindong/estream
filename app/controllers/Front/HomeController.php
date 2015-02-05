@@ -81,7 +81,7 @@ class HomeController extends \BaseController {
 
 	public function gallery()
 	{
-		$medias = Media::all();
+		$medias = \Media::all();
 		return View::make('front.gallery', compact('medias'));
 	}
 
