@@ -73,13 +73,16 @@ class HomeController extends \BaseController {
 	 */
 	public function faq()
 	{
+		$seminars = \Seminar::orderBy('start_at', 'desc')->paginate(5);
+
 		$faqs = \Faq::all();
-		return View::make('front.faq', compact('faqs'));
+		return View::make('front.faq', compact('faqs', 'seminars'));
 	}
 
 	public function gallery()
 	{
-		return View::make('front.gallery');
+		$medias = Media::all();
+		return View::make('front.gallery', compact('medias'));
 	}
 
 	/**
@@ -89,8 +92,10 @@ class HomeController extends \BaseController {
 	 */
 	public function news()
 	{
+		$seminars = \Seminar::orderBy('start_at', 'desc')->paginate(5);
+
 		$articles = \Article::orderBy('created_at', 'desc')->paginate(5);
-		return View::make('front.news', compact('articles'))
+		return View::make('front.news', compact('articles', 'seminars'))
 			->with('pagination', $articles->links());
 	}
 
@@ -101,9 +106,10 @@ class HomeController extends \BaseController {
 	 */
 	public function newsSingle($id)
 	{
+		$seminars = \Seminar::orderBy('start_at', 'desc')->paginate(5);
 		$article = Article::find($id);
 
-      	return View::make('front.news-single', compact('article'));
+      	return View::make('front.news-single', compact('article', 'seminars'));
 	}
 
 	/**

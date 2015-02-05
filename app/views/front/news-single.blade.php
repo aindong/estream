@@ -60,15 +60,17 @@
 
                         <div class="widget widget-papular-post">
 
-                            <h2>Popular Posts</h2>
+                            <h2>Latest Seminar</h2>
 
+                            @foreach($seminars as $seminar)
+                            
                             <ul>
 
                                 <!--LIST ITEM START-->
 
                                 <li>
 
-                                    <h4>Donec neque ipsum, sodales nec trist</h4>
+                                    <h4>{{ $seminar->title }}</h4>
 
                                     <div class="thumb">
 
@@ -78,81 +80,9 @@
 
                                     <div class="text">
 
-                                        <p class="date">19 May 2012  <span>Admin</span></p>
+                                        <p class="date">{{ date('D M d', strtotime($seminar->start_at)) }}</p>
 
-                                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
-
-                                    </div>
-
-                                </li>
-
-                                <!--LIST ITEM END-->
-
-                                <!--LIST ITEM START-->
-
-                                <li>
-
-                                    <h4>Donec neque ipsum, sodales nec trist</h4>
-
-                                    <div class="thumb">
-
-                                        <a href="blog.html#"><img src="/images/papular-post2.jpg" alt=""></a>
-
-                                    </div>
-
-                                    <div class="text">
-
-                                        <p class="date">19 May 2012  <span>Admin</span></p>
-
-                                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
-
-                                    </div>
-
-                                </li>
-
-                                <!--LIST ITEM END-->
-
-                                <!--LIST ITEM START-->
-
-                                <li>
-
-                                    <h4>Donec neque ipsum, sodales nec trist</h4>
-
-                                    <div class="thumb">
-
-                                        <a href="blog.html#"><img src="/images/papular-post3.jpg" alt=""></a>
-
-                                    </div>
-
-                                    <div class="text">
-
-                                        <p class="date">19 May 2012  <span>Admin</span></p>
-
-                                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
-
-                                    </div>
-
-                                </li>
-
-                                <!--LIST ITEM END-->
-
-                                <!--LIST ITEM START-->
-
-                                <li>
-
-                                    <h4>Donec neque ipsum, sodales nec trist</h4>
-
-                                    <div class="thumb">
-
-                                        <a href="blog.html#"><img src="/images/papular-post4.jpg" alt=""></a>
-
-                                    </div>
-
-                                    <div class="text">
-
-                                        <p class="date">19 May 2012  <span>Admin</span></p>
-
-                                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
+                                        <p>{{ substr($seminar->description, 0, 200) }}...</p>
 
                                     </div>
 
@@ -161,54 +91,12 @@
                                 <!--LIST ITEM END-->
 
                             </ul>
+
+                            @endforeach
 
                         </div>
 
                         <!--PAPULAR POST WIDGET END-->
-
-                        <!--TWITTER WIDGET START-->
-
-                        <div class="widget widget-twitter">
-
-                            <h2>Latest Tweets</h2>
-
-                            <ul>
-
-                                <li>
-
-                                    <p>What i like about photographs is that they capture a moment that’s gone forever, impossible to reproduce.</p>
-
-                                    <a href="blog.html#"># Quotes About Photography</a>
-
-                                    <p class="minuts-ago">8 mins ago</p>
-
-                                </li>
-
-                                <li>
-
-                                    <p>There are no bad pictures; that's just how your face looks sometimes..</p>
-
-                                    <a href="blog.html#"># Quotes About Photography</a>
-
-                                    <p class="minuts-ago">8 mins ago</p>
-
-                                </li>
-
-                                <li>
-
-                                    <p>What i like about photographs is that they capture a moment that’s gone forever, impossible to reproduce.</p>
-
-                                    <a href="blog.html#"># Quotes About Photography</a>
-
-                                    <p class="minuts-ago">8 mins ago</p>
-
-                                </li>
-
-                            </ul>
-
-                        </div>
-
-                        <!--TWITTER WIDGET END-->
 
                         <!--NEWS LETTERS WIDGET START-->
 

@@ -115,57 +115,41 @@
                     <div class="sidebar">
                         <!--PAPULAR POST WIDGET START-->
                         <div class="widget widget-papular-post">
-                            <h2>Popular Posts</h2>
+
+                            <h2>Latest Seminar</h2>
+
+                            @foreach($seminars as $seminar)
+
                             <ul>
+
                                 <!--LIST ITEM START-->
+
                                 <li>
-                                    <h4>Donec neque ipsum, sodales nec trist</h4>
+
+                                    <h4>{{ $seminar->title }}</h4>
+
                                     <div class="thumb">
-                                        <a href="faq.html#"><img src="images/papular-post.jpg" alt=""></a>
+
+                                        <a href="blog.html#"><img src="images/papular-post.jpg" alt=""></a>
+
                                     </div>
+
                                     <div class="text">
-                                        <p class="date">19 May 2012  <span>Admin</span></p>
-                                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
+
+                                        <p class="date">{{ date('D M d', strtotime($seminar->start_at)) }}</p>
+
+                                        <p>{{ substr($seminar->description, 0, 200) }}...</p>
+
                                     </div>
+
                                 </li>
+
                                 <!--LIST ITEM END-->
-                                <!--LIST ITEM START-->
-                                <li>
-                                    <h4>Donec neque ipsum, sodales nec trist</h4>
-                                    <div class="thumb">
-                                        <a href="faq.html#"><img src="images/papular-post2.jpg" alt=""></a>
-                                    </div>
-                                    <div class="text">
-                                        <p class="date">19 May 2012  <span>Admin</span></p>
-                                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
-                                    </div>
-                                </li>
-                                <!--LIST ITEM END-->
-                                <!--LIST ITEM START-->
-                                <li>
-                                    <h4>Donec neque ipsum, sodales nec trist</h4>
-                                    <div class="thumb">
-                                        <a href="faq.html#"><img src="images/papular-post3.jpg" alt=""></a>
-                                    </div>
-                                    <div class="text">
-                                        <p class="date">19 May 2012  <span>Admin</span></p>
-                                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
-                                    </div>
-                                </li>
-                                <!--LIST ITEM END-->
-                                <!--LIST ITEM START-->
-                                <li>
-                                    <h4>Donec neque ipsum, sodales nec trist</h4>
-                                    <div class="thumb">
-                                        <a href="faq.html#"><img src="images/papular-post4.jpg" alt=""></a>
-                                    </div>
-                                    <div class="text">
-                                        <p class="date">19 May 2012  <span>Admin</span></p>
-                                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
-                                    </div>
-                                </li>
-                                <!--LIST ITEM END-->
+
                             </ul>
+
+                            @endforeach
+
                         </div>
                         <!--PAPULAR POST WIDGET END-->
                     </div>
