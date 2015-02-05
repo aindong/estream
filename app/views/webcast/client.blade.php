@@ -51,12 +51,13 @@
 
     {{--<div id="livevideodivk" ><video id="sourcevid" style="background: url('/images/cb.jpg');" autoplay></video></div>--}}
     <div id="remotevideodivk" ><video id="remotevid" style="background: url('/images/cb.jpg');" autoplay style="margin-left:30px;"></video></div>
+
     <div id="anim" style="visibility:hidden;"><img id="animation" src="/images/anim.gif" width="210px" /></div>
 
     <br><br><br><br>
     <div>
         <a href="/users/dashboard" class="btn btn-primary" id="btn">Go back</a>
-        {{--<button id="btn" type="button" onclick="connect();" >Connect</button>--}}
+        <button id="btn" type="button" onclick="connect();" >Connect</button>
     </div>
     {{--<button id="btn" type="button" onclick="startVideo();">Start video</button>--}}
     {{--<button id="btn" type="button" onclick="stopVideo();">Stop video</button>--}}
@@ -67,7 +68,7 @@
 
 </div>
 <script>
-    var socket = new WebSocket('ws://192.168.1.12:1337/');  // change the IP address to your websocket server
+    var socket = new WebSocket('ws://127.0.0.1:1337/');  // change the IP address to your websocket server
     var stunServer = "stun.l.google.com:19302";
     var sourcevid = document.getElementById('sourcevid');
     var remotevid = document.getElementById('remotevid');

@@ -69,7 +69,7 @@
 
 </div>
 <script>
-    var socket = new WebSocket('ws://192.168.1.12:1337/');  // change the IP address to your websocket server
+    var socket = new WebSocket('ws://127.0.0.1:1337/');  // change the IP address to your websocket server
     var stunServer = "stun.l.google.com:19302";
     var sourcevid = document.getElementById('sourcevid');
     //var remotevid = document.getElementById('remotevid');
