@@ -99,8 +99,11 @@
 
                 <div class="logo">
 
-                    <a href="index.html"><img src="/images/logo-aeirs.jpg" alt=""></a>
-                    <span style="font-size:30px; weight: bolder;">AEIRS</span>
+                    <div style="position: relative;">
+                        <a href="/" style=""><img src="/images/logo-aeirs.jpg" alt=""></a>
+                        <span style="font-size:30px; font-weight: bold; position: absolute; left: 100px; top: 17px;">AEIRS</span>
+                        <span style="font-size: 12px; position: absolute; left: 100px; top: 40px; width: 349px;">Association of Educators for Interrelated Research and Studies</span>
+                    </div>
 
                 </div>
 

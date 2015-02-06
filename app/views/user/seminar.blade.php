@@ -5,7 +5,7 @@
     <div class="page-heading">
         <div class="container">
             <h2>My Seminars</h2>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+            <p>You can view your seminars, edit your profile, request for a webcast in here</p>
         </div>
     </div>
     <!--BANNER END-->

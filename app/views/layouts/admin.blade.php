@@ -53,6 +53,7 @@
 <script src="/js/moment.js"></script>
 <script src="/packages/FullCalendar/fullcalendar.min.js"></script>
 <script src="/js/bootstrap-datepicker.js"></script>
+<script src="//cdn.ckeditor.com/4.4.7/basic/ckeditor.js"></script>
 @yield('page-script')
 </body>
 </html>

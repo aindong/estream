@@ -902,7 +902,7 @@
                             </div>
                             <div class="text">
                                 <h2><a href="about-us.html#">Dexter Manzano</a></h2>
-                                <p>Vice-President</p>
+                                <p>Assistant Coordinator</p>
                             </div>
                         </div>
                     </div>
@@ -925,7 +925,7 @@
                             </div>
                             <div class="text">
                                 <h2><a href="about-us.html#">David V. Lip</a></h2>
-                                <p>Business Manager</p>
+                                <p>Technical Staff</p>
                             </div>
                         </div>
                     </div>
@@ -948,7 +948,7 @@
                             </div>
                             <div class="text">
                                 <h2><a href="about-us.html#">Apolinario Saymo</a></h2>
-                                <p>President</p>
+                                <p>Seminar Coordinator</p>
                             </div>
                         </div>
                     </div>
@@ -971,7 +971,7 @@
                             </div>
                             <div class="text">
                                 <h2><a href="about-us.html#">Raffy S. Aganon</a></h2>
-                                <p>Treasurer</p>
+                                <p>Liaison officer</p>
                             </div>
                         </div>
                     </div>
