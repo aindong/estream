@@ -20,7 +20,7 @@
                 <td>{{{ $attendant->user->info->last_name }}}, {{{ $attendant->user->info->first_name }}} {{{ $attendant->user->info->middle_name }}}</td>
                 <td>{{{ $attendant->user->email }}}</td>
                 <td>{{{ ucfirst($attendant->status) }}}</td>
-                <td><a href="/admin/users/{{ $attendant->user_id }}/edit" class="btn btn-primary">Paid</a> <a href="/admin/users/{{ $attendant->user_id }}/edit" class="btn btn-danger">Unpaid</a></td>
+                <td><a href="/admin/updateStatus/{{ $attendant->user_id }}/paid" class="btn btn-primary">Paid</a> <a href="/admin/updateStatus/{{ $attendant->user_id }}/waiting for payment" class="btn btn-danger">Unpaid</a></td>
             </tr>
         @endforeach
         </tbody>

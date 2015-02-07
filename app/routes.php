@@ -60,6 +60,8 @@ Route::group(['namespace' => 'Controllers\Back', 'before' => 'auth|hasRole:admin
 	Route::resource('/admin/logs', 'LogsController');
 	// Reports
 	Route::resource('/admin/reports', 'ReportsController');
+
+	Route::put('/admin/updateStatus/{id}/{status}', ['uses' => 'SeminarsController']);
 });
 
 /**

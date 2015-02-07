@@ -79,6 +79,16 @@ class SeminarsController extends \BaseController
         return View::make('admin.seminars.show', compact('seminar'));
     }
 
+    public function updateStatus($id, $status)
+    {
+        $userSeminar = \SeminarUser::where('user_id', '=', $id)->first();
+        $userSeminar->status = $status;
+        $userSeminar->save();
+
+        return \Redirect::back();
+        //return \Response::json(['message' => 'success'], 200);
+    }
+
     /**
      * Update
      */
