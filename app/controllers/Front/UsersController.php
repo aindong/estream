@@ -62,8 +62,12 @@ class UsersController extends \BaseController
                 'status'     => 'waiting for payment'
             ]);
 
-            $data = ['user' => \Auth::getUser(), 'seminar' => $seminar];
-            \Event::fire('user.seminar.register', $data);
+            $data = [
+                'message' => [],
+                'user' => \Auth::getUser(),
+                'seminar' => $seminar
+            ];
+            \Event::fire('user.seminar.register', array($data));
 
             return \Response::json(['message' => 'success'], 200);
         }
