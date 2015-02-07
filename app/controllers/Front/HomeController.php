@@ -1,8 +1,8 @@
 <?php namespace Controllers\Front;
 
-use View;
 use Article;
 use Seminar;
+use View;
 
 class HomeController extends \BaseController {
 
@@ -48,7 +48,7 @@ class HomeController extends \BaseController {
 	 */
 	public function seminars()
 	{
-		$seminars = \Seminar::orderBy('start_at', 'desc')->paginate(5);
+		$seminars = \Seminar::orderBy('start_at', 'desc')->where('start_at', '>', new \DateTime('today'))->paginate(5);
 		return View::make('front.seminars', compact('seminars'))
 			->with('pagination', $seminars->links());
 	}
