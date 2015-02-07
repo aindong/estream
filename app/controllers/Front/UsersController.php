@@ -67,6 +67,7 @@ class UsersController extends \BaseController
                 'user' => \Auth::getUser(),
                 'seminar' => $seminar
             ];
+
             \Event::fire('user.seminar.register', array($data));
 
             return \Response::json(['message' => 'success'], 200);
