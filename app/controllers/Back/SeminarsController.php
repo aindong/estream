@@ -60,6 +60,7 @@ class SeminarsController extends \BaseController
 //            'action'     => 'Created a new seminar'
 //        ]);
         \Event::fire('seminar.created', array($data));
+
         return Redirect::route('admin.seminars.index');
     }
 

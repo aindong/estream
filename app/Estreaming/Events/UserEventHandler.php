@@ -25,6 +25,13 @@ class UserEventHandler
     public function onNewSeminar(array $event)
     {
 
+        $users = \User::all();
+        foreach ($users as $user) {
+            Mail::send('emails.newSeminar', $event, function($message) use ($user)
+            {
+                $message->to($user->email, $user->info->first_name . ' ' . $user->info->last_name)->subject('New seminar has been added!');
+            });
+        }
     }
 
     /**
