@@ -4,7 +4,7 @@ class ReportsController extends \BaseController
 {
     public function index()
     {
-        $seminars = \Seminar::all();
+        $seminars = \Seminar::where('end_at', '<', new \DateTime('today'))->get();
 
         if (\Request::ajax()) {
             $results = [];

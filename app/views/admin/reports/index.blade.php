@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-    <h2>Seminars Management <a href="/admin/seminars/create" class="btn btn-primary">Add New</a></h2>
+    <h2>Reports</h2>
     <table class="table table-striped table-bordered" cellspacing="0" width="100%" id="example">
         <thead>
         <tr>
