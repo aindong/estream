@@ -8,7 +8,7 @@ class UserEventHandler
 
     public function onSeminarRegister(array $event)
     {
-        Mail::send('emails.seminarRegister', $event[0], function($message) use ($event)
+        Mail::send('emails.seminarRegister', $event, function($message) use ($event)
         {
             $message->to(\Auth::getUser()->email, \Auth::getUser()->info->first_name . ' ' . \Auth::getUser()->info->last_name )->subject('Registered on a seminar!');
         });
