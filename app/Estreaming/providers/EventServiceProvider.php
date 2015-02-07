@@ -10,6 +10,8 @@ class EventServiceProvider extends ServiceProvider {
      */
     public function register()
     {
+        // register the event
+        a
         $this->app->events->subscribe(new UserEventHandler);
     }
 
