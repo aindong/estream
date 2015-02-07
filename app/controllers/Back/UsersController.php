@@ -84,6 +84,7 @@ class UsersController extends \BaseController
         $userInfo->middle_name           = $data['middle_name'];
         $userInfo->membership            = $data['membership'];
         $userInfo->membership_expire_at  = date('Y-m-d', strtotime($data['membership_expire_at']));
+        $userInfo->contactnumber         = $data['contactnumber'];
         $userInfo->save();
 
         // \AuditTrail::create([

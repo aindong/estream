@@ -61,10 +61,14 @@
                                             <input type="text" placeholder="Last Name" class="input-block-level" name="last_name">
                                         </div>
                                     </div>
+                                    <label>Mobile Number *</label>
+                                    <input type="text" placeholder="Enter Mobile Number" class="input-block-level" name="contactnumber" required="required">
+
                                     <label>Email Address</label>
-                                    <input type="text" placeholder="Enter your E-mail ID" class="input-block-level" name="email">
+                                    <input type="text" placeholder="Enter your E-mail ID" class="input-block-level" name="email" required="required">
                                     <label>Password</label>
                                     <input type="password" placeholder="Enter Password" class="input-block-level" name="password">
+
                                     <button type="submit" class="btn-style">Sign Up</button>
                                 </fieldset>
                             </div>

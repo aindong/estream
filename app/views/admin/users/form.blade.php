@@ -30,6 +30,11 @@
 </div>
 
 <div class="form-group">
+    {{ Form::label('contactnumber', 'Mobile Number *', ['class' => 'form-label']) }}
+    {{ Form::text('contactnumber', null, ['class' => 'form-control', 'required' => 'required']) }}
+</div>
+
+<div class="form-group">
     {{ Form::label('membership', 'Membership *', ['class' => 'form-label']) }}
     {{ Form::select('membership', ['regular' => 'Regular', 'member' => 'Member'], null, ['class' => 'form-control', 'required']) }}
 </div>

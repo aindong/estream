@@ -6,23 +6,23 @@ class UserEventHandler
 {
 
 
-    public function onSeminarRegister($event)
+    public function onSeminarRegister(array $event)
     {
-        Mail::send('emails.seminarRegister', $event, function($message) use ($event)
+        Mail::send('emails.seminarRegister', $event[0], function($message) use ($event)
         {
             $message->to(\Auth::getUser()->email, \Auth::getUser()->info->first_name . ' ' . \Auth::getUser()->info->last_name )->subject('Registered on a seminar!');
         });
     }
 
-    public function onRegister($event)
+    public function onRegister(array $event)
     {
         Mail::send('emails.welcome', $event, function($message) use ($event)
         {
-            $message->to($event->email, $event->user->info->first_name . ' ' . $event->user->info->last_name)->subject('Welcome!');
+            $message->to($event['user']['email'], $event['user']['first_name'] . ' ' . $event['user']['last_name'])->subject('Welcome!');
         });
     }
 
-    public function onNewSeminar($event)
+    public function onNewSeminar(array $event)
     {
 
     }
@@ -35,8 +35,8 @@ class UserEventHandler
      */
     public function subscribe($events)
     {
-        $events->listen('user.seminar.register', 'UserEventHandler@onSeminarRegister');
-        $events->listen('user.register', 'UserEventHandler@onRegister');
-        $events->listen('seminar.created', 'UserEventHandler@onNewSeminar');
+        $events->listen('user.seminar.register', 'Estreaming\Events\UserEventHandler@onSeminarRegister');
+        $events->listen('user.register', 'Estreaming\Events\UserEventHandler@onRegister');
+        $events->listen('seminar.created', 'Estreaming\Events\UserEventHandler@onNewSeminar');
     }
 }

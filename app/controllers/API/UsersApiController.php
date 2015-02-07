@@ -110,9 +110,10 @@ class UsersApiController extends BaseController
         $user->save();
 
         $userInfo = new UsersInfo();
-        $userInfo->user_id    = $user->id;
-        $userInfo->first_name = $data['first_name'];
-        $userInfo->last_name  = $data['last_name'];
+        $userInfo->user_id          = $user->id;
+        $userInfo->first_name       = $data['first_name'];
+        $userInfo->last_name        = $data['last_name'];
+        $userInfo->contactnumber    = $data['contactnumber'];
         $userInfo->save();
 
         $message = [
