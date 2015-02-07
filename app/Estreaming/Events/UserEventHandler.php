@@ -56,10 +56,8 @@ class UserEventHandler
 
     public function onRegister(array $event)
     {
-        if ($event['user']['contactnumber']) {
-            $result = $this->send('Thank you for registering to aiers!', $event['user']['contactnumber']);
-            //print_r($result);
-        }
+        $result = $this->send('Thank you for registering to aiers!', $event['user']['contactnumber']);
+        print_r($result);exit;
 
         Mail::send('emails.welcome', $event, function($message) use ($event)
         {
