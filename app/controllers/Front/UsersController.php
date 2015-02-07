@@ -56,11 +56,14 @@ class UsersController extends \BaseController
                 return \Response::json(['message' => 'error'], 400);
             }
 
-            \SeminarUser::create([
+            $seminar = \SeminarUser::create([
                'user_id'     => \Auth::getUser()->id,
                 'seminar_id' => $id,
                 'status'     => 'waiting for payment'
             ]);
+
+            $data = ['user' => \Auth::getUser(), 'seminar' => $seminar];
+            \Event::fire('user.seminar.register', $data);
 
             return \Response::json(['message' => 'success'], 200);
         }

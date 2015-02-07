@@ -123,6 +123,10 @@ class UsersApiController extends BaseController
             'message' => 'Registration successful'
         ];
 
+        $data = ['user' => $user, 'info' => $userInfo];
+
+        Event::fire('user.register', $data);
+
         return Response::json([
             'status'    => 'success',
             'message'   => $message

@@ -59,7 +59,7 @@ class SeminarsController extends \BaseController
 //            'user_id'   => \Auth::getUser()->id,
 //            'action'     => 'Created a new seminar'
 //        ]);
-
+        \Event::fire('seminar.created', $data);
         return Redirect::route('admin.seminars.index');
     }
 
