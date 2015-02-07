@@ -61,7 +61,7 @@ Route::group(['namespace' => 'Controllers\Back', 'before' => 'auth|hasRole:admin
 	// Reports
 	Route::resource('/admin/reports', 'ReportsController');
 
-	Route::put('/admin/updateStatus/{id}/{status}', ['uses' => 'SeminarsController']);
+	Route::get('/admin/updateStatus/{id}/{status}', ['uses' => 'SeminarsController']);
 });
 
 /**
