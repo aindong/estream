@@ -42,11 +42,7 @@ class UserEventHandler
 
     public function onSeminarRegister(array $event)
     {
-        if (\Auth::getUser()->info->contactnumber) {
-
-            $result = $this->send('Thank you for registering into a seminar!', \Auth::getUser()->info->contactnumber);
-            //print_r($result);
-        }
+        $result = $this->send('Thank you for registering into a seminar!', \Auth::getUser()->info->contactnumber);
 
         Mail::send('emails.seminarRegister', $event, function($message) use ($event)
         {
@@ -57,7 +53,6 @@ class UserEventHandler
     public function onRegister(array $event)
     {
         $result = $this->send('Thank you for registering to aiers!', $event['user']['contactnumber']);
-        print_r($result);exit;
 
         Mail::send('emails.welcome', $event, function($message) use ($event)
         {
@@ -70,10 +65,7 @@ class UserEventHandler
 
         $users = \User::all();
         foreach ($users as $user) {
-            if ($user->info->contactnumber) {
-                $result = $this->send('New seminar has been added on aiers!', $user->info->contactnumber);
-                //print_r($result);
-            }
+            $result = $this->send('New seminar has been added on aiers!', $user->info->contactnumber);
 
             Mail::send('emails.newSeminar', $event, function($message) use ($user)
             {
