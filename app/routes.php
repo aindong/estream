@@ -58,6 +58,8 @@ Route::group(['namespace' => 'Controllers\Back', 'before' => 'auth|hasRole:admin
 	Route::resource('/admin/faqs', 'FaqsController');
 	// Logs
 	Route::resource('/admin/logs', 'LogsController');
+	// Reports
+	Route::resource('/admin/reports', 'ReportsController');
 });
 
 /**
