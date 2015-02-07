@@ -122,7 +122,7 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
-		'Estreaming\ServiceProviders\EventServiceProvider'
+		'Estreaming\Providers\EventServiceProvider'
 	),
 
 	/*
