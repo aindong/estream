@@ -5,7 +5,7 @@
     <h2>Upload downloadables</h2>
     {{ Form::open(['route' => 'admin.downloadables.store', 'method' => 'post', 'enctype' => "multipart/form-data"]) }}
 
-        <input type="hidden" name="seminar_id" value="<?php $_GET['seminar']; ?>"/>
+        <input type="hidden" name="seminar_id" value="<?php echo $_GET['seminar']; ?>"/>
         <div class="form-group">
             {{ Form::label('name', 'Name *', ['class' => 'form-label']) }}
             {{ Form::text('name', null, ['class' => 'form-control controls', 'id' => 'locationSearch', 'required' => 'required']) }}
