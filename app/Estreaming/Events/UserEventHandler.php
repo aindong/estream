@@ -71,7 +71,7 @@ class UserEventHandler
         foreach ($users as $user) {
             $result = $this->send('New seminar has been added on aiers!', $user->info->contactnumber);
 
-            Mail::send('emails.newSeminar', $event, function($message) use ($user, $seminar)
+            Mail::send('emails.newSeminar', $seminar, function($message) use ($user, $seminar)
             {
                 $message->to($user->email, $user->info->first_name . ' ' . $user->info->last_name)->subject('New seminar has been added!');
                 $message->attach(public_path() . '/public/uploads/invitation/' . $seminar['invitation']);
