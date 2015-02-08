@@ -5,8 +5,8 @@
     {{ Form::open(['route' => 'admin.downloadables.store', 'method' => 'post', 'enctype' => "multipart/form-data"]) }}
 
         <div class="form-group">
-            {{ Form::label('location', 'Location *', ['class' => 'form-label']) }}
-            {{ Form::text('location', null, ['class' => 'form-control controls', 'placeholder' => 'Type a location here and press enter', 'id' => 'locationSearch', 'required' => 'required']) }}
+            {{ Form::label('name', 'Name *', ['class' => 'form-label']) }}
+            {{ Form::text('name', null, ['class' => 'form-control controls', 'placeholder' => 'Type a location here and press enter', 'id' => 'locationSearch', 'required' => 'required']) }}
         </div>
 
         <div class="form-group">
