@@ -80,8 +80,8 @@ class SeminarsController extends \BaseController
 //            'user_id'   => \Auth::getUser()->id,
 //            'action'     => 'Created a new seminar'
 //        ]);
-
-        \Event::fire('seminar.created', $seminar->id);
+        $payload = [$seminar->id];
+        \Event::fire('seminar.created', $payload);
 
         return Redirect::route('admin.seminars.index');
     }
