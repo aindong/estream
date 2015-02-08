@@ -40,6 +40,12 @@ Route::group(['namespace' => 'Controllers\Front'], function() {
 Route::get('/webcast', ['as' => 'webcast.index', 'prefix' => 'admin', 'before' => 'auth|hasRole:admin', 'uses' => 'WebcastsController@index']);
 Route::get('/webcast/client', ['as' => 'webcast.client', 'uses' => 'WebcastsController@client']);
 
+Route::get('/admin/downloadables', ['as' => 'downloadables.index', 'uses' => 'DownloadablesController@index']);
+Route::get('/admin/downloadables/{id}', ['as' => 'downloadables.show', 'uses' => 'DownloadablesController@download']);
+Route::get('/admin/downloadables/create', ['as' => 'downloadables.create', 'before' => 'auth|hasRole:admin', 'uses' => 'DownloadablesController@create']);
+Route::post('/admin/downloadables', ['as' => 'downloadables.store', 'before' => 'auth|hasRole:admin', 'uses' => 'DownloadablesController@create']);
+Route::delete('/admin/downloadables', ['as' => 'downloadables.store', 'before' => 'auth|hasRole:admin', 'uses' => 'DownloadablesController@destroy']);
+
 /**
  * Backpage routes
  */
