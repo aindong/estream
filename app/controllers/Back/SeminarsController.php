@@ -81,7 +81,7 @@ class SeminarsController extends \BaseController
 //            'action'     => 'Created a new seminar'
 //        ]);
         $payload = ["id" => $seminar->id];
-        \Event::fire('seminar.created', $payload);
+        \Event::fire('seminar.created', array($payload));
 
         return Redirect::route('admin.seminars.index');
     }
