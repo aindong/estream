@@ -38,7 +38,7 @@ class DownloadablesController extends BaseController
         $downloadable->filename = $filename;
         $downloadable->save();
 
-        return \Redirect::to('/admin/seminars/'.$id);
+        return \Redirect::to('/admin/seminars/'.Input::get('seminar_id'));
     }
 
     public function destroy($id)
