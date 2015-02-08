@@ -22,7 +22,7 @@ class DownloadablesController extends BaseController
     public function store()
     {
         if (!Input::hasFile('file')) {
-            return \Redirect::to('/admin/seminars/'.Input::get('seminar_id'));
+            echo "File upload failed";
         }
 
         $destination = public_path() . '/public/uploads/downloadables/';
