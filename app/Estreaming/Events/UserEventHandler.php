@@ -62,6 +62,10 @@ class UserEventHandler
 
     public function onNewSeminar(array $event)
     {
+        $seminar = \Seminar::find($event);
+        $seminar = $seminar->toArray();
+
+        print_r($seminar);exit;
 
         $users = \User::all();
         foreach ($users as $user) {
