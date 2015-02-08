@@ -60,7 +60,7 @@ class UserEventHandler
         });
     }
 
-    public function onNewSeminar(array $event)
+    public function onNewSeminar($event)
     {
         $seminar = \Seminar::find($event);
         $seminar = $seminar->toArray();
