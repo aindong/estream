@@ -1,6 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
+    @if(isset($_GET['seminar']))
     <h2>Upload downloadables</h2>
     {{ Form::open(['route' => 'admin.downloadables.store', 'method' => 'post', 'enctype' => "multipart/form-data"]) }}
 
@@ -19,6 +20,9 @@
         <button type="submit" class="btn btn-primary">Submit</button>
 
     {{ Form::close() }}
+    @else
+        <p>No action in here</p>
+    @endif
 @stop
 
 @section('page-script')
