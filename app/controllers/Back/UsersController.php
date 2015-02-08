@@ -104,6 +104,6 @@ class UsersController extends \BaseController
         //     'action'     => 'Deleted an article with id of '. $id
         // ]);
 
-        return Redirect::route('admin.articles.index');
+        return Redirect::route('admin.users.index');
     }
 }
