@@ -6,7 +6,7 @@
 
         <div class="form-group">
             {{ Form::label('name', 'Name *', ['class' => 'form-label']) }}
-            {{ Form::text('name', null, ['class' => 'form-control controls', 'placeholder' => 'Type a location here and press enter', 'id' => 'locationSearch', 'required' => 'required']) }}
+            {{ Form::text('name', null, ['class' => 'form-control controls', 'id' => 'locationSearch', 'required' => 'required']) }}
         </div>
 
         <div class="form-group">
