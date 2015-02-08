@@ -95,8 +95,15 @@ class UsersController extends \BaseController
         return Redirect::route('admin.users.index');
     }
 
-    public function destroy()
+    public function destroy($id)
     {
+        User::destroy($id);
 
+        // \AuditTrail::create([
+        //     'user_id'   => Auth::getUser()->id,
+        //     'action'     => 'Deleted an article with id of '. $id
+        // ]);
+
+        return Redirect::route('admin.articles.index');
     }
 }

@@ -25,7 +25,12 @@
                         N/A
                       @endif
                     </td>
-                    <td><a href="/admin/users/{{ $user->id }}/edit" class="btn btn-warning">Update</a> <a href="#" class="btn btn-danger">Delete</a></td>
+                    <td><a href="/admin/users/{{ $user->id }}/edit" class="btn btn-warning">Update</a>
+                        {{ Form::open(array('url' => 'admin/users/' . $users->id, 'class' => 'deleteItem')) }}
+                        {{ Form::hidden('_method', 'DELETE') }}
+                        {{ Form::submit('Delete', array('class' => 'btn btn-danger')) }}
+                        {{ Form::close() }}
+                    </td>
                 </tr>
             @endforeach
         </tbody>
@@ -36,6 +41,12 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('#example').dataTable();
+        });
+
+        $('.deleteItem').on('submit', function(e) {
+            if(!confirm('Are you sure to delete this item?')) {
+                return false;
+            }
         });
     </script>
 @stop

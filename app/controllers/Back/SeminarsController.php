@@ -124,6 +124,13 @@ class SeminarsController extends \BaseController
      */
     public function destroy($id)
     {
+        Seminar::destroy($id);
 
+        // \AuditTrail::create([
+        //     'user_id'   => Auth::getUser()->id,
+        //     'action'     => 'Deleted an article with id of '. $id
+        // ]);
+
+        return \Redirect::route('admin.articles.index');
     }
 }
