@@ -44,7 +44,7 @@ Route::get('/admin/downloadables', ['as' => 'downloadables.index', 'uses' => 'Do
 Route::get('/admin/downloadables/{id}', ['as' => 'downloadables.show', 'uses' => 'DownloadablesController@download']);
 Route::get('/admin/downloadables/create', ['as' => 'downloadables.create', 'before' => 'auth|hasRole:admin', 'uses' => 'DownloadablesController@create']);
 Route::post('/admin/downloadables', ['as' => 'downloadables.store', 'before' => 'auth|hasRole:admin', 'uses' => 'DownloadablesController@create']);
-Route::delete('/admin/downloadables', ['as' => 'downloadables.store', 'before' => 'auth|hasRole:admin', 'uses' => 'DownloadablesController@destroy']);
+Route::delete('/admin/downloadables', ['as' => 'downloadables.delete', 'before' => 'auth|hasRole:admin', 'uses' => 'DownloadablesController@destroy']);
 
 /**
  * Backpage routes

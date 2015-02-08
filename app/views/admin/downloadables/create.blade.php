@@ -2,7 +2,7 @@
 
 @section('content')
     <h2>Upload downloadables</h2>
-    {{ Form::open(['route' => 'admin.dpwnloadables.store', 'method' => 'post', 'enctype' => "multipart/form-data"]) }}
+    {{ Form::open(['route' => 'admin.downloadables.store', 'method' => 'post', 'enctype' => "multipart/form-data"]) }}
 
         <div class="form-group">
             {{ Form::label('location', 'Location *', ['class' => 'form-label']) }}
