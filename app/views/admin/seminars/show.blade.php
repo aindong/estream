@@ -5,7 +5,7 @@
     <p style="color: #000; font-size: 12px;">{{ date('d M, Y', strtotime($seminar->start_at)) }} - {{ date('d M, Y', strtotime($seminar->end_at)) }}</p>
     <p style="color: #000; font-size: 15px;">{{ substr($seminar->description, 0, 250) }} ...</p>
 
-    <h1>Downloadables <a href="/admin/downloadables/create" class="btn btn-primary">Add</a></h1>
+    <h1>Downloadables <a href="/admin/downloadables/create?seminar={{ $seminar->id }}" class="btn btn-primary">Add</a></h1>
     <table class="table table-striped table-bordered" cellspacing="0" width="100%" id="example">
         <thead>
         <tr>

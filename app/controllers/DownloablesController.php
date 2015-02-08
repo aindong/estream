@@ -19,7 +19,7 @@ class DownloadablesController extends BaseController
         return View::make('admin.downloadables.create');
     }
 
-    public function store($id)
+    public function store()
     {
         if (!Input::hasFile('invitation')) {
             return \Redirect::back();
@@ -33,12 +33,12 @@ class DownloadablesController extends BaseController
         $file->invitation = $filename;
 
         $downloadable = new \Downloadable();
-        $downloadable->seminar_id = $id;
+        $downloadable->seminar_id = Input::get('seminar_id');
         $downloadable->name = Input::get('name');
         $downloadable->filename = $filename;
         $downloadable->save();
 
-        return View::make('admin.downloadables.create');
+        return \Redirect::to('/admin/seminars/'.$id);
     }
 
     public function destroy($id)
