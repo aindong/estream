@@ -21,7 +21,7 @@ class DownloadablesController extends BaseController
 
     public function store()
     {
-        if (!Input::hasFile('invitation')) {
+        if (!Input::hasFile('file')) {
             return \Redirect::back();
         }
 
