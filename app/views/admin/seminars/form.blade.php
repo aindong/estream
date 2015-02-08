@@ -27,6 +27,11 @@
 </div>
 
 <div class="form-group">
+    {{ Form::label('invitation', 'Invitation Letter *', ['class' => 'form-label']) }}
+    {{ Form::file('invitation', null, ['class' => 'form-control', 'required' => 'required']) }}
+</div>
+
+<div class="form-group">
     {{ Form::label('location', 'Location *', ['class' => 'form-label']) }}
     {{ Form::text('location', null, ['class' => 'form-control controls', 'placeholder' => 'Type a location here and press enter', 'id' => 'locationSearch', 'required' => 'required']) }}
 </div>
