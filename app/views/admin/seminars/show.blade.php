@@ -29,7 +29,7 @@
     </table>
 
     <h1>Requesting to attend</h1>
-    <table class="table table-striped table-bordered" cellspacing="0" width="100%" id="example">
+    <table class="table table-striped table-bordered" cellspacing="0" width="100%" id="example2">
         <thead>
         <tr>
             <th>Name</th>
@@ -55,6 +55,10 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('#example').dataTable();
+        });
+
+        $(document).ready(function() {
+            $('#example2').dataTable();
         });
     </script>
 @stop
