@@ -57,7 +57,7 @@
 
 @section('content')
     <h2>Create a new seminar</h2>
-    {{ Form::open(['route' => 'admin.seminars.store', 'method' => 'post']) }}
+    {{ Form::open(['route' => 'admin.seminars.store', 'method' => 'post', 'enctype' => "multipart/form-data"]) }}
         @include('admin.seminars.form')
     {{ Form::close() }}
 @stop
