@@ -30,11 +30,8 @@ class WebcastsController extends BaseController
     public function webcastStatus($id, $status)
     {
         $request = \WebcastRequest::find($id);
-
-        if (!is_null($request)) {
-            $request->status = $status;
-            $request->save();
-        }
+        $request->status = $status;
+        $request->save();
 
         return \Redirect::back();
     }
