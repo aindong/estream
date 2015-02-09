@@ -31,7 +31,7 @@
     <!--BANNER START-->
     <div class="page-heading">
         <div class="container">
-            <h2>Webcast Seminat Title here</h2>
+            <h2>{{ $seminar->title }}</h2>
             <p>Watch webcast here</p>
         </div>
     </div>
@@ -46,9 +46,9 @@
                 <div class="span2">
                     <input type="hidden" id="broadcast-name" value="testroom">
                     @if(Auth::getUser()->role_id == 2)
-                    <button id="setup-new-broadcast" class="setup btn btn-primary">Setup New Broadcast</button>
+                    <button id="setup-new-broadcast" class="setup btn btn-primary">Start Broadcasting</button>
                     @else
-                    <button class="join btn btn-primary" data-sessionid="testroom">View His Webcam</button>
+                    <button class="join btn btn-primary" data-sessionid="testroom">Join the webcast</button>
                     @endif
                 </div>
 
