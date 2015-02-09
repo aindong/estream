@@ -17,7 +17,7 @@ class WebcastsController extends BaseController
         $seminar = \Seminar::find($id);
 
         $user = \Auth::getUser();
-        $request = \WebcastRequest::where('user_id', '=', $user->id)->where('seminar_id', '=', $id)->get();
+        $request = \WebcastRequest::where('user_id', '=', $user->id)->where('seminar_id', '=', $id)->first();
 
         if ($request->status == 'disapproved') {
             return \Redirect::back();
