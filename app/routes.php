@@ -38,8 +38,10 @@ Route::group(['namespace' => 'Controllers\Front'], function() {
 });
 
 Route::get('/webcast', ['as' => 'webcast.index', 'prefix' => 'admin', 'before' => 'auth|hasRole:admin', 'uses' => 'WebcastsController@index']);
+Route::get('/admin/webcast/{id}/{status}', ['as' => 'webcast.status', 'before' => 'auth|hasRole:admin', 'uses' => 'WebcastsController@webcastStatus']);
 Route::get('/webcast/client', ['as' => 'webcast.client', 'uses' => 'WebcastsController@client']);
 Route::get('/webcast/seminar/{id}', ['before' => 'auth', 'uses' => 'WebcastsController@seminar']);
+
 
 Route::get('/admin/downloadables', ['as' => 'downloadables.index', 'uses' => 'DownloadablesController@index']);
 Route::get('/downloadables/{id}', ['as' => 'downloadables.show', 'uses' => 'DownloadablesController@download']);

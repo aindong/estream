@@ -6,4 +6,9 @@ class WebcastRequest extends Eloquent
 
     protected $table = 'seminars_webcast';
 
+    public function user()
+    {
+        return $this->belongsTo('User', 'user_id');
+    }
+
 }

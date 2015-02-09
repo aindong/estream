@@ -61,12 +61,12 @@
         </tr>
         </thead>
         <tbody>
-        @foreach($seminar->attendees as $attendant)
+        @foreach($webcastRequests as $request)
             <tr>
-                <td>{{{ $attendant->user->info->last_name }}}, {{{ $attendant->user->info->first_name }}} {{{ $attendant->user->info->middle_name }}}</td>
-                <td>{{{ $attendant->user->email }}}</td>
-                <td>{{{ ucfirst($attendant->status) }}}</td>
-                <td><a href="/admin/updateStatus/{{ $attendant->user_id }}/paid" class="btn btn-primary">Paid</a> <a href="/admin/updateStatus/{{ $attendant->user_id }}/waiting for payment" class="btn btn-danger">Unpaid</a></td>
+                <td>{{{ $request->user->info->last_name }}}, {{{ $request->user->info->first_name }}} {{{ $request->user->info->middle_name }}}</td>
+                <td>{{{ $request->user->email }}}</td>
+                <td>{{{ ucfirst($request->status) }}}</td>
+                <td><a href="/admin/webcast/{{ $request->user_id }}/approve" class="btn btn-primary">Approve</a> <a href="/admin/webcast/{{ $request->user_id }}/disapproved" class="btn btn-danger">Disapprove</a></td>
             </tr>
         @endforeach
         </tbody>
