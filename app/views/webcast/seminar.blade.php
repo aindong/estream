@@ -11,6 +11,7 @@
             transition: all 1s ease;
             vertical-align: top;
             width: 100%;
+            height: 450px;
         }
 
         #video-wrapper {
