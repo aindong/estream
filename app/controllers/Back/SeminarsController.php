@@ -99,7 +99,11 @@ class SeminarsController extends \BaseController
     {
         $downloadables = \Downloadable::where('seminar_id', '=', $id)->get();
         $seminar = Seminar::find($id);
-        return View::make('admin.seminars.show', compact('seminar'))->with('downloadables', $downloadables);
+        $webcastRequests = \WebcastRequest::where('seminar_id', '=', $id)->get();
+
+        return View::make('admin.seminars.show', compact('seminar'))
+            ->with('downloadables', $downloadables)
+            ->with('webcastRequests', $webcastRequests);
     }
 
     public function updateStatus($id, $status)
