@@ -9,8 +9,15 @@ class DownloadablesController extends BaseController
 
     public function download($id)
     {
+        $download = \Downloadable::find($id);
+        $destination = public_path() . '/public/uploads/downloadables/';
 
-        return View::make('admin.downloadables.create');
+        $file = $destination . $download->filename;
+        if (empty($download)) {
+            return \Redirect::back();
+        }
+
+        return \Response::download();
     }
 
     public function create()
