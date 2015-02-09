@@ -122,7 +122,8 @@ class HomeController extends \BaseController {
 	public function seminarSingle($id)
 	{
 		$seminar = Seminar::find($id);
-		$downloadables = \Downloadable::where('seminar_id', '='. $id)->get();
+		$downloadables = \Downloadable::where('seminar_id', '=', $id)->get();
+
 		print_r($downloadables);exit;
       	return View::make('front.seminars-single', compact('seminar'))
 			->with('downloadables', $downloadables);
