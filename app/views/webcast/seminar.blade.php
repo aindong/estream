@@ -44,7 +44,7 @@
             <div class="row">
 
                 <div class="span2">
-                    <input type="hidden" id="broadcast-name" value="testroom">
+                    <input type="hidden" id="broadcast-name" value="{{ $seminar->id }}">
                     @if(Auth::getUser()->role_id == 2)
                     <button id="setup-new-broadcast" class="setup btn btn-primary">Start Broadcasting</button>
                     @else
