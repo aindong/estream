@@ -41,7 +41,7 @@ Route::get('/webcast', ['as' => 'webcast.index', 'prefix' => 'admin', 'before' =
 Route::get('/webcast/client', ['as' => 'webcast.client', 'uses' => 'WebcastsController@client']);
 
 Route::get('/admin/downloadables', ['as' => 'downloadables.index', 'uses' => 'DownloadablesController@index']);
-Route::get('/admin/downloadables/{id}', ['as' => 'downloadables.show', 'uses' => 'DownloadablesController@download']);
+Route::get('/downloadables/{id}', ['as' => 'downloadables.show', 'uses' => 'DownloadablesController@download']);
 Route::get('/admin/downloadables/create', ['as' => 'admin.downloadables.create', 'before' => 'auth|hasRole:admin', 'uses' => 'DownloadablesController@create']);
 Route::post('/admin/downloadables', ['as' => 'admin.downloadables.store', 'before' => 'auth|hasRole:admin', 'uses' => 'DownloadablesController@store']);
 Route::delete('/admin/downloadables', ['as' => 'admin.downloadables.delete', 'before' => 'auth|hasRole:admin', 'uses' => 'DownloadablesController@destroy']);
