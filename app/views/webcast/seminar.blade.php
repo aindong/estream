@@ -107,16 +107,18 @@
 
         // Join room
         var joinRoomButton = document.querySelector('.join');
-        joinRoomButton.onclick = function() {
-            this.disabled = true;
+        if (joinRoomButton) {
+            joinRoomButton.onclick = function() {
+                this.disabled = true;
 
-            var sessionid = this.getAttribute('data-sessionid');
-            session = sessions[sessionid];
+                var sessionid = this.getAttribute('data-sessionid');
+                session = sessions[sessionid];
 
-            if (!session) throw 'No such session exists.';
+                if (!session) throw 'No such session exists.';
 
-            connection.join(session);
-        };
+                connection.join(session);
+            };
+        }
 
         var sessions = {};
         connection.onNewSession = function(session) {
