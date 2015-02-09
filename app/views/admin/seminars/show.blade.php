@@ -17,7 +17,7 @@
         @foreach($downloadables as $downloadable)
             <tr>
                 <td>{{{ $downloadable->name }}}</td>
-                <td><a href="/admin/downloadables/{{ $downloadable->id }}/download" class="btn btn-primary">Download</a>
+                <td><a href="/downloadables/{{ $downloadable->id }}" class="btn btn-primary">Download</a>
                     {{ Form::open(array('url' => 'admin/downloadables/' . $downloadable->id, 'class' => 'deleteItem')) }}
                     {{ Form::hidden('_method', 'DELETE') }}
                     {{ Form::submit('Delete', array('class' => 'btn btn-danger')) }}

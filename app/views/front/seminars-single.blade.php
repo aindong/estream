@@ -119,7 +119,7 @@
                     @foreach($downloadables as $downloadable)
                         <tr>
                             <td>{{{ $downloadable->name }}}</td>
-                            <td><a href="/downloadables/{{ $downloadable->id }}/download" class="btn btn-primary">Download</a>
+                            <td><a href="downloadables/{{ $downloadable->id }}" class="btn btn-primary">Download</a>
                             </td>
                         </tr>
                     @endforeach
