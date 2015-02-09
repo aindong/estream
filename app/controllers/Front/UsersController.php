@@ -85,6 +85,6 @@ class UsersController extends \BaseController
         $requests = \WebcastRequest::where('user_id', '=', $user->id)->get();
 
         return View::make('user.seminar', compact('seminarUsers', 'user'))
-            ->with('requests', $request);
+            ->with('requests', $requests);
     }
 }
