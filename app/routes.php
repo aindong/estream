@@ -42,7 +42,7 @@ Route::get('/admin/webcast/{id}/{status}', ['as' => 'webcast.status', 'before' =
 Route::get('/webcast/client', ['as' => 'webcast.client', 'uses' => 'WebcastsController@client']);
 Route::get('/webcast/seminar/{id}', ['before' => 'auth', 'uses' => 'WebcastsController@seminar']);
 
-Route::get('/webcast/request/{id}/{seminar}', ['before' => 'auth', 'uses' => 'WebcastsController@request']);
+Route::post('/webcast/request/{id}/{seminar}', ['before' => 'auth', 'uses' => 'WebcastsController@request']);
 
 
 Route::get('/admin/downloadables', ['as' => 'downloadables.index', 'uses' => 'DownloadablesController@index']);

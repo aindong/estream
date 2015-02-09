@@ -52,8 +52,16 @@
                     @foreach($seminarUsers as $seminaruser)
                     <div class="profile-box editing">
                        <h1>{{ $seminaruser->seminar->title }}</h1>
-                       @if($seminaruser->status == "Paid")
-                          <a href="/webcast/request/{{ $user->id }}/{{ $seminaruser->seminar_id }}" class="btn-style">Request for Webcast</a>
+                       @if($seminaruser->status == "paid")
+                           @foreach($requests as $request)
+                                @if($seminaruser->seminar_id == $request->seminar_id)
+                                    @if($request->status == 'approved')
+                                        <a href="/webcast/seminar/{{ $seminaruser->seminar_id }}" class="btn-style">Go to webcast</a>
+                                    @else
+                                        <a data-href="/webcast/request/{{ $user->id }}/{{ $seminaruser->seminar_id }}" class="btn-style request">Request for Webcast</a>
+                                    @endif
+                                @endif
+                           @endforeach
                        @else
                           <a href="#" class="btn-style">Cancel</a>
                        @endif
@@ -68,4 +76,25 @@
         </div>
     </div>
     <!--CONTANT END-->
+@stop
+
+@section('page-script')
+    <script type="text/javascript">
+        $(function() {
+            var request = $('.request');
+            request.on('click', function(e) {
+                e.preventDefault();
+
+                var url = $(this).attr('data-href');
+                $.ajax({
+                    url: url,
+                    type: 'post',
+                    success: function(data) {
+                        console.log(data);
+                        location.reload();
+                    }
+                });
+            });
+        });
+    </script>
 @stop

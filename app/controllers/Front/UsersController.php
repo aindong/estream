@@ -80,7 +80,11 @@ class UsersController extends \BaseController
     public function seminars()
     {
         $user = Auth::getUser();
-        $seminarUsers = \SeminarUser::all();
-        return View::make('user.seminar', compact('seminarUsers', 'user'));
+        $seminarUsers = \SeminarUser::where('user_id', '=', $user->id)->get();
+
+        $requests = \WebcastRequest::where('user_id', '=', $user->id)->get();
+
+        return View::make('user.seminar', compact('seminarUsers', 'user'))
+            ->with('requests', $request);
     }
 }
