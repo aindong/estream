@@ -71,7 +71,7 @@
                                     ?>
 
                                     @if($seminarStatus == "paid")
-                                        <a href="#myModal" class="btn-style">Download Assets</a>
+                                        <a href="#myModal" role="button" data-toggle="modal" class="btn-style">Download Assets</a>
                                     @elseif($seminarStatus == 'waiting for payment')
                                         Waiting for your payment
                                     @else
