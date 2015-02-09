@@ -21,7 +21,7 @@
                         </div>
                         <div class="text">
                             <p>Welcome</p>
-                            <a href="edit-profile.html#" class="btn-style">{{ $user->info->first_name }}</a>
+                            <a href="edit-profile.html#" class="btn-style">{{ $user->info->first_name ." ". $user->info->last_name }}</a>
                             <div style="line-height: 0.4em;">
                                 @if(Auth::getUser()->info->membership == 'member')
                                     <p style="font-weight: bold;">Member</p>
@@ -56,14 +56,14 @@
                         <ul>
                             <li>
                                 <label>First Name</label>
-                                <input type="text" class="input-block-level"  placeholder="Enter your First Name">
+                                <input type="text" class="input-block-level"  placeholder="Enter your First Name" value="{{ $user->info->first_name }}">
                             </li>
                             <li>
                                 <label>Last Name</label>
-                                <input type="text" class="input-block-level" placeholder="Enter your Last Name">
+                                <input type="text" class="input-block-level" placeholder="Enter your Last Name" value="{{ $user->info->last_name }}">
                             </li>
                             <li>
-                                <label>Genter</label>
+                                <label>Gender</label>
                                 <select class="input-block-level">
                                     <option>Male</option>
                                     <option>Female</option>
@@ -75,11 +75,11 @@
                             </li>
                             <li>
                                 <label>Email</label>
-                                <input type="text" class="input-block-level"  placeholder="Enter your E-mail ID">
+                                <input type="text" class="input-block-level"  placeholder="Enter your E-mail ID" value="{{ $user->email }}">
                             </li>
                             <li>
-                                <label>Phone</label>
-                                <input type="text" class="input-block-level" placeholder="Enter your Phone Number">
+                                <label>Contact Number</label>
+                                <input type="text" class="input-block-level" placeholder="Enter your Contact Number" value="{{ $user->info->contactnumber }}">
                             </li>
                             <li class="fw">
                                 <label>Address</label>
