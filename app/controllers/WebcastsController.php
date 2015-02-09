@@ -11,4 +11,9 @@ class WebcastsController extends BaseController
     {
         return View::make('webcast.client');
     }
+
+    public function seminar($room, $id)
+    {
+        return View::make('webcast.seminar');
+    }
 }
