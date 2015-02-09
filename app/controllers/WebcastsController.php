@@ -42,14 +42,20 @@ class WebcastsController extends BaseController
     public function request($id, $seminar)
     {
         if (\Request::ajax()) {
+
+            $check = \WebcastRequest::where('user_id', '=', $id)->where('semiar_id', '=', $seminar)->get();
+            if(!empty($check)) {
+                return \Response::json(['status' => 'error', 'message' => 'request already made'], 400);
+            }
+
             $request = new \WebcastRequest();
             $request->user_id = $id;
             $request->seminar_id = $seminar;
-            $request->status = 'waiting for confirmation';
+            $request->status = 'waiting';
             $request->save();
 
             return \Response::json(['status' => 'success', 'data' => $request], 200);
         }
-        return \Response::json(['status' => 'error'], 400);
+        return \Response::json(['status' => 'error', 'message' => 'bad request'], 400);
     }
 }
