@@ -99,6 +99,7 @@ class SeminarsController extends \BaseController
     {
         $downloadables = \Downloadable::where('seminar_id', '=', $id)->get();
         $seminar = Seminar::find($id);
+
         return View::make('admin.seminars.show', compact('seminar'))->with('downloadables', $downloadables);
     }
 

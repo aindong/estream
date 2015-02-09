@@ -49,6 +49,28 @@
         @endforeach
         </tbody>
     </table>
+
+    <h1>Requesting for webcasts</h1>
+    <table class="table table-striped table-bordered" cellspacing="0" width="100%" id="example3">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach($seminar->attendees as $attendant)
+            <tr>
+                <td>{{{ $attendant->user->info->last_name }}}, {{{ $attendant->user->info->first_name }}} {{{ $attendant->user->info->middle_name }}}</td>
+                <td>{{{ $attendant->user->email }}}</td>
+                <td>{{{ ucfirst($attendant->status) }}}</td>
+                <td><a href="/admin/updateStatus/{{ $attendant->user_id }}/paid" class="btn btn-primary">Paid</a> <a href="/admin/updateStatus/{{ $attendant->user_id }}/waiting for payment" class="btn btn-danger">Unpaid</a></td>
+            </tr>
+        @endforeach
+        </tbody>
+    </table>
 @stop
 
 @section('page-script')
@@ -59,6 +81,10 @@
 
         $(document).ready(function() {
             $('#example2').dataTable();
+        });
+
+        $(document).ready(function() {
+            $('#example3').dataTable();
         });
     </script>
 @stop

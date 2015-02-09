@@ -15,6 +15,9 @@ class WebcastsController extends BaseController
     public function seminar($id)
     {
         $seminar = \Seminar::find($id);
+
+
+
         return View::make('webcast.seminar')
             ->with('seminar', $seminar);
     }
