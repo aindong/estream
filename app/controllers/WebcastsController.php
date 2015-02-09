@@ -33,4 +33,18 @@ class WebcastsController extends BaseController
 
         return \Redirect::back();
     }
+
+    public function request($id, $seminar)
+    {
+        if (\Request::ajax()) {
+            $request = new \WebcastRequest();
+            $request->user_id = $id;
+            $request->seminar_id = $seminar;
+            $request->status = 'waiting for confirmation';
+            $request->save();
+
+            return \Response::json(['status' => 'success', 'data' => $request], 200);
+        }
+        return \Response::json(['status' => 'error'], 400);
+    }
 }
