@@ -45,7 +45,7 @@ class WebcastsController extends BaseController
             $request = new \WebcastRequest();
             $request->user_id = $id;
             $request->seminar_id = $seminar;
-            $request->status = 'waiting for confirmation';
+            $request->status = 'waiting';
             $request->save();
 
             return \Response::json(['status' => 'success', 'data' => $request], 200);

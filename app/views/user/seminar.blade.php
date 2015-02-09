@@ -58,15 +58,17 @@
                                 @if($seminaruser->seminar_id == $request->seminar_id)
                                     @if($request->status == 'approved')
                                         <a href="/webcast/seminar/{{ $seminaruser->seminar_id }}" class="btn-style">Go to webcast</a>
+                                    @elseif($request->status == 'waiting')
+                                        <p>Waiting for webcast approval</p>
                                     @else
-                                        <a data-href="/webcast/request/{{ $user->id }}/{{ $seminaruser->seminar_id }}" class="btn-style request">Request for Webcast</a>
+                                        <p>Disapproved from accessing the webcast</p>
                                     @endif
                                     <?php $found = true; ?>
                                 @endif
                            @endforeach
 
                            @if(empty($requests) || $found == false)
-                               <a data-href="/webcast/request/{{ $user->id }}/{{ $seminaruser->seminar_id }}" class="btn-style request">Request for Webcast</a>
+                               <a href="#" data-href="/webcast/request/{{ $user->id }}/{{ $seminaruser->seminar_id }}" class="btn-style request">Request for Webcast</a>
                            @endif
                        @else
                           <a href="#" class="btn-style">Cancel</a>
