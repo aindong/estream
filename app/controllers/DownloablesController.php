@@ -17,7 +17,7 @@ class DownloadablesController extends BaseController
             return \Redirect::back();
         }
 
-        return \Response::download();
+        return \Response::download($file);
     }
 
     public function create()
