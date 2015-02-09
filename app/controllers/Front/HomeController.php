@@ -124,7 +124,7 @@ class HomeController extends \BaseController {
 		$seminar = Seminar::find($id);
 		$downloadables = \Downloadable::where('seminar_id', '=', $id)->get();
 
-		print_r($downloadables);exit;
+		//print_r($downloadables);exit;
       	return View::make('front.seminars-single', compact('seminar'))
 			->with('downloadables', $downloadables);
 	}
