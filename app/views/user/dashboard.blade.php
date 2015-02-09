@@ -21,7 +21,7 @@
                         </div>
                         <div class="text">
                             <p>Welcome</p>
-                            <a href="edit-profile.html#" class="btn-style">Marrie James</a>
+                            <a href="edit-profile.html#" class="btn-style">{{ $user->info->first_name }}</a>
                             <div style="line-height: 0.4em;">
                                 @if(Auth::getUser()->info->membership == 'member')
                                     <p style="font-weight: bold;">Member</p>
