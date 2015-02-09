@@ -53,6 +53,7 @@
                     <div class="profile-box editing">
                        <h1>{{ $seminaruser->seminar->title }}</h1>
                        @if($seminaruser->status == "paid")
+                           <?php $found = false; ?>
                            @foreach($requests as $request)
                                 @if($seminaruser->seminar_id == $request->seminar_id)
                                     @if($request->status == 'approved')
@@ -60,10 +61,13 @@
                                     @else
                                         <a data-href="/webcast/request/{{ $user->id }}/{{ $seminaruser->seminar_id }}" class="btn-style request">Request for Webcast</a>
                                     @endif
-                                @else
-                                    <a data-href="/webcast/request/{{ $user->id }}/{{ $seminaruser->seminar_id }}" class="btn-style request">Request for Webcast</a>
+                                    <?php $found = true; ?>
                                 @endif
                            @endforeach
+
+                           @if(empty($requests) || $found == false)
+                               <a data-href="/webcast/request/{{ $user->id }}/{{ $seminaruser->seminar_id }}" class="btn-style request">Request for Webcast</a>
+                           @endif
                        @else
                           <a href="#" class="btn-style">Cancel</a>
                        @endif
