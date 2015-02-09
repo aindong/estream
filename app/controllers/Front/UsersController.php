@@ -79,7 +79,8 @@ class UsersController extends \BaseController
 
     public function seminars()
     {
+        $user = Auth::getUser();
         $seminarUsers = \SeminarUser::all();
-        return View::make('user.seminar', compact('seminarUsers'));
+        return View::make('user.seminar', compact('seminarUsers', 'user'));
     }
 }

@@ -17,11 +17,11 @@
                     <!--PROFILE IMAGE START-->
                     <div class="profile-box profile-view">
                         <div class="thumb">
-                            <a href="edit-profile.html#"><img src="/images/profile-img.jpg" alt=""></a>
+                            <a href="#"><img src="/images/profile-img.jpg" alt=""></a>
                         </div>
                         <div class="text">
                             <p>Welcome</p>
-                            <a href="edit-profile.html#" class="btn-style">Marrie James</a>
+                            <a href="#" class="btn-style">{{ $user->info->first_name ." ". $user->info->last_name }}</a>
                             <div style="line-height: 0.4em;">
                                 @if(Auth::getUser()->info->membership == 'member')
                                     <p style="font-weight: bold;">Member</p>
@@ -41,7 +41,6 @@
                         <ul>
                             <li><a href="/users/dashboard">Edit Profile</a></li>
                             <li><a href="/users/seminars">My Seminars</a></li>
-                            <li><a href="/users/webcasts">Webcasts Request</a></li>
                         </ul>
                         <div class="logout">
                             <a href="/logout">Log Out</a>
@@ -53,6 +52,11 @@
                     @foreach($seminarUsers as $seminaruser)
                     <div class="profile-box editing">
                        <h1>{{ $seminaruser->seminar->title }}</h1>
+                       @if($seminaruser->status == "Paid")
+                          <a href="/webcast/request/{{ $user->id }}/{{ $seminaruser->seminar_id }}" class="btn-style">Request for Webcast</a>
+                       @else
+                          <a href="#" class="btn-style">Cancel</a>
+                       @endif
                        <p style="font-size: 12px"><i class="fa fa-calendar-o"></i> {{ date('d M, Y', strtotime($seminaruser->seminar->start_at)) }} - {{ date('d M, Y', strtotime($seminaruser->seminar->end_at)) }}</p>
                        <p><i>{{ $seminaruser->seminar->location }}</i></p>
                        <p>{{ substr($seminaruser->seminar->description, 0, 200) }} ...</p>
