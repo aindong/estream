@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-    <h1>{{ $seminar->title }} <a href="/webcast/seminar/{{ $seminar->id }}" class="btn-style">Go to webcast</a></h1>
+    <h1>{{ $seminar->title }} <a href="/webcast/seminar/{{ $seminar->id }}" class="btn-style btn btn-primary">Go to webcast</a></h1>
     <p style="color: #000; font-size: 12px;">{{ date('d M, Y', strtotime($seminar->start_at)) }} - {{ date('d M, Y', strtotime($seminar->end_at)) }}</p>
     <p style="color: #000; font-size: 15px;">{{ substr($seminar->description, 0, 250) }} ...</p>
 
