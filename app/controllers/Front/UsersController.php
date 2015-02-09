@@ -8,7 +8,8 @@ class UsersController extends \BaseController
 {
     public function index()
     {
-        return View::make('user.dashboard');
+        $user = Auth::getUser();
+        return View::make('user.dashboard', compact('user'));
     }
 
     /**
