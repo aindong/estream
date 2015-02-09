@@ -12,11 +12,16 @@
             vertical-align: top;
             width: 100%;
         }
+
         #video-wrapper {
             height: 450px;
             width: 100%;
             background-color: #000;
             margin-bottom: 50px;
+        }
+
+        #videos-container {
+            height: 450px;
         }
 
         .btn {
