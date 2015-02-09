@@ -60,6 +60,8 @@
                                     @else
                                         <a data-href="/webcast/request/{{ $user->id }}/{{ $seminaruser->seminar_id }}" class="btn-style request">Request for Webcast</a>
                                     @endif
+                                @else
+                                    <a data-href="/webcast/request/{{ $user->id }}/{{ $seminaruser->seminar_id }}" class="btn-style request">Request for Webcast</a>
                                 @endif
                            @endforeach
                        @else
