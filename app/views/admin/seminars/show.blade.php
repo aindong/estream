@@ -66,7 +66,7 @@
                 <td>{{{ $request->user->info->last_name }}}, {{{ $request->user->info->first_name }}} {{{ $request->user->info->middle_name }}}</td>
                 <td>{{{ $request->user->email }}}</td>
                 <td>{{{ ucfirst($request->status) }}}</td>
-                <td><a href="/admin/webcast/{{ $request->user_id }}/approved" class="btn btn-primary">Approve</a> <a href="/admin/webcast/{{ $request->user_id }}/disapproved" class="btn btn-danger">Disapprove</a></td>
+                <td><a href="/admin/webcast/{{ $request->id }}/approved" class="btn btn-primary">Approve</a> <a href="/admin/webcast/{{ $request->id }}/disapproved" class="btn btn-danger">Disapprove</a></td>
             </tr>
         @endforeach
         </tbody>
