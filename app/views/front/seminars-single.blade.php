@@ -71,7 +71,7 @@
                                     ?>
 
                                     @if($seminarStatus == "paid")
-                                        <a href="#" class="btn-style">Download Assets</a>
+                                        <a href="#myModal" class="btn-style">Download Assets</a>
                                     @elseif($seminarStatus == 'waiting for payment')
                                         Waiting for your payment
                                     @else
@@ -99,6 +99,38 @@
                 <!--EVENT LOCATION MAP END-->
             </div>
             <div class="clearfix"></div>
+
+            <!-- Modal -->
+            <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel">Downloadables</h3>
+              </div>
+              <div class="modal-body">
+
+                <table class="table table-striped table-bordered" cellspacing="0" width="100%" id="example">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach($downloadables as $downloadable)
+                        <tr>
+                            <td>{{{ $downloadable->name }}}</td>
+                            <td><a href="downloadables/{{ $downloadable->id }}" class="btn btn-primary">Download</a>
+                            </td>
+                        </tr>
+                    @endforeach
+                    </tbody>
+                </table>
+
+              </div>
+              <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+              </div>
+            </div>
 
         </div>
         <!--FOLLOW US SECTION START-->
