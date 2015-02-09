@@ -31,7 +31,7 @@ class WebcastsController extends BaseController
     {
         $request = \WebcastRequest::find($id);
 
-        if (!empty($request)) {
+        if (!is_null($request)) {
             $request->status = $status;
             $request->save();
         }

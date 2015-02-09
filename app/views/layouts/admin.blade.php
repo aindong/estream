@@ -32,7 +32,7 @@
             <li><a href="/admin/articles"><i class="glyphicon glyphicon-pencil"></i> News Articles</a></li>
             <li><a href="/admin/seminars"><i class="glyphicon glyphicon-calendar"></i> Seminars</a></li>
             <li><a href="/admin/medias"><i class="glyphicon glyphicon-picture"></i> Gallery</a></li>
-            <li><a href="/admin/webcasts"><i class="glyphicon glyphicon-headphones"></i> Webcasts Requests</a></li>
+            {{--<li><a href="/admin/webcasts"><i class="glyphicon glyphicon-headphones"></i> Webcasts Requests</a></li>--}}
             <li><a href="/admin/webcast"><i class="glyphicon glyphicon-headphones"></i> Webcasts</a></li>
             <li><a href="/admin/faqs"><i class="glyphicon glyphicon-th-list"></i> FAQ</a></li>
             <li><a href="/admin/logs"><i class="glyphicon glyphicon-bell"></i> Audit Trail</a></li>
