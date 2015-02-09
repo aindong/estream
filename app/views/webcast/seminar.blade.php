@@ -44,11 +44,11 @@
             <div class="row">
 
                 <div class="span2">
-                    <input type="hidden" id="broadcast-name" value="testing">
+                    <input type="hidden" id="broadcast-name" value="{{ $seminar->id . '_' . $seminar->title }}">
                     @if(Auth::getUser()->role_id == 2)
                     <button id="setup-new-broadcast" class="setup btn btn-primary">Start Broadcasting</button>
                     @else
-                    <button class="join btn btn-primary" data-sessionid="testroom">Join the webcast</button>
+                    <button class="join btn btn-primary" data-sessionid="{{ $seminar->id . '_' . $seminar->title }}">Join the webcast</button>
                     @endif
                 </div>
 
