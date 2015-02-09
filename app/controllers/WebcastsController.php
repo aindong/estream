@@ -43,8 +43,8 @@ class WebcastsController extends BaseController
     {
         if (\Request::ajax()) {
 
-            $check = \WebcastRequest::where('user_id', '=', $id)->where('seminar_id', '=', $seminar)->get();
-            if(!empty($check)) {
+            $check = \WebcastRequest::where('user_id', '=', $id)->where('seminar_id', '=', $seminar)->first();
+            if(!is_null($check)) {
                 return \Response::json(['status' => 'error', 'message' => 'request already made'], 400);
             }
 
