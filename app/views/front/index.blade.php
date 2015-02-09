@@ -87,7 +87,7 @@
 
                             {{--<div class="text">--}}
 
-                                {{--<h3><a href="index.html#">Expert teachers</a></h3>--}}
+                                {{--<h3><a href="#">Expert teachers</a></h3>--}}
 
                                 {{--<p>UI improvements were the one aspect of WordPress's future that everyone I spoke to seemed to agree on: </p>--}}
 
@@ -115,7 +115,7 @@
 
                             {{--<div class="text">--}}
 
-                                {{--<h3><a href="index.html#">Trusted certifications</a></h3>--}}
+                                {{--<h3><a href="#">Trusted certifications</a></h3>--}}
 
                                 {{--<p>UI improvements were the one aspect of WordPress's future that everyone I spoke to seemed to agree on: </p>--}}
 
@@ -143,7 +143,7 @@
 
                             {{--<div class="text">--}}
 
-                                {{--<h3><a href="index.html#">Start Learning</a></h3>--}}
+                                {{--<h3><a href="#">Start Learning</a></h3>--}}
 
                                 {{--<p>UI improvements were the one aspect of WordPress's future that everyone I spoke to seemed to agree on: </p>--}}
 
@@ -203,7 +203,7 @@
 
                         {{--<div class="thumb">--}}
 
-                            {{--<a href="index.html#"><img src="images/course1.jpg" alt=""></a>--}}
+                            {{--<a href="#"><img src="images/course1.jpg" alt=""></a>--}}
 
                             {{--<div class="price"><span>$</span>9</div>--}}
 
@@ -233,9 +233,9 @@
 
                             {{--<div class="course-detail-btn">--}}
 
-                                {{--<a href="index.html#">Subscribe</a>--}}
+                                {{--<a href="#">Subscribe</a>--}}
 
-                                {{--<a href="index.html#">Detail</a>--}}
+                                {{--<a href="#">Detail</a>--}}
 
                             {{--</div>--}}
 
@@ -251,7 +251,7 @@
 
                         {{--<div class="thumb">--}}
 
-                            {{--<a href="index.html#"><img src="images/course2.jpg" alt=""></a>--}}
+                            {{--<a href="#"><img src="images/course2.jpg" alt=""></a>--}}
 
                             {{--<div class="price"><span>$</span>51</div>--}}
 
@@ -281,9 +281,9 @@
 
                             {{--<div class="course-detail-btn">--}}
 
-                                {{--<a href="index.html#">Subscribe</a>--}}
+                                {{--<a href="#">Subscribe</a>--}}
 
-                                {{--<a href="index.html#">Detail</a>--}}
+                                {{--<a href="#">Detail</a>--}}
 
                             {{--</div>--}}
 
@@ -299,7 +299,7 @@
 
                         {{--<div class="thumb">--}}
 
-                            {{--<a href="index.html#"><img src="images/course3.jpg" alt=""></a>--}}
+                            {{--<a href="#"><img src="images/course3.jpg" alt=""></a>--}}
 
                             {{--<div class="price"><span>$</span>20</div>--}}
 
@@ -329,9 +329,9 @@
 
                             {{--<div class="course-detail-btn">--}}
 
-                                {{--<a href="index.html#">Subscribe</a>--}}
+                                {{--<a href="#">Subscribe</a>--}}
 
-                                {{--<a href="index.html#">Detail</a>--}}
+                                {{--<a href="#">Detail</a>--}}
 
                             {{--</div>--}}
 
@@ -347,7 +347,7 @@
 
                         {{--<div class="thumb">--}}
 
-                            {{--<a href="index.html#"><img src="images/course4.jpg" alt=""></a>--}}
+                            {{--<a href="#"><img src="images/course4.jpg" alt=""></a>--}}
 
                             {{--<div class="price"><span>$</span>8</div>--}}
 
@@ -377,9 +377,9 @@
 
                             {{--<div class="course-detail-btn">--}}
 
-                                {{--<a href="index.html#">Subscribe</a>--}}
+                                {{--<a href="#">Subscribe</a>--}}
 
-                                {{--<a href="index.html#">Detail</a>--}}
+                                {{--<a href="#">Detail</a>--}}
 
                             {{--</div>--}}
 
@@ -395,7 +395,7 @@
 
                         {{--<div class="thumb">--}}
 
-                            {{--<a href="index.html#"><img src="images/course1.jpg" alt=""></a>--}}
+                            {{--<a href="#"><img src="images/course1.jpg" alt=""></a>--}}
 
                             {{--<div class="price"><span>$</span>15</div>--}}
 
@@ -425,9 +425,9 @@
 
                             {{--<div class="course-detail-btn">--}}
 
-                                {{--<a href="index.html#">Subscribe</a>--}}
+                                {{--<a href="#">Subscribe</a>--}}
 
-                                {{--<a href="index.html#">Detail</a>--}}
+                                {{--<a href="#">Detail</a>--}}
 
                             {{--</div>--}}
 
@@ -443,7 +443,7 @@
 
                         {{--<div class="thumb">--}}
 
-                            {{--<a href="index.html#"><img src="images/course2.jpg" alt=""></a>--}}
+                            {{--<a href="#"><img src="images/course2.jpg" alt=""></a>--}}
 
                             {{--<div class="price"><span>$</span>63</div>--}}
 
@@ -473,9 +473,9 @@
 
                             {{--<div class="course-detail-btn">--}}
 
-                                {{--<a href="index.html#">Subscribe</a>--}}
+                                {{--<a href="#">Subscribe</a>--}}
 
-                                {{--<a href="index.html#">Detail</a>--}}
+                                {{--<a href="#">Detail</a>--}}
 
                             {{--</div>--}}
 
@@ -491,7 +491,7 @@
 
                         {{--<div class="thumb">--}}
 
-                            {{--<a href="index.html#"><img src="images/course3.jpg" alt=""></a>--}}
+                            {{--<a href="#"><img src="images/course3.jpg" alt=""></a>--}}
 
                             {{--<div class="price"><span>$</span>19</div>--}}
 
@@ -521,9 +521,9 @@
 
                             {{--<div class="course-detail-btn">--}}
 
-                                {{--<a href="index.html#">Subscribe</a>--}}
+                                {{--<a href="#">Subscribe</a>--}}
 
-                                {{--<a href="index.html#">Detail</a>--}}
+                                {{--<a href="#">Detail</a>--}}
 
                             {{--</div>--}}
 
@@ -539,7 +539,7 @@
 
                         {{--<div class="thumb">--}}
 
-                            {{--<a href="index.html#"><img src="images/course4.jpg" alt=""></a>--}}
+                            {{--<a href="#"><img src="images/course4.jpg" alt=""></a>--}}
 
                             {{--<div class="price"><span>$</span>25</div>--}}
 
@@ -569,9 +569,9 @@
 
                             {{--<div class="course-detail-btn">--}}
 
-                                {{--<a href="index.html#">Subscribe</a>--}}
+                                {{--<a href="#">Subscribe</a>--}}
 
-                                {{--<a href="index.html#">Detail</a>--}}
+                                {{--<a href="#">Detail</a>--}}
 
                             {{--</div>--}}
 
@@ -587,7 +587,7 @@
 
                         {{--<div class="thumb">--}}
 
-                            {{--<a href="index.html#"><img src="images/course1.jpg" alt=""></a>--}}
+                            {{--<a href="#"><img src="images/course1.jpg" alt=""></a>--}}
 
                             {{--<div class="price"><span>$</span>13</div>--}}
 
@@ -617,9 +617,9 @@
 
                             {{--<div class="course-detail-btn">--}}
 
-                                {{--<a href="index.html#">Subscribe</a>--}}
+                                {{--<a href="#">Subscribe</a>--}}
 
-                                {{--<a href="index.html#">Detail</a>--}}
+                                {{--<a href="#">Detail</a>--}}
 
                             {{--</div>--}}
 
@@ -635,7 +635,7 @@
 
                         {{--<div class="thumb">--}}
 
-                            {{--<a href="index.html#"><img src="images/course2.jpg" alt=""></a>--}}
+                            {{--<a href="#"><img src="images/course2.jpg" alt=""></a>--}}
 
                             {{--<div class="price"><span>$</span>17</div>--}}
 
@@ -665,9 +665,9 @@
 
                             {{--<div class="course-detail-btn">--}}
 
-                                {{--<a href="index.html#">Subscribe</a>--}}
+                                {{--<a href="#">Subscribe</a>--}}
 
-                                {{--<a href="index.html#">Detail</a>--}}
+                                {{--<a href="#">Detail</a>--}}
 
                             {{--</div>--}}
 
@@ -683,7 +683,7 @@
 
                         {{--<div class="thumb">--}}
 
-                            {{--<a href="index.html#"><img src="images/course3.jpg" alt=""></a>--}}
+                            {{--<a href="#"><img src="images/course3.jpg" alt=""></a>--}}
 
                             {{--<div class="price"><span>$</span>31</div>--}}
 
@@ -713,9 +713,9 @@
 
                             {{--<div class="course-detail-btn">--}}
 
-                                {{--<a href="index.html#">Subscribe</a>--}}
+                                {{--<a href="#">Subscribe</a>--}}
 
-                                {{--<a href="index.html#">Detail</a>--}}
+                                {{--<a href="#">Detail</a>--}}
 
                             {{--</div>--}}
 
@@ -731,7 +731,7 @@
 
                         {{--<div class="thumb">--}}
 
-                            {{--<a href="index.html#"><img src="images/course4.jpg" alt=""></a>--}}
+                            {{--<a href="#"><img src="images/course4.jpg" alt=""></a>--}}
 
                             {{--<div class="price"><span>$</span>36</div>--}}
 
@@ -761,9 +761,9 @@
 
                             {{--<div class="course-detail-btn">--}}
 
-                                {{--<a href="index.html#">Subscribe</a>--}}
+                                {{--<a href="#">Subscribe</a>--}}
 
-                                {{--<a href="index.html#">Detail</a>--}}
+                                {{--<a href="#">Detail</a>--}}
 
                             {{--</div>--}}
 
@@ -888,20 +888,20 @@
                     <div class="span3">
                         <div class="teachers">
                             <!-- <div class="social-icons">
-                                <a href="about-us.html#"><i class="fa fa-facebook"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-flickr"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-dribbble"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-google-plus"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-linkedin"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-pinterest"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-twitter"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-vimeo-square"></i></a>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-flickr"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-vimeo-square"></i></a>
                             </div> -->
                             <div class="thumb">
-                                <a href="about-us.html#"><img src="images/admin1.jpg" alt=""></a>
+                                <a href="#"><img src="images/admin1.jpg" alt=""></a>
                             </div>
                             <div class="text">
-                                <h2><a href="about-us.html#">Dexter Manzano</a></h2>
+                                <h2><a href="#">Dexter Manzano</a></h2>
                                 <p>Assistant Coordinator</p>
                             </div>
                         </div>
@@ -911,20 +911,20 @@
                     <div class="span3">
                         <div class="teachers">
                             <!-- <div class="social-icons">
-                                <a href="about-us.html#"><i class="fa fa-facebook"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-flickr"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-dribbble"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-google-plus"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-linkedin"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-pinterest"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-twitter"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-vimeo-square"></i></a>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-flickr"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-vimeo-square"></i></a>
                             </div> -->
                             <div class="thumb">
-                                <a href="about-us.html#"><img src="images/admin2.jpg" alt=""></a>
+                                <a href="#"><img src="images/admin2.jpg" alt=""></a>
                             </div>
                             <div class="text">
-                                <h2><a href="about-us.html#">David V. Lip</a></h2>
+                                <h2><a href="#">David V. Lip</a></h2>
                                 <p>Technical Staff</p>
                             </div>
                         </div>
@@ -934,20 +934,20 @@
                     <div class="span3">
                         <div class="teachers">
                             <!-- <div class="social-icons">
-                                <a href="about-us.html#"><i class="fa fa-facebook"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-flickr"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-dribbble"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-google-plus"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-linkedin"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-pinterest"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-twitter"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-vimeo-square"></i></a>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-flickr"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-vimeo-square"></i></a>
                             </div> -->
                             <div class="thumb">
-                                <a href="about-us.html#"><img src="images/admin3.jpg" alt=""></a>
+                                <a href="#"><img src="images/admin3.jpg" alt=""></a>
                             </div>
                             <div class="text">
-                                <h2><a href="about-us.html#">Apolinario Saymo</a></h2>
+                                <h2><a href="#">Apolinario Saymo</a></h2>
                                 <p>Seminar Coordinator</p>
                             </div>
                         </div>
@@ -957,20 +957,20 @@
                     <div class="span3">
                         <div class="teachers">
                             <!-- <div class="social-icons">
-                                <a href="about-us.html#"><i class="fa fa-facebook"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-flickr"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-dribbble"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-google-plus"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-linkedin"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-pinterest"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-twitter"></i></a>
-                                <a href="about-us.html#"><i class="fa fa-vimeo-square"></i></a>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-flickr"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-vimeo-square"></i></a>
                             </div> -->
                             <div class="thumb">
-                                <a href="about-us.html#"><img src="images/admin4.jpg" alt=""></a>
+                                <a href="#"><img src="images/admin4.jpg" alt=""></a>
                             </div>
                             <div class="text">
-                                <h2><a href="about-us.html#">Raffy S. Aganon</a></h2>
+                                <h2><a href="#">Raffy S. Aganon</a></h2>
                                 <p>Liaison officer</p>
                             </div>
                         </div>
@@ -1033,11 +1033,11 @@
 
                                     <ul>
 
-                                        <li><a href="index.html#"><i class="fa fa-heart-o"></i></a><span class="notification">25</span></li>
+                                        <li><a href="#"><i class="fa fa-heart-o"></i></a><span class="notification">25</span></li>
 
-                                        <li><a href="index.html#"><i class="fa fa-link"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-link"></i></a></li>
 
-                                        <li><a href="index.html#"><i class="fa fa-comments-o"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-comments-o"></i></a></li>
 
                                     </ul>
 
@@ -1055,7 +1055,7 @@
 
                                 <p>To promote love of teaching and learning and serves as an activity center for students and professionals who value discipline in studies, review, and research </p>
 
-                                <a href="index.html#" class="more">Read More</a>
+                                <a href="#" class="more">Read More</a>
 
                             </div>
 
@@ -1091,11 +1091,11 @@
 
                                     <ul>
 
-                                        <li><a href="index.html#"><i class="fa fa-heart-o"></i></a><span class="notification">25</span></li>
+                                        <li><a href="#"><i class="fa fa-heart-o"></i></a><span class="notification">25</span></li>
 
-                                        <li><a href="index.html#"><i class="fa fa-link"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-link"></i></a></li>
 
-                                        <li><a href="index.html#"><i class="fa fa-comments-o"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-comments-o"></i></a></li>
 
                                     </ul>
 
@@ -1113,7 +1113,7 @@
 
                                 <p>To promote materials and extension services to help the community obtain information meeting their personal, educational, and professional needs. </p>
 
-                                <a href="index.html#" class="more">Read More</a>
+                                <a href="#" class="more">Read More</a>
 
                             </div>
 
@@ -1152,7 +1152,7 @@
 
                                     <div class="thumb">
 
-                                        <a href="index.html#"><img alt="" src="images/event1.png"></a>
+                                        <a href="#"><img alt="" src="images/event1.png"></a>
 
                                     </div>
 
@@ -1162,9 +1162,9 @@
 
                                         <h4>{{ $seminar->title }}</h4>
 
-                                        <!-- <a href="index.html#" class="tags">Equipment</a>
+                                        <!-- <a href="#" class="tags">Equipment</a>
 
-                                        <a href="index.html#" class="tags">tips</a> -->
+                                        <a href="#" class="tags">tips</a> -->
 
                                     </div>
 
@@ -1218,7 +1218,7 @@
 
                                     <div class="thumb">
 
-                                        <a href="index.html#"><img alt="" src="images/event3.png"></a>
+                                        <a href="#"><img alt="" src="images/event3.png"></a>
 
                                     </div>
 
@@ -1228,9 +1228,9 @@
 
                                         <h4>{{ $article->title }}</h4>
 
-                                        <!-- <a href="index.html#" class="tags">Equipment</a>
+                                        <!-- <a href="#" class="tags">Equipment</a>
 
-                                        <a href="index.html#" class="tags">tips</a> -->
+                                        <a href="#" class="tags">tips</a> -->
 
                                     </div>
 
@@ -1284,7 +1284,7 @@
 
                                 <p>To promote love of teaching and learning and serves as an activity center for students and professionals who value discipline in studies, review, and research. To promote materials and extension services to help the community obtain information meeting their personal, educational, and professional needs. </p>
 
-                                <a href="index.html#">Naiana Ansa</a>
+                                <a href="#">Naiana Ansa</a>
 
                             </div>
 
@@ -1296,7 +1296,7 @@
 
                                 <p>To promote love of teaching and learning and serves as an activity center for students and professionals who value discipline in studies, review, and research </p>
 
-                                <a href="index.html#">Jasmine Dou</a>
+                                <a href="#">Jasmine Dou</a>
 
                             </div>
 
@@ -1308,7 +1308,7 @@
 
                                 <p>I'm learning as I go along in this program and developing career interests through each phase of the process. I do hope to find a more secure place in the working world upon completion of my degree. </p>
 
-                                <a href="index.html#">David john</a>
+                                <a href="#">David john</a>
 
                             </div>
 
@@ -1320,7 +1320,7 @@
 
                                 <p>The program requirements were very “do-able” with my work schedule and I was able to transfer many credits from my AS degree. I also liked the idea of obtaining a degree from a university with an excellent reputation as opposed to one of the “online only” schools that advertise heavily on TV. </p>
 
-                                <a href="index.html#">Roth Brown</a>
+                                <a href="#">Roth Brown</a>
 
                             </div>
 
@@ -1332,7 +1332,7 @@
 
                                 <p>The online coursework has been the most enjoyable aspect of the program. They are just as stimulating as those classes taken on campus! I've just finished my third semester and the time as flown by. </p>
 
-                                <a href="index.html#">Timothy Smith</a>
+                                <a href="#">Timothy Smith</a>
 
                             </div>
 
@@ -1342,7 +1342,7 @@
 
                     <div id="bx-pager">
 
-                        <a data-slide-index="0" href="index.html">
+                        <a data-slide-index="0" href="#">
 
                             <div class="thumb">
 
@@ -1356,7 +1356,7 @@
 
                         </a>
 
-                        <a data-slide-index="1" href="index.html">
+                        <a data-slide-index="1" href="#">
 
                             <div class="thumb">
 
@@ -1370,7 +1370,7 @@
 
                         </a>
 
-                        <a data-slide-index="2" href="index.html">
+                        <a data-slide-index="2" href="#">
 
                             <div class="thumb">
 
@@ -1384,7 +1384,7 @@
 
                         </a>
 
-                        <a data-slide-index="3" href="index.html">
+                        <a data-slide-index="3" href="#">
 
                             <div class="thumb">
 
@@ -1398,7 +1398,7 @@
 
                         </a>
 
-                        <a data-slide-index="4" href="index.html">
+                        <a data-slide-index="4" href="#">
 
                             <div class="thumb">
 
@@ -1438,7 +1438,7 @@
 
                         <div class="follow">
 
-                            <a href="index.html#">
+                            <a href="#">
 
                                 <i class="fa fa-facebook"></i>
 
@@ -1460,7 +1460,7 @@
 
                         <div class="follow">
 
-                            <a href="index.html#">
+                            <a href="#">
 
                                 <i class="fa fa-google"></i>
 
@@ -1482,7 +1482,7 @@
 
                         <div class="follow">
 
-                            <a href="index.html#">
+                            <a href="#">
 
                                 <i class="fa fa-linkedin"></i>
 

@@ -35,14 +35,14 @@
                     <div class="blog">
 
                         <div class="blog-contant">
-                            <h2><a href="blog-detail.html#">{{{ $article->title }}}</a></h2>
+                            <h2><a href="#">{{{ $article->title }}}</a></h2>
                             <div class="text">
                                 <p>{{{ $article->body }}}</p>
                             </div>
                             <div class="blog-comments">
-                                <a href="blog-detail.html#"><i class="fa fa-user"></i>{{{ $article->user->info->first_name }}}</a>
-                                <a href="blog-detail.html#"><i class="fa fa-calendar"></i>{{{ date('d M Y', strtotime($article->created_at)) }}}</a>
-                                <a class="pull-right" href="blog-detail.html#"><i class="fa fa-comment"></i>35 Comments</a>
+                                <a href="#"><i class="fa fa-user"></i>{{{ $article->user->info->first_name }}}</a>
+                                <a href="#"><i class="fa fa-calendar"></i>{{{ date('d M Y', strtotime($article->created_at)) }}}</a>
+                                <a class="pull-right" href="#"><i class="fa fa-comment"></i>35 Comments</a>
                             </div>
                         </div>
 
@@ -74,7 +74,7 @@
 
                                     <div class="thumb">
 
-                                        <a href="blog.html#"><img src="/images/papular-post.jpg" alt=""></a>
+                                        <a href="#"><img src="/images/papular-post.jpg" alt=""></a>
 
                                     </div>
 
@@ -144,7 +144,7 @@
 
                         <div class="follow">
 
-                            <a href="blog.html#">
+                            <a href="#">
 
                                 <i class="fa fa-facebook"></i>
 
@@ -166,7 +166,7 @@
 
                         <div class="follow">
 
-                            <a href="blog.html#">
+                            <a href="#">
 
                                 <i class="fa fa-google"></i>
 
@@ -188,7 +188,7 @@
 
                         <div class="follow">
 
-                            <a href="blog.html#">
+                            <a href="#">
 
                                 <i class="fa fa-linkedin"></i>
 

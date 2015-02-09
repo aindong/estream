@@ -22,7 +22,7 @@
                     <div class="row events">
                         <div class="span6">
                             <div class="thumb">
-                                <a href="events.html#"><img src="/images/events1.jpg" alt=""></a>
+                                <a href="#"><img src="/images/events1.jpg" alt=""></a>
                             </div>
                         </div>
                         <!--EVENT CONTANT START-->
@@ -33,7 +33,7 @@
                                     <span>{{ date('D M d', strtotime($seminar->start_at)) }}</span>
                                     <h2>{{ $seminar->title }}</h2>
                                     <div class="data-tags">
-                                        {{--<a href="events.html#"></a>--}}
+                                        {{--<a href="#"></a>--}}
                                     </div>
                                 </div>
                                 <!--EVENT HEADER END-->
@@ -47,11 +47,11 @@
                                     <table>
                                         <tr>
                                             <td><p class="color">Date:</p></td>
-                                            <td><a href="events.html#"><i class="fa fa-calendar-o"></i>{{ date('d M, Y', strtotime($seminar->start_at)) }} - {{ date('d M, Y', strtotime($seminar->end_at)) }}</a> <a href="#"><i class="fa fa-clock-o"></i>7:30 am - 9:00 pm</a></td>
+                                            <td><a href="#"><i class="fa fa-calendar-o"></i>{{ date('d M, Y', strtotime($seminar->start_at)) }} - {{ date('d M, Y', strtotime($seminar->end_at)) }}</a> <a href="#"><i class="fa fa-clock-o"></i>7:30 am - 9:00 pm</a></td>
                                         </tr>
                                         <tr>
                                             <td><p class="color">Venue:</p></td>
-                                            <td><a href="events.html#">{{ $seminar->location }}</a></td>
+                                            <td><a href="#">{{ $seminar->location }}</a></td>
                                         </tr>
                                     </table>
                                 </div>
@@ -139,7 +139,7 @@
                 <div class="row">
                     <div class="span4">
                         <div class="follow">
-                            <a href="events.html#">
+                            <a href="#">
                                 <i class="fa fa-facebook"></i>
                                 <div class="text">
                                     <h4>Follow us on Facebook</h4>
@@ -150,7 +150,7 @@
                     </div>
                     <div class="span4">
                         <div class="follow">
-                            <a href="events.html#">
+                            <a href="#">
                                 <i class="fa fa-google"></i>
                                 <div class="text">
                                     <h4>Follow us on Google Plus</h4>
@@ -161,7 +161,7 @@
                     </div>
                     <div class="span4">
                         <div class="follow">
-                            <a href="events.html#">
+                            <a href="#">
                                 <i class="fa fa-linkedin"></i>
                                 <div class="text">
                                     <h4>Follow us on Linkedin</h4>

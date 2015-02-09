@@ -23,7 +23,7 @@
                     <div class="row events">
                         <div class="span6">
                             <div class="thumb">
-                                <a href="events.html#"><img src="images/events1.jpg" alt=""></a>
+                                <a href="#"><img src="images/events1.jpg" alt=""></a>
                             </div>
                         </div>
                         <!--EVENT CONTANT START-->
@@ -34,7 +34,7 @@
                                     <span>{{ date('D M d', strtotime($seminar->start_at)) }}</span>
                                     <h2><a href="/seminars/{{{ $seminar->id }}}">{{ $seminar->title }}</a></h2>
                                     <div class="data-tags">
-                                        {{--<a href="events.html#"></a>--}}
+                                        {{--<a href="#"></a>--}}
                                     </div>
                                 </div>
                                 <!--EVENT HEADER END-->
@@ -48,11 +48,11 @@
                                     <table>
                                         <tr>
                                             <td><p class="color">Date:</p></td>
-                                            <td><a href="events.html#"><i class="fa fa-calendar-o"></i>{{ date('d M, Y', strtotime($seminar->start_at)) }} - {{ date('d M, Y', strtotime($seminar->end_at)) }}</a> <a href="#"><i class="fa fa-clock-o"></i>7:30 am - 9:00 pm</a></td>
+                                            <td><a href="#"><i class="fa fa-calendar-o"></i>{{ date('d M, Y', strtotime($seminar->start_at)) }} - {{ date('d M, Y', strtotime($seminar->end_at)) }}</a> <a href="#"><i class="fa fa-clock-o"></i>7:30 am - 9:00 pm</a></td>
                                         </tr>
                                         <tr>
                                             <td><p class="color">Venue:</p></td>
-                                            <td><a href="events.html#">{{ $seminar->location }}</a></td>
+                                            <td><a href="#">{{ $seminar->location }}</a></td>
                                         </tr>
                                     </table>
                                 </div>
@@ -72,7 +72,7 @@
                 {{--<div class="row events">--}}
                     {{--<div class="span6">--}}
                         {{--<div class="thumb">--}}
-                            {{--<a href="events.html#"><img src="images/events1.jpg" alt=""></a>--}}
+                            {{--<a href="#"><img src="images/events1.jpg" alt=""></a>--}}
                         {{--</div>--}}
                     {{--</div>--}}
                     {{--<!--EVENT CONTANT START-->--}}
@@ -83,7 +83,7 @@
                                 {{--<span>Mon July 2</span>--}}
                                 {{--<h2>Learn Creative Skills, Shape Your Future</h2>--}}
                                 {{--<div class="data-tags">--}}
-                                    {{--<a href="events.html#">Technology</a>--}}
+                                    {{--<a href="#">Technology</a>--}}
                                 {{--</div>--}}
                             {{--</div>--}}
                             {{--<!--EVENT HEADER END-->--}}
@@ -97,18 +97,18 @@
                                 {{--<table>--}}
                                     {{--<tr>--}}
                                         {{--<td><p class="color">Date:</p></td>--}}
-                                        {{--<td><a href="events.html#"><i class="fa fa-calendar-o"></i>06 Dec, 20140 - 14 Dec, 2014</a> <a href="events.html#"><i class="fa fa-clock-o"></i>7:30 am - 9:00 pm</a></td>--}}
+                                        {{--<td><a href="#"><i class="fa fa-calendar-o"></i>06 Dec, 20140 - 14 Dec, 2014</a> <a href="#"><i class="fa fa-clock-o"></i>7:30 am - 9:00 pm</a></td>--}}
                                     {{--</tr>--}}
                                     {{--<tr>--}}
                                         {{--<td><p class="color">Venue:</p></td>--}}
-                                        {{--<td><a href="events.html#">103, C Block, West Street, New York, BMC, US</a></td>--}}
+                                        {{--<td><a href="#">103, C Block, West Street, New York, BMC, US</a></td>--}}
                                     {{--</tr>--}}
                                 {{--</table>--}}
                             {{--</div>--}}
                             {{--<!--EVENT VANUE END-->--}}
                             {{--<!--EVENT FOOTER START-->--}}
                             {{--<div class="event-footer">--}}
-                                {{--<a href="events.html#" class="btn-style">Register</a>--}}
+                                {{--<a href="#" class="btn-style">Register</a>--}}
                             {{--</div>--}}
                             {{--<!--EVENT FOOTER END-->--}}
                         {{--</div>--}}
@@ -120,7 +120,7 @@
                 {{--<div class="row events">--}}
                     {{--<div class="span6">--}}
                         {{--<div class="thumb">--}}
-                            {{--<a href="events.html#"><img src="images/events2.jpg" alt=""></a>--}}
+                            {{--<a href="#"><img src="images/events2.jpg" alt=""></a>--}}
                         {{--</div>--}}
                     {{--</div>--}}
                     {{--<!--EVENT CONTANT START-->--}}
@@ -131,7 +131,7 @@
                                 {{--<span>Mon July 2</span>--}}
                                 {{--<h2>Learn Creative Skills, Shape Your Future</h2>--}}
                                 {{--<div class="data-tags">--}}
-                                    {{--<a href="events.html#">Technology</a>--}}
+                                    {{--<a href="#">Technology</a>--}}
                                 {{--</div>--}}
                             {{--</div>--}}
                             {{--<!--EVENT HEADER END-->--}}
@@ -145,18 +145,18 @@
                                 {{--<table>--}}
                                     {{--<tr>--}}
                                         {{--<td><p class="color">Date:</p></td>--}}
-                                        {{--<td><a href="events.html#"><i class="fa fa-calendar-o"></i>06 Dec, 20140 - 14 Dec, 2014</a> <a href="events.html#"><i class="fa fa-clock-o"></i>7:30 am - 9:00 pm</a></td>--}}
+                                        {{--<td><a href="#"><i class="fa fa-calendar-o"></i>06 Dec, 20140 - 14 Dec, 2014</a> <a href="#"><i class="fa fa-clock-o"></i>7:30 am - 9:00 pm</a></td>--}}
                                     {{--</tr>--}}
                                     {{--<tr>--}}
                                         {{--<td><p class="color">Venue:</p></td>--}}
-                                        {{--<td><a href="events.html#">103, C Block, West Street, New York, BMC, US</a></td>--}}
+                                        {{--<td><a href="#">103, C Block, West Street, New York, BMC, US</a></td>--}}
                                     {{--</tr>--}}
                                 {{--</table>--}}
                             {{--</div>--}}
                             {{--<!--EVENT VANUE END-->--}}
                             {{--<!--EVENT FOOTER START-->--}}
                             {{--<div class="event-footer">--}}
-                                {{--<a href="events.html#" class="btn-style">Register</a>--}}
+                                {{--<a href="#" class="btn-style">Register</a>--}}
                             {{--</div>--}}
                             {{--<!--EVENT FOOTER END-->--}}
                         {{--</div>--}}
@@ -168,7 +168,7 @@
                 {{--<div class="row events">--}}
                     {{--<div class="span6">--}}
                         {{--<div class="thumb">--}}
-                            {{--<a href="events.html#"><img src="images/events3.jpg" alt=""></a>--}}
+                            {{--<a href="#"><img src="images/events3.jpg" alt=""></a>--}}
                         {{--</div>--}}
                     {{--</div>--}}
                     {{--<!--EVENT CONTANT START-->--}}
@@ -179,7 +179,7 @@
                                 {{--<span>Mon July 2</span>--}}
                                 {{--<h2>Learn Creative Skills, Shape Your Future</h2>--}}
                                 {{--<div class="data-tags">--}}
-                                    {{--<a href="events.html#">Technology</a>--}}
+                                    {{--<a href="#">Technology</a>--}}
                                 {{--</div>--}}
                             {{--</div>--}}
                             {{--<!--EVENT HEADER END-->--}}
@@ -193,18 +193,18 @@
                                 {{--<table>--}}
                                     {{--<tr>--}}
                                         {{--<td><p class="color">Date:</p></td>--}}
-                                        {{--<td><a href="events.html#"><i class="fa fa-calendar-o"></i>06 Dec, 20140 - 14 Dec, 2014</a> <a href="events.html#"><i class="fa fa-clock-o"></i>7:30 am - 9:00 pm</a></td>--}}
+                                        {{--<td><a href="#"><i class="fa fa-calendar-o"></i>06 Dec, 20140 - 14 Dec, 2014</a> <a href="#"><i class="fa fa-clock-o"></i>7:30 am - 9:00 pm</a></td>--}}
                                     {{--</tr>--}}
                                     {{--<tr>--}}
                                         {{--<td><p class="color">Venue:</p></td>--}}
-                                        {{--<td><a href="events.html#">103, C Block, West Street, New York, BMC, US</a></td>--}}
+                                        {{--<td><a href="#">103, C Block, West Street, New York, BMC, US</a></td>--}}
                                     {{--</tr>--}}
                                 {{--</table>--}}
                             {{--</div>--}}
                             {{--<!--EVENT VANUE END-->--}}
                             {{--<!--EVENT FOOTER START-->--}}
                             {{--<div class="event-footer">--}}
-                                {{--<a href="events.html#" class="btn-style">Register</a>--}}
+                                {{--<a href="#" class="btn-style">Register</a>--}}
                             {{--</div>--}}
                             {{--<!--EVENT FOOTER END-->--}}
                         {{--</div>--}}
@@ -216,7 +216,7 @@
                 {{--<div class="row events">--}}
                     {{--<div class="span6">--}}
                         {{--<div class="thumb">--}}
-                            {{--<a href="events.html#"><img src="images/events4.jpg" alt=""></a>--}}
+                            {{--<a href="#"><img src="images/events4.jpg" alt=""></a>--}}
                         {{--</div>--}}
                     {{--</div>--}}
                     {{--<!--EVENT CONTANT START-->--}}
@@ -227,7 +227,7 @@
                                 {{--<span>Mon July 2</span>--}}
                                 {{--<h2>Learn Creative Skills, Shape Your Future</h2>--}}
                                 {{--<div class="data-tags">--}}
-                                    {{--<a href="events.html#">Technology</a>--}}
+                                    {{--<a href="#">Technology</a>--}}
                                 {{--</div>--}}
                             {{--</div>--}}
                             {{--<!--EVENT HEADER END-->--}}
@@ -241,18 +241,18 @@
                                 {{--<table>--}}
                                     {{--<tr>--}}
                                         {{--<td><p class="color">Date:</p></td>--}}
-                                        {{--<td><a href="events.html#"><i class="fa fa-calendar-o"></i>06 Dec, 20140 - 14 Dec, 2014</a> <a href="events.html#"><i class="fa fa-clock-o"></i>7:30 am - 9:00 pm</a></td>--}}
+                                        {{--<td><a href="#"><i class="fa fa-calendar-o"></i>06 Dec, 20140 - 14 Dec, 2014</a> <a href="#"><i class="fa fa-clock-o"></i>7:30 am - 9:00 pm</a></td>--}}
                                     {{--</tr>--}}
                                     {{--<tr>--}}
                                         {{--<td><p class="color">Venue:</p></td>--}}
-                                        {{--<td><a href="events.html#">103, C Block, West Street, New York, BMC, US</a></td>--}}
+                                        {{--<td><a href="#">103, C Block, West Street, New York, BMC, US</a></td>--}}
                                     {{--</tr>--}}
                                 {{--</table>--}}
                             {{--</div>--}}
                             {{--<!--EVENT VANUE END-->--}}
                             {{--<!--EVENT FOOTER START-->--}}
                             {{--<div class="event-footer">--}}
-                                {{--<a href="events.html#" class="btn-style">Register</a>--}}
+                                {{--<a href="#" class="btn-style">Register</a>--}}
                             {{--</div>--}}
                             {{--<!--EVENT FOOTER END-->--}}
                         {{--</div>--}}
@@ -273,7 +273,7 @@
                 <div class="row">
                     <div class="span4">
                         <div class="follow">
-                            <a href="events.html#">
+                            <a href="#">
                                 <i class="fa fa-facebook"></i>
                                 <div class="text">
                                     <h4>Follow us on Facebook</h4>
@@ -284,7 +284,7 @@
                     </div>
                     <div class="span4">
                         <div class="follow">
-                            <a href="events.html#">
+                            <a href="#">
                                 <i class="fa fa-google"></i>
                                 <div class="text">
                                     <h4>Follow us on Google Plus</h4>
@@ -295,7 +295,7 @@
                     </div>
                     <div class="span4">
                         <div class="follow">
-                            <a href="events.html#">
+                            <a href="#">
                                 <i class="fa fa-linkedin"></i>
                                 <div class="text">
                                     <h4>Follow us on Linkedin</h4>

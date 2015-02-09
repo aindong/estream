@@ -35,10 +35,10 @@
                             </div>
                             <div class="footer">
                                 {{--<ul>--}}
-                                    {{--<li><a href="signin.html#">I Forgot My Password</a></li>--}}
-                                    {{--<li><a href="signin.html#">Re-send Confirmation Email</a></li>--}}
-                                    {{--<li><a href="signin.html#">Sign up Today for Free!</a></li>--}}
-                                    {{--<li><a href="signin.html#">Terms of Use</a></li>--}}
+                                    {{--<li><a href="#">I Forgot My Password</a></li>--}}
+                                    {{--<li><a href="#">Re-send Confirmation Email</a></li>--}}
+                                    {{--<li><a href="#">Sign up Today for Free!</a></li>--}}
+                                    {{--<li><a href="#">Terms of Use</a></li>--}}
                                 {{--</ul>--}}
                             </div>
                         </form>
@@ -86,7 +86,7 @@
                 <div class="row">
                     <div class="span4">
                         <div class="follow">
-                            <a href="signin.html#">
+                            <a href="#">
                                 <i class="fa fa-facebook"></i>
                                 <div class="text">
                                     <h4>Follow us on Facebook</h4>
@@ -97,7 +97,7 @@
                     </div>
                     <div class="span4">
                         <div class="follow">
-                            <a href="signin.html#">
+                            <a href="#">
                                 <i class="fa fa-google"></i>
                                 <div class="text">
                                     <h4>Follow us on Google Plus</h4>
@@ -108,7 +108,7 @@
                     </div>
                     <div class="span4">
                         <div class="follow">
-                            <a href="signin.html#">
+                            <a href="#">
                                 <i class="fa fa-linkedin"></i>
                                 <div class="text">
                                     <h4>Follow us on Linkedin</h4>

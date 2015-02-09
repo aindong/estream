@@ -45,10 +45,10 @@
                         {{--<div class="social-icons">--}}
                             {{--<a href="images/gallery3.jpg" rel="prettyPhoto[gallery2]"><i class="fa fa-search"></i></a>--}}
                             {{--<br>--}}
-                            {{--<a href="gallery.html#"><i class="fa fa-picture-o"></i></a>--}}
-                            {{--<a href="gallery.html#"><i class="fa fa-link"></i></a>--}}
-                            {{--<a href="gallery.html#"><i class="fa fa-info-circle"></i></a>--}}
-                            {{--<a href="gallery.html#"><i class="fa fa-heart"></i></a>--}}
+                            {{--<a href="#"><i class="fa fa-picture-o"></i></a>--}}
+                            {{--<a href="#"><i class="fa fa-link"></i></a>--}}
+                            {{--<a href="#"><i class="fa fa-info-circle"></i></a>--}}
+                            {{--<a href="#"><i class="fa fa-heart"></i></a>--}}
                         {{--</div>--}}
                     {{--</li>--}}
                     {{--<li class="span3">--}}
@@ -56,10 +56,10 @@
                         {{--<div class="social-icons">--}}
                             {{--<a href="images/gallery4.jpg" rel="prettyPhoto[gallery2]"><i class="fa fa-search"></i></a>--}}
                             {{--<br>--}}
-                            {{--<a href="gallery.html#"><i class="fa fa-picture-o"></i></a>--}}
-                            {{--<a href="gallery.html#"><i class="fa fa-link"></i></a>--}}
-                            {{--<a href="gallery.html#"><i class="fa fa-info-circle"></i></a>--}}
-                            {{--<a href="gallery.html#"><i class="fa fa-heart"></i></a>--}}
+                            {{--<a href="#"><i class="fa fa-picture-o"></i></a>--}}
+                            {{--<a href="#"><i class="fa fa-link"></i></a>--}}
+                            {{--<a href="#"><i class="fa fa-info-circle"></i></a>--}}
+                            {{--<a href="#"><i class="fa fa-heart"></i></a>--}}
                         {{--</div>--}}
                     {{--</li>--}}
                     {{--<li class="span3">--}}
@@ -67,10 +67,10 @@
                         {{--<div class="social-icons">--}}
                             {{--<a href="images/gallery5.jpg" rel="prettyPhoto[gallery2]"><i class="fa fa-search"></i></a>--}}
                             {{--<br>--}}
-                            {{--<a href="gallery.html#"><i class="fa fa-picture-o"></i></a>--}}
-                            {{--<a href="gallery.html#"><i class="fa fa-link"></i></a>--}}
-                            {{--<a href="gallery.html#"><i class="fa fa-info-circle"></i></a>--}}
-                            {{--<a href="gallery.html#"><i class="fa fa-heart"></i></a>--}}
+                            {{--<a href="#"><i class="fa fa-picture-o"></i></a>--}}
+                            {{--<a href="#"><i class="fa fa-link"></i></a>--}}
+                            {{--<a href="#"><i class="fa fa-info-circle"></i></a>--}}
+                            {{--<a href="#"><i class="fa fa-heart"></i></a>--}}
                         {{--</div>--}}
                     {{--</li>--}}
                     {{--<li class="span3">--}}
@@ -78,10 +78,10 @@
                         {{--<div class="social-icons">--}}
                             {{--<a href="images/gallery6.jpg" rel="prettyPhoto[gallery2]"><i class="fa fa-search"></i></a>--}}
                             {{--<br>--}}
-                            {{--<a href="gallery.html#"><i class="fa fa-picture-o"></i></a>--}}
-                            {{--<a href="gallery.html#"><i class="fa fa-link"></i></a>--}}
-                            {{--<a href="gallery.html#"><i class="fa fa-info-circle"></i></a>--}}
-                            {{--<a href="gallery.html#"><i class="fa fa-heart"></i></a>--}}
+                            {{--<a href="#"><i class="fa fa-picture-o"></i></a>--}}
+                            {{--<a href="#"><i class="fa fa-link"></i></a>--}}
+                            {{--<a href="#"><i class="fa fa-info-circle"></i></a>--}}
+                            {{--<a href="#"><i class="fa fa-heart"></i></a>--}}
                         {{--</div>--}}
                     {{--</li>--}}
                     {{--<li class="span3">--}}
@@ -89,10 +89,10 @@
                         {{--<div class="social-icons">--}}
                             {{--<a href="images/gallery7.jpg" rel="prettyPhoto[gallery2]"><i class="fa fa-search"></i></a>--}}
                             {{--<br>--}}
-                            {{--<a href="gallery.html#"><i class="fa fa-picture-o"></i></a>--}}
-                            {{--<a href="gallery.html#"><i class="fa fa-link"></i></a>--}}
-                            {{--<a href="gallery.html#"><i class="fa fa-info-circle"></i></a>--}}
-                            {{--<a href="gallery.html#"><i class="fa fa-heart"></i></a>--}}
+                            {{--<a href="#"><i class="fa fa-picture-o"></i></a>--}}
+                            {{--<a href="#"><i class="fa fa-link"></i></a>--}}
+                            {{--<a href="#"><i class="fa fa-info-circle"></i></a>--}}
+                            {{--<a href="#"><i class="fa fa-heart"></i></a>--}}
                         {{--</div>--}}
                     {{--</li>--}}
                     {{--<li class="span3">--}}
@@ -100,10 +100,10 @@
                         {{--<div class="social-icons">--}}
                             {{--<a href="images/gallery8.jpg" rel="prettyPhoto[gallery2]"><i class="fa fa-search"></i></a>--}}
                             {{--<br>--}}
-                            {{--<a href="gallery.html#"><i class="fa fa-picture-o"></i></a>--}}
-                            {{--<a href="gallery.html#"><i class="fa fa-link"></i></a>--}}
-                            {{--<a href="gallery.html#"><i class="fa fa-info-circle"></i></a>--}}
-                            {{--<a href="gallery.html#"><i class="fa fa-heart"></i></a>--}}
+                            {{--<a href="#"><i class="fa fa-picture-o"></i></a>--}}
+                            {{--<a href="#"><i class="fa fa-link"></i></a>--}}
+                            {{--<a href="#"><i class="fa fa-info-circle"></i></a>--}}
+                            {{--<a href="#"><i class="fa fa-heart"></i></a>--}}
                         {{--</div>--}}
                     {{--</li>--}}
                 </ul>

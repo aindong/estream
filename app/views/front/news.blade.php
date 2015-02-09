@@ -48,7 +48,7 @@
 
                                     <a href="#"><i class="fa fa-calendar"></i>{{{ date('d M Y', strtotime($article->created_at)) }}}</a>
 
-                                    {{--<a href="blog.html#" class="pull-right"><i class="fa fa-comment"></i>35 Comments</a>--}}
+                                    {{--<a href="#" class="pull-right"><i class="fa fa-comment"></i>35 Comments</a>--}}
 
                                 </div>
                             </div>
@@ -88,7 +88,7 @@
 
                                     <div class="thumb">
 
-                                        <a href="blog.html#"><img src="images/papular-post.jpg" alt=""></a>
+                                        <a href="#"><img src="images/papular-post.jpg" alt=""></a>
 
                                     </div>
 
@@ -158,7 +158,7 @@
 
                         <div class="follow">
 
-                            <a href="blog.html#">
+                            <a href="#">
 
                                 <i class="fa fa-facebook"></i>
 
@@ -180,7 +180,7 @@
 
                         <div class="follow">
 
-                            <a href="blog.html#">
+                            <a href="#">
 
                                 <i class="fa fa-google"></i>
 
@@ -202,7 +202,7 @@
 
                         <div class="follow">
 
-                            <a href="blog.html#">
+                            <a href="#">
 
                                 <i class="fa fa-linkedin"></i>
 
