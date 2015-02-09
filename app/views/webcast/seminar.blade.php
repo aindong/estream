@@ -147,11 +147,13 @@
         var videosContainer = document.getElementById('videos-container') || document.body;
         //        var roomsList = document.getElementById('rooms-list');
 
-        document.getElementById('setup-new-broadcast').onclick = function() {
-            this.disabled = true;
+        if (document.getElementById('setup-new-broadcast')) {
+            document.getElementById('setup-new-broadcast').onclick = function() {
+                this.disabled = true;
 
-            connection.open(document.getElementById('broadcast-name').value || 'Anonymous');
-        };
+                connection.open(document.getElementById('broadcast-name').value || 'Anonymous');
+            };
+        }
 
         // setup signaling to search existing sessions
         connection.connect();
