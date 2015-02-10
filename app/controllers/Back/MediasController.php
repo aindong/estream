@@ -86,7 +86,7 @@ class MediasController extends \BaseController
       return Redirect::route('admin.medias.index');
     }
 
-    public function destroy()
+    public function destroy($id)
     {
       Media::destroy($id);
 

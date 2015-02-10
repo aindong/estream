@@ -21,7 +21,12 @@
                       <td>{{{ $media->type }}}</td>
                       <td>{{{ $media->created_at }}}</td>
                       <td>{{{ $media->updated_at }}}</td>
-                      <td><a href="#" class="btn btn-danger">Delete</a></td>
+                      <td>
+                          {{ Form::open(array('url' => 'admin/medias/' . $media->id, 'class' => 'deleteItem')) }}
+                          {{ Form::hidden('_method', 'DELETE') }}
+                          {{ Form::submit('Delete', array('class' => 'btn btn-danger')) }}
+                          {{ Form::close() }}
+                      </td>
                   </tr>
               @endforeach
           </tbody>
@@ -32,6 +37,12 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('#example').dataTable();
+
+            $('.deleteItem').on('submit', function(e) {
+                if(!confirm('Are you sure to delete this item?')) {
+                    return false;
+                }
+            });
         });
     </script>
 @stop
