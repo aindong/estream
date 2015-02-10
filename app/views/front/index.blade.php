@@ -1152,7 +1152,7 @@
 
                                     <div class="thumb">
 
-                                        <a href="#"><img alt="" src="images/event1.png"></a>
+                                        <a href="/seminars/{{ $seminar->id }}"><img alt="" src="images/event1.png"></a>
 
                                     </div>
 
@@ -1218,7 +1218,7 @@
 
                                     <div class="thumb">
 
-                                        <a href="#"><img alt="" src="images/event3.png"></a>
+                                        <a href="/news/{{ $article->id }}"><img alt="" src="images/event3.png"></a>
 
                                     </div>
 
@@ -1352,7 +1352,7 @@
 
                             <p>Naiana Ansa</p>
 
-                            <p class="color">guitarist</p>
+                            <p class="color">Student</p>
 
                         </a>
 
@@ -1366,7 +1366,7 @@
 
                             <p>Jasmine Dou</p>
 
-                            <p class="color">student</p>
+                            <p class="color">Student</p>
 
                         </a>
 
@@ -1380,7 +1380,7 @@
 
                             <p>David john</p>
 
-                            <p class="color">student</p>
+                            <p class="color">Student</p>
 
                         </a>
 
@@ -1394,7 +1394,7 @@
 
                             <p>Roth Brown</p>
 
-                            <p class="color">Artist</p>
+                            <p class="color">Student</p>
 
                         </a>
 
@@ -1408,7 +1408,7 @@
 
                             <p>Timothy Smith</p>
 
-                            <p class="color">Smithies</p>
+                            <p class="color">Student</p>
 
                         </a>
 

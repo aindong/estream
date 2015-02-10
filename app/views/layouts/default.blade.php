@@ -70,8 +70,6 @@
 
                                         My Account
 
-                                        <b class="caret"></b>
-
                                     </a>
                                 @endif
 
