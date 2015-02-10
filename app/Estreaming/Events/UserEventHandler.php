@@ -79,6 +79,11 @@ class UserEventHandler
         }
     }
 
+    public function onWebcastStatusChanged(array $event)
+    {
+        print_r($event);exit;
+    }
+
     /**
      * Register the listeners for the subscriber.
      *
@@ -90,5 +95,6 @@ class UserEventHandler
         $events->listen('user.seminar.register', 'Estreaming\Events\UserEventHandler@onSeminarRegister');
         $events->listen('user.register', 'Estreaming\Events\UserEventHandler@onRegister');
         $events->listen('seminar.created', 'Estreaming\Events\UserEventHandler@onNewSeminar');
+        $events->listen('user.webcast.status', 'Estreaming\Events\UserEventHandler@onWebcastStatusChanged');
     }
 }
