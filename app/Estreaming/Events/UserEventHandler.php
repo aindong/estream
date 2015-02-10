@@ -79,6 +79,12 @@ class UserEventHandler
         }
     }
 
+    public function onWebcastStatusChanged(array $event)
+    {
+        $request = \WebcastRequest::find($event['id']);
+        $result = $this->send('Your request for webcasting has been '.strtoupper($request->status), $request->user->info->cotactnumber);
+    }
+
     /**
      * Register the listeners for the subscriber.
      *
@@ -90,5 +96,6 @@ class UserEventHandler
         $events->listen('user.seminar.register', 'Estreaming\Events\UserEventHandler@onSeminarRegister');
         $events->listen('user.register', 'Estreaming\Events\UserEventHandler@onRegister');
         $events->listen('seminar.created', 'Estreaming\Events\UserEventHandler@onNewSeminar');
+        $events->listen('user.webcast.status', 'Estreaming\Events\UserEventHandler@onWebcastStatusChanged');
     }
 }

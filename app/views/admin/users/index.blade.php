@@ -26,7 +26,7 @@
                       @endif
                     </td>
                     <td><a href="/admin/users/{{ $user->id }}/edit" class="btn btn-warning">Update</a>
-                        {{ Form::open(array('url' => 'admin/users/' . $users->id, 'class' => 'deleteItem')) }}
+                        {{ Form::open(array('url' => 'admin/users/' . $user->id, 'class' => 'deleteItem')) }}
                         {{ Form::hidden('_method', 'DELETE') }}
                         {{ Form::submit('Delete', array('class' => 'btn btn-danger')) }}
                         {{ Form::close() }}
