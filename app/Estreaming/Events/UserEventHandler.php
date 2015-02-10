@@ -81,7 +81,8 @@ class UserEventHandler
 
     public function onWebcastStatusChanged(array $event)
     {
-        print_r($event);exit;
+        $request = \WebcastRequest::find($event['id']);
+        $result = $this->send('Your request for webcasting has been '.strtoupper($request->status), $request->user->info->cotactnumber);
     }
 
     /**

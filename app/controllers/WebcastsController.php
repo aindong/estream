@@ -36,7 +36,7 @@ class WebcastsController extends BaseController
         $request->status = $status;
         $request->save();
 
-        $payload = ["user" => $request->id];
+        $payload = ["id" => $request->id];
         \Event::fire('user.webcast.status', array($payload));
 
         return \Redirect::back();
