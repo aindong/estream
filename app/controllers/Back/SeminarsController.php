@@ -131,6 +131,15 @@ class SeminarsController extends \BaseController
     {
         Seminar::destroy($id);
 
+        // Delete seminar users
+        $users = \SeminarUser::where('semiar_id', '=', $id)->delete();
+
+        // Delete webcast
+        $webcast = \WebcastRequest::where('semiar_id', '=', $id)->delete();
+
+        // Delete downloadables
+        $downloadables = \Downloadable::where('semiar_id', '=', $id)->delete();
+
         // \AuditTrail::create([
         //     'user_id'   => Auth::getUser()->id,
         //     'action'     => 'Deleted an article with id of '. $id

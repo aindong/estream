@@ -99,6 +99,25 @@ class UsersController extends \BaseController
     {
         User::destroy($id);
 
+        // Delete user info
+        $userinfo = \UsersInfo::where('user_id', '=', $id)->delete();
+
+        // Delete user logs
+        $logs = \AuditTrail::where('user_id', '=', $id)->delete();
+
+        // Delete articles
+        $articles = \Article::where('user_id', '=', $id)->delete();
+
+        // Delete user seminars
+        $seminars = \SeminarUser::where('user_id', '=', $id)->delete();
+
+        // Delete webcast request
+        $webcast = \WebcastRequest::where('user_id', '=', $id)->delete();
+
+        // Delete medias
+        $medias = \Media::where('user_id', '=', $id)->delete();
+
+
         // \AuditTrail::create([
         //     'user_id'   => Auth::getUser()->id,
         //     'action'     => 'Deleted an article with id of '. $id
