@@ -52,47 +52,47 @@
                     <!--EDIT PROFILE START-->
                     <div class="profile-box editing">
                         <h2>Edit Profile</h2>
+                        {{ Form::model($user, ['url' => '/users/' + $user->id, 'class' => 'form']) }}
                         <ul>
                             <li>
                                 <label>First Name</label>
-                                <input type="text" class="input-block-level"  placeholder="Enter your First Name" value="{{ $user->info->first_name }}">
+                                {{ Form::text('firstname', null, ['placeholder' => 'Enter your First Name', 'class' => 'input-block-level']) }}
                             </li>
                             <li>
                                 <label>Last Name</label>
-                                <input type="text" class="input-block-level" placeholder="Enter your Last Name" value="{{ $user->info->last_name }}">
+                                {{ Form::text('lastname', null, ['placeholder' => 'Enter your Last Name', 'class' => 'input-block-level']) }}
                             </li>
                             <li>
                                 <label>Gender</label>
-                                <select class="input-block-level">
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                </select>
+                                {{ Form::select('gender', ['male' => 'Male', 'female' => 'Female'], null, ['placeholder' => 'Select a gender', 'class' => 'input-block-level']) }}
                             </li>
                             <li>
                                 <label>Date of Birth</label>
-                                <input type="text" class="input-block-level">
+                                {{ Form::text('birthdate', null, ['placeholder' => 'Enter your birthdate', 'class' => 'input-block-level']) }}
                             </li>
                             <li>
                                 <label>Email</label>
-                                <input type="text" class="input-block-level"  placeholder="Enter your E-mail ID" value="{{ $user->email }}">
+                                {{ Form::text('email', null, ['placeholder' => 'Enter your email', 'class' => 'input-block-level']) }}
                             </li>
                             <li>
                                 <label>Contact Number</label>
-                                <input type="text" class="input-block-level" placeholder="Enter your Contact Number" value="{{ $user->info->contactnumber }}">
+                                {{ Form::text('contactnumber', null, ['placeholder' => 'Enter your cellphone number', 'class' => 'input-block-level']) }}
                             </li>
                             <li class="fw">
                                 <label>Address</label>
-                                <textarea class="input-block-level"></textarea>
+                                {{ Form::textarea('contactnumber', null, ['placeholder' => 'Enter your address', 'class' => 'input-block-level']) }}
                             </li>
                             <li class="fw">
-                                <button class="btn-style">Update</button>
+                                <button class="btn-style" type="submit">Update</button>
                             </li>
                         </ul>
+                        {{ Form::close() }}
                     </div>
                     <!--EDIT PROFILE END-->
                     <!--EDIT PASSWORD START-->
                     <div class="profile-box editing">
                         <h2>Edit Password</h2>
+                        {{ Form::model($user, ['url' => '/users/' + $user->id, 'class' => 'form']) }}
                         <ul>
                             <li>
                                 <label>New Password</label>
@@ -110,6 +110,7 @@
                                 <button class="btn-style">Update</button>
                             </li>
                         </ul>
+                        {{ Form::close() }}
                     </div>
                     <!--EDIT PASSWORD END-->
 
