@@ -53,6 +53,10 @@
                                             <td><p class="color">Venue:</p></td>
                                             <td><a href="#">{{ $seminar->location }}</a></td>
                                         </tr>
+                                        <tr>
+                                            <td><p class="color">Price:</p></td>
+                                            <p>{{ $seminar->price }}</p>
+                                        </tr>
                                     </table>
                                 </div>
                                 <!--EVENT VANUE END-->
