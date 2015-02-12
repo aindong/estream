@@ -8,7 +8,10 @@ class UsersController extends \BaseController
 {
     public function index()
     {
-        $user = Auth::getUser();
+        $user = \User::join('users_info', 'users.id', '=', 'users_info.user_id', 'inner')
+            ->where('users.id', Auth::getUser()->id)
+            ->first();
+
         return View::make('user.dashboard', compact('user'));
     }
 
