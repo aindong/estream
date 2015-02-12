@@ -55,7 +55,7 @@
                                         </tr>
                                         <tr>
                                             <td><p class="color">Price:</p></td>
-                                            <p>{{ $seminar->price }}</p>
+                                            <td>Php {{ $seminar->price }}</td>
                                         </tr>
                                     </table>
                                 </div>
