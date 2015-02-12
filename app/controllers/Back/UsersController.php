@@ -97,6 +97,12 @@ class UsersController extends \BaseController
 
     public function destroy($id)
     {
+        $user = User::find($id);
+        if ($user->role->name == 'admin') {
+            Session::flash('error', 'Sorry but you cant delete an admin account');
+            return Redirect::back();
+        }
+
         User::destroy($id);
 
         // Delete user info
