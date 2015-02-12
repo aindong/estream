@@ -25,6 +25,34 @@ class UsersController extends \BaseController
         return View::make('front.register');
     }
 
+    public function update($id)
+    {
+        $data = Input::all();
+
+        $user = User::find($id);
+        $user->email = $data['email'];
+        $user->password = Hash::make($data['password']);
+        $user->save();
+
+        $userInfo = UsersInfo::where('user_id', $id)->first();
+        $userInfo->first_name            = $data['first_name'];
+        $userInfo->last_name             = $data['last_name'];
+        $userInfo->middle_name           = $data['middle_name'];
+        $userInfo->membership            = $data['membership'];
+        $userInfo->membership_expire_at  = date('Y-m-d', strtotime($data['membership_expire_at']));
+        $userInfo->contactnumber         = $data['contactnumber'];
+        $userInfo->gender                = $data['gender'];
+        $userInfo->address               = $data['address'];
+        $userInfo->save();
+
+        // \AuditTrail::create([
+        //     'user_id'   => \Auth::getUser()->id,
+        //     'action'     => 'Updated a user with id '.$id
+        // ]);
+
+        return Redirect::back('/');
+    }
+
     /**
      * Login
      *
