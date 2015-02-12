@@ -80,7 +80,7 @@
                             </li>
                             <li class="fw">
                                 <label>Address</label>
-                                {{ Form::textarea('contactnumber', null, ['placeholder' => 'Enter your address', 'class' => 'input-block-level']) }}
+                                {{ Form::textarea('address', null, ['placeholder' => 'Enter your address', 'class' => 'input-block-level']) }}
                             </li>
                             <li class="fw">
                                 <button class="btn-style" type="submit">Update</button>
