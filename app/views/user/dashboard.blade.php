@@ -56,11 +56,11 @@
                         <ul>
                             <li>
                                 <label>First Name</label>
-                                {{ Form::text('firstname', null, ['placeholder' => 'Enter your First Name', 'class' => 'input-block-level']) }}
+                                {{ Form::text('first_name', null, ['placeholder' => 'Enter your First Name', 'class' => 'input-block-level']) }}
                             </li>
                             <li>
                                 <label>Last Name</label>
-                                {{ Form::text('lastname', null, ['placeholder' => 'Enter your Last Name', 'class' => 'input-block-level']) }}
+                                {{ Form::text('last_name', null, ['placeholder' => 'Enter your Last Name', 'class' => 'input-block-level']) }}
                             </li>
                             <li>
                                 <label>Gender</label>
