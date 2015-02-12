@@ -35,6 +35,8 @@ var User = (function() {
                     .html('You\'ve successfully logged in')
                     .show();
 
+                $('button').attr('disabled', false);
+
                 setTimeout(function() {
                     location.href = data.link;
                 }, 1000);
@@ -50,6 +52,8 @@ var User = (function() {
                     .removeClass('alert-success')
                     .html(message)
                     .show();
+
+                $('button').attr('disabled', false);
             }
         });
     };
@@ -72,6 +76,8 @@ var User = (function() {
                     .removeClass('alert-danger')
                     .html('Registration successful')
                     .show();
+
+                $('button').attr('disabled', false);
             },
             error: function(data) {
                 console.log(data.responseJSON);
@@ -84,6 +90,8 @@ var User = (function() {
                     .removeClass('alert-success')
                     .html(message)
                     .show();
+
+                $('button').attr('disabled', false);
             }
         });
     };
@@ -101,6 +109,7 @@ var User = (function() {
         e.preventDefault();
         // Call the user login request
         user.login($(this).serialize());
+        $('button').attr('disabled', true);
     });
 
     /**
@@ -110,6 +119,7 @@ var User = (function() {
         e.preventDefault();
         // Call the user registration request
         user.register($(this).serialize());
+        $('button').attr('disabled', true);
     });
 
     return user;
