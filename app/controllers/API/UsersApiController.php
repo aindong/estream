@@ -48,11 +48,13 @@ class UsersApiController extends BaseController
                 $membership_expire_at = strtotime(Auth::getUser()->info->membership_expire_at);
                 $today = time();
 
-                if ($membership_expire_at < $today) {
-                    $userinfo = UsersInfo::find(Auth::getUser()->id);
-                    $userinfo->membership = 'regular';
-                    $userinfo->membership_expire_at = 0;
-                    $userinfo->save();
+                if ($membership != 'regular') {
+                    if ($membership_expire_at < $today) {
+                        $userinfo = UsersInfo::find(Auth::getUser()->id);
+                        $userinfo->membership = 'regular';
+                        $userinfo->membership_expire_at = 0;
+                        $userinfo->save();
+                    }
                 }
 
                 AuditTrail::create([
