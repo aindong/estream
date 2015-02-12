@@ -52,7 +52,7 @@
                     <!--EDIT PROFILE START-->
                     <div class="profile-box editing">
                         <h2>Edit Profile</h2>
-                        {{ Form::model($user, ['url' => '/users/' + $user->id, 'class' => 'form']) }}
+                        {{ Form::model($user, ['url' => '/users/' + $user->id, 'class' => 'form', 'method' => 'post']) }}
                         <ul>
                             <li>
                                 <label>First Name</label>

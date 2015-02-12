@@ -33,6 +33,8 @@ Route::group(['namespace' => 'Controllers\Front'], function() {
 		Route::get('/users/dashboard', ['as' => 'user.dashboard', 'uses' => 'UsersController@index']);
 		Route::get('/users/seminars', ['as' => 'user.dashboard', 'uses' => 'UsersController@seminars']);
 
+		Route::post('/users/{id}/update', ['uses' => 'UsersController@update']);
+
 		Route::post('/users/seminars/register/{id}', ['as' => 'user.dashboard', 'uses' => 'UsersController@registerSeminar']);
 	});
 });
