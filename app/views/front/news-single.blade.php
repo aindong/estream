@@ -74,7 +74,7 @@
 
                                     <div class="thumb">
 
-                                        <a href="#"><img src="/images/papular-post.jpg" alt=""></a>
+                                        <a href="/seminar/{{ $seminar->id }}"><img src="/images/papular-post.jpg" alt=""></a>
 
                                     </div>
 

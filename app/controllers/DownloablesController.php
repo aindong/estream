@@ -50,6 +50,7 @@ class DownloadablesController extends BaseController
 
     public function destroy($id)
     {
+        Downloadable::destroy($id);
 
         return View::make('admin.downloadables.create');
     }
