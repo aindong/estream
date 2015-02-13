@@ -100,7 +100,8 @@ class SeminarsController extends \BaseController
      */
     public function edit($id)
     {
-        return View::make('admin.seminars.edit');
+        $seminar = Seminar::find($id);
+        return View::make('admin.seminars.edit', compact('serminar'));
     }
 
     public function show($id)
@@ -129,7 +130,41 @@ class SeminarsController extends \BaseController
      */
     public function update($id)
     {
+        $destination  = public_path() . '/public/uploads/invitation/';
+        $destination2 = public_path() . '/public/uploads/seminar/';
 
+        $data = Input::all();
+        $data['start_at'] = date('Y-m-d', strtotime($data['start_at']));
+        $data['end_at']   = date('Y-m-d', strtotime($data['end_at']));
+//        print_r($data);exit;
+
+        $seminar = Seminar::find($id);
+        $seminar->title = $data['title'];
+        $seminar->description = $data['description'];
+        $seminar->price = $data['price'];
+        $seminar->location = $data['location'];
+        $seminar->long = $data['long'];
+        $seminar->lat = $data['lat'];
+
+        if (Input::hasFile('invitation')) {
+            $invitation = Input::file('invitation');
+            $filename = uniqid() . '-' . time() . '-' . $invitation->getClientOriginalName();
+            $invitation->move($destination, $filename);
+            $seminar->invitation = $filename;
+        }
+
+        if (Input::hasFile('image')) {
+            $image = Input::file('image');
+            $filename2 = uniqid() . '-' . time() . '-' . $image->getClientOriginalName();
+            $image->move($destination2, $filename2);
+            $seminar->image = $filename2;
+        }
+
+        $seminar->start_at = $data['start_at'];
+        $seminar->end_at = $data['end_at'];
+        $seminar->save();
+
+        return Redirect::route('admin.seminars.index');
     }
 
     /**

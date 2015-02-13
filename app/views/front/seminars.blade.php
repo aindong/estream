@@ -25,7 +25,7 @@
                             <div class="thumb">
                                 
                                 @if($seminar->image)
-                                    <a href="#"><img src="/public/uploads/seminar/{{ $seminar->image }}" alt=""></a>
+                                    <a href="#"><img src="/public/uploads/seminar/{{ $seminar->image }}" alt="" style="height: 335px;"></a>
                                 @else
                                     <a href="#"><img src="images/events1.jpg" alt=""></a>
                                 @endif
@@ -58,6 +58,10 @@
                                         <tr>
                                             <td><p class="color">Venue:</p></td>
                                             <td><a href="#">{{ $seminar->location }}</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><p class="color">Price:</p></td>
+                                            <td>Php {{ $seminar->price }}</td>
                                         </tr>
                                     </table>
                                 </div>

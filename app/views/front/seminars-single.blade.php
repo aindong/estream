@@ -23,7 +23,7 @@
                         <div class="span6">
                             <div class="thumb">
                                 @if($seminar->image)
-                                    <a href="#"><img src="/public/uploads/seminar/{{ $seminar->image }}" alt=""></a>
+                                    <a href="#"><img src="/public/uploads/seminar/{{ $seminar->image }}" alt="" style="height: 335px;"></a>
                                 @else
                                     <a href="#"><img src="/images/events1.jpg" alt=""></a>
                                 @endif
