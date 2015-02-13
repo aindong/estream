@@ -42,7 +42,6 @@
                             <div class="blog-comments">
                                 <a href="#"><i class="fa fa-user"></i>{{{ $article->user->info->first_name }}}</a>
                                 <a href="#"><i class="fa fa-calendar"></i>{{{ date('d M Y', strtotime($article->created_at)) }}}</a>
-                                <a class="pull-right" href="#"><i class="fa fa-comment"></i>35 Comments</a>
                             </div>
                         </div>
 
@@ -70,13 +69,7 @@
 
                                 <li>
 
-                                    <h4>{{ $seminar->title }}</h4>
-
-                                    <div class="thumb">
-
-                                        <a href="/seminar/{{ $seminar->id }}"><img src="/images/papular-post.jpg" alt=""></a>
-
-                                    </div>
+                                    <h4><a href="/seminar/{{ $seminar->id }}">{{ $seminar->title }}</a></h4>
 
                                     <div class="text">
 

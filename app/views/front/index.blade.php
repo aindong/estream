@@ -993,9 +993,9 @@
 
                 <div class="sec-header">
 
-                    <h2>Popular Posts</h2>
+                    <h2>Our objectives</h2>
 
-                    <p>Latest From Blog</p>
+                    {{--<p>Latest From Blog</p>--}}
 
                     <span></span>
 
@@ -1013,49 +1013,15 @@
 
                         <div class="post">
 
-                            <div class="thumb"><img src="images/post.png" alt=""></div>
-
-                            <!--POST HEADER START-->
-
-                            <div class="header">
-
-                                <!--POST DATE START-->
-
-                                <div class="post-date">
-
-                                    <p>January<span>11</span>2015</p>
-
-                                </div>
-
-                                <!--POST DATE START-->
-
-                                <div class="icons">
-
-                                    <ul>
-
-                                        <li><a href="#"><i class="fa fa-heart-o"></i></a><span class="notification">25</span></li>
-
-                                        <li><a href="#"><i class="fa fa-link"></i></a></li>
-
-                                        <li><a href="#"><i class="fa fa-comments-o"></i></a></li>
-
-                                    </ul>
-
-                                </div>
-
-                            </div>
-
-                            <!--POST HEADER END-->
-
                             <div class="text">
 
-                                <h2>Association of Educators for Interrelated Research and Studies, Inc.</h2>
+                                <h2>Association of Educators for Interrelated Research and Studies, Inc. (AEIRS)</h2>
 
-                                <h5>Apolinario S. Saymo / President</h5>
+                                {{--<h5>Apolinario S. Saymo / President</h5>--}}
 
                                 <p>To promote love of teaching and learning and serves as an activity center for students and professionals who value discipline in studies, review, and research </p>
 
-                                <a href="#" class="more">Read More</a>
+                                {{--<a href="#" class="more">Read More</a>--}}
 
                             </div>
 
@@ -1067,53 +1033,15 @@
 
                         <div class="post">
 
-                            <div class="thumb">
-
-                                <img src="images/post.png" alt="">
-
-                            </div>
-
-                            <!--POST HEADER START-->
-
-                            <div class="header">
-
-                                <!--POST DATE START-->
-
-                                <div class="post-date">
-
-                                    <p>February<span>01</span>2015</p>
-
-                                </div>
-
-                                <!--POST DATE START-->
-
-                                <div class="icons">
-
-                                    <ul>
-
-                                        <li><a href="#"><i class="fa fa-heart-o"></i></a><span class="notification">25</span></li>
-
-                                        <li><a href="#"><i class="fa fa-link"></i></a></li>
-
-                                        <li><a href="#"><i class="fa fa-comments-o"></i></a></li>
-
-                                    </ul>
-
-                                </div>
-
-                            </div>
-
-                            <!--POST HEADER END-->
-
                             <div class="text">
 
-                                <h2>Association of Educator for Interrelated Research and Studies (AEIRS)</h2>
+                                <h2>Association of Educator for Interrelated Research and Studies, Inc. (AEIRS)</h2>
 
-                                <h5>Dexter L. Manzano / Vice-President</h5>
+                                {{--<h5>Dexter L. Manzano / Vice-President</h5>--}}
 
                                 <p>To promote materials and extension services to help the community obtain information meeting their personal, educational, and professional needs. </p>
 
-                                <a href="#" class="more">Read More</a>
+                                {{--<a href="#" class="more">Read More</a>--}}
 
                             </div>
 
@@ -1149,18 +1077,11 @@
                                 @foreach($seminars as $seminar)
 
                                 <li>
-
-                                    <div class="thumb">
-
-                                        <a href="/seminars/{{ $seminar->id }}"><img alt="" src="images/event1.png"></a>
-
-                                    </div>
-
                                     <div class="text">
 
                                         <p>{{ date('D M d', strtotime($seminar->start_at)) }}</p>
 
-                                        <h4>{{ $seminar->title }}</h4>
+                                        <h4><a href="/seminars/{{ $seminar->id }}">{{ $seminar->title }}</a></h4>
 
                                         <!-- <a href="#" class="tags">Equipment</a>
 
@@ -1215,18 +1136,11 @@
                                 @foreach($articles as $article)
 
                                 <li>
-
-                                    <div class="thumb">
-
-                                        <a href="/news/{{ $article->id }}"><img alt="" src="images/event3.png"></a>
-
-                                    </div>
-
                                     <div class="text">
 
                                         <p>{{ date('D M d', strtotime($article->start_at)) }}</p>
 
-                                        <h4>{{ $article->title }}</h4>
+                                        <h4><a href="/news/{{ $article->id }}">{{ $article->title }}</a></h4>
 
                                         <!-- <a href="#" class="tags">Equipment</a>
 

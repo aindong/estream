@@ -201,6 +201,7 @@
         $(function() {
             $('.register').on('click', function(e) {
                 e.preventDefault();
+                $(this).attr('disabled', true);
 
                 $.ajax({
                     url: '/users/seminars/register/' + $(this).data('id'),
@@ -209,9 +210,11 @@
                         console.log('success');
                         alert('Successfully registered for the seminar');
                         location.reload();
+                        $(this).attr('disabled', false);
                     },
                     error: function() {
                         console.log('error');
+                        $(this).attr('disabled', false);
                     }
                 });
             });

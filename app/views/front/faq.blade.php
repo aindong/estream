@@ -126,13 +126,7 @@
 
                                 <li>
 
-                                    <h4>{{ $seminar->title }}</h4>
-
-                                    <div class="thumb">
-
-                                        <a href="/seminars/{{ $seminar->id }}"><img src="images/papular-post.jpg" alt=""></a>
-
-                                    </div>
+                                    <h4><a href="/seminars/{{ $seminar->id }}">{{ $seminar->title }}</a></h4>
 
                                     <div class="text">
 
