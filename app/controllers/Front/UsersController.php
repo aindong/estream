@@ -8,8 +8,11 @@ class UsersController extends \BaseController
 {
     public function index()
     {
+        $current = Auth::getUser();
+
+
         $user = \User::join('users_info', 'users.id', '=', 'users_info.user_id', 'inner')
-            ->where('users.id', Auth::getUser()->id)
+            ->where('users.id', $current->id)
             ->first();
 
         return View::make('user.dashboard', compact('user'));
@@ -117,5 +120,56 @@ class UsersController extends \BaseController
 
         return View::make('user.seminar', compact('seminarUsers', 'user'))
             ->with('requests', $requests);
+    }
+
+    public function updateUser($id)
+    {
+        if (Auth::getUser()->id == $id) {
+            $data = \Input::all();
+
+            $user = \User::findOrFail($id);
+            $user->email    = $data['email'];
+            $user->save();
+
+            $userInfo = \UsersInfo::where('user_id', '=', $id)->first();
+            $userInfo->first_name       = $data['first_name'];
+            $userInfo->last_name        = $data['last_name'];
+            $userInfo->contactnumber    = $data['contactnumber'];
+            $userInfo->gender           = $data['gender'];
+            $userInfo->birthdate        = $data['birthdate'];
+            $userInfo->contactnumber    = $data['contactnumber'];
+            $userInfo->address          = $data['address'];
+
+            $userInfo->save();
+            \Session::flash('profile_success', 'Successfully updated the user profile');
+        } else {
+            \Session::flash('profile_error', 'Failed to updated the user profile');
+        }
+
+        return Redirect::back();
+    }
+
+    public function updatePassword($id)
+    {
+        if (Auth::getUser()->id == $id) {
+            $data = \Input::all();
+
+            $user = \User::find($id);
+
+            if ($data['newpassword'] == $data['confirmpassword']) {
+                if (\Hash::check($data['oldpassword'], $user->password)) {
+                    $user->password    = \Hash::make($data['newpassword']);
+                    $user->save();
+
+                    \Session::flash('password_success', 'Successfully changed the password');
+                } else {
+                    \Session::flash('password_error', 'Failed to changed the password. Check your password.');
+                }
+            } else {
+                \Session::flash('password_error', 'Confirmation password and New password does not match');
+            }
+        }
+
+        return Redirect::back();
     }
 }

@@ -51,8 +51,17 @@
                 <div class="span8">
                     <!--EDIT PROFILE START-->
                     <div class="profile-box editing">
+                        @if(Session::has('profile_error'))
+                            <div class="alert alert-danger">
+                                {{ Session::get('profile_error') }}
+                            </div>
+                        @elseif(Session::has('profile_success'))
+                            <div class="alert alert-success">
+                                {{ Session::get('profile_success') }}
+                            </div>
+                        @endif
                         <h2>Edit Profile</h2>
-                        {{ Form::model($user, ['url' => '/users/' + $user->id, 'class' => 'form', 'method' => 'post']) }}
+                        {{ Form::model($user, ['url' => '/users/' . $user->user_id . '/update', 'class' => 'form', 'method' => 'post']) }}
                         <ul>
                             <li>
                                 <label>First Name</label>
@@ -91,23 +100,32 @@
                     <!--EDIT PROFILE END-->
                     <!--EDIT PASSWORD START-->
                     <div class="profile-box editing">
+                        @if(Session::has('password_error'))
+                            <div class="alert alert-danger">
+                                {{ Session::get('password_error') }}
+                            </div>
+                        @elseif(Session::has('password_success'))
+                            <div class="alert alert-success">
+                                {{ Session::get('password_success') }}
+                            </div>
+                        @endif
                         <h2>Edit Password</h2>
-                        {{ Form::model($user, ['url' => '/users/' + $user->id, 'class' => 'form']) }}
+                        {{ Form::model($user, ['url' => '/users/' . $user->user_id . '/password', 'class' => 'form']) }}
                         <ul>
                             <li>
                                 <label>New Password</label>
-                                <input type="text" class="input-block-level"  placeholder="Enter your New Password">
+                                <input type="text" class="input-block-level"  placeholder="Enter your New Password" name="newpassword">
                             </li>
                             <li>
                                 <label>Confirm Password</label>
-                                <input type="text" class="input-block-level" placeholder="Confirm Password">
+                                <input type="text" class="input-block-level" placeholder="Confirm Password" name="confirmpassword">
                             </li>
                             <li>
                                 <label>Old Password</label>
-                                <input type="password" class="input-block-level" placeholder="Enter your old Password">
+                                <input type="password" class="input-block-level" placeholder="Enter your old Password" name="oldpassword">
                             </li>
                             <li class="fw">
-                                <button class="btn-style">Update</button>
+                                <button class="btn-style" type="submit">Update</button>
                             </li>
                         </ul>
                         {{ Form::close() }}
