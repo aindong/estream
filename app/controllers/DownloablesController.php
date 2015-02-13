@@ -52,6 +52,6 @@ class DownloadablesController extends BaseController
     {
         Downloadable::destroy($id);
 
-        return View::make('admin.downloadables.create');
+        return Redirect::back();
     }
 }
