@@ -1237,7 +1237,7 @@
             html2canvas: 'https://cdn.webrtc-experiment.com/screenshot.js',
             hark: 'https://cdn.webrtc-experiment.com/hark.js',
             firebase: 'https://cdn.webrtc-experiment.com/firebase.js',
-            firebaseio: 'https://chat.firebaseIO.com/',
+            firebaseio: 'https://estreaming.firebaseIO.com/',
             muted: 'https://cdn.webrtc-experiment.com/images/muted.png',
             getConnectionStats: 'https://cdn.webrtc-experiment.com/getConnectionStats.js',
             FileBufferReader: 'https://cdn.webrtc-experiment.com/FileBufferReader.js'
