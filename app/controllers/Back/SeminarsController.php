@@ -101,7 +101,8 @@ class SeminarsController extends \BaseController
     public function edit($id)
     {
         $seminar = Seminar::find($id);
-        return View::make('admin.seminars.edit', compact('serminar'));
+        return View::make('admin.seminars.edit')
+            ->with('seminar', $seminar);
     }
 
     public function show($id)

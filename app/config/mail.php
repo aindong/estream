@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'freedom_war550@live.com.ph', 'name' => 'Admin'),
+	'from' => array('address' => 'freedom_war550@live.com.ph', 'name' => 'AEIRS'),
 
 	/*
 	|--------------------------------------------------------------------------
