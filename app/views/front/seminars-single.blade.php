@@ -22,7 +22,11 @@
                     <div class="row events">
                         <div class="span6">
                             <div class="thumb">
-                                <a href="#"><img src="/images/events1.jpg" alt=""></a>
+                                @if($seminar->image)
+                                    <a href="#"><img src="/public/uploads/seminar/{{ $seminar->image }}" alt=""></a>
+                                @else
+                                    <a href="#"><img src="/images/events1.jpg" alt=""></a>
+                                @endif
                             </div>
                         </div>
                         <!--EVENT CONTANT START-->

@@ -48,7 +48,7 @@ class HomeController extends \BaseController {
 	 */
 	public function seminars()
 	{
-		$seminars = \Seminar::orderBy('start_at', 'desc')->where('end_at', '>', new \DateTime('today'))->paginate(5);
+		$seminars = \Seminar::orderBy('start_at', 'asc')->where('end_at', '>', new \DateTime('today'))->paginate(5);
 		return View::make('front.seminars', compact('seminars'))
 			->with('pagination', $seminars->links());
 	}

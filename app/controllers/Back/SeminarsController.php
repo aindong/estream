@@ -49,7 +49,8 @@ class SeminarsController extends \BaseController
      */
     public function store()
     {
-        $destination = public_path() . '/public/uploads/invitation/';
+        $destination  = public_path() . '/public/uploads/invitation/';
+        $destination2 = public_path() . '/public/uploads/seminar/';
 
         $data = Input::all();
         $data['start_at'] = date('Y-m-d', strtotime($data['start_at']));
@@ -69,6 +70,13 @@ class SeminarsController extends \BaseController
             $filename = uniqid() . '-' . time() . '-' . $invitation->getClientOriginalName();
             $invitation->move($destination, $filename);
             $seminar->invitation = $filename;
+        }
+
+        if (Input::hasFile('image')) {
+            $image = Input::file('image');
+            $filename2 = uniqid() . '-' . time() . '-' . $image->getClientOriginalName();
+            $image->move($destination2, $filename2);
+            $seminar->image = $filename2;
         }
 
         $seminar->start_at = $data['start_at'];
@@ -132,13 +140,13 @@ class SeminarsController extends \BaseController
         Seminar::destroy($id);
 
         // Delete seminar users
-        $users = \SeminarUser::where('semiar_id', '=', $id)->delete();
+        $users = \SeminarUser::where('seminar_id', '=', $id)->delete();
 
         // Delete webcast
-        $webcast = \WebcastRequest::where('semiar_id', '=', $id)->delete();
+        $webcast = \WebcastRequest::where('seminar_id', '=', $id)->delete();
 
         // Delete downloadables
-        $downloadables = \Downloadable::where('semiar_id', '=', $id)->delete();
+        $downloadables = \Downloadable::where('seminar_id', '=', $id)->delete();
 
         // \AuditTrail::create([
         //     'user_id'   => Auth::getUser()->id,

@@ -42,22 +42,31 @@ class UserEventHandler
 
     public function onSeminarRegister(array $event)
     {
-        $result = $this->send('Thank you for registering into a seminar!', \Auth::getUser()->info->contactnumber);
+        try {
+            $result = $this->send('Thank you for registering into a seminar!', \Auth::getUser()->info->contactnumber);
 
-        Mail::send('emails.seminarRegister', $event, function($message) use ($event)
-        {
-            $message->to(\Auth::getUser()->email, \Auth::getUser()->info->first_name . ' ' . \Auth::getUser()->info->last_name )->subject('Registered on a seminar!');
-        });
+            Mail::send('emails.seminarRegister', $event, function($message) use ($event)
+            {
+                $message->to(\Auth::getUser()->email, \Auth::getUser()->info->first_name . ' ' . \Auth::getUser()->info->last_name )->subject('Registered on a seminar!');
+            });
+        } catch(\Exception $ex) {
+
+        }
     }
 
     public function onRegister(array $event)
     {
-        $result = $this->send('Thank you for registering to aiers!', $event['user']['contactnumber']);
+        try {
+            $result = $this->send('Thank you for registering to aiers!', $event['user']['contactnumber']);
 
-        Mail::send('emails.welcome', $event, function($message) use ($event)
-        {
-            $message->to($event['user']['email'], $event['user']['first_name'] . ' ' . $event['user']['last_name'])->subject('Welcome!');
-        });
+            Mail::send('emails.welcome', $event, function($message) use ($event)
+            {
+                $message->to($event['user']['email'], $event['user']['first_name'] . ' ' . $event['user']['last_name'])->subject('Welcome!');
+            });
+        } catch(\Exception $ex) {
+
+        }
+
     }
 
     public function onNewSeminar(array $event)
@@ -81,8 +90,14 @@ class UserEventHandler
 
     public function onWebcastStatusChanged(array $event)
     {
-        $request = \WebcastRequest::find($event['id']);
-        $result = $this->send('Your request for webcasting has been '.strtoupper($request->status), $request->user->info->cotactnumber);
+        try {
+            $request = \WebcastRequest::find($event['id']);
+            $result = $this->send('Your request for webcasting has been '.strtoupper($request->status), $request->user->info->cotactnumber);
+        } catch(\Exception $ex) {
+
+        }
+
+
     }
 
     /**
