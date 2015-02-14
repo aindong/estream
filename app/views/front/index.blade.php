@@ -1266,7 +1266,6 @@
 
                             <p>Naiana Ansa</p>
 
-                            <p class="color">Student</p>
 
                         </a>
 
@@ -1280,7 +1279,6 @@
 
                             <p>Jasmine Dou</p>
 
-                            <p class="color">Student</p>
 
                         </a>
 
@@ -1294,7 +1292,6 @@
 
                             <p>David john</p>
 
-                            <p class="color">Student</p>
 
                         </a>
 
@@ -1308,7 +1305,6 @@
 
                             <p>Roth Brown</p>
 
-                            <p class="color">Student</p>
 
                         </a>
 
@@ -1322,7 +1318,6 @@
 
                             <p>Timothy Smith</p>
 
-                            <p class="color">Student</p>
 
                         </a>
 
