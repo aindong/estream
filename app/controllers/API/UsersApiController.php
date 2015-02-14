@@ -93,7 +93,7 @@ class UsersApiController extends BaseController
         $validate = Validator::make($data = Input::all(), [
             'first_name' => 'required|min:3',
             'last_name'  => 'required|min:3',
-            'email'      => 'required|email|min:5',
+            'email'      => 'required|email|min:5|unique:users',
             'password'   => 'required|min:5'
         ]);
 
