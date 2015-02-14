@@ -17,7 +17,13 @@
                     <!--PROFILE IMAGE START-->
                     <div class="profile-box profile-view">
                         <div class="thumb">
-                            <a href="#"><img src="/images/profile-img.jpg" alt=""></a>
+                            <a href="#myModal" role="button" data-toggle="modal">
+                                @if(Auth::getUser()->info->picture != '')
+                                    <img src="/public/uploads/user/{{ Auth::getUser()->info->picture }}" alt="">
+                                @else
+                                    <img src="/images/profile-img.jpg" alt="">
+                                @endif
+                            </a>
                         </div>
                         <div class="text">
                             <p>Welcome</p>
@@ -138,4 +144,22 @@
 
     </div>
     <!--CONTANT END-->
+
+    <!-- Modal -->
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">Change profile picture</h3>
+        </div>
+        <div class="modal-body">
+            {{ Form::open(['url' => '/users/'.Auth::getUser()->id.'/picture', 'method' => 'post', 'enctype' => "multipart/form-data"]) }}
+                <label for="picture" class="form-label">Browse image</label>
+                {{ Form::file('picture',['required' => 'required', 'class' => 'form-control', 'id' => 'picture', 'accept' => 'image/*']) }}
+                <button class="btn-style" type="submit">Submit</button>
+            {{ Form::close() }}
+        </div>
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        </div>
+    </div>
 @stop

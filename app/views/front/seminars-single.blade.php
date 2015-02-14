@@ -83,7 +83,7 @@
                                     @elseif($seminarStatus == 'waiting for payment')
                                         Waiting for your payment
                                     @else
-                                        <a href="#" class="btn-style register" data-id="{{ $seminar->id }}">Register</a>
+                                        <button class="btn-style register" data-id="{{ $seminar->id }}">Register</button>
                                     @endif
                                 @else
                                     <a href="/login" class="btn-style">Login</a>
@@ -200,7 +200,7 @@
     <script type="text/javascript">
         $(function() {
             $('.register').on('click', function(e) {
-                e.preventDefault();
+
                 $(this).attr('disabled', true);
 
                 $.ajax({

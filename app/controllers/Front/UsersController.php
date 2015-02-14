@@ -114,12 +114,19 @@ class UsersController extends \BaseController
     public function seminars()
     {
         $user = Auth::getUser();
-        $seminarUsers = \SeminarUser::where('user_id', '=', $user->id)->get();
+        $seminarUsers = \SeminarUser::where('user_id', '=', $user->id)->orderBy('id', 'desc')->get();
 
         $requests = \WebcastRequest::where('user_id', '=', $user->id)->get();
 
         return View::make('user.seminar', compact('seminarUsers', 'user'))
             ->with('requests', $requests);
+    }
+
+    public function cancelSeminar($id)
+    {
+        \SeminarUser::where('seminar_id', '=', $id)->where('user_id', '=', Auth::getUser()->id)->delete();
+        \WebcastRequest::where('seminar_id', '=', $id)->where('user_id', '=', Auth::getUser()->id)->delete();
+        return Redirect::back();
     }
 
     public function updateUser($id)
@@ -168,6 +175,26 @@ class UsersController extends \BaseController
             } else {
                 \Session::flash('password_error', 'Confirmation password and New password does not match');
             }
+        }
+
+        return Redirect::back();
+    }
+
+    public function updatePicture($id)
+    {
+        if (Auth::getUser()->id == $id) {
+            $destination = public_path() . '/public/uploads/user';
+
+            if (\Input::hasFile('picture')) {
+                $picture = \Input::file('picture');
+                $filename = uniqid() . '-' . time() . '-' . $picture->getClientOriginalName();
+                $picture->move($destination, $filename);
+
+                $user = \UsersInfo::where('user_id', '=', $id)->first();
+                $user->picture = $filename;
+                $user->save();
+            }
+            //print_r(\Input::all());exit;
         }
 
         return Redirect::back();

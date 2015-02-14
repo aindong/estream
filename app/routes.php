@@ -35,6 +35,8 @@ Route::group(['namespace' => 'Controllers\Front'], function() {
 
 		Route::post('/users/{id}/update', ['uses' => 'UsersController@updateUser']);
 		Route::post('/users/{id}/password', ['uses' => 'UsersController@updatePassword']);
+		Route::post('/users/{id}/picture', ['uses' => 'UsersController@updatePicture']);
+		Route::get('/users/{id}/cancelSeminar', ['uses' => 'UsersController@cancelSeminar']);
 
 		Route::post('/users/seminars/register/{id}', ['as' => 'user.dashboard', 'uses' => 'UsersController@registerSeminar']);
 	});

@@ -71,7 +71,7 @@
                                <a href="#" data-href="/webcast/request/{{ $user->id }}/{{ $seminaruser->seminar_id }}" class="btn-style request">Request for Webcast</a>
                            @endif
                        @else
-                          <a href="#" class="btn-style">Cancel</a>
+                          <a href="/users/{{ $seminaruser->seminar_id }}/cancelSeminar" class="btn-style">Cancel</a>
                        @endif
                        <p style="font-size: 12px"><i class="fa fa-calendar-o"></i> {{ date('d M, Y', strtotime($seminaruser->seminar->start_at)) }} - {{ date('d M, Y', strtotime($seminaruser->seminar->end_at)) }}</p>
                        <p><i>{{ $seminaruser->seminar->location }}</i></p>
