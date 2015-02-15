@@ -16,4 +16,11 @@ class TestimonialsController extends \BaseController
 
         return \Redirect::back();
     }
+
+    public function delete($id)
+    {
+        \Testimonial::destroy($id);
+
+        return \Redirect::back();
+    }
 }
