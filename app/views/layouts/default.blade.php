@@ -52,7 +52,7 @@
                         <li><a href="/login">Login</a></li>
                         @else
                         <li><a href="/logout">Sign Out</a></li>
-
+                        <li><a href="/users/create-testimonials">Write a Testimonial</a></li>
                         <li>
 
                             <div class="dropdown">

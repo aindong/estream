@@ -69,7 +69,8 @@
 
                                 <li>
 
-                                    <h4><a href="/seminar/{{ $seminar->id }}">{{ $seminar->title }}</a></h4>
+
+                                    <h4><a href="/seminars/{{ $seminar->id }}">{{ $seminar->title }}</a></h4>
 
                                     <div class="text">
 

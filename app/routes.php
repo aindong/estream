@@ -31,7 +31,9 @@ Route::group(['namespace' => 'Controllers\Front'], function() {
 
 	Route::group(['before' => 'auth|hasRole:user'], function() {
 		Route::get('/users/dashboard', ['as' => 'user.dashboard', 'uses' => 'UsersController@index']);
-		Route::get('/users/seminars', ['as' => 'user.dashboard', 'uses' => 'UsersController@seminars']);
+		Route::get('/users/seminars', ['as' => 'user.seminars', 'uses' => 'UsersController@seminars']);
+		Route::get('/users/create-testimonials', ['as' => 'user.testimonials', 'uses' => 'UsersController@testimonials']);
+		Route::post('/users/create-testimonials', ['as' => 'user.testimonials', 'uses' => 'UsersController@postTestimonials']);
 
 		Route::post('/users/{id}/update', ['uses' => 'UsersController@updateUser']);
 		Route::post('/users/{id}/password', ['uses' => 'UsersController@updatePassword']);
@@ -76,6 +78,10 @@ Route::group(['namespace' => 'Controllers\Back', 'before' => 'auth|hasRole:admin
 	Route::resource('/admin/logs', 'LogsController');
 	// Reports
 	Route::resource('/admin/reports', 'ReportsController');
+
+	// Testimonials
+	Route::get('/admin/testimonials', ['as' => 'admin.testimonials.index', 'uses' => 'TestimonialsController@index']);
+	Route::get('/admin/testimonials/{id}/approve', ['as' => 'admin.testimonials.approve', 'uses' => 'TestimonialsController@approve']);
 
 	Route::get('/admin/updateStatus/{id}/{status}', ['uses' => 'SeminarsController@updateStatus']);
 });

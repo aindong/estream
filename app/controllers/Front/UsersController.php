@@ -199,4 +199,22 @@ class UsersController extends \BaseController
 
         return Redirect::back();
     }
+
+    public function testimonials()
+    {
+        return View::make('user.testimonials');
+    }
+
+    public function postTestimonials()
+    {
+        $data = \Input::all();
+
+        $testi = new \Testimonial();
+        $testi->user_id = Auth::getUser()->id;
+        $testi->testi   = $data['testimonial'];
+        $testi->status  = 'waiting';
+        $testi->save();
+
+        return Redirect::to('/users/dashboard');
+    }
 }

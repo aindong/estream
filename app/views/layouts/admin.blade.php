@@ -34,6 +34,7 @@
             <li><a href="/admin/medias"><i class="glyphicon glyphicon-picture"></i> Gallery</a></li>
             {{--<li><a href="/admin/webcasts"><i class="glyphicon glyphicon-headphones"></i> Webcasts Requests</a></li>--}}
             {{--<li><a href="/admin/webcast"><i class="glyphicon glyphicon-headphones"></i> Webcasts</a></li>--}}
+            <li><a href="/admin/testimonials"><i class="glyphicon glyphicon-th-list"></i> Testimonials</a></li>
             <li><a href="/admin/faqs"><i class="glyphicon glyphicon-th-list"></i> FAQ</a></li>
             <li><a href="/admin/logs"><i class="glyphicon glyphicon-bell"></i> Audit Trail</a></li>
             <li><a href="/admin/reports"><i class="glyphicon glyphicon-stats"></i> Reports</a></li>

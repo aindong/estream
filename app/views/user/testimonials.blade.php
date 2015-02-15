@@ -55,36 +55,19 @@
                     <!--EDIT PROFILE END-->
                 </div>
                 <div class="span8">
-                    @foreach($seminarUsers as $seminaruser)
                     <div class="profile-box editing">
-                       <h1>{{ $seminaruser->seminar->title }}</h1>
-                       @if($seminaruser->status == "paid")
-                           <?php $found = false; ?>
-                           @foreach($requests as $request)
-                                @if($seminaruser->seminar_id == $request->seminar_id)
-                                    @if($request->status == 'approved')
-                                        <a href="/webcast/seminar/{{ $seminaruser->seminar_id }}" class="btn-style">Go to webcast</a>
-                                    @elseif($request->status == 'waiting')
-                                        <p>Waiting for webcast approval</p>
-                                    @else
-                                        <p>Disapproved from accessing the webcast</p>
-                                    @endif
-                                    <?php $found = true; ?>
-                                @endif
-                           @endforeach
-
-                           @if(empty($requests) || $found == false)
-                               <a href="#" data-href="/webcast/request/{{ $user->id }}/{{ $seminaruser->seminar_id }}" class="btn-style request">Request for Webcast</a>
-                           @endif
-                       @else
-                          <a href="/users/{{ $seminaruser->seminar_id }}/cancelSeminar" class="btn-style">Cancel</a>
-                       @endif
-                       <p style="font-size: 12px"><i class="fa fa-calendar-o"></i> {{ date('d M, Y', strtotime($seminaruser->seminar->start_at)) }} - {{ date('d M, Y', strtotime($seminaruser->seminar->end_at)) }}</p>
-                       <p><i>{{ $seminaruser->seminar->location }}</i></p>
-                       <p>{{ substr($seminaruser->seminar->description, 0, 200) }} ...</p>
-                       <p>Status: <span style="font-weight: bold">{{ ucfirst($seminaruser->status) }}</span></p>
+                        <ul>
+                            {{ Form::open(['url' => '/users/create-testimonials', 'method' => 'post']) }}
+                                <li class="fw">
+                                    <h1>Write your testimonial</h1>
+                                    {{ Form::textarea('testimonial', null, ['placeholder' => 'Write your testimonial', 'class' => 'input-block-level', 'required' => 'required']) }}
+                                </li>
+                                <li class="fw">
+                                    <button class="btn-style" type="submit">Submit</button>
+                                </li>
+                            {{ Form::close() }}
+                        </ul>
                     </div>
-                    @endforeach
                 </div>
             </div>
         </div>
@@ -95,20 +78,7 @@
 @section('page-script')
     <script type="text/javascript">
         $(function() {
-            var request = $('.request');
-            request.on('click', function(e) {
-                e.preventDefault();
 
-                var url = $(this).attr('data-href');
-                $.ajax({
-                    url: url,
-                    type: 'post',
-                    success: function(data) {
-                        console.log(data);
-                        location.reload();
-                    }
-                });
-            });
         });
     </script>
 @stop

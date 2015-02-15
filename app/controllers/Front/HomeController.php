@@ -28,7 +28,8 @@ class HomeController extends \BaseController {
 	{
 		$seminars = \Seminar::orderBy('start_at', 'desc')->paginate(5);
 		$articles = \Article::orderBy('created_at', 'desc')->paginate(5);
-		return View::make('front.index', compact('faqs', 'seminars', 'articles'));
+		$testimonials = \Testimonial::orderBy('created_at', 'desc')->where('status', '=', 'approved')->paginate(5);
+		return View::make('front.index', compact('faqs', 'seminars', 'articles', 'testimonials'));
 	}
 
 	/**

@@ -1178,7 +1178,7 @@
 
                     <h2>Read Our Testimonials</h2>
 
-                    <p>What Students say</p>
+                    <p>What They Say About Us</p>
 
                     <span></span>
 
@@ -1191,135 +1191,155 @@
                 <div class="testimonial-data">
 
                     <ul class="bxslider2">
+                        @foreach($testimonials as $testimonial)
+                            <li>
+                                <div class="testimonial-text">
+                                    <p>{{ $testimonial->testi }}</p>
+                                    <a href="">{{ $testimonial->user->info->first_name }} {{ $testimonial->user->info->last_name }}</a>
+                                </div>
+                            </li>
+                        @endforeach
+                        {{--<li>--}}
 
-                        <li>
+                            {{--<div class="testimonial-text">--}}
 
-                            <div class="testimonial-text">
+                                {{--<p>To promote love of teaching and learning and serves as an activity center for students and professionals who value discipline in studies, review, and research. To promote materials and extension services to help the community obtain information meeting their personal, educational, and professional needs. </p>--}}
 
-                                <p>To promote love of teaching and learning and serves as an activity center for students and professionals who value discipline in studies, review, and research. To promote materials and extension services to help the community obtain information meeting their personal, educational, and professional needs. </p>
+                                {{--<a href="#">Naiana Ansa</a>--}}
 
-                                <a href="#">Naiana Ansa</a>
+                            {{--</div>--}}
 
-                            </div>
+                        {{--</li>--}}
 
-                        </li>
+                        {{--<li>--}}
 
-                        <li>
+                            {{--<div class="testimonial-text">--}}
 
-                            <div class="testimonial-text">
+                                {{--<p>To promote love of teaching and learning and serves as an activity center for students and professionals who value discipline in studies, review, and research </p>--}}
 
-                                <p>To promote love of teaching and learning and serves as an activity center for students and professionals who value discipline in studies, review, and research </p>
+                                {{--<a href="#">Jasmine Dou</a>--}}
 
-                                <a href="#">Jasmine Dou</a>
+                            {{--</div>--}}
 
-                            </div>
+                        {{--</li>--}}
 
-                        </li>
+                        {{--<li>--}}
 
-                        <li>
+                            {{--<div class="testimonial-text">--}}
 
-                            <div class="testimonial-text">
+                                {{--<p>I'm learning as I go along in this program and developing career interests through each phase of the process. I do hope to find a more secure place in the working world upon completion of my degree. </p>--}}
 
-                                <p>I'm learning as I go along in this program and developing career interests through each phase of the process. I do hope to find a more secure place in the working world upon completion of my degree. </p>
+                                {{--<a href="#">David john</a>--}}
 
-                                <a href="#">David john</a>
+                            {{--</div>--}}
 
-                            </div>
+                        {{--</li>--}}
 
-                        </li>
+                        {{--<li>--}}
 
-                        <li>
+                            {{--<div class="testimonial-text">--}}
 
-                            <div class="testimonial-text">
+                                {{--<p>The program requirements were very “do-able” with my work schedule and I was able to transfer many credits from my AS degree. I also liked the idea of obtaining a degree from a university with an excellent reputation as opposed to one of the “online only” schools that advertise heavily on TV. </p>--}}
 
-                                <p>The program requirements were very “do-able” with my work schedule and I was able to transfer many credits from my AS degree. I also liked the idea of obtaining a degree from a university with an excellent reputation as opposed to one of the “online only” schools that advertise heavily on TV. </p>
+                                {{--<a href="#">Roth Brown</a>--}}
 
-                                <a href="#">Roth Brown</a>
+                            {{--</div>--}}
 
-                            </div>
+                        {{--</li>--}}
 
-                        </li>
+                        {{--<li>--}}
 
-                        <li>
+                            {{--<div class="testimonial-text">--}}
 
-                            <div class="testimonial-text">
+                                {{--<p>The online coursework has been the most enjoyable aspect of the program. They are just as stimulating as those classes taken on campus! I've just finished my third semester and the time as flown by. </p>--}}
 
-                                <p>The online coursework has been the most enjoyable aspect of the program. They are just as stimulating as those classes taken on campus! I've just finished my third semester and the time as flown by. </p>
+                                {{--<a href="#">Timothy Smith</a>--}}
 
-                                <a href="#">Timothy Smith</a>
+                            {{--</div>--}}
 
-                            </div>
-
-                        </li>
+                        {{--</li>--}}
 
                     </ul>
 
                     <div id="bx-pager">
 
-                        <a data-slide-index="0" href="#">
+                        @foreach($testimonials as $testimonial)
+                            <a data-slide-index="0" href="">
+                                <div class="thumb">
+                                    @if($testimonial->user->info->picture != '')
+                                        <img src="/public/uploads/user/{{ $testimonial->user->info->picture }}" alt="">
+                                    @else
+                                        <img src="images/student-testi1.jpg" alt="">
+                                    @endif
+                                </div>
 
-                            <div class="thumb">
+                                <p>{{ $testimonial->user->info->first_name }} {{ $testimonial->user->info->last_name }}</p>
+                            </a>
+                        @endforeach
+                        {{--<a data-slide-index="0" href="#">--}}
 
-                                <img src="images/student-testi1.jpg" alt="">
+                            {{--<div class="thumb">--}}
 
-                            </div>
+                                {{--<img src="images/student-testi1.jpg" alt="">--}}
 
-                            <p>Naiana Ansa</p>
+                            {{--</div>--}}
 
-
-                        </a>
-
-                        <a data-slide-index="1" href="#">
-
-                            <div class="thumb">
-
-                                <img src="images/student-testi2.jpg" alt="">
-
-                            </div>
-
-                            <p>Jasmine Dou</p>
-
-
-                        </a>
-
-                        <a data-slide-index="2" href="#">
-
-                            <div class="thumb">
-
-                                <img src="images/student-testi3.jpg" alt="">
-
-                            </div>
-
-                            <p>David john</p>
+                            {{--<p>Naiana Ansa</p>--}}
 
 
-                        </a>
+                        {{--</a>--}}
 
-                        <a data-slide-index="3" href="#">
+                        {{--<a data-slide-index="1" href="#">--}}
 
-                            <div class="thumb">
+                            {{--<div class="thumb">--}}
 
-                                <img src="images/student-testi4.jpg" alt="">
+                                {{--<img src="images/student-testi2.jpg" alt="">--}}
 
-                            </div>
+                            {{--</div>--}}
 
-                            <p>Roth Brown</p>
-
-
-                        </a>
-
-                        <a data-slide-index="4" href="#">
-
-                            <div class="thumb">
-
-                                <img src="images/student-testi5.jpg" alt="">
-
-                            </div>
-
-                            <p>Timothy Smith</p>
+                            {{--<p>Jasmine Dou</p>--}}
 
 
-                        </a>
+                        {{--</a>--}}
+
+                        {{--<a data-slide-index="2" href="#">--}}
+
+                            {{--<div class="thumb">--}}
+
+                                {{--<img src="images/student-testi3.jpg" alt="">--}}
+
+                            {{--</div>--}}
+
+                            {{--<p>David john</p>--}}
+
+
+                        {{--</a>--}}
+
+                        {{--<a data-slide-index="3" href="#">--}}
+
+                            {{--<div class="thumb">--}}
+
+                                {{--<img src="images/student-testi4.jpg" alt="">--}}
+
+                            {{--</div>--}}
+
+                            {{--<p>Roth Brown</p>--}}
+
+
+                        {{--</a>--}}
+
+                        {{--<a data-slide-index="4" href="#">--}}
+
+                            {{--<div class="thumb">--}}
+
+                                {{--<img src="images/student-testi5.jpg" alt="">--}}
+
+                            {{--</div>--}}
+
+                            {{--<p>Timothy Smith</p>--}}
+
+
+                        {{--</a>--}}
 
                     </div>
 
