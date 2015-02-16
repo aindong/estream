@@ -116,9 +116,9 @@ class SeminarsController extends \BaseController
             ->with('webcastRequests', $webcastRequests);
     }
 
-    public function updateStatus($id, $status)
+    public function updateStatus($id, $seminar, $status)
     {
-        $userSeminar = \SeminarUser::where('user_id', '=', $id)->first();
+        $userSeminar = \SeminarUser::where('user_id', '=', $id)->where('seminar_id', '=', $seminar)->first();
         $userSeminar->status = $status;
         $userSeminar->save();
 

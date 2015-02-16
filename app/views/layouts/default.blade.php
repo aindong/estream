@@ -52,7 +52,9 @@
                         <li><a href="/login">Login</a></li>
                         @else
                         <li><a href="/logout">Sign Out</a></li>
+                        @if(Auth::getUser()->role_id == 1)
                         <li><a href="/users/create-testimonials">Write a Testimonial</a></li>
+                        @endif
                         <li>
 
                             <div class="dropdown">

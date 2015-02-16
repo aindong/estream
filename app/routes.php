@@ -83,7 +83,7 @@ Route::group(['namespace' => 'Controllers\Back', 'before' => 'auth|hasRole:admin
 	Route::get('/admin/testimonials', ['as' => 'admin.testimonials.index', 'uses' => 'TestimonialsController@index']);
 	Route::get('/admin/testimonials/{id}/approve', ['as' => 'admin.testimonials.approve', 'uses' => 'TestimonialsController@approve']);
 	Route::delete('/admin/testimonials/{id}', ['as' => 'admin.testimonials.delete', 'uses' => 'TestimonialsController@delete']);
-	Route::get('/admin/updateStatus/{id}/{status}', ['uses' => 'SeminarsController@updateStatus']);
+	Route::get('/admin/updateStatus/{id}/{seminar}/{status}', ['uses' => 'SeminarsController@updateStatus']);
 });
 
 /**
