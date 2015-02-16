@@ -902,7 +902,7 @@
                             </div>
                             <div class="text">
                                 <h2><a href="#">Dexter Manzano</a></h2>
-                                <p>Assistant Coordinator</p>
+                                <p>Assistant Director</p>
                             </div>
                         </div>
                     </div>
@@ -948,7 +948,7 @@
                             </div>
                             <div class="text">
                                 <h2><a href="#">Apolinario Saymo</a></h2>
-                                <p>Seminar Coordinator</p>
+                                <p>Seminar Director</p>
                             </div>
                         </div>
                     </div>

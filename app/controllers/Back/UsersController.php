@@ -123,6 +123,9 @@ class UsersController extends \BaseController
         // Delete medias
         $medias = \Media::where('user_id', '=', $id)->delete();
 
+        // Delete Testimonials
+        $testimonials = \Testimonial::where('user_id', '=', $id)->delete();
+
 
         // \AuditTrail::create([
         //     'user_id'   => Auth::getUser()->id,
