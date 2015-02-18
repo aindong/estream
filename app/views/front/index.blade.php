@@ -871,115 +871,115 @@
 
         {{--<!--STUDENT FORM SECTION END-->--}}
 
-        <!--OUR TEACHERS SECTION START-->
-        <section>
-            <div class="container">
-                <!--SECTION HEADER START-->
-                <div class="sec-header">
-                    <h2>Administrators</h2>
-                    <!-- <p>Discover courses by topic</p> -->
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <!--SECTION HEADER END-->
-                <div class="row">
-                    <!--TEACHERS THUMB START-->
-                    <div class="span3">
-                        <div class="teachers">
-                            <!-- <div class="social-icons">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-flickr"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-vimeo-square"></i></a>
-                            </div> -->
-                            <div class="thumb">
-                                <a href="#"><img src="images/admin1.jpg" alt=""></a>
-                            </div>
-                            <div class="text">
-                                <h2><a href="#">Dexter Manzano</a></h2>
-                                <p>Assistant Director</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--TEACHERS THUMB END-->
-                    <!--TEACHERS THUMB START-->
-                    <div class="span3">
-                        <div class="teachers">
-                            <!-- <div class="social-icons">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-flickr"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-vimeo-square"></i></a>
-                            </div> -->
-                            <div class="thumb">
-                                <a href="#"><img src="images/admin2.jpg" alt=""></a>
-                            </div>
-                            <div class="text">
-                                <h2><a href="#">David V. Lip</a></h2>
-                                <p>Technical Staff</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--TEACHERS THUMB END-->
-                    <!--TEACHERS THUMB START-->
-                    <div class="span3">
-                        <div class="teachers">
-                            <!-- <div class="social-icons">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-flickr"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-vimeo-square"></i></a>
-                            </div> -->
-                            <div class="thumb">
-                                <a href="#"><img src="images/admin3.jpg" alt=""></a>
-                            </div>
-                            <div class="text">
-                                <h2><a href="#">Apolinario Saymo</a></h2>
-                                <p>Seminar Director</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--TEACHERS THUMB END-->
-                    <!--TEACHERS THUMB START-->
-                    <div class="span3">
-                        <div class="teachers">
-                            <!-- <div class="social-icons">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-flickr"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-vimeo-square"></i></a>
-                            </div> -->
-                            <div class="thumb">
-                                <a href="#"><img src="images/admin4.jpg" alt=""></a>
-                            </div>
-                            <div class="text">
-                                <h2><a href="#">Raffy S. Aganon</a></h2>
-                                <p>Liaison officer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--TEACHERS THUMB END-->
-                </div>
-            </div>
-        </section>
-        <!--OUR TEACHERS SECTION END-->
+        {{--<!--OUR TEACHERS SECTION START-->--}}
+        {{--<section>--}}
+            {{--<div class="container">--}}
+                {{--<!--SECTION HEADER START-->--}}
+                {{--<div class="sec-header">--}}
+                    {{--<h2>Administrators</h2>--}}
+                    {{--<!-- <p>Discover courses by topic</p> -->--}}
+                    {{--<span></span>--}}
+                    {{--<span></span>--}}
+                    {{--<span></span>--}}
+                {{--</div>--}}
+                {{--<!--SECTION HEADER END-->--}}
+                {{--<div class="row">--}}
+                    {{--<!--TEACHERS THUMB START-->--}}
+                    {{--<div class="span3">--}}
+                        {{--<div class="teachers">--}}
+                            {{--<!-- <div class="social-icons">--}}
+                                {{--<a href="#"><i class="fa fa-facebook"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-flickr"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-dribbble"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-google-plus"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-linkedin"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-pinterest"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-twitter"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-vimeo-square"></i></a>--}}
+                            {{--</div> -->--}}
+                            {{--<div class="thumb">--}}
+                                {{--<a href="#"><img src="images/admin1.jpg" alt=""></a>--}}
+                            {{--</div>--}}
+                            {{--<div class="text">--}}
+                                {{--<h2><a href="#">Dexter Manzano</a></h2>--}}
+                                {{--<p>Assistant Director</p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<!--TEACHERS THUMB END-->--}}
+                    {{--<!--TEACHERS THUMB START-->--}}
+                    {{--<div class="span3">--}}
+                        {{--<div class="teachers">--}}
+                            {{--<!-- <div class="social-icons">--}}
+                                {{--<a href="#"><i class="fa fa-facebook"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-flickr"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-dribbble"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-google-plus"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-linkedin"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-pinterest"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-twitter"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-vimeo-square"></i></a>--}}
+                            {{--</div> -->--}}
+                            {{--<div class="thumb">--}}
+                                {{--<a href="#"><img src="images/admin2.jpg" alt=""></a>--}}
+                            {{--</div>--}}
+                            {{--<div class="text">--}}
+                                {{--<h2><a href="#">David V. Lip</a></h2>--}}
+                                {{--<p>Technical Staff</p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<!--TEACHERS THUMB END-->--}}
+                    {{--<!--TEACHERS THUMB START-->--}}
+                    {{--<div class="span3">--}}
+                        {{--<div class="teachers">--}}
+                            {{--<!-- <div class="social-icons">--}}
+                                {{--<a href="#"><i class="fa fa-facebook"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-flickr"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-dribbble"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-google-plus"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-linkedin"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-pinterest"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-twitter"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-vimeo-square"></i></a>--}}
+                            {{--</div> -->--}}
+                            {{--<div class="thumb">--}}
+                                {{--<a href="#"><img src="images/admin3.jpg" alt=""></a>--}}
+                            {{--</div>--}}
+                            {{--<div class="text">--}}
+                                {{--<h2><a href="#">Apolinario Saymo</a></h2>--}}
+                                {{--<p>Seminar Director</p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<!--TEACHERS THUMB END-->--}}
+                    {{--<!--TEACHERS THUMB START-->--}}
+                    {{--<div class="span3">--}}
+                        {{--<div class="teachers">--}}
+                            {{--<!-- <div class="social-icons">--}}
+                                {{--<a href="#"><i class="fa fa-facebook"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-flickr"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-dribbble"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-google-plus"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-linkedin"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-pinterest"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-twitter"></i></a>--}}
+                                {{--<a href="#"><i class="fa fa-vimeo-square"></i></a>--}}
+                            {{--</div> -->--}}
+                            {{--<div class="thumb">--}}
+                                {{--<a href="#"><img src="images/admin4.jpg" alt=""></a>--}}
+                            {{--</div>--}}
+                            {{--<div class="text">--}}
+                                {{--<h2><a href="#">Raffy S. Aganon</a></h2>--}}
+                                {{--<p>Liaison officer</p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<!--TEACHERS THUMB END-->--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</section>--}}
+        {{--<!--OUR TEACHERS SECTION END-->--}}
 
         <!--PAPULAR POSTS SECTION START-->
 
@@ -1263,8 +1263,8 @@
 
                     <div id="bx-pager">
 
-                        @foreach($testimonials as $testimonial)
-                            <a data-slide-index="0" href="">
+                        @foreach($testimonials as $key => $testimonial)
+                            <a data-slide-index="{{ $key }}" href="">
                                 <div class="thumb">
                                     @if($testimonial->user->info->picture != '')
                                         <img src="/public/uploads/user/{{ $testimonial->user->info->picture }}" alt="">
@@ -1354,88 +1354,6 @@
         </section>
 
         <!--TESTIMONIALS SECTION END-->
-
-        <!--FOLLOW US SECTION START-->
-
-        <!-- <section class="follow-us">
-
-            <div class="container">
-
-                <div class="row">
-
-                    <div class="span4">
-
-                        <div class="follow">
-
-                            <a href="#">
-
-                                <i class="fa fa-facebook"></i>
-
-                                <div class="text">
-
-                                    <h4>Follow us on Facebook</h4>
-
-                                    <p>Faucibus toroot menuts</p>
-
-                                </div>
-
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="span4">
-
-                        <div class="follow">
-
-                            <a href="#">
-
-                                <i class="fa fa-google"></i>
-
-                                <div class="text">
-
-                                    <h4>Follow us on Google Plus</h4>
-
-                                    <p>Faucibus toroot menuts</p>
-
-                                </div>
-
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="span4">
-
-                        <div class="follow">
-
-                            <a href="#">
-
-                                <i class="fa fa-linkedin"></i>
-
-                                <div class="text">
-
-                                    <h4>Follow us on Linkedin</h4>
-
-                                    <p>Faucibus toroot menuts</p>
-
-                                </div>
-
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section> -->
-
-        <!--FOLLOW US SECTION END-->
 
     </div>
 

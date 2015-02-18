@@ -27,7 +27,14 @@
 
     <!-- PARALLAX BACKGROUNDS -->
     <link href="/css/parallax.css" rel="stylesheet" type="text/css" />
-
+    <style>
+        .navigation ul li a {
+            font-size: 18px !important;
+        }
+        .account ul li a {
+            font-size: 18px !important;
+        }
+    </style>
     @yield('page-style')
 </head>
 
@@ -104,26 +111,6 @@
                         <span style="font-size:30px; font-weight: bold; position: absolute; left: 100px; top: 17px;">AEIRS</span>
                         <span style="font-size: 12px; position: absolute; left: 100px; top: 40px; width: 349px;">Association of Educators for Interrelated Research and Studies</span>
                     </div>
-
-                </div>
-
-                <div class="cart">
-
-                    <ul>
-
-                        <li>
-
-                            <div class="search-bar"><i class="fa fa-search"></i></div>
-
-                            <div class="search-box">
-
-                                <input type="text" class="input-block-level">
-
-                            </div>
-
-                        </li>
-
-                    </ul>
 
                 </div>
 

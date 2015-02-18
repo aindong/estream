@@ -13,6 +13,27 @@
     <div class="contant">
         <div class="container">
             <div class="contact-us">
+                <div style="font-size: 15px;" class="container">
+                    <div class="row">
+                        <div class="span6">
+                            <h3>Visit us at...</h3>
+                            <p>Association of Educator for Interrelated Research and Studies (AEIRS)</p>
+                            <p>Rm. 209, Llabres Bldg., Blk. 12,<br/>
+                                Lot 19 Verdant Heights,<br/>
+                                Multinational Village, Paraňaque City</p>
+                        </div>
+                        <div class="span6">
+                            <h3>...or Contact us</h3>
+                            <p>Email Address: {{ 'dextermanzano65@yahoo.com' }}</p>
+                            <p>Mobile Numbers: </p>
+                            <p>0915 – 116 – 8501 (Globe)</p>
+                            <p>0908 – 820 – 1187 (Smart)</p>
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+
+
                 <!--EVENT START-->
                 <!--EVENT LOCATION MAP START-->
                 <div class="event-location-map">

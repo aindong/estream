@@ -3,6 +3,29 @@
 @section('page-style')
     <!-- PIE CHART -->
     <link href="css/chart.css" rel="stylesheet" type="text/css">
+    <style>
+        .widerModal
+        {
+            width: 700px;
+            margin-top: -300px !important;
+            margin-left:  -350px !important;
+        }
+
+        .modal-body {
+            padding-left: 33px;
+            padding-right: 10px;
+        }
+
+        .modal-body ul li {
+            list-style: circle;
+        }
+
+        .higherWider {
+            width:970px;
+            /*margin-top: -250px !important;*/
+            margin-left:  -485px !important;
+        }
+    </style>
 @stop
 
 @section('content')
@@ -25,32 +48,30 @@
                             <h2>Everything you need to know</h2>
                             <p>Established under the mandate of <b>Art III, Sec. 8 of the Constitution</b>, chosen educators from the different institutions of learning organized a training body named Association of Educators for Interrelated Research and Studies, Inc. Its office is located at Rm. 209 Llabres Bldg., Blk. 12, Lot 19 Verdant Heights, 
                             Multinational Village, Paraňaque City. Like any other organizations, the Association of Educators for Interrelated Research and Studies, Inc. (AEIRS) is registered at the Securities and Exchange Commission as a non-stock and nonprofit organization with a Company Registration Number CN201126786. It also bears TIN # 415-618-325-000 issued by the Bureau of Internal Revenue.</p>
-                            <h2>Objectives</h2>
-                            <p>1)  To promote love of teaching and learning and serves as an activity center for students and professionals who value discipline in studies, review, and research;<br>
-                            2)  To promote materials and extension services to help the community obtain information meeting their personal, educational, and professional needs; and<br>
-                            3)  To encourage career development and advancement among students and professionals.</p>
-
-                            <h2>Summary</h2>
-
-                            <p>Name of Organization: Association of Educator for Interrelated Research and Studies (AEIRS)<br>
-                            Address: Rm. 209, Llabres Bldg., Blk. 12, Lot 19 Verdant Heights, Multinational Village, 
-                                Paraňaque City<br>
-                            SEC Reg: CN201126786<br>
-                            TIN No. : 415-618-325-000</p>
-
-
                         </div>
                     </div>
                     <div class="span6">
                         <div class="mac">
                             <ul class="bxslider">
                                 <li>
-                                    <img src="images/mac-screen1.png" alt="">
+                                    <img src="/images/1.jpg" alt="">
                                 </li>
                                 <li>
-                                    <img src="images/mac-screen2.png" alt="">
+                                    <img src="/images/2.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="/images/3.jpg" alt=""/>
                                 </li>
                             </ul>
+                        </div>
+                    </div>
+                    <div class="span12">
+                        <div class="intro">
+                            <h2>Objectives</h2>
+                            <p>1)  To promote love of teaching and learning and serves as an activity center for students and professionals who value discipline in studies, review, and research;<br>
+                                2)  To promote materials and extension services to help the community obtain information meeting their personal, educational, and professional needs; and<br>
+                                3)  To encourage career development and advancement among students and professionals.</p>
+
                         </div>
                     </div>
                 </div>
@@ -84,10 +105,10 @@
                                 <a href="#"><i class="fa fa-vimeo-square"></i></a>
                             </div> -->
                             <div class="thumb">
-                                <a href="#"><img src="images/admin1.jpg" alt=""></a>
+                                <a href="#dexter" role="button" data-toggle="modal"><img src="images/admin1.jpg" alt=""></a>
                             </div>
                             <div class="text">
-                                <h2><a href="#">Dexter Manzano</a></h2>
+                                <h2><a href="#dexter" role="button" data-toggle="modal">Dexter Manzano</a></h2>
                                 <p>Assistant Director</p>
                             </div>
                         </div>
@@ -107,10 +128,10 @@
                                 <a href="#"><i class="fa fa-vimeo-square"></i></a>
                             </div> -->
                             <div class="thumb">
-                                <a href="#"><img src="images/admin2.jpg" alt=""></a>
+                                <a href="#david" role="button" data-toggle="modal"><img src="images/admin2.jpg" alt=""></a>
                             </div>
                             <div class="text">
-                                <h2><a href="#">David V. Lip</a></h2>
+                                <h2><a href="#david" role="button" data-toggle="modal">David V. Lip</a></h2>
                                 <p>Technical Staff</p>
                             </div>
                         </div>
@@ -130,10 +151,10 @@
                                 <a href="#"><i class="fa fa-vimeo-square"></i></a>
                             </div> -->
                             <div class="thumb">
-                                <a href="#"><img src="images/admin3.jpg" alt=""></a>
+                                <a href="#apolinario" role="button" data-toggle="modal"><img src="images/admin3.jpg" alt=""></a>
                             </div>
                             <div class="text">
-                                <h2><a href="#">Apolinario Saymo</a></h2>
+                                <h2><a href="#apolinario" role="button" data-toggle="modal">Apolinario Saymo</a></h2>
                                 <p>Seminar Director</p>
                             </div>
                         </div>
@@ -153,10 +174,10 @@
                                 <a href="#"><i class="fa fa-vimeo-square"></i></a>
                             </div> -->
                             <div class="thumb">
-                                <a href="#"><img src="images/admin4.jpg" alt=""></a>
+                                <a href="#raffy" role="button" data-toggle="modal"><img src="images/admin4.jpg" alt=""></a>
                             </div>
                             <div class="text">
-                                <h2><a href="#">Raffy S. Aganon</a></h2>
+                                <h2><a href="#raffy" role="button" data-toggle="modal">Raffy S. Aganon</a></h2>
                                 <p>Liaison Officer</p>
                             </div>
                         </div>
@@ -167,47 +188,112 @@
         </section>
         <!--OUR TEACHERS SECTION END-->
 
-        <!--FOLLOW US SECTION START-->
-        <!-- <section class="follow-us">
-            <div class="container">
-                <div class="row">
-                    <div class="span4">
-                        <div class="follow">
-                            <a href="#">
-                                <i class="fa fa-facebook"></i>
-                                <div class="text">
-                                    <h4>Follow us on Facebook</h4>
-                                    <p>Faucibus toroot menuts</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="span4">
-                        <div class="follow">
-                            <a href="#">
-                                <i class="fa fa-google"></i>
-                                <div class="text">
-                                    <h4>Follow us on Google Plus</h4>
-                                    <p>Faucibus toroot menuts</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="span4">
-                        <div class="follow">
-                            <a href="#">
-                                <i class="fa fa-linkedin"></i>
-                                <div class="text">
-                                    <h4>Follow us on Linkedin</h4>
-                                    <p>Faucibus toroot menuts</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+        <!-- Modal -->
+        <div id="apolinario" class="modal hide fade higherWider" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel">Admin Information</h3>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <h1>Apolinario S. Saymo</h1>
+                    <ul>
+                        <li>Bachelor of Arts in Journalism at the Manuel L. Quezon University</li>
+                        <li>Bachelor of Secondary Education to quality him to teach in Secondary School</li>
+                        <li>Professional Board Examination for teacher</li>
+                        <li>Department of Education, Culture and Sports during which time for obtaining his Masteral of English</li>
+                        <li>Doctor Of Educational with Major In Educational Management </li>
+                    </ul>
+                    <br/>
+                    <p>He published articles relative to his profession and has written various books for different Educational Levels.</p>
+                    <br/>
+                    <ul>
+                        <li>ABCs of Computer and English I-IV for High School Student</li>
+                        <li>English plus Study and Thinking Skills writing</li>
+                        <li>Effective speech communication</li>
+                        <li>Effective writing</li>
+                        <li>Technical Writing Philippines Literature</li>
+                        <li>World Literature</li>
+                    </ul>
+                    <p>
+                        He is the Editor-In-Chief of a Local newspaper and President of Different Professional Organization.
+                        The Author Retired as an Associate Professor of the English Department At Tarlac State University
+                    </p>
                 </div>
             </div>
-        </section> -->
-        <!--FOLLOW US SECTION END-->
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+        <!-- MODAL END -->
+
+        <!-- Modal -->
+        <div id="dexter" class="modal hide fade higherWider" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel">Admin Information</h3>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <h1>Dexter Lucas Manzano</h1>
+                    <ul>
+                        <li>Ed.D. in educational management(units)</li>
+                        <li>Master of Arts in Education Major in Filipino</li>
+                        <li>Bachelor of Secondary Education Major in Physical Education Minor in Filipino</li>
+                        <li>LET Passer</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+        <!-- MODAL END -->
+
+        <!-- Modal -->
+        <div id="david" class="modal hide fade higherWider" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel">Admin Information</h3>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <h1>David Lip</h1>
+                    <ul>
+                        <li>Master of Arts In Education </li>
+                        <li>BSAB – English in Minor in Theater arts</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+        <!-- MODAL END -->
+
+        <!-- Modal -->
+        <div id="raffy" class="modal hide fade higherWider" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel">Admin Information</h3>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <h1>Raffy S. Aganon</h1>
+                    <ul>
+                        <li>BScience in Secondary Education</li>
+                        <li>Master of Arts in Education</li>
+                        <li>Doctor Of Philosophy(linguistics)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+        <!-- MODAL END -->
+
+
     </div>
     <!--CONTANT END-->
 @stop

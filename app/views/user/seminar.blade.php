@@ -27,7 +27,7 @@
                         </div>
                         <div class="text">
                             <p>Welcome</p>
-                            <a href="#" class="btn-style">{{ Auth::getUser()->info->first_name ." ". Auth::getUser()->info->last_name }}</a>
+                            <a style="cursor: default;" href="#" class="btn-style">{{ Auth::getUser()->info->first_name ." ". Auth::getUser()->info->last_name }}</a>
                             <div style="line-height: 0.4em;">
                                 @if(Auth::getUser()->info->membership == 'member')
                                     <p style="font-weight: bold;">Member</p>

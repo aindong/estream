@@ -92,29 +92,7 @@
 
                         <!--PAPULAR POST WIDGET END-->
 
-                        <!--NEWS LETTERS WIDGET START-->
 
-                        <div class="widget widget-newsletter">
-
-                            <div class="inner">
-
-                                <h2>Join Newsletters</h2>
-
-                                <div class="input-cover">
-
-                                    <i class="fa fa-envelope-o"></i>
-
-                                    <input type="text" class="input-block-level" placeholder="Enter Your E-Mail ID">
-
-                                </div>
-
-                                <button class="btn-style">Subscribe</button>
-
-                            </div>
-
-                        </div>
-
-                        <!--NEWS LETTERS WIDGET END-->
 
                     </div>
 
