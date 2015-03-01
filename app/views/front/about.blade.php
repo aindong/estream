@@ -83,7 +83,7 @@
             <div class="container">
                 <!--SECTION HEADER START-->
                 <div class="sec-header">
-                    <h2>Administrators</h2>
+                    <h2>Officers</h2>
                     <!-- <p>Discover courses by topic</p> -->
                     <span></span>
                     <span></span>
@@ -192,7 +192,7 @@
         <div id="apolinario" class="modal hide fade higherWider" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h3 id="myModalLabel">Admin Information</h3>
+                <h3 id="myModalLabel">Officers in Information</h3>
             </div>
             <div class="modal-body">
                 <div class="container">
@@ -231,7 +231,7 @@
         <div id="dexter" class="modal hide fade higherWider" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h3 id="myModalLabel">Admin Information</h3>
+                <h3 id="myModalLabel">Officers Information</h3>
             </div>
             <div class="modal-body">
                 <div class="container">
@@ -254,7 +254,7 @@
         <div id="david" class="modal hide fade higherWider" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h3 id="myModalLabel">Admin Information</h3>
+                <h3 id="myModalLabel">Officers Information</h3>
             </div>
             <div class="modal-body">
                 <div class="container">
@@ -275,7 +275,7 @@
         <div id="raffy" class="modal hide fade higherWider" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h3 id="myModalLabel">Admin Information</h3>
+                <h3 id="myModalLabel">Officers Information</h3>
             </div>
             <div class="modal-body">
                 <div class="container">
