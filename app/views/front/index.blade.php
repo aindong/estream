@@ -1112,9 +1112,7 @@
 
                             <div class="text">
 
-                                <h3 class="pull-left">Watch Seminars </h3>
 
-                                <span class="pull-right">Free!</span>
 
                                 <p>To promote love of teaching and learning and serves as an activity center for students and professionals who value discipline in studies, review, and research. To promote materials and extension services to help the community obtain information meeting their personal, educational, and professional needs. </p>
 
