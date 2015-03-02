@@ -1105,7 +1105,7 @@
 
                         <div class="box lesson">
 
-                            <h2>About Trial Lessons</h2>
+                            <h2>About AEIRS</h2>
 
                             {{--<iframe src="http://player.vimeo.com/video/10734556?title=0&amp;byline=0&amp;portrait=0&amp"></iframe>--}}
                             <iframe width="327" height="287" src="https://www.youtube.com/embed/twdxlpMT1dw" frameborder="0" allowfullscreen></iframe>
