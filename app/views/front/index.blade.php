@@ -1137,7 +1137,7 @@
                                 <li>
                                     <div class="text">
 
-                                        <p>{{ date('D M d', strtotime($article->start_at)) }}</p>
+                                        <p>{{ date('D M d', strtotime($article->created_at)) }}</p>
 
                                         <h4><a href="/news/{{ $article->id }}">{{ $article->title }}</a></h4>
 
