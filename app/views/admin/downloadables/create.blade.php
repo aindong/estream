@@ -12,7 +12,7 @@
         </div>
 
         <div class="form-group">
-            {{ Form::label('file', 'Image *', ['class' => 'form-label']) }}
+            {{ Form::label('file', 'File *', ['class' => 'form-label']) }}
             {{ Form::file('file',null, ['class' => 'form-control', 'required' => 'required']) }}
         </div>
 
