@@ -78,7 +78,7 @@ class UserEventHandler
 
         $users = \User::all();
         foreach ($users as $user) {
-            $result = $this->send('New seminar has been added on aiers!', $user->info->contactnumber);
+            $result = $this->send('New seminar has been added on aeirs!', $user->info->contactnumber);
 
             Mail::send('emails.newSeminar', $seminar, function($message) use ($user, $seminar)
             {
